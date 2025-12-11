@@ -574,7 +574,10 @@ def evaluate_single_model(model_name, prompt_type, word_list, test_words, num_ga
     debug_mode = os.getenv('DEBUG_RESPONSES', '0') == '1'
     debug_dir = None
     if debug_mode:
-        out_dir = os.getenv('OUT_DIR', '.')
+        # Default to results/llms/ directory
+    default_out_dir = str(Path(__file__).parent.parent / 'results' / 'llms')
+    out_dir = os.getenv('OUT_DIR', default_out_dir)
+    Path(out_dir).mkdir(parents=True, exist_ok=True)
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
         debug_dir = f"{out_dir}/debug_responses/{model_name.replace('-', '_')}_{prompt_type}_{timestamp}"
         os.makedirs(debug_dir, exist_ok=True)
@@ -583,7 +586,10 @@ def evaluate_single_model(model_name, prompt_type, word_list, test_words, num_ga
     # choose strategy (Navigator API)
     strategy = NavigatorUFCoTStrategy(model_name) if prompt_type == "chain-of-thought" else NavigatorUFStrategy(model_name)
 
-    out_dir = os.getenv('OUT_DIR', '.')
+    # Default to results/llms/ directory
+    default_out_dir = str(Path(__file__).parent.parent / 'results' / 'llms')
+    out_dir = os.getenv('OUT_DIR', default_out_dir)
+    Path(out_dir).mkdir(parents=True, exist_ok=True)
     os.makedirs(out_dir, exist_ok=True)
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     individual_csv = f"{out_dir}/model_{model_name.replace('-', '_')}_{prompt_type}_{timestamp}.csv"

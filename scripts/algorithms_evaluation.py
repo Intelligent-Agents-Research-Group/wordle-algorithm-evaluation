@@ -326,8 +326,8 @@ def main():
 
     # Write results to CSV
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    output_dir = Path(__file__).parent.parent / 'results'
-    output_dir.mkdir(exist_ok=True)
+    output_dir = Path(__file__).parent.parent / 'results' / 'algorithms'
+    output_dir.mkdir(parents=True, exist_ok=True)
     csv_filename = output_dir / f"algorithm_results_{timestamp}.csv"
 
     headers = [

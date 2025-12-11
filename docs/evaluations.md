@@ -528,6 +528,114 @@ See the **llm_evaluation.py** section above for detailed instructions on running
 
 ---
 
+## Analysis and Visualization Tools
+
+### Summary Statistics Generation
+
+**Script:** `scripts/generate_summary_stats.py`
+
+**Purpose:** Generate comprehensive summary statistics from algorithm evaluation results.
+
+**What it generates:**
+- **JSON file** (`summary_stats_{timestamp}.json`) - Machine-readable statistics for programmatic analysis
+- **Text file** (`summary_stats_{timestamp}.txt`) - Human-readable formatted report
+
+**Metrics calculated:**
+- Overall performance (win rate, avg attempts, min/max attempts)
+- Tier-based performance breakdown (performance by word difficulty)
+- Distance convergence patterns (average Hamming/Levenshtein by attempt)
+
+**Usage:**
+```bash
+cd scripts
+python3 generate_summary_stats.py [results_csv_path]
+```
+
+If no path is provided, automatically uses the most recent `algorithm_results_*.csv` from `results/algorithms/`.
+
+**Output location:** `results/algorithms/`
+
+---
+
+### Visualization Generation
+
+Two complementary scripts generate publication-quality graphs:
+
+#### **1. generate_graphs.py** - Comprehensive Multi-Panel Graphs
+
+Generates 4 comprehensive visualizations combining multiple metrics:
+
+**Graphs generated:**
+1. **overall_performance.png** - Win rate and average attempts (side-by-side)
+2. **tier_performance.png** - Performance grouped by word difficulty tier
+3. **distance_convergence.png** - Hamming and Levenshtein convergence (combined)
+4. **attempt_distribution.png** - Box plot showing attempt distributions
+
+**Usage:**
+```bash
+cd scripts
+python3 generate_graphs.py [results_csv_path]
+```
+
+#### **2. generate_focused_graphs.py** - Individual Focused Graphs
+
+Generates 5 individual, focused visualizations for specific metrics:
+
+**Graphs generated:**
+1. **mean_hamming_per_turn.png** - Mean Hamming distance for each turn (1-6)
+2. **mean_levenshtein_per_turn.png** - Mean Levenshtein distance for each turn (1-6)
+3. **avg_attempts_by_strategy.png** - Average attempts to win by strategy
+4. **hamming_reduction_per_turn.png** - Average Hamming distance reduction per turn
+5. **levenshtein_reduction_per_turn.png** - Average Levenshtein distance reduction per turn
+
+**Usage:**
+```bash
+cd scripts
+python3 generate_focused_graphs.py [results_csv_path]
+```
+
+**Output location:** `results/algorithms/plots/`
+
+**Requirements:**
+- `matplotlib` and `seaborn` (listed in `requirements.txt`)
+- Install via: `pip install -r requirements.txt`
+
+**Features:**
+- Publication-quality 300 DPI PNG images
+- Consistent color schemes across graphs
+- Value labels on bar charts
+- Grid lines and legends for readability
+- Automatic detection of most recent results
+
+---
+
+### Results Directory Structure
+
+```
+results/
+├── algorithms/
+│   ├── algorithm_results_{timestamp}.csv   # Detailed game-by-game data
+│   ├── summary_stats_{timestamp}.json      # Machine-readable statistics
+│   ├── summary_stats_{timestamp}.txt       # Human-readable report
+│   └── plots/                              # All generated graphs
+│       ├── overall_performance.png
+│       ├── tier_performance.png
+│       ├── distance_convergence.png
+│       ├── attempt_distribution.png
+│       ├── mean_hamming_per_turn.png
+│       ├── mean_levenshtein_per_turn.png
+│       ├── avg_attempts_by_strategy.png
+│       ├── hamming_reduction_per_turn.png
+│       └── levenshtein_reduction_per_turn.png
+│
+└── llms/
+    ├── model_{name}_{type}_{timestamp}.csv  # LLM evaluation results
+    ├── summary_{name}_{type}_{timestamp}.json
+    └── plots/                                # LLM-specific graphs
+```
+
+---
+
 ## Experimental Design
 
 ### Controlled Variables
