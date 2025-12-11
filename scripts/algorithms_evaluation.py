@@ -16,20 +16,28 @@ Outputs detailed CSV with all metrics for analysis.
 
 import random
 import csv
+import sys
 from datetime import datetime
 from typing import List, Tuple
+from pathlib import Path
+
+# Add parent directories to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent / 'engines'))
+sys.path.insert(0, str(Path(__file__).parent.parent / 'algorithms'))
+sys.path.insert(0, str(Path(__file__).parent))
 
 from wordle_env import WordleEnv
 from css_strategy import CSSStrategy
 from voi_strategy import VOIStrategy
 from random_strategy import RandomStrategy
 from pure_random_strategy import PureRandomStrategy
-from test_set_loader import get_test_words_only
+from test_set_loader import load_canonical_test_set
 
 
-def load_word_list(filename='words'):
-    """Load word list from file."""
-    with open(filename, 'r') as f:
+def load_word_list():
+    """Load full word list from wordlist.txt (pool of possible guesses)."""
+    wordlist_path = Path(__file__).parent.parent / 'wordlist' / 'wordlist.txt'
+    with open(wordlist_path, 'r') as f:
         return [word.strip().upper() for word in f.readlines() if len(word.strip()) == 5]
 
 
@@ -178,14 +186,14 @@ class SimpleAgent:
         self.candidates = self.strategy.update_belief(self.candidates, guess, feedback)
 
 
-def run_strategy_test(word_list: List[str], test_words: List[str],
+def run_strategy_test(word_list: List[str], test_set: List[Tuple[int, str, int]],
                      strategy_name: str, agent_factory) -> List[dict]:
     """Run test for a single strategy and return detailed results."""
     print(f"\nTesting {strategy_name}...")
 
     results = []
 
-    for game_id, target_word in enumerate(test_words):
+    for game_id, target_word, tier in test_set:
         env = WordleEnv(word_list)
         env.target_word = target_word
         env.attempts = 0
@@ -235,8 +243,9 @@ def run_strategy_test(word_list: List[str], test_words: List[str],
 
         results.append({
             'strategy': strategy_name,
-            'game_number': game_id + 1,
+            'game_number': game_id,
             'target_word': target_word,
+            'tier': tier,
             'won': win,
             'attempts': attempts_to_win,
             'total_reward': env.get_total_reward() if win else -10,
@@ -257,10 +266,10 @@ def run_strategy_test(word_list: List[str], test_words: List[str],
     # Calculate summary statistics
     wins = sum(1 for r in results if r['won'])
     total_attempts = sum(r['attempts'] for r in results if r['won'])
-    win_rate = wins / len(test_words) if test_words else 0
+    win_rate = wins / len(test_set) if test_set else 0
     avg_attempts = total_attempts / wins if wins > 0 else 0
 
-    print(f"  {strategy_name}: {win_rate:.1%} win rate ({wins}/{len(test_words)}), "
+    print(f"  {strategy_name}: {win_rate:.1%} win rate ({wins}/{len(test_set)}), "
           f"avg {avg_attempts:.2f} attempts")
 
     return results
@@ -277,8 +286,8 @@ def main():
     print(f"\nLoaded {len(word_list)} words")
 
     # Load canonical test set (ensures algorithms and LLMs use same words)
-    test_words = get_test_words_only()
-    print(f"Testing on {len(test_words)} words from canonical test set")
+    test_set = load_canonical_test_set()  # Returns [(game_id, word, tier), ...]
+    print(f"Testing on {len(test_set)} words from canonical test set")
 
     all_results = []
 
@@ -312,15 +321,17 @@ def main():
     print("=" * 80)
 
     for strategy_name, agent_factory in strategies:
-        results = run_strategy_test(word_list, test_words, strategy_name, agent_factory)
+        results = run_strategy_test(word_list, test_set, strategy_name, agent_factory)
         all_results.extend(results)
 
     # Write results to CSV
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    csv_filename = f"all_strategies_comprehensive_{timestamp}.csv"
+    output_dir = Path(__file__).parent.parent / 'results'
+    output_dir.mkdir(exist_ok=True)
+    csv_filename = output_dir / f"algorithm_results_{timestamp}.csv"
 
     headers = [
-        'strategy', 'game_number', 'target_word', 'won', 'attempts', 'total_reward',
+        'strategy', 'game_number', 'target_word', 'tier', 'won', 'attempts', 'total_reward',
         'guess_1', 'feedback_1', 'hamming_1', 'levenshtein_1',
         'guess_2', 'feedback_2', 'hamming_2', 'levenshtein_2',
         'guess_3', 'feedback_3', 'hamming_3', 'levenshtein_3',

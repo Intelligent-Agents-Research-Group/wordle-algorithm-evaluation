@@ -8,6 +8,61 @@ The evaluations system provides comprehensive testing and comparison of Wordle-s
 
 ---
 
+## Experimental Methodology
+
+### Word Selection and Test Design
+
+**Guess Pool (Candidate Words):**
+- Algorithms can guess from the **full wordlist** (`wordlist/wordlist.txt`)
+- Contains **5,629 five-letter English words**
+- Organized by frequency tiers (Tier 1-4) based on Zipf scores
+- Provides algorithms with realistic vocabulary to choose from
+
+**Test Set (Target Words):**
+- Algorithms are evaluated on a **fixed test set** (`wordlist/test_set.csv`)
+- Contains **100 carefully selected words**:
+  - 34 words from Tier 1 (high frequency, Zipf ≥ 4.0)
+  - 33 words from Tier 2 (medium frequency, 3.0 ≤ Zipf < 4.0)
+  - 33 words from Tier 3 (lower frequency, 2.5 ≤ Zipf < 3.0)
+- Fixed seed (42) ensures reproducibility
+- Same 100 words used for ALL evaluations (algorithms and LLMs)
+
+### Why This Design?
+
+1. **Realistic Gameplay:** Algorithms have access to full vocabulary (5,629 words), mimicking real Wordle where any valid word can be guessed
+2. **Controlled Testing:** All methods tested on identical 100 target words enables fair, direct comparison
+3. **Difficulty Analysis:** Tier distribution allows analysis of performance across word difficulty levels
+4. **Reproducibility:** Fixed seed and version-controlled test set ensures experiments can be replicated
+5. **Statistical Power:** 100 games provides sufficient data for paired statistical tests
+
+### Experimental Protocol
+
+**For each algorithm:**
+1. Load full wordlist (5,629 words) as the candidate pool
+2. Load test set (100 target words with tier labels)
+3. For each of 100 target words:
+   - Initialize game environment with target word
+   - Algorithm selects guesses from candidate pool
+   - Record all guesses, feedback, distances, and outcomes
+   - Maximum 6 attempts per game
+4. Save detailed results to CSV with all metrics
+5. Compute summary statistics (win rate, avg attempts, by tier)
+
+**Metrics Tracked:**
+- Strategy name
+- Game number and target word
+- Word tier (difficulty level)
+- Win/loss outcome
+- Number of attempts to win
+- Total reward accumulated
+- For each guess (1-6):
+  - Guess word
+  - Feedback pattern (Green/Yellow/Gray)
+  - Hamming distance to target
+  - Levenshtein distance to target
+
+---
+
 ## Canonical Test Set
 
 ### Purpose
