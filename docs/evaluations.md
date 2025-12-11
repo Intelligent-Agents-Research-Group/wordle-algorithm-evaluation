@@ -8,6 +8,77 @@ The evaluations system provides comprehensive testing and comparison of Wordle-s
 
 ---
 
+## Canonical Test Set
+
+### Purpose
+
+All evaluations (algorithms and LLMs) use the **same 100 words in the same order** to ensure fair comparison. This enables:
+
+- ✓ **Direct comparison:** "On word CRANE, CSS won in 3 attempts, Mistral in 4"
+- ✓ **Paired statistical testing:** More powerful than independent samples
+- ✓ **Reproducibility:** Fixed seed (42) ensures identical test sets
+- ✓ **Tier analysis:** Performance comparison across word difficulty levels
+
+### Composition
+
+**File:** `wordlist/test_set.csv`
+
+- **Total:** 100 words
+- **Tier 1:** 34 words (high frequency, Zipf ≥ 4.0)
+- **Tier 2:** 33 words (medium frequency, 3.0 ≤ Zipf < 4.0)
+- **Tier 3:** 33 words (lower frequency, 2.5 ≤ Zipf < 3.0)
+
+**Selection Method:** Random sampling with fixed seed (42) for reproducibility
+
+**Example Words:**
+- Game 1: PHOTO (Tier 1)
+- Game 2: PARTY (Tier 1)
+- Game 35: GENRE (Tier 2)
+- Game 68: AGAVE (Tier 3)
+
+### Generation
+
+To regenerate or verify the canonical test set:
+
+```bash
+cd scripts
+python3 generate_test_set.py
+```
+
+**Output:**
+```
+Canonical Test Set Summary
+- 100 words total
+- 34 from Tier 1, 33 from Tier 2, 33 from Tier 3
+- Saved to: wordlist/test_set.csv
+```
+
+### Usage in Code
+
+Both evaluation scripts automatically load the canonical test set:
+
+```python
+from test_set_loader import get_test_words_only
+
+# Load all 100 words in canonical order
+test_words = get_test_words_only()
+
+# Use first N words for testing
+test_words = get_test_words_only()[:10]  # First 10 for quick test
+```
+
+### Publication Benefits
+
+This approach is publication-ready because:
+
+1. **Reproducible:** Fixed seed, version-controlled test set
+2. **Fair:** All methods tested on identical tasks
+3. **Statistical:** Enables paired tests (matched samples)
+4. **Transparent:** Test set is public and documented
+5. **Balanced:** Representative sampling across difficulty levels
+
+---
+
 ## Evaluation Scripts
 
 ### algorithms_evaluation.py

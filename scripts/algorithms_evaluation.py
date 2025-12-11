@@ -2,11 +2,13 @@
 """
 Comprehensive evaluation of all algorithms (basic and hybrid strategies).
 
-Tests 8 strategies on 100 total games using the tiered word list:
-- 25 games from Tier 1 (most common words)
-- 25 games from Tier 2
-- 25 games from Tier 3
-- 25 games from Tier 4 (least common words)
+Tests 8 strategies on 100 games using the canonical test set:
+- 34 words from Tier 1 (most common words)
+- 33 words from Tier 2
+- 33 words from Tier 3
+
+Uses canonical_test_set.csv to ensure all evaluations (algorithms and LLMs)
+test on identical words in identical order for fair comparison.
 
 Calculates both Hamming and Levenshtein distances for each guess.
 Outputs detailed CSV with all metrics for analysis.
@@ -22,6 +24,7 @@ from css_strategy import CSSStrategy
 from voi_strategy import VOIStrategy
 from random_strategy import RandomStrategy
 from pure_random_strategy import PureRandomStrategy
+from test_set_loader import get_test_words_only
 
 
 def load_word_list(filename='words'):
@@ -273,9 +276,9 @@ def main():
     word_list = load_word_list()
     print(f"\nLoaded {len(word_list)} words")
 
-    # Create test set (same seed as previous tests for consistency)
-    test_words = create_test_set(word_list, num_words=100, seed=42)
-    print(f"Testing on {len(test_words)} words")
+    # Load canonical test set (ensures algorithms and LLMs use same words)
+    test_words = get_test_words_only()
+    print(f"Testing on {len(test_words)} words from canonical test set")
 
     all_results = []
 

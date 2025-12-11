@@ -19,6 +19,7 @@ import numpy as np
 from wordle_env import WordleEnv
 from guessing_agent import GuessingAgent
 from llm_strategy import LLMStrategy
+from test_set_loader import get_test_words_only
 
 
 # ----------------- Helpers -----------------
@@ -876,10 +877,18 @@ def main():
         print(f"❌ ERROR: Failed to load word list: {e}")
         return 1
 
-    # Start with small test set to verify LLM is working
-    num_test_games = int(os.getenv('NUM_TEST_GAMES', '3'))
-    test_words = create_standardized_test_set(word_list, num_words=num_test_games, seed=42)
-    print(f"✓ Created test set with {len(test_words)} words")
+    # Load canonical test set (ensures all evaluations use same words)
+    try:
+        canonical_words = get_test_words_only()
+        print(f"✓ Loaded canonical test set ({len(canonical_words)} words)")
+    except FileNotFoundError as e:
+        print(f"❌ ERROR: {e}")
+        return 1
+
+    # Allow testing with subset of canonical set
+    num_test_games = int(os.getenv('NUM_TEST_GAMES', str(len(canonical_words))))
+    test_words = canonical_words[:num_test_games]
+    print(f"✓ Using {len(test_words)} words from canonical set")
     print()
 
     start = time.time()
