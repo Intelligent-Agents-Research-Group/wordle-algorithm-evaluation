@@ -14,12 +14,52 @@ import re
 import sys
 from datetime import datetime
 from typing import List, Tuple
+from pathlib import Path
 import numpy as np
 
+# Add parent directories to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent / 'engines'))
+sys.path.insert(0, str(Path(__file__).parent.parent / 'algorithms'))
+sys.path.insert(0, str(Path(__file__).parent))
+
 from wordle_env import WordleEnv
-from guessing_agent import GuessingAgent
-from llm_strategy import LLMStrategy
 from test_set_loader import get_test_words_only
+
+
+# ----------------- GuessingAgent -----------------
+
+class GuessingAgent:
+    """Agent that uses an LLM strategy to play Wordle."""
+    def __init__(self, word_list, strategy):
+        self.word_list = word_list
+        self.strategy = strategy
+        self.candidates = list(word_list)
+        self.history = []  # List of (guess, feedback) tuples
+
+    def reset(self):
+        """Reset agent for a new game."""
+        self.candidates = list(self.word_list)
+        self.history = []
+
+    def select_guess(self):
+        """Select next guess using the strategy."""
+        # Call strategy's get_guess method with current candidates and history
+        guess = self.strategy.get_guess(self.candidates, self.history)
+        return guess
+
+    def update(self, guess, feedback, reward):
+        """Update agent state after a guess."""
+        # Convert feedback to string format if needed
+        if feedback and isinstance(feedback[0], int):
+            str_feedback = ['G' if f == 2 else 'Y' if f == 1 else '-' for f in feedback]
+        else:
+            str_feedback = feedback
+
+        # Add to history
+        self.history.append((guess, str_feedback))
+
+        # Update candidates using strategy's belief update
+        self.candidates = self.strategy.update_belief(self.candidates, guess, str_feedback)
 
 
 # ----------------- Helpers -----------------
@@ -197,6 +237,12 @@ def is_valid_guess(guess: str, word_list: List[str]) -> bool:
 
 
 # ----------------- Strategies -----------------
+
+class LLMStrategy:
+    """Base class for LLM strategies."""
+    def __init__(self, model_name, temperature=0.7):
+        self.model_name = model_name
+        self.temperature = temperature
 
 class NavigatorUFStrategy(LLMStrategy):
     """Base strategy for Navigator UF models (zero-shot)."""
@@ -487,9 +533,11 @@ class NavigatorUFCoTStrategy(NavigatorUFStrategy):
 
 # ----------------- Word List + Test Set -----------------
 
-def load_word_list(filename='words'):
-    """Load word list from file."""
-    with open(filename, 'r') as f:
+def load_word_list():
+    """Load full word list from wordlist.txt (pool of possible guesses)."""
+    from pathlib import Path
+    wordlist_path = Path(__file__).parent.parent / 'wordlist' / 'wordlist.txt'
+    with open(wordlist_path, 'r') as f:
         return [word.strip().upper() for word in f.readlines() if len(word.strip()) == 5]
 
 
@@ -574,10 +622,9 @@ def evaluate_single_model(model_name, prompt_type, word_list, test_words, num_ga
     debug_mode = os.getenv('DEBUG_RESPONSES', '0') == '1'
     debug_dir = None
     if debug_mode:
-        # Default to results/llms/ directory
-    default_out_dir = str(Path(__file__).parent.parent / 'results' / 'llms')
-    out_dir = os.getenv('OUT_DIR', default_out_dir)
-    Path(out_dir).mkdir(parents=True, exist_ok=True)
+        default_out_dir = str(Path(__file__).parent.parent / 'results' / 'llms')
+        out_dir = os.getenv('OUT_DIR', default_out_dir)
+        Path(out_dir).mkdir(parents=True, exist_ok=True)
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
         debug_dir = f"{out_dir}/debug_responses/{model_name.replace('-', '_')}_{prompt_type}_{timestamp}"
         os.makedirs(debug_dir, exist_ok=True)
@@ -586,11 +633,10 @@ def evaluate_single_model(model_name, prompt_type, word_list, test_words, num_ga
     # choose strategy (Navigator API)
     strategy = NavigatorUFCoTStrategy(model_name) if prompt_type == "chain-of-thought" else NavigatorUFStrategy(model_name)
 
-    # Default to results/llms/ directory
+    # Set output directory (default to results/llms/)
     default_out_dir = str(Path(__file__).parent.parent / 'results' / 'llms')
     out_dir = os.getenv('OUT_DIR', default_out_dir)
     Path(out_dir).mkdir(parents=True, exist_ok=True)
-    os.makedirs(out_dir, exist_ok=True)
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     individual_csv = f"{out_dir}/model_{model_name.replace('-', '_')}_{prompt_type}_{timestamp}.csv"
 

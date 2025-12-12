@@ -18,7 +18,9 @@ echo ""
 # Check if API key is set
 if [ -z "$NAVIGATOR_UF_API_KEY" ]; then
     echo "⚠️  NAVIGATOR_UF_API_KEY not set. Loading from .env if available..."
-    if [ -f .env ]; then
+    if [ -f ../.env ]; then
+        export $(cat ../.env | xargs)
+    elif [ -f .env ]; then
         export $(cat .env | xargs)
     fi
 fi

@@ -3,3 +3,5 @@
 __pycache__/
 *.pyc
 results/
+scripts/test_results/
+scripts/evaluation_logs/
