@@ -1,4 +1,4 @@
-#!/bin/bash
+1#!/bin/bash
 # Run all 11 models with zero-shot prompting (100 games each)
 
 export NUM_TEST_GAMES=100

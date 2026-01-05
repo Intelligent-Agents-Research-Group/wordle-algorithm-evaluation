@@ -689,12 +689,187 @@ This evaluation system supports the larger research goal of:
 
 ---
 
+## Hybrid LLM-Algorithm Evaluations
+
+### Overview
+
+Hybrid strategies combine Large Language Models with traditional algorithms (CSS) to test whether integrating LLM intuition with algorithmic optimization improves Wordle-solving performance.
+
+**Location:** `scripts/hybrid/`
+
+### Hybrid Strategies
+
+Four hybrid approaches are evaluated:
+
+1. **LLM-then-CSS**: LLM makes first guess, CSS handles remaining guesses
+2. **CSS-then-LLM**: CSS makes first 2 guesses (optimal opening), LLM handles rest
+3. **Threshold-Based**: CSS when candidates > threshold, LLM when ≤ threshold (default: 50)
+4. **Alternating**: Alternates between LLM and CSS on each turn
+
+### Staged Testing Approach
+
+To efficiently validate hybrid strategies, evaluations follow a staged approach:
+
+#### **Stage 1: Quick Validation** ✨ Recommended starting point
+- **Purpose**: Determine if any hybrid shows promise
+- **Configuration**:
+  - 3 models: mistral-small-3.1, llama-3.3-70b-instruct, mistral-7b-instruct
+  - 4 strategies: All hybrid approaches
+  - 10 games per combination (120 total games)
+- **Time**: ~2-3 hours
+- **Cost**: Minimal (~$0.12-$0.36 in API calls)
+- **Output**: `results/hybrids/stage1/`
+
+**Run Stage 1:**
+```bash
+cd scripts/hybrid
+./run_stage1_test.sh
+```
+
+**Analyze Results:**
+```bash
+python3 analyze_stage1_results.py
+```
+
+#### **Stage 2: Full Strategy Evaluation**
+- **When**: If Stage 1 shows hybrid < 3.79 avg attempts (beats pure CSS)
+- **Configuration**: Best 1-2 strategies × 2-3 models × 100 games
+- **Time**: ~5-10 hours
+- **Purpose**: Validate with full canonical test set
+
+#### **Stage 3: Comprehensive Model Comparison**
+- **When**: If Stage 2 confirms hybrid advantage
+- **Configuration**: Best strategy × all 11 models × 100 games
+- **Time**: ~10-20 hours
+- **Purpose**: Publication-ready comprehensive comparison
+
+### Decision Criteria
+
+**Baseline Comparisons:**
+- Pure CSS: 98% win rate, **3.79 avg attempts** ← Target to beat
+- Pure LLMs: 89-100% win rate, 4.03-4.47 avg attempts
+
+**Stage 1 → Stage 2:** Proceed if any hybrid achieves < 3.79 avg attempts
+
+**Stage 2 → Stage 3:** Proceed if hybrid consistently < 3.79 across models
+
+**If hybrids don't improve:** Document findings that hybrids don't provide benefit
+
+### Output Format
+
+Hybrid evaluations produce the same output format as other evaluations:
+
+**CSV Files** (`results/hybrids/`):
+```
+{strategy}_{model}_{timestamp}.csv
+```
+Contains:
+- Game number, target word, win/loss, attempts
+- All guesses with feedback, Hamming and Levenshtein distances
+- Strategy used for each guess (for threshold and alternating strategies)
+
+**Summary JSON** (`results/hybrids/`):
+```
+summary_{strategy}_{model}_{timestamp}.json
+```
+Contains:
+- Strategy name and configuration (threshold, css_turns, start_with)
+- Total games, wins, win rate
+- Average attempts when won
+- Timestamp
+
+### Environment Variables
+
+| Variable | Description | Default | Strategies |
+|----------|-------------|---------|------------|
+| `NAVIGATOR_UF_API_KEY` | API key (required) | - | All |
+| `MODEL` | LLM model name | `llama-3.3-70b-instruct` | All |
+| `NUM_GAMES` | Games to evaluate | 100 | All |
+| `CSS_TURNS` | CSS turns before LLM switch | 2 | css_then_llm |
+| `THRESHOLD` | Candidate count for switching | 50 | threshold_hybrid |
+| `START_WITH` | First strategy (`llm` or `css`) | `llm` | alternating_hybrid |
+
+### Individual Script Usage
+
+Each hybrid strategy can be run independently:
+
+```bash
+cd scripts/hybrid
+
+# LLM-then-CSS
+python3 llm_then_css.py
+
+# CSS-then-LLM (customizable)
+CSS_TURNS=3 python3 css_then_llm.py
+
+# Threshold-based (customizable)
+THRESHOLD=30 python3 threshold_hybrid.py
+
+# Alternating (customizable)
+START_WITH=css python3 alternating_hybrid.py
+```
+
+### Research Questions
+
+1. **Do hybrids outperform pure approaches?**
+   - Can any hybrid beat CSS's 3.79 avg attempts?
+   - Do hybrids achieve better win rates than LLMs?
+
+2. **Which hybrid strategy is most effective?**
+   - Opening-focused (LLM-then-CSS)?
+   - Closing-focused (CSS-then-LLM)?
+   - Context-aware (threshold-based)?
+   - Balanced (alternating)?
+
+3. **When is each approach beneficial?**
+   - Early game (opening moves)?
+   - Late game (closing with few candidates)?
+   - Throughout (alternating)?
+
+4. **Model dependence:**
+   - Do better LLMs make better hybrids?
+   - Do weaker LLMs benefit more from CSS support?
+
+5. **Cost-benefit trade-off:**
+   - Is slight performance gain worth LLM API costs?
+   - Which strategy minimizes LLM calls while maximizing performance?
+
+### Implementation Details
+
+**Common Features:**
+- All use canonical test set (100 words)
+- LLM calls include retry logic with exponential backoff
+- Automatic fallback to CSS if LLM fails
+- Both Hamming and Levenshtein distances tracked
+- Results compatible with existing analysis tools
+
+**Strategy Classes:**
+- `LLMThenCSSStrategy`: Simple turn-based switch
+- `CSSThenLLMStrategy`: Configurable CSS opening length
+- `ThresholdHybridStrategy`: Dynamic switching based on candidate count
+- `AlternatingHybridStrategy`: Turn-by-turn alternation
+
+### Integration with Results Documentation
+
+After completing hybrid evaluations, update `docs/results.md` with:
+- Hybrid strategy performance tables
+- Comparison to pure algorithms and LLMs
+- Analysis of when hybrids are beneficial
+- Cost-benefit analysis
+- Recommendations for production use
+
+---
+
 ## Additional Evaluations
 
 More evaluation scripts will be added here as development continues.
 
-**Planned additions:**
-- Tier-based evaluation (25 games per tier)
-- LLM agent evaluation
-- Statistical significance testing
-- Visualization and analysis scripts
+**Completed:**
+- Algorithm evaluations (8 strategies)
+- LLM evaluations (11 models × 2 prompting types)
+- Hybrid LLM-algorithm evaluations (4 strategies, staged approach)
+
+**Future additions:**
+- Statistical significance testing between approaches
+- Advanced visualization and analysis scripts
+- Cross-task evaluation (other word games)
