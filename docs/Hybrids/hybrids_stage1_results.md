@@ -6,7 +6,7 @@
 
 ---
 
-## Key Finding 🎯
+## Key Finding 
 
 **The best hybrid strategy beats pure CSS!**
 
@@ -20,7 +20,7 @@
 
 | Rank | Strategy | Model | Win Rate | Avg Attempts | Wins |
 |------|----------|-------|----------|--------------|------|
-| 🥇 1 | **llm_then_css** | **llama-3.3-70b** | **100%** | **3.60** | **10/10** |
+|  1 | **llm_then_css** | **llama-3.3-70b** | **100%** | **3.60** | **10/10** |
 | 2 | alternating_llm_first | mistral-7b | 90% | 3.67 | 9/10 |
 | 3 | css_then_llm | llama-3.3-70b | 90% | 3.78 | 9/10 |
 | 4 | alternating_llm_first | mistral-small-3.1 | 90% | 3.89 | 9/10 |
@@ -38,7 +38,7 @@
 ## Strategy Performance Summary
 
 ### llm_then_css (LLM first guess, CSS remaining)
-- **Best**: llama-3.3-70b (100%, 3.60 avg) ⭐ **BEATS CSS!**
+- **Best**: llama-3.3-70b (100%, 3.60 avg)  **BEATS CSS!**
 - **Average across models**: 3.94 avg attempts
 - **Insight**: Strong LLM opening + optimal CSS pruning works well
 
@@ -63,7 +63,7 @@
 
 | Approach | Win Rate | Avg Attempts | Winner |
 |----------|----------|--------------|--------|
-| **Best Hybrid (llm_then_css + llama-3.3-70b)** | **100%** | **3.60** | 🏆 |
+| **Best Hybrid (llm_then_css + llama-3.3-70b)** | **100%** | **3.60** |  |
 | Pure CSS | 98% | 3.79 | - |
 | CSS-VOI Alternating | 100% | 3.85 | - |
 | Best Pure LLM (mistral-small-3.1 CoT) | 100% | 4.30 | - |
@@ -72,7 +72,7 @@
 
 ---
 
-## Decision: Proceed to Stage 2 ✅
+## Decision: Proceed to Stage 2 
 
 **Reasoning:**
 1. llm_then_css + llama-3.3-70b beats pure CSS (3.60 < 3.79)

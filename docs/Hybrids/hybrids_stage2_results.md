@@ -7,7 +7,7 @@
 
 ---
 
-## Executive Summary 📊
+## Executive Summary 
 
 **Stage 1 results did NOT hold up with larger sample size.**
 
@@ -16,7 +16,7 @@ The promising 3.60-3.67 avg attempts from Stage 1 (10 games) regressed to 4.05-4
 ### Key Finding: Hybrids Do Not Beat Pure CSS
 
 **Pure CSS remains superior:**
-- Pure CSS: 98% win rate, **3.79 avg attempts** ✅
+- Pure CSS: 98% win rate, **3.79 avg attempts** 
 - Best Stage 2 hybrid: 92% win rate, **4.05 avg attempts**
 - **Difference: +0.26 attempts (7% worse)**
 
@@ -66,7 +66,7 @@ The promising 3.60-3.67 avg attempts from Stage 1 (10 games) regressed to 4.05-4
 
 | Approach | Win Rate | Avg Attempts | Sample Size | Winner |
 |----------|----------|--------------|-------------|--------|
-| **Pure CSS** | **98%** | **3.79** | 100 games | 🏆 **BEST** |
+| **Pure CSS** | **98%** | **3.79** | 100 games |  **BEST** |
 | CSS-VOI Alternating | 100% | 3.85 | 100 games | - |
 | Best Stage 2 Hybrid (alternating + llama) | 92% | 4.05 | 100 games | - |
 | Pure LLM (llama CoT) | 93% | 4.03 | 100 games | - |
@@ -126,7 +126,7 @@ The promising 3.60-3.67 avg attempts from Stage 1 (10 games) regressed to 4.05-4
 **Hypothesis:** LLM opening + CSS optimization should combine strengths
 
 **Stage 1 Results (10 games):**
-- llama-3.3-70b: 3.60 avg ⭐ (appeared to beat CSS!)
+- llama-3.3-70b: 3.60 avg  (appeared to beat CSS!)
 - mistral-7b: 4.11 avg
 
 **Stage 2 Results (100 games):**
@@ -140,7 +140,7 @@ The promising 3.60-3.67 avg attempts from Stage 1 (10 games) regressed to 4.05-4
 **Hypothesis:** Turn-by-turn alternation provides complementary benefits
 
 **Stage 1 Results (10 games):**
-- mistral-7b: 3.67 avg ⭐ (appeared very promising!)
+- mistral-7b: 3.67 avg  (appeared very promising!)
 - llama-3.3-70b: 4.00 avg
 
 **Stage 2 Results (100 games):**
@@ -255,15 +255,15 @@ The staged testing approach successfully identified that:
 ## Next Steps
 
 **For this research:**
-- ✅ Document findings in paper/publication
-- ✅ Include both Stage 1 and Stage 2 results
-- ✅ Discuss small-sample variance as key lesson
-- ✅ Report negative result (hybrids don't help)
+-  Document findings in paper/publication
+-  Include both Stage 1 and Stage 2 results
+-  Discuss small-sample variance as key lesson
+-  Report negative result (hybrids don't help)
 
 **For production use:**
-- ✅ Use pure CSS algorithm (98%, 3.79 avg)
-- ✅ OR use CSS-VOI alternating (100%, 3.85 avg)
-- ❌ Do not use hybrid LLM-algorithm approaches
+-  Use pure CSS algorithm (98%, 3.79 avg)
+-  OR use CSS-VOI alternating (100%, 3.85 avg)
+-  Do not use hybrid LLM-algorithm approaches
 
 **For future work:**
 - Test hybrids on less structured problems
