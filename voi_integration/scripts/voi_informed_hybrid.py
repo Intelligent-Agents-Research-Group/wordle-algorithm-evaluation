@@ -47,13 +47,19 @@ from voi_strategy import VOIStrategy
 
 # Models that require the GPT API key (frontier models)
 GPT_API_MODELS = {
-    "gpt-5", "gpt-5-mini", "gpt-4.1", "gpt-4.1-mini", "gpt-4o", "gpt-4o-mini",
+    "gpt-5-mini", "gpt-4.1", "gpt-4.1-mini", "gpt-4o", "gpt-4o-mini",
     "claude-3-opus", "claude-3.7-sonnet", "claude-4.5-sonnet",
-    "gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash"
+    "gemini-2.5-flash", "gemini-2.0-flash"
 }
 
 # Models that use NAVIGATOR_UF_API_KEY1
 KEY1_MODELS = {"claude-4-sonnet"}
+
+# Models that use NAVIGATOR_UF_API_KEY3
+KEY3_MODELS = {"gpt-5", "gemini-2.5-pro"}
+
+# Reasoning models: need max_completion_tokens instead of max_tokens, no temperature
+REASONING_MODELS = {"gpt-5", "gpt-oss-120b"}
 
 VALID_STRATEGIES = {"llm", "css", "voi"}
 
@@ -63,6 +69,11 @@ def _get_api_key_for_model(model_name: str) -> str:
         key = os.getenv("NAVIGATOR_UF_API_KEY1")
         if not key:
             raise RuntimeError(f"NAVIGATOR_UF_API_KEY1 not set (required for {model_name})")
+        return key
+    elif model_name in KEY3_MODELS:
+        key = os.getenv("NAVIGATOR_UF_API_KEY3")
+        if not key:
+            raise RuntimeError(f"NAVIGATOR_UF_API_KEY3 not set (required for {model_name})")
         return key
     elif model_name in GPT_API_MODELS:
         key = os.getenv("NAVIGATOR_UF_GPT_API_KEY")
@@ -222,18 +233,27 @@ class VOIInformedHybridStrategy:
 
             prompt = self._build_prompt(candidates, history, algo_scores, entropy)
 
+            is_reasoning = self.model_name in REASONING_MODELS
+            call_kwargs = {
+                "model": self.model_name,
+                "messages": [{"role": "user", "content": prompt}],
+            }
+            if is_reasoning:
+                call_kwargs["max_completion_tokens"] = 16384
+            else:
+                call_kwargs["temperature"] = self.temperature
+                call_kwargs["max_tokens"] = 150
+
             def api_call():
-                return client.chat.completions.create(
-                    model=self.model_name,
-                    messages=[{"role": "user", "content": prompt}],
-                    temperature=self.temperature,
-                    max_tokens=150
-                )
+                return client.chat.completions.create(**call_kwargs)
 
             for attempt in range(5):
                 try:
                     response = api_call()
-                    text = response.choices[0].message.content.strip()
+                    content = response.choices[0].message.content
+                    if content is None:
+                        content = getattr(response.choices[0].message, 'reasoning_content', None) or ""
+                    text = content.strip()
                     guess = self._extract_guess(text, history, candidates)
                     if guess:
                         return guess
