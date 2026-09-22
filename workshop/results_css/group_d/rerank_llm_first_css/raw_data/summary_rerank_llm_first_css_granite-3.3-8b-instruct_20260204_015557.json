@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "rerank_llm_first_css_true",
+  "repair_mode": "rerank_llm_first",
+  "algorithm": "css_true",
+  "model_name": "granite-3.3-8b-instruct",
+  "prompt_type": "zero-shot",
+  "top_k": null,
+  "total_games": 100,
+  "wins": 95,
+  "win_rate": 0.95,
+  "avg_attempts_when_won": 4.105263157894737,
+  "llm_accepted": 297,
+  "llm_repaired": 123,
+  "repair_rate": 0.29285714285714287,
+  "timestamp": "20260204_015557"
+}

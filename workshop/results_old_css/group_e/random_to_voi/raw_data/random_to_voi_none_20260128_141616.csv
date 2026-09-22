@@ -1,0 +1,6 @@
+game_number,target_word,won,attempts,guess_1,feedback_1,hamming_1,levenshtein_1,strategy_1,guess_2,feedback_2,hamming_2,levenshtein_2,strategy_2,guess_3,feedback_3,hamming_3,levenshtein_3,strategy_3,guess_4,feedback_4,hamming_4,levenshtein_4,strategy_4,guess_5,feedback_5,hamming_5,levenshtein_5,strategy_5,guess_6,feedback_6,hamming_6,levenshtein_6,strategy_6
+1,PHOTO,True,3,SANTI,---G-,4,4,RANDOM,BERTH,---GY,4,4,VOI,PHOTO,GGGGG,0,0,VOI,,,,,,,,,,,,,,,
+2,PARTY,True,4,SPIEL,-Y---,5,5,RANDOM,PHOTO,G--G-,3,3,VOI,PUTTY,G--GG,2,2,VOI,PARTY,GGGGG,0,0,VOI,,,,,,,,,,
+3,TRICK,True,3,WHINE,--G--,4,4,RANDOM,TAILS,G-G--,3,3,VOI,TRICK,GGGGG,0,0,VOI,,,,,,,,,,,,,,,
+4,DIRTY,True,3,SARIN,--GY-,4,4,RANDOM,GIRTH,-GGG-,2,2,VOI,DIRTY,GGGGG,0,0,VOI,,,,,,,,,,,,,,,
+5,USUAL,True,4,GRIMY,-----,5,5,RANDOM,LOATH,Y-Y--,5,5,VOI,BALES,-YY-Y,5,5,VOI,USUAL,GGGGG,0,0,VOI,,,,,,,,,,

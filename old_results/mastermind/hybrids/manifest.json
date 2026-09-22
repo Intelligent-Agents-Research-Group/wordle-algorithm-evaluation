@@ -1,0 +1,30 @@
+{
+  "experiment": "mastermind_workshop_hybrid_experiments",
+  "generated": "2026-02-12T09:02:26Z",
+  "num_games_per_config": 100,
+  "groups_run": "all",
+  "variants_run": "both",
+  "elapsed_seconds": 41379,
+  "note": "Group D (repair hybrids) excluded per research design",
+  "groups": {
+    "group_a": {
+      "description": "Single handoff (ZS, 8 models)",
+      "configs": ["L_to_C", "L_to_V", "L_to_C_alt", "L_to_C_then_V", "L_to_V_then_C", "C_to_L", "V_to_L"],
+      "runs_per_variant": 56
+    },
+    "group_b": {
+      "description": "K-handoff sweeps (ZS, 8 models, k=1,2,3)",
+      "configs": ["Lk_to_css", "Lk_to_voi", "cssk_to_L", "voik_to_L"],
+      "runs_per_variant": 96
+    },
+    "group_c": {
+      "description": "Alternation patterns (ZS+CoT, 8 models)",
+      "configs": ["alt_css_start", "alt_voi_start", "alt_llm_start_css", "alt_llm_start_voi"],
+      "runs_per_variant": 64
+    },
+    "sanity": {
+      "description": "L->CSS with CoT (k=1)",
+      "runs_per_variant": 8
+    }
+  }
+}

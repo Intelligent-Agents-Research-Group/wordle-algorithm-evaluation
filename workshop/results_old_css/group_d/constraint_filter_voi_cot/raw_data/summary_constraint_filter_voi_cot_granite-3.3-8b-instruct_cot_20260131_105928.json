@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "constraint_filter_voi_cot",
+  "repair_mode": "constraint_filter",
+  "algorithm": "voi",
+  "model_name": "granite-3.3-8b-instruct",
+  "prompt_type": "cot",
+  "top_k": null,
+  "total_games": 100,
+  "wins": 97,
+  "win_rate": 0.97,
+  "avg_attempts_when_won": 4.278350515463917,
+  "llm_accepted": 341,
+  "llm_repaired": 92,
+  "repair_rate": 0.21247113163972287,
+  "timestamp": "20260131_105928"
+}

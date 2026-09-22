@@ -1,0 +1,104 @@
+================================================================================
+REPEATED MEASURES ANOVA: WIN_RATE
+================================================================================
+
+Generated: 2026-02-02 18:13:31
+Metric: win_rate
+Description: Win rate (proportion of games solved)
+Lower is better: No
+
+--------------------------------------------------------------------------------
+DESIGN
+--------------------------------------------------------------------------------
+Complete cases (subjects): 100
+Conditions (approaches): 8
+Within-subjects factor: approach
+Subject: target_word
+
+--------------------------------------------------------------------------------
+ANOVA TABLE
+--------------------------------------------------------------------------------
+Source                         SS     df           MS            F            p
+----------------------------------------------------------------------
+Conditions                79.2214      7      11.3173     616.0380    1.36e-292
+Error                     12.7312    693       0.0184
+
+--------------------------------------------------------------------------------
+EFFECT SIZES
+--------------------------------------------------------------------------------
+Partial eta-squared (eta^2p): 0.8615
+Omega-squared (omega^2): 0.8600
+
+--------------------------------------------------------------------------------
+INTERPRETATION
+--------------------------------------------------------------------------------
+Result: HIGHLY SIGNIFICANT (p < 0.001)
+Effect size: large (eta^2p = 0.8615)
+
+F(7, 693) = 616.0380, p = 1.36e-292, eta^2p = 0.8615
+
+--------------------------------------------------------------------------------
+DESCRIPTIVE STATISTICS BY APPROACH
+--------------------------------------------------------------------------------
+    approach       mean        std   min        max  count         se     95% CI
+         CSS   0.960000   0.196946   0.0   1.000000    100   0.019695   0.038601
+         VOI   0.990000   0.100000   0.0   1.000000    100   0.010000   0.019600
+Frontier_LLM   0.930000   0.159228   0.3   1.000000    100   0.015923   0.031209
+     Mid_LLM   0.963333   0.115032   0.3   1.000000    100   0.011503   0.022546
+   Small_LLM   0.946000   0.120118   0.4   1.000000    100   0.012012   0.023543
+      Hybrid   0.944815   0.106527   0.5   1.000000    100   0.010653   0.020879
+      Random   0.910000   0.287623   0.0   1.000000    100   0.028762   0.056374
+ Pure_Random   0.000000   0.000000   0.0   0.000000    100   0.000000   0.000000
+
+--------------------------------------------------------------------------------
+POST-HOC PAIRWISE COMPARISONS (Bonferroni-corrected)
+--------------------------------------------------------------------------------
+Significant comparisons: 10 out of 28
+
+Significant Pairwise Differences (p-corr < 0.05):
+           A            B          T        p-unc       p-corr    cohen
+         CSS  Pure_Random  48.744230     5.17e-71     1.45e-69      nan
+Frontier_LLM  Pure_Random  58.406837     1.58e-78     4.42e-77      nan
+Frontier_LLM          VOI  -3.462159     7.93e-04     2.22e-02      nan
+      Hybrid  Pure_Random  88.692880     3.80e-96     1.06e-94      nan
+      Hybrid          VOI  -4.126950     7.67e-05     2.15e-03      nan
+     Mid_LLM  Pure_Random  83.744933     1.04e-93     2.90e-92      nan
+ Pure_Random       Random -31.638584     1.44e-53     4.03e-52      nan
+ Pure_Random    Small_LLM -78.756029     4.15e-91     1.16e-89      nan
+ Pure_Random          VOI -99.000000    8.04e-101     2.25e-99      nan
+   Small_LLM          VOI  -3.331958     1.21e-03     3.40e-02      nan
+
+All Pairwise Comparisons (sorted by p-value):
+           A            B          T    dof        p-unc       p-corr    cohen
+ Pure_Random          VOI -99.000000   99.0    8.04e-101     2.25e-99      nan
+      Hybrid  Pure_Random  88.692880   99.0     3.80e-96     1.06e-94      nan
+     Mid_LLM  Pure_Random  83.744933   99.0     1.04e-93     2.90e-92      nan
+ Pure_Random    Small_LLM -78.756029   99.0     4.15e-91     1.16e-89      nan
+Frontier_LLM  Pure_Random  58.406837   99.0     1.58e-78     4.42e-77      nan
+         CSS  Pure_Random  48.744230   99.0     5.17e-71     1.45e-69      nan
+ Pure_Random       Random -31.638584   99.0     1.44e-53     4.03e-52      nan
+      Hybrid          VOI  -4.126950   99.0     7.67e-05     2.15e-03      nan
+Frontier_LLM          VOI  -3.462159   99.0     7.93e-04     2.22e-02      nan
+   Small_LLM          VOI  -3.331958   99.0     1.21e-03     3.40e-02      nan
+      Random          VOI  -2.934058   99.0     4.16e-03     1.16e-01      nan
+     Mid_LLM          VOI  -2.031010   99.0     4.49e-02     1.00e+00      nan
+     Mid_LLM       Random   1.938558   99.0     5.54e-02     1.00e+00      nan
+Frontier_LLM      Mid_LLM  -1.847645   99.0     6.76e-02     1.00e+00      nan
+         CSS          VOI  -1.749816   99.0     8.32e-02     1.00e+00      nan
+         CSS       Random   1.681836   99.0     9.58e-02     1.00e+00      nan
+      Hybrid      Mid_LLM  -1.611540   99.0     1.10e-01     1.00e+00      nan
+         CSS Frontier_LLM   1.449056   99.0     1.50e-01     1.00e+00      nan
+      Hybrid       Random   1.387534   99.0     1.68e-01     1.00e+00      nan
+      Random    Small_LLM  -1.222119   99.0     2.25e-01     1.00e+00      nan
+     Mid_LLM    Small_LLM   1.162474   99.0     2.48e-01     1.00e+00      nan
+Frontier_LLM       Hybrid  -1.080010   99.0     2.83e-01     1.00e+00      nan
+Frontier_LLM    Small_LLM  -1.021732   99.0     3.09e-01     1.00e+00      nan
+         CSS       Hybrid   0.938812   99.0     3.50e-01     1.00e+00      nan
+Frontier_LLM       Random   0.736859   99.0     4.63e-01     1.00e+00      nan
+         CSS    Small_LLM   0.724138   99.0     4.71e-01     1.00e+00      nan
+         CSS      Mid_LLM  -0.178734   99.0     8.59e-01     1.00e+00      nan
+      Hybrid    Small_LLM  -0.106039   99.0     9.16e-01     1.00e+00      nan
+
+================================================================================
+END OF REPORT
+================================================================================

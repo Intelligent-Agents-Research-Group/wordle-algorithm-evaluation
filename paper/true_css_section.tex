@@ -1,0 +1,95 @@
+%==============================================================================
+% Current Solution Strategy (CSS) - Algorithm Description
+%==============================================================================
+
+\subsection{Current Solution Strategy (CSS)}
+\label{sec:css}
+
+We implement the Current Solution Strategy (CSS) based on the minimax regret framework introduced by \citet{lu2011robust}. CSS is designed for robust decision-making under uncertainty by selecting actions that minimize worst-case regret.
+
+\subsubsection{Theoretical Foundation}
+
+The key insight of CSS is that optimal query selection should consider the \textit{current solution} to the minimax optimization problem---specifically, the minimax optimal alternative and its \textit{adversarial witness}---and use this to choose queries with the greatest potential to reduce worst-case regret.
+
+In the general framework:
+\begin{itemize}
+    \item The \textbf{current solution} is the decision alternative that minimizes maximum regret given current uncertainty
+    \item The \textbf{adversarial witness} is the scenario that maximizes regret for the current solution
+    \item CSS selects queries that specifically target reducing the advantage of this adversarial witness
+\end{itemize}
+
+\subsubsection{Adaptation to Wordle}
+
+We adapt CSS to the Wordle domain as follows:
+\begin{itemize}
+    \item \textbf{Current solution}: A candidate word under consideration as the next guess
+    \item \textbf{Adversarial witness}: The feedback pattern that would leave the \textit{maximum} number of candidates remaining---representing the worst-case outcome for the guesser
+    \item \textbf{Query selection}: Choose guesses that minimize the worst-case remaining candidates while preferentially discriminating among the worst-case group
+\end{itemize}
+
+This approach ensures robust performance: regardless of which feedback pattern is received, the remaining candidate set will be no larger than a guaranteed size.
+
+\subsubsection{Algorithm Description}
+
+The CSS algorithm proceeds in three phases:
+
+\paragraph{Phase 1: Adversarial Witness Identification.}
+For each candidate guess $g \in C$ (where $C$ is the current candidate set), we partition the candidates by the feedback pattern they would produce:
+\begin{equation}
+C_f^g = \{w \in C : \text{feedback}(w, g) = f\}
+\end{equation}
+The adversarial witness for guess $g$ is the feedback pattern that leaves the most candidates:
+\begin{equation}
+f^*_g = \arg\max_f |C_f^g|
+\end{equation}
+
+\paragraph{Phase 2: Minimax Selection.}
+We identify the minimax optimal worst-case size:
+\begin{equation}
+m^* = \min_{g \in C} \max_f |C_f^g|
+\end{equation}
+All guesses achieving this minimum worst-case form the set of minimax-optimal candidates:
+\begin{equation}
+G^* = \{g \in C : \max_f |C_f^g| = m^*\}
+\end{equation}
+
+\paragraph{Phase 3: Witness Targeting.}
+Among the minimax-optimal guesses $G^*$, we select the guess that best discriminates among its worst-case candidate group. This ``witness targeting'' aspect of CSS prioritizes guesses that would help distinguish between candidates even in the worst-case scenario.
+
+For each $g \in G^*$, we compute a discrimination score based on how the guess would partition its worst-case candidates $C_{f^*_g}^g$ in subsequent rounds. The final guess is:
+\begin{equation}
+g^* = \arg\max_{g \in G^*} \text{discrimination}(g, C_{f^*_g}^g)
+\end{equation}
+
+Ties are broken by preferring guesses that are themselves valid candidates (enabling immediate victory if correct).
+
+\subsubsection{Constraint Filtering}
+
+After each guess, CSS filters the candidate set to maintain only words consistent with the observed feedback. A word $w$ remains a candidate if and only if $\text{feedback}(w, g) = f_{\text{observed}}$ for all previous guess-feedback pairs $(g, f_{\text{observed}})$.
+
+This filtering is exact---no valid candidates are incorrectly eliminated, and all eliminated words are provably inconsistent with the observed feedback. This property ensures that CSS achieves \textbf{zero constraint violations} by construction.
+
+\subsubsection{Properties}
+
+CSS exhibits several desirable properties for Wordle:
+
+\begin{enumerate}
+    \item \textbf{Worst-case guarantees}: The minimax objective ensures bounded worst-case performance regardless of the target word.
+
+    \item \textbf{Perfect constraint compliance}: By filtering candidates based on feedback, CSS never violates constraints from previous rounds.
+
+    \item \textbf{Current solution restriction}: CSS only considers guesses from the remaining candidate set, ensuring every guess could potentially be the correct answer.
+
+    \item \textbf{Adaptive targeting}: The witness targeting mechanism focuses computational effort on distinguishing the most problematic cases.
+\end{enumerate}
+
+%==============================================================================
+% References (add to main bibliography)
+%==============================================================================
+% @inproceedings{lu2011robust,
+%   title={Robust Approximation and Incremental Elicitation in Voting Protocols},
+%   author={Lu, Tyler and Boutilier, Craig},
+%   booktitle={Proceedings of the Twenty-Second International Joint Conference on Artificial Intelligence (IJCAI)},
+%   year={2011},
+%   pages={287--293}
+% }

@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "constraint_filter_css",
+  "repair_mode": "constraint_filter",
+  "algorithm": "css",
+  "model_name": "llama-3.1-nemotron-nano-8b-v1",
+  "prompt_type": "zero-shot",
+  "top_k": null,
+  "total_games": 100,
+  "wins": 97,
+  "win_rate": 0.97,
+  "avg_attempts_when_won": 4.0,
+  "llm_accepted": 0,
+  "llm_repaired": 406,
+  "repair_rate": 1.0,
+  "timestamp": "20260131_022349"
+}

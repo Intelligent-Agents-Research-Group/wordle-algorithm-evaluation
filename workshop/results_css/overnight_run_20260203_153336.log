@@ -1,0 +1,28 @@
+========================================
+OVERNIGHT AUTOMATION STARTED
+Started: Tue Feb  3 15:33:36 EST 2026
+========================================
+
+Monitoring run_all_css_true.sh...
+Will start additional models when complete.
+[15:33:36] Main experiments running... (36 CSV files completed)
+[15:38:36] Main experiments running... (36 CSV files completed)
+[15:43:36] Main experiments running... (36 CSV files completed)
+[15:48:36] Main experiments running... (36 CSV files completed)
+[15:53:36] Main experiments running... (37 CSV files completed)
+[15:58:36] Main experiments running... (41 CSV files completed)
+[16:03:36] Main experiments running... (44 CSV files completed)
+[16:08:36] Main experiments running... (44 CSV files completed)
+[16:13:37] Main experiments running... (44 CSV files completed)
+[16:18:37] Main experiments running... (44 CSV files completed)
+[16:23:37] Main experiments running... (44 CSV files completed)
+[16:28:37] Main experiments running... (44 CSV files completed)
+[16:33:37] Main experiments running... (45 CSV files completed)
+[16:38:37] Main experiments running... (49 CSV files completed)
+[16:43:37] Main experiments running... (52 CSV files completed)
+[16:48:37] Main experiments running... (52 CSV files completed)
+[16:53:37] Main experiments running... (52 CSV files completed)
+[16:58:37] Main experiments running... (52 CSV files completed)
+[17:07:21] Main experiments running... (52 CSV files completed)
+[17:12:22] Main experiments running... (52 CSV files completed)
+[17:17:22] Main experiments running... (53 CSV files completed)

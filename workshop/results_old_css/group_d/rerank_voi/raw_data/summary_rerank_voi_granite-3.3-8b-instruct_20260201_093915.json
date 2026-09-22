@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "rerank_voi",
+  "repair_mode": "rerank",
+  "algorithm": "voi",
+  "model_name": "granite-3.3-8b-instruct",
+  "prompt_type": "zero-shot",
+  "top_k": 5,
+  "total_games": 100,
+  "wins": 97,
+  "win_rate": 0.97,
+  "avg_attempts_when_won": 4.103092783505154,
+  "llm_accepted": 354,
+  "llm_repaired": 7,
+  "repair_rate": 0.019390581717451522,
+  "timestamp": "20260201_093915"
+}

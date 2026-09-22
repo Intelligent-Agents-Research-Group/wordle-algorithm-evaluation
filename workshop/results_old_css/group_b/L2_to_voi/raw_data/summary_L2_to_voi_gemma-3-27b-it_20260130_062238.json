@@ -1,0 +1,19 @@
+{
+  "strategy": "flexible_hybrid",
+  "config_name": "L2_to_voi",
+  "model_name": "gemma-3-27b-it",
+  "prompt_type": "zero-shot",
+  "schedule": {
+    "1": "llm",
+    "2": "llm",
+    "3": "voi",
+    "4": "voi",
+    "5": "voi",
+    "6": "voi"
+  },
+  "total_games": 100,
+  "wins": 97,
+  "win_rate": 0.97,
+  "avg_attempts_when_won": 3.9381443298969074,
+  "timestamp": "20260130_062238"
+}

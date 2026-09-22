@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "rerank_llm_first_css",
+  "repair_mode": "rerank_llm_first",
+  "algorithm": "css",
+  "model_name": "llama-3.1-nemotron-nano-8b-v1",
+  "prompt_type": "zero-shot",
+  "top_k": null,
+  "total_games": 100,
+  "wins": 94,
+  "win_rate": 0.94,
+  "avg_attempts_when_won": 3.925531914893617,
+  "llm_accepted": 0,
+  "llm_repaired": 405,
+  "repair_rate": 1.0,
+  "timestamp": "20260131_160811"
+}

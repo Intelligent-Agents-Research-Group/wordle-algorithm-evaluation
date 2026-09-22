@@ -1,0 +1,19 @@
+{
+  "strategy": "flexible_hybrid",
+  "config_name": "L3_to_css",
+  "model_name": "codestral-22b",
+  "prompt_type": "zero-shot",
+  "schedule": {
+    "1": "llm",
+    "2": "llm",
+    "3": "llm",
+    "4": "css",
+    "5": "css",
+    "6": "css"
+  },
+  "total_games": 100,
+  "wins": 92,
+  "win_rate": 0.92,
+  "avg_attempts_when_won": 4.554347826086956,
+  "timestamp": "20260130_102118"
+}

@@ -1,0 +1,103 @@
+========================================
+RE-RUNNING ALL CSS EXPERIMENTS WITH CSS_TRUE
+Started: Tue Feb  3 11:27:44 EST 2026
+Games per run: 100
+Output: /Users/kevin/Desktop/wordle/results/workshop_true_css
+Log: /Users/kevin/Desktop/wordle/results/workshop_true_css/run_all_css_true_20260203_112744.log
+========================================
+Loading environment from /Users/kevin/Desktop/wordle/.env
+
+========================================
+GROUP A - SINGLE HANDOFF (CSS_TRUE)
+========================================
+
+[1] A1_true | Model: llama-3.3-70b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/wordle/workshop/scripts/flexible_hybrid.py", line 33, in <module>
+    from test_set_loader import get_test_words_only
+ModuleNotFoundError: No module named 'test_set_loader'
+SUCCESS: A1_true llama-3.3-70b-instruct
+
+[2] A1_true | Model: llama-3.1-70b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/wordle/workshop/scripts/flexible_hybrid.py", line 33, in <module>
+    from test_set_loader import get_test_words_only
+ModuleNotFoundError: No module named 'test_set_loader'
+SUCCESS: A1_true llama-3.1-70b-instruct
+
+[3] A1_true | Model: llama-3.1-8b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/wordle/workshop/scripts/flexible_hybrid.py", line 33, in <module>
+    from test_set_loader import get_test_words_only
+ModuleNotFoundError: No module named 'test_set_loader'
+SUCCESS: A1_true llama-3.1-8b-instruct
+
+[4] A1_true | Model: codestral-22b
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/wordle/workshop/scripts/flexible_hybrid.py", line 33, in <module>
+    from test_set_loader import get_test_words_only
+ModuleNotFoundError: No module named 'test_set_loader'
+SUCCESS: A1_true codestral-22b
+
+[5] A1_true | Model: gemma-3-27b-it
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/wordle/workshop/scripts/flexible_hybrid.py", line 33, in <module>
+    from test_set_loader import get_test_words_only
+ModuleNotFoundError: No module named 'test_set_loader'
+SUCCESS: A1_true gemma-3-27b-it
+
+[6] A1_true | Model: granite-3.3-8b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/wordle/workshop/scripts/flexible_hybrid.py", line 33, in <module>
+    from test_set_loader import get_test_words_only
+ModuleNotFoundError: No module named 'test_set_loader'
+SUCCESS: A1_true granite-3.3-8b-instruct
+
+[7] A1_true | Model: llama-3.1-nemotron-nano-8b-v1
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/wordle/workshop/scripts/flexible_hybrid.py", line 33, in <module>
+    from test_set_loader import get_test_words_only
+ModuleNotFoundError: No module named 'test_set_loader'
+SUCCESS: A1_true llama-3.1-nemotron-nano-8b-v1
+
+[8] A1_true | Model: mistral-7b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/wordle/workshop/scripts/flexible_hybrid.py", line 33, in <module>
+    from test_set_loader import get_test_words_only
+ModuleNotFoundError: No module named 'test_set_loader'
+SUCCESS: A1_true mistral-7b-instruct
+
+[9] A3_true | Model: llama-3.3-70b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/wordle/workshop/scripts/flexible_hybrid.py", line 33, in <module>
+    from test_set_loader import get_test_words_only
+ModuleNotFoundError: No module named 'test_set_loader'
+SUCCESS: A3_true llama-3.3-70b-instruct
+
+[10] A3_true | Model: llama-3.1-70b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/wordle/workshop/scripts/flexible_hybrid.py", line 33, in <module>
+    from test_set_loader import get_test_words_only
+ModuleNotFoundError: No module named 'test_set_loader'
+SUCCESS: A3_true llama-3.1-70b-instruct
+
+[11] A3_true | Model: llama-3.1-8b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/wordle/workshop/scripts/flexible_hybrid.py", line 33, in <module>
+    from test_set_loader import get_test_words_only
+ModuleNotFoundError: No module named 'test_set_loader'
+SUCCESS: A3_true llama-3.1-8b-instruct
+
+[12] A3_true | Model: codestral-22b
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/wordle/workshop/scripts/flexible_hybrid.py", line 33, in <module>
+    from test_set_loader import get_test_words_only
+ModuleNotFoundError: No module named 'test_set_loader'
+SUCCESS: A3_true codestral-22b
+
+[13] A3_true | Model: gemma-3-27b-it
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/wordle/workshop/scripts/flexible_hybrid.py", line 33, in <module>
+    from test_set_loader import get_test_words_only
+ModuleNotFoundError: No module named 'test_set_loader'
+SUCCESS: A3_true gemma-3-27b-it

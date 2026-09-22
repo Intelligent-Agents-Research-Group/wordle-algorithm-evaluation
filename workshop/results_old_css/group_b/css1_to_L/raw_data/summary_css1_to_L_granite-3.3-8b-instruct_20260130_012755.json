@@ -1,0 +1,19 @@
+{
+  "strategy": "flexible_hybrid",
+  "config_name": "css1_to_L",
+  "model_name": "granite-3.3-8b-instruct",
+  "prompt_type": "zero-shot",
+  "schedule": {
+    "1": "css",
+    "2": "llm",
+    "3": "llm",
+    "4": "llm",
+    "5": "llm",
+    "6": "llm"
+  },
+  "total_games": 100,
+  "wins": 89,
+  "win_rate": 0.89,
+  "avg_attempts_when_won": 4.292134831460674,
+  "timestamp": "20260130_012755"
+}

@@ -1,0 +1,19 @@
+{
+  "strategy": "flexible_hybrid",
+  "config_name": "random_to_voi",
+  "model_name": "none",
+  "prompt_type": "zero-shot",
+  "schedule": {
+    "1": "random",
+    "2": "voi",
+    "3": "voi",
+    "4": "voi",
+    "5": "voi",
+    "6": "voi"
+  },
+  "total_games": 5,
+  "wins": 5,
+  "win_rate": 1.0,
+  "avg_attempts_when_won": 3.4,
+  "timestamp": "20260128_141616"
+}

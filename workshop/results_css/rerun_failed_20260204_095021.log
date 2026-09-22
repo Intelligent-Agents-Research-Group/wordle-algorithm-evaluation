@@ -1,0 +1,3964 @@
+========================================
+RE-RUNNING 20 FAILED EXPERIMENTS
+WITH ALGORITHM FALLBACK ENABLED
+Started: Wed Feb  4 09:50:21 EST 2026
+Games per run: 100
+Output: /Users/kevin/Desktop/projects/wordle/workshop/results_true_css
+Log: /Users/kevin/Desktop/projects/wordle/workshop/results_true_css/rerun_failed_20260204_095021.log
+========================================
+Using Python: /Users/kevin/Desktop/projects/wordle/venv/bin/python
+Loading environment from /Users/kevin/Desktop/projects/wordle/.env
+
+========================================
+GROUP A FAILURES (4 runs)
+========================================
+[1/20] A3_true | granite-3.3-8b-instruct
+================================================================================
+FLEXIBLE HYBRID EVALUATION: L_to_C_alt_true
+================================================================================
+Model: granite-3.3-8b-instruct
+Prompt Type: zero-shot
+Schedule: {"1": "llm", "2": "css_true", "3": "voi", "4": "css_true", "5": "voi", "6": "css_true"}
+Games: 100
+================================================================================
+
+Game 1/100: Target = PHOTO
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: CHAPS -> -G-Y- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: PHONE -> GGG-- (H:2, L:2)
+  Attempt 3 [VOI]: PHOTO -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 2/100: Target = PARTY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: AROSE -> YY--- (H:5, L:4)
+  Attempt 2 [CSS_TRUE]: MARIA -> -GG-- (H:3, L:3)
+  Attempt 3 [VOI]: TARDY -> YGG-G (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: PARTY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 3/100: Target = TRICK
+  Attempt 1 [LLM]: AURAL -> --Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: TRIER -> GGG-- (H:2, L:2)
+  Attempt 3 [VOI]: TRIPS -> GGG-- (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: TRICK -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 4/100: Target = DIRTY
+  Attempt 1 [LLM]: PLEAD -> ----Y (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: RODDY -> Y-Y-G (H:4, L:4)
+  Attempt 3 [VOI]: DIRTY -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 5/100: Target = USUAL
+  Attempt 1 [LLM]: SPRIT -> Y---- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: MAKES -> -Y--Y (H:5, L:5)
+  Attempt 3 [VOI]: ASSAD -> -G-G- (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: USUAL -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 6/100: Target = TRULY
+  Attempt 1 [LLM]: LEAST -> Y---Y (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: TILLY -> G--GG (H:2, L:2)
+  Attempt 3 [VOI]: TRULY -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 7/100: Target = SPENT
+  Attempt 1 [LLM]: GUESS -> --GY- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: SHEET -> G-G-G (H:2, L:2)
+  Attempt 3 [VOI]: SLEPT -> G-GYG (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: SPENT -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 8/100: Target = PAUSE
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: TASER -> -GYY- (H:4, L:3)
+  Attempt 2 [CSS_TRUE]: SALVE -> YG--G (H:3, L:3)
+  Attempt 3 [VOI]: CAUSE -> -GGGG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: PAUSE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 9/100: Target = CRAZY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: SIENA -> ----Y (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: ROYAL -> Y-YY- (H:5, L:5)
+  Attempt 3 [VOI]: PARTY -> -YY-G (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: GRADY -> -GG-G (H:2, L:2)
+  Attempt 5 [VOI]: CRAZY -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 10/100: Target = BASES
+  Attempt 1 [LLM]: BREED -> G--G- (H:3, L:3)
+  Attempt 2 [CSS_TRUE]: BASEL -> GGGG- (H:1, L:1)
+  Attempt 3 [VOI]: BASES -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 11/100: Target = YOUNG
+  Attempt 1 [LLM]: FIRST -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: CONDE -> -GY-- (H:4, L:4)
+  Attempt 3 [VOI]: LOGAN -> -GY-Y (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: YOUNG -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 12/100: Target = MEANS
+  Attempt 1 [LLM]: SPRIG -> Y---- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: MALES -> GY-YG (H:3, L:3)
+  Attempt 3 [VOI]: MEANS -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 13/100: Target = TRUTH
+  Attempt 1 [LLM]: SHEDS -> -Y--- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: TORAH -> G-Y-G (H:3, L:3)
+  Attempt 3 [VOI]: TRUTH -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 14/100: Target = FIRED
+  Attempt 1 [LLM]: GUESS -> --Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: TRIED -> -YYGG (H:3, L:3)
+  Attempt 3 [VOI]: AIRED -> -GGGG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: FIRED -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 15/100: Target = FOLKS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: LASER -> Y-Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: FOILS -> GG-YG (H:2, L:2)
+  Attempt 3 [VOI]: FOLKS -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 16/100: Target = CHILE
+  Attempt 1 [LLM]: SORRY -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: ANGEL -> ---YY (H:5, L:5)
+  Attempt 3 [VOI]: ELLIE -> -Y-YG (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: BIBLE -> -Y-GG (H:3, L:3)
+  Attempt 5 [VOI]: WHILE -> -GGGG (H:1, L:1)
+  Attempt 6 [CSS_TRUE]: CHILE -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 17/100: Target = BLACK
+  Attempt 1 [LLM]: TRAPS -> --G-- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: ALAIN -> -GG-- (H:3, L:3)
+  Attempt 3 [VOI]: BLAKE -> GGGY- (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: BLACK -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 18/100: Target = GRANT
+  Attempt 1 [LLM]: SHEDS -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: RATIO -> YYY-- (H:5, L:4)
+  Attempt 3 [VOI]: KMART -> --GYG (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: GRANT -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 19/100: Target = MEALS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: RATES -> -Y-YG (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: LEANS -> YGG-G (H:2, L:2)
+  Attempt 3 [VOI]: MEALS -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 20/100: Target = CREAM
+  Attempt 1 [LLM]: BREED -> -GG-- (H:3, L:3)
+  Attempt 2 [CSS_TRUE]: GREAT -> -GGG- (H:2, L:2)
+  Attempt 3 [VOI]: FREAK -> -GGG- (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: OREAL -> -GGG- (H:2, L:2)
+  Attempt 5 [VOI]: AREAS -> -GGG- (H:2, L:2)
+  Attempt 6 [CSS_TRUE]: CREAM -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 21/100: Target = AWAKE
+  Attempt 1 [LLM]: BASED -> -Y-Y- (H:5, L:4)
+  Attempt 2 [CSS_TRUE]: PEARL -> -YG-- (H:4, L:4)
+  Attempt 3 [VOI]: AWAKE -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 22/100: Target = OCCUR
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: LASER -> ----G (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: ROTOR -> -Y--G (H:4, L:4)
+  Attempt 3 [VOI]: CHOIR -> Y-Y-G (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: OCCUR -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 23/100: Target = YEARS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: RAISE -> YY-YY (H:5, L:4)
+  Attempt 2 [CSS_TRUE]: AYERS -> YYYGG (H:3, L:2)
+  Attempt 3 [VOI]: YEARS -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 24/100: Target = GRADE
+  Attempt 1 [LLM]: AFFIX -> Y---- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: EARLY -> YYY-- (H:5, L:5)
+  Attempt 3 [VOI]: CREAM -> -GYY- (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: GRADE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 25/100: Target = CHILL
+  Attempt 1 [LLM]: ABOUT -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: FERNS -> ----- (H:5, L:5)
+  Attempt 3 [VOI]: DICKY -> -YY-- (H:5, L:5)
+  Attempt 4 [CSS_TRUE]: CHILI -> GGGG- (H:1, L:1)
+  Attempt 5 [VOI]: CHILL -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 26/100: Target = FLOOD
+  Attempt 1 [LLM]: BREED -> ----G (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: PLAID -> -G--G (H:3, L:3)
+  Attempt 3 [VOI]: FLOYD -> GGG-G (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: FLOOD -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 27/100: Target = APPLY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: RAISE -> -Y--- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: ALTON -> GY--- (H:4, L:4)
+  Attempt 3 [VOI]: AYALA -> GY-G- (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: APPLY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 28/100: Target = SMILE
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: REALS -> -Y-GY (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: SMELL -> GGYG- (H:2, L:2)
+  Attempt 3 [VOI]: SMILE -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 29/100: Target = KNOCK
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: RATES -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: COLBY -> YY--- (H:5, L:5)
+  Attempt 3 [VOI]: MUCHO -> --Y-Y (H:5, L:5)
+  Attempt 4 [CSS_TRUE]: KNOCK -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 30/100: Target = SLEEP
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: AIRES -> ---GY (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: STEED -> G-GG- (H:2, L:2)
+  Attempt 3 [VOI]: SLEEP -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 31/100: Target = BRICK
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ARIES -> -GG-- (H:3, L:3)
+  Attempt 2 [CSS_TRUE]: PRINT -> -GG-- (H:3, L:3)
+  Attempt 3 [VOI]: BRICK -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 32/100: Target = WROTE
+  Attempt 1 [LLM]: SHIPS -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: YEARN -> -Y-Y- (H:5, L:5)
+  Attempt 3 [VOI]: GRECO -> -GY-Y (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: DROVE -> -GG-G (H:2, L:2)
+  Attempt 5 [VOI]: FROME -> -GG-G (H:2, L:2)
+  Attempt 6 [CSS_TRUE]: WROTE -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 33/100: Target = RATED
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: RAISE -> GG--Y (H:3, L:3)
+  Attempt 2 [CSS_TRUE]: RAZED -> GG-GG (H:1, L:1)
+  Attempt 3 [VOI]: RAPED -> GG-GG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: RAKED -> GG-GG (H:1, L:1)
+  Attempt 5 [VOI]: RATED -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 34/100: Target = ALERT
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ARISE -> GY--Y (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: ADLER -> G-YYY (H:4, L:2)
+  Attempt 3 [VOI]: ALERT -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 35/100: Target = CAGES
+  Attempt 1 [LLM]: FLOWS -> ----G (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: DANES -> -G-GG (H:2, L:2)
+  Attempt 3 [VOI]: BASES -> -G-GG (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: RATES -> -G-GG (H:2, L:2)
+  Attempt 5 [VOI]: GAMES -> YG-GG (H:2, L:2)
+  Attempt 6 [CSS_TRUE]: PAGES -> -GGGG (H:1, L:1)
+  Failed to find word
+
+Game 36/100: Target = TEDDY
+  Attempt 1 [LLM]: BASED -> ---YY (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: DIODE -> Y--GY (H:4, L:4)
+  Attempt 3 [VOI]: REDDY -> -GGGG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: TEDDY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 37/100: Target = COLES
+  Attempt 1 [LLM]: GUESS -> --Y-G (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: ARIES -> ---GG (H:3, L:3)
+  Attempt 3 [VOI]: BONES -> -G-GG (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: MOLES -> -GGGG (H:1, L:1)
+  Attempt 5 [VOI]: COLES -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 38/100: Target = HWANG
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ARISE -> Y---- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: TANYA -> -YY-- (H:5, L:4)
+  Attempt 3 [VOI]: HOGAN -> G-YYY (H:4, L:3)
+  Attempt 4 [CSS_TRUE]: HUANG -> G-GGG (H:1, L:1)
+  Attempt 5 [VOI]: HWANG -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 39/100: Target = WRATH
+  Attempt 1 [LLM]: SPRIG -> --Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: TRADE -> YGG-- (H:3, L:3)
+  Attempt 3 [VOI]: CRAFT -> -GG-Y (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: WRATH -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 40/100: Target = MACHO
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ARISE -> Y---- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: CANAL -> YG--- (H:4, L:4)
+  Attempt 3 [VOI]: MACHO -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 41/100: Target = LOPEZ
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: STARE -> ----Y (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: LINED -> G--G- (H:3, L:3)
+  Attempt 3 [VOI]: LOPEZ -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 42/100: Target = GOODY
+  Attempt 1 [LLM]: LEAST -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: CORNY -> -G--G (H:3, L:3)
+  Attempt 3 [VOI]: HOWDY -> -G-GG (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: MOODY -> -GGGG (H:1, L:1)
+  Attempt 5 [VOI]: GOODY -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 43/100: Target = BROTH
+  Attempt 1 [LLM]: AZURE -> ---Y- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: ROOTS -> Y-GG- (H:3, L:3)
+  Attempt 3 [VOI]: FROTH -> -GGGG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: BROTH -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 44/100: Target = VERDE
+  Attempt 1 [LLM]: GUESS -> --Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: LIBER -> ---YY (H:5, L:5)
+  Attempt 3 [VOI]: DRAPE -> YY--G (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: VERDE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 45/100: Target = TAMED
+  Attempt 1 [LLM]: SHEDS -> --YY- (H:5, L:4)
+  Attempt 2 [CSS_TRUE]: BARED -> -G-GG (H:2, L:2)
+  Attempt 3 [VOI]: FATED -> -GYGG (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: TAMED -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 46/100: Target = LEAFS
+  Attempt 1 [LLM]: BASED -> -YYY- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: STARE -> Y-G-Y (H:4, L:4)
+  Attempt 3 [VOI]: MEALS -> -GGYG (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: LEANS -> GGG-G (H:1, L:1)
+  Attempt 5 [VOI]: LEAFS -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 47/100: Target = YACHT
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: RAISE -> -G--- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: MANLY -> -G--Y (H:4, L:4)
+  Attempt 3 [VOI]: YACHT -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 48/100: Target = MESSY
+  Attempt 1 [LLM]: ZOOTS -> ----Y (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: SNAPE -> Y---Y (H:5, L:5)
+  Attempt 3 [VOI]: FRESH -> --YG- (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: JESSI -> -GGG- (H:2, L:2)
+  Attempt 5 [VOI]: MESSY -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 49/100: Target = RYDER
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: STARE -> ---YY (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: FEDOR -> -YG-G (H:3, L:3)
+  Attempt 3 [VOI]: RIDER -> G-GGG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: RYDER -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 50/100: Target = MOTIF
+  Attempt 1 [LLM]: WORDS -> -G--- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: COHEN -> -G--- (H:4, L:4)
+  Attempt 3 [VOI]: POPPY -> -G--- (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: VOLTA -> -G-Y- (H:4, L:4)
+  Attempt 5 [VOI]: MOTIF -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 51/100: Target = RAVEN
+  Attempt 1 [LLM]: BREAK -> -YYY- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: TASER -> -G-GY (H:3, L:3)
+  Attempt 3 [VOI]: RAGED -> GG-G- (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: RAVEL -> GGGG- (H:1, L:1)
+  Attempt 5 [VOI]: RAVEN -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 52/100: Target = REICH
+  Attempt 1 [LLM]: SLEEP -> --Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: RECON -> GGY-- (H:3, L:3)
+  Attempt 3 [VOI]: REICH -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 53/100: Target = ICONS
+  Attempt 1 [LLM]: SHIFT -> Y-Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: LINES -> -YY-G (H:4, L:4)
+  Attempt 3 [VOI]: INDUS -> GY--G (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: ICONS -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 54/100: Target = SILKY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: OATES -> ----Y (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: SHINY -> G-Y-G (H:3, L:3)
+  Attempt 3 [VOI]: SILLY -> GGG-G (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: SILKY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 55/100: Target = CARVE
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: AILES -> Y--Y- (H:5, L:4)
+  Attempt 2 [CSS_TRUE]: GRAVE -> -YYGG (H:3, L:3)
+  Attempt 3 [VOI]: CARVE -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 56/100: Target = LAGER
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: AROSE -> YY--Y (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: MATER -> -G-GG (H:2, L:2)
+  Attempt 3 [VOI]: RARER -> -G-GG (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: PALER -> -GYGG (H:2, L:2)
+  Attempt 5 [VOI]: LAGER -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 57/100: Target = JERKS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: AIRES -> --GYG (H:3, L:3)
+  Attempt 2 [CSS_TRUE]: HERBS -> -GG-G (H:2, L:2)
+  Attempt 3 [VOI]: ZEROS -> -GG-G (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: FERNS -> -GG-G (H:2, L:2)
+  Attempt 5 [VOI]: TERMS -> -GG-G (H:2, L:2)
+  Attempt 6 [CSS_TRUE]: PERKS -> -GGGG (H:1, L:1)
+  Failed to find word
+
+Game 58/100: Target = LOTUS
+  Attempt 1 [LLM]: DCTUO -> --GGY (H:3, L:3)
+  Attempt 2 [CSS_TRUE]: LOTUS -> GGGGG (H:0, L:0)
+  Won in 2 attempts!
+
+Game 59/100: Target = LACEY
+  Attempt 1 [LLM]: JUMBO -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: LANEY -> GG-GG (H:1, L:1)
+  Attempt 3 [VOI]: LACEY -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 60/100: Target = TUDOR
+  Attempt 1 [LLM]: GUESS -> -G--- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: YULIA -> -G--- (H:4, L:4)
+  Attempt 3 [VOI]: MUCHO -> -G--Y (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: TUTOR -> GG-GG (H:1, L:1)
+  Attempt 5 [VOI]: TUDOR -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 61/100: Target = QUOTA
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ARISE -> Y---- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: MANLY -> -Y--- (H:5, L:5)
+  Attempt 3 [VOI]: GOTTA -> -Y-GG (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: QUOTA -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 62/100: Target = MOURN
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: LANES -> --Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: IRONY -> -YYY- (H:5, L:5)
+  Attempt 3 [VOI]: HURON -> -YYYG (H:4, L:3)
+  Attempt 4 [CSS_TRUE]: MOURN -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 63/100: Target = PROMO
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: CARES -> --Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: GROOT -> -GGY- (H:3, L:3)
+  Attempt 3 [VOI]: FRODO -> -GG-G (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: PROMO -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 64/100: Target = CASTE
+  Attempt 1 [LLM]: GUESS -> --YY- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: AISLE -> Y-G-G (H:3, L:3)
+  Attempt 3 [VOI]: PASTE -> -GGGG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: CASTE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 65/100: Target = CAPRI
+  Attempt 1 [LLM]: SHEDS -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: CARLA -> GGY-- (H:3, L:3)
+  Attempt 3 [VOI]: CAIRN -> GGYG- (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: CAPRI -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 66/100: Target = ALIAS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: NEARS -> --Y-G (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: SALTS -> -YY-G (H:4, L:3)
+  Attempt 3 [VOI]: ALBUS -> GG--G (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: ALIAS -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 67/100: Target = PADDY
+  Attempt 1 [LLM]: ZOOLS -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: EATER -> -G--- (H:4, L:4)
+  Attempt 3 [VOI]: MACHU -> -G--- (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: BANDA -> -G-G- (H:3, L:3)
+  Attempt 5 [VOI]: PADDY -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 68/100: Target = BLOBS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: NEARS -> ----G (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: CLOTS -> -GG-G (H:2, L:2)
+  Attempt 3 [VOI]: GLOSS -> -GG-G (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: FLOPS -> -GG-G (H:2, L:2)
+  Attempt 5 [VOI]: BLOWS -> GGG-G (H:1, L:1)
+  Attempt 6 [CSS_TRUE]: BLOBS -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 69/100: Target = DILLY
+  Attempt 1 [LLM]: BREED -> ----Y (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: SANDI -> ---YY (H:5, L:5)
+  Attempt 3 [VOI]: DITTO -> GG--- (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: DIMLY -> GG-GG (H:1, L:1)
+  Attempt 5 [VOI]: DILLY -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 70/100: Target = GUTSY
+  Attempt 1 [LLM]: SHEDS -> Y---- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: INSTA -> --YY- (H:5, L:5)
+  Attempt 3 [VOI]: FROST -> ---GY (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: GUTSY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 71/100: Target = TABOR
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: AROSE -> YYY-- (H:5, L:4)
+  Attempt 2 [CSS_TRUE]: CARON -> -GYG- (H:3, L:3)
+  Attempt 3 [VOI]: VAPOR -> -G-GG (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: GABOR -> -GGGG (H:1, L:1)
+  Attempt 5 [VOI]: LABOR -> -GGGG (H:1, L:1)
+  Attempt 6 [CSS_TRUE]: TABOR -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 72/100: Target = INLAY
+  Attempt 1 [LLM]: BREED -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: HASTY -> -Y--G (H:4, L:4)
+  Attempt 3 [VOI]: AMPLY -> Y--YG (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: FLAKY -> -YY-G (H:4, L:3)
+  Attempt 5 [VOI]: INLAY -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 73/100: Target = AHHHH
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: EARLS -> -Y--- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: AMINA -> G---- (H:4, L:4)
+  Attempt 3 [VOI]: ADOPT -> G---- (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: AHHHH -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 74/100: Target = ROUEN
+  Attempt 1 [LLM]: THESE -> --Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: LONER -> -GYGY (H:3, L:3)
+  Attempt 3 [VOI]: ROGEN -> GG-GG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: ROUEN -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 75/100: Target = BUENA
+  Attempt 1 [LLM]: SPRIG -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: HALEN -> -Y-YY (H:5, L:4)
+  Attempt 3 [VOI]: AMEND -> Y-GG- (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: BUENA -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 76/100: Target = MENON
+  Attempt 1 [LLM]: BASED -> ---Y- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: LOIRE -> -Y--Y (H:5, L:5)
+  Attempt 3 [VOI]: KEOGH -> -GY-- (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: METOO -> GG-G- (H:2, L:2)
+  Attempt 5 [VOI]: MENON -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 77/100: Target = TRASK
+  Attempt 1 [LLM]: TRUST -> GG-G- (H:2, L:2)
+  Attempt 2 [CSS_TRUE]: TRASK -> GGGGG (H:0, L:0)
+  Won in 2 attempts!
+
+Game 78/100: Target = CASIO
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: LANES -> -G--Y (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: SATYA -> YG--- (H:4, L:4)
+  Attempt 3 [VOI]: BASIC -> -GGGY (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: CASIO -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 79/100: Target = VOILA
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: TEARS -> --Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: MALIN -> -YYY- (H:5, L:5)
+  Attempt 3 [VOI]: VOILA -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 80/100: Target = AURAL
+  Attempt 1 [LLM]: BREED -> -Y--- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: MARTI -> -YG-- (H:4, L:4)
+  Attempt 3 [VOI]: CORSA -> --G-Y (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: AURAL -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 81/100: Target = LEGER
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ARIES -> -Y-G- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: OUTER -> ---GG (H:3, L:3)
+  Attempt 3 [VOI]: RYDER -> ---GG (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: LEVER -> GG-GG (H:1, L:1)
+  Attempt 5 [VOI]: LEPER -> GG-GG (H:1, L:1)
+  Attempt 6 [CSS_TRUE]: LEGER -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 82/100: Target = DALLY
+  Attempt 1 [LLM]: ACHIE -> Y---- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: YARNS -> YG--- (H:4, L:4)
+  Attempt 3 [VOI]: PADDY -> -GY-G (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: DALLY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 83/100: Target = INIGO
+  Attempt 1 [LLM]: BREED -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: SLAIN -> ---YY (H:5, L:5)
+  Attempt 3 [VOI]: CHINO -> --GYG (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: INIGO -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 84/100: Target = KRILL
+  Attempt 1 [LLM]: SPRIT -> --YY- (H:5, L:4)
+  Attempt 2 [CSS_TRUE]: ARIEL -> -GG-G (H:2, L:2)
+  Attempt 3 [VOI]: BRILL -> -GGGG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: KRILL -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 85/100: Target = SNIDE
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: SNARE -> GG--G (H:2, L:2)
+  Attempt 2 [CSS_TRUE]: SNIPE -> GGG-G (H:1, L:1)
+  Attempt 3 [VOI]: SNIDE -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 86/100: Target = LEWES
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: EARNS -> Y---G (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: TILES -> --YGG (H:3, L:3)
+  Attempt 3 [VOI]: LOVES -> G--GG (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: LEWES -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 87/100: Target = TAMER
+  Attempt 1 [LLM]: STATE -> -YY-Y (H:5, L:3)
+  Attempt 2 [CSS_TRUE]: RATED -> YGYG- (H:3, L:3)
+  Attempt 3 [VOI]: TAPER -> GG-GG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: TAKER -> GG-GG (H:1, L:1)
+  Attempt 5 [VOI]: TAMER -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 88/100: Target = COTTA
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: AILES -> Y---- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: MAYAN -> -Y--- (H:5, L:5)
+  Attempt 3 [VOI]: BOTHA -> -GG-G (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: GOTTA -> -GGGG (H:1, L:1)
+  Attempt 5 [VOI]: COTTA -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 89/100: Target = CORBY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: AIRES -> --G-- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: CORNY -> GGG-G (H:1, L:1)
+  Attempt 3 [VOI]: CORBY -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 90/100: Target = POLIS
+  Attempt 1 [LLM]: SLOTS -> -YY-G (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: DOLLS -> -GG-G (H:2, L:2)
+  Attempt 3 [VOI]: COLES -> -GG-G (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: FOLKS -> -GG-G (H:2, L:2)
+  Attempt 5 [VOI]: BOLUS -> -GG-G (H:2, L:2)
+  Attempt 6 [CSS_TRUE]: POLIS -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 91/100: Target = ROXAS
+  Attempt 1 [LLM]: SPRIT -> Y-Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: ROBES -> GG--G (H:2, L:2)
+  Attempt 3 [VOI]: ROOKS -> GG--G (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: ROARS -> GGY-G (H:2, L:2)
+  Attempt 5 [VOI]: ROXAS -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 92/100: Target = RANCE
+  Attempt 1 [LLM]: GIVEN -> ---YY (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: TONNE -> --G-G (H:3, L:3)
+  Attempt 3 [VOI]: DENSE -> --G-G (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: MANCE -> -GGGG (H:1, L:1)
+  Attempt 5 [VOI]: LANCE -> -GGGG (H:1, L:1)
+  Attempt 6 [CSS_TRUE]: RANCE -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 93/100: Target = CARON
+  Attempt 1 [LLM]: AFRIC -> Y-G-Y (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: CARES -> GGG-- (H:2, L:2)
+  Attempt 3 [VOI]: CARLY -> GGG-- (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: CARTA -> GGG-- (H:2, L:2)
+  Attempt 5 [VOI]: CARON -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 94/100: Target = SURYA
+  Attempt 1 [LLM]: BASED -> -YY-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: SLANT -> G-Y-- (H:4, L:4)
+  Attempt 3 [VOI]: SURYA -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 95/100: Target = AGGIE
+  Attempt 1 [LLM]: SPRIT -> ---G- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: DELIA -> -Y-GY (H:4, L:4)
+  Attempt 3 [VOI]: JANIE -> -Y-GG (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: ABBIE -> G--GG (H:2, L:2)
+  Attempt 5 [VOI]: AGGIE -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 96/100: Target = CAUSA
+  Attempt 1 [LLM]: HARSH -> -G-G- (H:3, L:3)
+  Attempt 2 [CSS_TRUE]: SALSA -> -G-GG (H:2, L:2)
+  Attempt 3 [VOI]: CAUSA -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 97/100: Target = BAMBA
+  Attempt 1 [LLM]: BASED -> GG--- (H:3, L:3)
+  Attempt 2 [CSS_TRUE]: BANAL -> GG-Y- (H:3, L:3)
+  Attempt 3 [VOI]: BAHIA -> GG--G (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: BARCA -> GG--G (H:2, L:2)
+  Attempt 5 [VOI]: BAMBA -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 98/100: Target = MAYNE
+  Attempt 1 [LLM]: SOULS -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: TRIED -> ---Y- (H:5, L:5)
+  Attempt 3 [VOI]: MANCE -> GGY-G (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: MAYNE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 99/100: Target = BOGGS
+  Attempt 1 [LLM]: SPRIT -> Y---- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: CANES -> ----G (H:4, L:4)
+  Attempt 3 [VOI]: BLOBS -> G-Y-G (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: BOGUS -> GGG-G (H:1, L:1)
+  Attempt 5 [VOI]: BOGGS -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 100/100: Target = FINNS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: AIRES -> -G--G (H:3, L:3)
+  Attempt 2 [CSS_TRUE]: KILNS -> -G-GG (H:2, L:2)
+  Attempt 3 [VOI]: FINNS -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 100
+Wins: 98
+Win rate: 98.0%
+Average attempts (when won): 4.09
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/workshop/results_true_css/group_a/L_to_C_alt_true/raw_data/L_to_C_alt_true_granite-3.3-8b-instruct_20260204_095128.csv
+  /Users/kevin/Desktop/projects/wordle/workshop/results_true_css/group_a/L_to_C_alt_true/raw_data/summary_L_to_C_alt_true_granite-3.3-8b-instruct_20260204_095128.json
+SUCCESS: A3_true granite-3.3-8b-instruct
+[2/20] A4_true | granite-3.3-8b-instruct
+================================================================================
+FLEXIBLE HYBRID EVALUATION: L_to_C_then_V_true
+================================================================================
+Model: granite-3.3-8b-instruct
+Prompt Type: zero-shot
+Schedule: {"1": "llm", "2": "css_true", "3": "css_true", "4": "voi", "5": "voi", "6": "voi"}
+Games: 100
+================================================================================
+
+Game 1/100: Target = PHOTO
+  Attempt 1 [LLM]: BASED -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: COLIN -> -Y--- (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: PHOTO -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 2/100: Target = PARTY
+  Attempt 1 [LLM]: SHEDS -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: BARON -> -GG-- (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: MARTY -> -GGGG (H:1, L:1)
+  Attempt 4 [VOI]: PARTY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 3/100: Target = TRICK
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: LEANS -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: COURT -> Y--YY (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: TRICK -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 4/100: Target = DIRTY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: LASER -> ----Y (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: TRYIN -> YYYY- (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: DIRTY -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 5/100: Target = USUAL
+  Attempt 1 [LLM]: SPRIT -> Y---- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: DANES -> -Y--Y (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: LHASA -> Y-YY- (H:5, L:5)
+  Attempt 4 [VOI]: USUAL -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 6/100: Target = TRULY
+  Attempt 1 [LLM]: SHEDS -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: TALON -> G-Y-- (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: TWIRL -> G--YY (H:4, L:4)
+  Attempt 4 [VOI]: TRULY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 7/100: Target = SPENT
+  Attempt 1 [LLM]: HABER -> ---Y- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: SEEIN -> G-G-Y (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: STENT -> G-GGG (H:1, L:1)
+  Attempt 4 [VOI]: SPENT -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 8/100: Target = PAUSE
+  Attempt 1 [LLM]: BASED -> -GYY- (H:4, L:3)
+  Attempt 2 [CSS_TRUE]: LAPSE -> -GYGG (H:2, L:2)
+  Attempt 3 [CSS_TRUE]: PAUSE -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 9/100: Target = CRAZY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: OATES -> -Y--- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: DIANA -> --G-- (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: CLARY -> G-GYG (H:2, L:2)
+  Attempt 4 [VOI]: CRAZY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 10/100: Target = BASES
+  Attempt 1 [LLM]: SORRY -> Y---- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: AILES -> Y--GG (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: CATES -> -G-GG (H:2, L:2)
+  Attempt 4 [VOI]: DAMES -> -G-GG (H:2, L:2)
+  Attempt 5 [VOI]: WAVES -> -G-GG (H:2, L:2)
+  Attempt 6 [VOI]: BASES -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 11/100: Target = YOUNG
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ARIES -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: FOUND -> -GGG- (H:2, L:2)
+  Attempt 3 [CSS_TRUE]: MOUNT -> -GGG- (H:2, L:2)
+  Attempt 4 [VOI]: YOUNG -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 12/100: Target = MEANS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: RAISE -> -Y-YY (H:5, L:4)
+  Attempt 2 [CSS_TRUE]: TESLA -> -GY-Y (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: SEDAN -> YG-YY (H:4, L:3)
+  Attempt 4 [VOI]: BEANS -> -GGGG (H:1, L:1)
+  Attempt 5 [VOI]: MEANS -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 13/100: Target = TRUTH
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: TALES -> G---- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: TURIN -> GYY-- (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: TROUT -> GG-YY (H:3, L:2)
+  Attempt 4 [VOI]: TRUTH -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 14/100: Target = FIRED
+  Attempt 1 [LLM]: ZEBRA -> -Y-Y- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: POSER -> ---GY (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: FIRED -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 15/100: Target = FOLKS
+  Attempt 1 [LLM]: GUESS -> ----G (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: MAILS -> ---YG (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: BOLTS -> -GG-G (H:2, L:2)
+  Attempt 4 [VOI]: FOLDS -> GGG-G (H:1, L:1)
+  Attempt 5 [VOI]: FOLKS -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 16/100: Target = CHILE
+  Attempt 1 [LLM]: GUESS -> --Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: AIDEN -> -Y-Y- (H:5, L:4)
+  Attempt 3 [CSS_TRUE]: RELIC -> -YYYY (H:5, L:5)
+  Attempt 4 [VOI]: CLIVE -> GYG-G (H:2, L:2)
+  Attempt 5 [VOI]: CHILE -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 17/100: Target = BLACK
+  Attempt 1 [LLM]: BASED -> GY--- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: BRAWN -> G-G-- (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: BLATT -> GGG-- (H:2, L:2)
+  Attempt 4 [VOI]: BLACK -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 18/100: Target = GRANT
+  Attempt 1 [LLM]: GUESS -> G---- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: GROAN -> GG-YY (H:3, L:2)
+  Attempt 3 [CSS_TRUE]: GRAND -> GGGG- (H:1, L:1)
+  Attempt 4 [VOI]: GRANT -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 19/100: Target = MEALS
+  Attempt 1 [LLM]: BREEZ -> --Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: LEAST -> YGGY- (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: DEALS -> -GGGG (H:1, L:1)
+  Attempt 4 [VOI]: HEALS -> -GGGG (H:1, L:1)
+  Attempt 5 [VOI]: MEALS -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 20/100: Target = CREAM
+  Attempt 1 [LLM]: GUESS -> --G-- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: CRETE -> GGG-- (H:2, L:2)
+  Attempt 3 [CSS_TRUE]: CREAM -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 21/100: Target = AWAKE
+  Attempt 1 [LLM]: GUESS -> --Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: PARED -> -Y-Y- (H:5, L:4)
+  Attempt 3 [CSS_TRUE]: BLAME -> --G-G (H:3, L:3)
+  Attempt 4 [VOI]: WEAVE -> Y-G-G (H:3, L:3)
+  Attempt 5 [VOI]: AWAKE -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 22/100: Target = OCCUR
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: AIRES -> --Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: ORTON -> GY--- (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: OCCUR -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 23/100: Target = YEARS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: RAISE -> YY-YY (H:5, L:4)
+  Attempt 2 [CSS_TRUE]: AYERS -> YYYGG (H:3, L:2)
+  Attempt 3 [CSS_TRUE]: YEARS -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 24/100: Target = GRADE
+  Attempt 1 [LLM]: GUESS -> G-Y-- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: GRACE -> GGG-G (H:1, L:1)
+  Attempt 3 [CSS_TRUE]: GRADE -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 25/100: Target = CHILL
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: EARLS -> ---G- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: GILLY -> -YYG- (H:4, L:3)
+  Attempt 3 [CSS_TRUE]: CHILL -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 26/100: Target = FLOOD
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ARIES -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: GHOUL -> --G-Y (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: BLOND -> -GG-G (H:2, L:2)
+  Attempt 4 [VOI]: LLOYD -> -GG-G (H:2, L:2)
+  Attempt 5 [VOI]: FLOOD -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 27/100: Target = APPLY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: NEARS -> --Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: MALTA -> -YY-- (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: FOCAL -> ---YY (H:5, L:5)
+  Attempt 4 [VOI]: APPLY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 28/100: Target = SMILE
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ASTER -> -Y-Y- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: SEINE -> G-G-G (H:2, L:2)
+  Attempt 3 [CSS_TRUE]: SLICE -> GYG-G (H:2, L:2)
+  Attempt 4 [VOI]: SMILE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 29/100: Target = KNOCK
+  Attempt 1 [LLM]: AFFIX -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: GOERS -> -Y--- (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: LUTON -> ---YY (H:5, L:5)
+  Attempt 4 [VOI]: PHONY -> --GY- (H:4, L:4)
+  Attempt 5 [VOI]: KNOCK -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 30/100: Target = SLEEP
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: TALES -> --YGY (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: SLEEK -> GGGG- (H:1, L:1)
+  Attempt 3 [CSS_TRUE]: SLEEP -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 31/100: Target = BRICK
+  Attempt 1 [LLM]: GUESS -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: KANTO -> Y---- (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: PRICK -> -GGGG (H:1, L:1)
+  Attempt 4 [VOI]: FRICK -> -GGGG (H:1, L:1)
+  Attempt 5 [VOI]: CRICK -> -GGGG (H:1, L:1)
+  Attempt 6 [VOI]: BRICK -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 32/100: Target = WROTE
+  Attempt 1 [LLM]: QOZYX -> -Y--- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: CRONE -> -GG-G (H:2, L:2)
+  Attempt 3 [CSS_TRUE]: PROVE -> -GG-G (H:2, L:2)
+  Attempt 4 [VOI]: FROME -> -GG-G (H:2, L:2)
+  Attempt 5 [VOI]: AROSE -> -GG-G (H:2, L:2)
+  Attempt 6 [VOI]: ERODE -> -GG-G (H:2, L:2)
+  Failed to find word
+
+Game 33/100: Target = RATED
+  Attempt 1 [LLM]: SHYLY -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: RAVEN -> GG-G- (H:2, L:2)
+  Attempt 3 [CSS_TRUE]: RACED -> GG-GG (H:1, L:1)
+  Attempt 4 [VOI]: RAGED -> GG-GG (H:1, L:1)
+  Attempt 5 [VOI]: RAKED -> GG-GG (H:1, L:1)
+  Attempt 6 [VOI]: RAPED -> GG-GG (H:1, L:1)
+  Failed to find word
+
+Game 34/100: Target = ALERT
+  Attempt 1 [LLM]: JETTY -> -YY-- (H:5, L:4)
+  Attempt 2 [CSS_TRUE]: TREES -> YYG-- (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: AVERT -> G-GGG (H:1, L:1)
+  Attempt 4 [VOI]: ALERT -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 35/100: Target = CAGES
+  Attempt 1 [LLM]: ATEER -> Y--G- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: LACES -> -GYGG (H:2, L:2)
+  Attempt 3 [CSS_TRUE]: CAFES -> GG-GG (H:1, L:1)
+  Attempt 4 [VOI]: CANES -> GG-GG (H:1, L:1)
+  Attempt 5 [VOI]: CAKES -> GG-GG (H:1, L:1)
+  Attempt 6 [VOI]: CAVES -> GG-GG (H:1, L:1)
+  Failed to find word
+
+Game 36/100: Target = TEDDY
+  Attempt 1 [LLM]: GIVEN -> ---Y- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: CESAR -> -G--- (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: LEYTE -> -GYY- (H:4, L:4)
+  Attempt 4 [VOI]: TEDDY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 37/100: Target = COLES
+  Attempt 1 [LLM]: SHEDS -> --Y-G (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: LANES -> Y--GG (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: MILES -> --GGG (H:2, L:2)
+  Attempt 4 [VOI]: FOLES -> -GGGG (H:1, L:1)
+  Attempt 5 [VOI]: ROLES -> -GGGG (H:1, L:1)
+  Attempt 6 [VOI]: COLES -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 38/100: Target = HWANG
+  Attempt 1 [LLM]: SETTS -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: DIANA -> --GG- (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: CLANG -> --GGG (H:2, L:2)
+  Attempt 4 [VOI]: HWANG -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 39/100: Target = WRATH
+  Attempt 1 [LLM]: LEAST -> --G-Y (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: TRACI -> YGG-- (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: WRATH -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 40/100: Target = MACHO
+  Attempt 1 [LLM]: SHIFT -> -Y--- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: HOARE -> YYY-- (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: MACHO -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 41/100: Target = LOPEZ
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: AIRES -> ---G- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: BONED -> -G-G- (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: MOTEL -> -G-GY (H:3, L:3)
+  Attempt 4 [VOI]: FOLEY -> -GYG- (H:3, L:3)
+  Attempt 5 [VOI]: LOPEZ -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 42/100: Target = GOODY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: SNARE -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: BUILT -> ----- (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: GOOCH -> GGG-- (H:2, L:2)
+  Attempt 4 [VOI]: GOOFY -> GGG-G (H:1, L:1)
+  Attempt 5 [VOI]: GOODY -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 43/100: Target = BROTH
+  Attempt 1 [LLM]: BREWS -> GG--- (H:3, L:3)
+  Attempt 2 [CSS_TRUE]: BRIAN -> GG--- (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: BROOD -> GGG-- (H:2, L:2)
+  Attempt 4 [VOI]: BROTH -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 44/100: Target = VERDE
+  Attempt 1 [LLM]: APPLE -> ----G (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: ROSIE -> Y---G (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: BERNE -> -GG-G (H:2, L:2)
+  Attempt 4 [VOI]: VERGE -> GGG-G (H:1, L:1)
+  Attempt 5 [VOI]: VERDE -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 45/100: Target = TAMED
+  Attempt 1 [LLM]: GUESS -> --Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: ARNIE -> Y---Y (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: CADET -> -GYGY (H:3, L:3)
+  Attempt 4 [VOI]: HATED -> -GYGG (H:2, L:2)
+  Attempt 5 [VOI]: TAXED -> GG-GG (H:1, L:1)
+  Attempt 6 [VOI]: TAPED -> GG-GG (H:1, L:1)
+  Failed to find word
+
+Game 46/100: Target = LEAFS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: SIENA -> Y-Y-Y (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: CASTE -> -YY-Y (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: REALS -> -GGYG (H:2, L:2)
+  Attempt 4 [VOI]: LEADS -> GGG-G (H:1, L:1)
+  Attempt 5 [VOI]: LEAKS -> GGG-G (H:1, L:1)
+  Attempt 6 [VOI]: LEAFS -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 47/100: Target = YACHT
+  Attempt 1 [LLM]: BASED -> -G--- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: CARAT -> YG--G (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: YACHT -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 48/100: Target = MESSY
+  Attempt 1 [LLM]: GUESS -> --YGY (H:4, L:3)
+  Attempt 2 [CSS_TRUE]: MESSI -> GGGG- (H:1, L:1)
+  Attempt 3 [CSS_TRUE]: MESSY -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 49/100: Target = RYDER
+  Attempt 1 [LLM]: ZYLOR -> -G--G (H:3, L:3)
+  Attempt 2 [CSS_TRUE]: RYDER -> GGGGG (H:0, L:0)
+  Won in 2 attempts!
+
+Game 50/100: Target = MOTIF
+  Attempt 1 [LLM]: WORDS -> -G--- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: LOONY -> -G--- (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: TOUCH -> YG--- (H:4, L:4)
+  Attempt 4 [VOI]: GOTTI -> -GG-Y (H:3, L:3)
+  Attempt 5 [VOI]: MOTIF -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 51/100: Target = RAVEN
+  Attempt 1 [LLM]: SPRIG -> --Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: ARDEN -> YY-GG (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: RAVEN -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 52/100: Target = REICH
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ARSED -> -Y-Y- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: TORRE -> --Y-Y (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: RELIC -> GG-YY (H:3, L:2)
+  Attempt 4 [VOI]: REICH -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 53/100: Target = ICONS
+  Attempt 1 [LLM]: ZENTH -> --Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: GAINS -> --YGG (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: IRONS -> G-GGG (H:1, L:1)
+  Attempt 4 [VOI]: ICONS -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 54/100: Target = SILKY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: NEARS -> ----Y (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: SLOTH -> GY--- (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: SILKY -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 55/100: Target = CARVE
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: RAISE -> YG--G (H:3, L:3)
+  Attempt 2 [CSS_TRUE]: CARPE -> GGG-G (H:1, L:1)
+  Attempt 3 [CSS_TRUE]: CARTE -> GGG-G (H:1, L:1)
+  Attempt 4 [VOI]: CARVE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 56/100: Target = LAGER
+  Attempt 1 [LLM]: BREED -> -Y-G- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: MAIER -> -G-GG (H:2, L:2)
+  Attempt 3 [CSS_TRUE]: LATER -> GG-GG (H:1, L:1)
+  Attempt 4 [VOI]: LAGER -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 57/100: Target = JERKS
+  Attempt 1 [LLM]: SPRIT -> Y-G-- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: DARES -> --GYG (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: HERBS -> -GG-G (H:2, L:2)
+  Attempt 4 [VOI]: FERNS -> -GG-G (H:2, L:2)
+  Attempt 5 [VOI]: GERMS -> -GG-G (H:2, L:2)
+  Attempt 6 [VOI]: JERKS -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 58/100: Target = LOTUS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ASTER -> -YG-- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: POTTS -> -GG-G (H:2, L:2)
+  Attempt 3 [CSS_TRUE]: GOTHS -> -GG-G (H:2, L:2)
+  Attempt 4 [VOI]: LOTUS -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 59/100: Target = LACEY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: EARNS -> YG--- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: MATED -> -G-G- (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: LABEL -> GG-G- (H:2, L:2)
+  Attempt 4 [VOI]: LACEY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 60/100: Target = TUDOR
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: RATES -> Y-Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: TROUT -> GYYY- (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: TUMOR -> GG-GG (H:1, L:1)
+  Attempt 4 [VOI]: TUDOR -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 61/100: Target = QUOTA
+  Attempt 1 [LLM]: SPRIT -> ----Y (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: LATTE -> -Y-G- (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: QUOTA -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 62/100: Target = MOURN
+  Attempt 1 [LLM]: GIVEN -> ----G (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: RAMON -> Y-YYG (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: MOURN -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 63/100: Target = PROMO
+  Attempt 1 [LLM]: SPRIG -> -YY-- (H:5, L:4)
+  Attempt 2 [CSS_TRUE]: PRADO -> GG--G (H:2, L:2)
+  Attempt 3 [CSS_TRUE]: PROTO -> GGG-G (H:1, L:1)
+  Attempt 4 [VOI]: PROMO -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 64/100: Target = CASTE
+  Attempt 1 [LLM]: BASED -> -GGY- (H:3, L:3)
+  Attempt 2 [CSS_TRUE]: CASTE -> GGGGG (H:0, L:0)
+  Won in 2 attempts!
+
+Game 65/100: Target = CAPRI
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: EARNS -> -GY-- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: AAMIR -> -G-YY (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: DAIRY -> -GYG- (H:3, L:3)
+  Attempt 4 [VOI]: CAPRI -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 66/100: Target = ALIAS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: EARLS -> -Y-YG (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: CLASS -> -GY-G (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: ALIAS -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 67/100: Target = PADDY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: RAISE -> -G--- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: TANYA -> -G-Y- (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: BALDY -> -G-GG (H:2, L:2)
+  Attempt 4 [VOI]: GAUDY -> -G-GG (H:2, L:2)
+  Attempt 5 [VOI]: CADDY -> -GGGG (H:1, L:1)
+  Attempt 6 [VOI]: DADDY -> -GGGG (H:1, L:1)
+  Failed to find word
+
+Game 68/100: Target = BLOBS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: RATES -> ----G (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: LONGS -> YY--G (H:4, L:3)
+  Attempt 3 [CSS_TRUE]: SLOWS -> -GG-G (H:2, L:2)
+  Attempt 4 [VOI]: BLOCS -> GGG-G (H:1, L:1)
+  Attempt 5 [VOI]: BLOBS -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 69/100: Target = DILLY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ELISA -> -YY-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: NILLY -> -GGGG (H:1, L:1)
+  Attempt 3 [CSS_TRUE]: FILLY -> -GGGG (H:1, L:1)
+  Attempt 4 [VOI]: GILLY -> -GGGG (H:1, L:1)
+  Attempt 5 [VOI]: HILLY -> -GGGG (H:1, L:1)
+  Attempt 6 [VOI]: TILLY -> -GGGG (H:1, L:1)
+  Failed to find word
+
+Game 70/100: Target = GUTSY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: REALS -> ----Y (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: SHUNT -> Y-Y-Y (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: MUSTY -> -GYYG (H:3, L:3)
+  Attempt 4 [VOI]: GUTSY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 71/100: Target = TABOR
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: REALS -> Y-Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: MARIA -> -GY-- (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: GATOR -> -GYGG (H:2, L:2)
+  Attempt 4 [VOI]: TABOR -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 72/100: Target = INLAY
+  Attempt 1 [LLM]: GUESS -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: RICAN -> -Y-GY (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: INLAY -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 73/100: Target = AHHHH
+  Attempt 1 [LLM]: SPRIT -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: CANOE -> -Y--- (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: AYALA -> G---- (H:4, L:4)
+  Attempt 4 [VOI]: AHHHH -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 74/100: Target = ROUEN
+  Attempt 1 [LLM]: SPRIG -> --Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: ANDRE -> -Y-YY (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: TUNER -> -YYGY (H:4, L:4)
+  Attempt 4 [VOI]: ROUEN -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 75/100: Target = BUENA
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: OATES -> -Y-Y- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: LEARN -> -YY-Y (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: AMEND -> Y-GG- (H:3, L:3)
+  Attempt 4 [VOI]: HYENA -> --GGG (H:2, L:2)
+  Attempt 5 [VOI]: BUENA -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 76/100: Target = MENON
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: LASER -> ---Y- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: PONTE -> -YG-Y (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: MENON -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 77/100: Target = TRASK
+  Attempt 1 [LLM]: BREWS -> -G--Y (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: CRIST -> -G-GY (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: TRASH -> GGGG- (H:1, L:1)
+  Attempt 4 [VOI]: TRASK -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 78/100: Target = CASIO
+  Attempt 1 [LLM]: BREED -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: HAILS -> -GY-Y (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: SAYIN -> YG-G- (H:3, L:3)
+  Attempt 4 [VOI]: CASIO -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 79/100: Target = VOILA
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: OATES -> YY--- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: LORNA -> YG--G (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: HOLLA -> -G-GG (H:2, L:2)
+  Attempt 4 [VOI]: VOILA -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 80/100: Target = AURAL
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ACRES -> G-G-- (H:3, L:3)
+  Attempt 2 [CSS_TRUE]: ARRAN -> G-GG- (H:2, L:2)
+  Attempt 3 [CSS_TRUE]: AKRAM -> G-GG- (H:2, L:2)
+  Attempt 4 [VOI]: AURAL -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 81/100: Target = LEGER
+  Attempt 1 [LLM]: SPRIG -> --Y-Y (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: GLARE -> YY-YY (H:5, L:4)
+  Attempt 3 [CSS_TRUE]: LEGER -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 82/100: Target = DALLY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: EARNS -> -G--- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: CABAL -> -G--Y (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: DALIT -> GGG-- (H:2, L:2)
+  Attempt 4 [VOI]: DALLY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 83/100: Target = INIGO
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: RATES -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: COULD -> -Y--- (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: BINGO -> -YYGG (H:3, L:2)
+  Attempt 4 [VOI]: INIGO -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 84/100: Target = KRILL
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: CANES -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: HYDRO -> ---Y- (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: TRILL -> -GGGG (H:1, L:1)
+  Attempt 4 [VOI]: GRILL -> -GGGG (H:1, L:1)
+  Attempt 5 [VOI]: BRILL -> -GGGG (H:1, L:1)
+  Attempt 6 [VOI]: KRILL -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 85/100: Target = SNIDE
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: LASER -> --YY- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: TENSE -> --YYG (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: SPINE -> G-GYG (H:2, L:2)
+  Attempt 4 [VOI]: SNIDE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 86/100: Target = LEWES
+  Attempt 1 [LLM]: GROWL -> ---YY (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: WILLS -> Y-Y-G (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: LAWNS -> G-G-G (H:2, L:2)
+  Attempt 4 [VOI]: LEWES -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 87/100: Target = TAMER
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ANISE -> Y---Y (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: LATER -> -GYGG (H:2, L:2)
+  Attempt 3 [CSS_TRUE]: TAMER -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 88/100: Target = COTTA
+  Attempt 1 [LLM]: ESHUN -> ----- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: PILAR -> ---Y- (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: BAFTA -> ---GG (H:3, L:3)
+  Attempt 4 [VOI]: GOTTA -> -GGGG (H:1, L:1)
+  Attempt 5 [VOI]: COTTA -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 89/100: Target = CORBY
+  Attempt 1 [LLM]: BASED -> Y---- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: RUBIO -> Y-Y-Y (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: CORBY -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 90/100: Target = POLIS
+  Attempt 1 [LLM]: SHEDS -> ----G (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: LIONS -> YYY-G (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: BOILS -> -GYYG (H:3, L:3)
+  Attempt 4 [VOI]: POLIS -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 91/100: Target = ROXAS
+  Attempt 1 [LLM]: SHEDS -> ----G (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: LOANS -> -GY-G (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: ROXAS -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 92/100: Target = RANCE
+  Attempt 1 [LLM]: BASED -> -G-Y- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: LAINE -> -G-YG (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: RANCE -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 93/100: Target = CARON
+  Attempt 1 [LLM]: BASED -> -G--- (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: RAMAN -> YG--G (H:3, L:3)
+  Attempt 3 [CSS_TRUE]: CAIRN -> GG-YG (H:2, L:2)
+  Attempt 4 [VOI]: CARON -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 94/100: Target = SURYA
+  Attempt 1 [LLM]: SPRIG -> G-G-- (H:3, L:3)
+  Attempt 2 [CSS_TRUE]: SERRA -> G-G-G (H:2, L:2)
+  Attempt 3 [CSS_TRUE]: SORTA -> G-G-G (H:2, L:2)
+  Attempt 4 [VOI]: SURYA -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 95/100: Target = AGGIE
+  Attempt 1 [LLM]: BASED -> -Y-Y- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: REALM -> -YY-- (H:5, L:5)
+  Attempt 3 [CSS_TRUE]: AGENT -> GGY-- (H:3, L:3)
+  Attempt 4 [VOI]: AGGIE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 96/100: Target = CAUSA
+  Attempt 1 [LLM]: SPRIT -> Y---- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: NAMES -> -G--Y (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: HAUSA -> -GGGG (H:1, L:1)
+  Attempt 4 [VOI]: CAUSA -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 97/100: Target = BAMBA
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: TEARS -> --Y-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: MALIN -> YG--- (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: GAMMA -> -GG-G (H:2, L:2)
+  Attempt 4 [VOI]: BAMBA -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 98/100: Target = MAYNE
+  Attempt 1 [LLM]: LEAST -> -YY-- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: MADRE -> GG--G (H:2, L:2)
+  Attempt 3 [CSS_TRUE]: MAINE -> GG-GG (H:1, L:1)
+  Attempt 4 [VOI]: MAYNE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 99/100: Target = BOGGS
+  Attempt 1 [LLM]: SPRIT -> Y---- (H:5, L:5)
+  Attempt 2 [CSS_TRUE]: HANES -> ----G (H:4, L:4)
+  Attempt 3 [CSS_TRUE]: COLDS -> -G--G (H:3, L:3)
+  Attempt 4 [VOI]: BOMBS -> GG--G (H:2, L:2)
+  Attempt 5 [VOI]: BOOKS -> GG--G (H:2, L:2)
+  Attempt 6 [VOI]: BOGUS -> GGG-G (H:1, L:1)
+  Failed to find word
+
+Game 100/100: Target = FINNS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ARIES -> --Y-G (H:4, L:4)
+  Attempt 2 [CSS_TRUE]: KILNS -> -G-GG (H:2, L:2)
+  Attempt 3 [CSS_TRUE]: SIGNS -> -G-GG (H:2, L:2)
+  Attempt 4 [VOI]: FINNS -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 100
+Wins: 93
+Win rate: 93.0%
+Average attempts (when won): 3.95
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/workshop/results_true_css/group_a/L_to_C_then_V_true/raw_data/L_to_C_then_V_true_granite-3.3-8b-instruct_20260204_095234.csv
+  /Users/kevin/Desktop/projects/wordle/workshop/results_true_css/group_a/L_to_C_then_V_true/raw_data/summary_L_to_C_then_V_true_granite-3.3-8b-instruct_20260204_095234.json
+SUCCESS: A4_true granite-3.3-8b-instruct
+[3/20] A5_true | granite-3.3-8b-instruct
+================================================================================
+FLEXIBLE HYBRID EVALUATION: L_to_V_then_C_true
+================================================================================
+Model: granite-3.3-8b-instruct
+Prompt Type: zero-shot
+Schedule: {"1": "llm", "2": "voi", "3": "voi", "4": "css_true", "5": "css_true", "6": "css_true"}
+Games: 100
+================================================================================
+
+Game 1/100: Target = PHOTO
+  Attempt 1 [LLM]: SHEDS -> -G--- (H:4, L:4)
+  Attempt 2 [VOI]: CHINA -> -G--- (H:4, L:4)
+  Attempt 3 [VOI]: THROB -> YG-Y- (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: PHOTO -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 2/100: Target = PARTY
+  Attempt 1 [LLM]: BREED -> -Y--- (H:5, L:5)
+  Attempt 2 [VOI]: WHORL -> ---Y- (H:5, L:5)
+  Attempt 3 [VOI]: MARIS -> -GG-- (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: KARAN -> -GG-- (H:3, L:3)
+  Attempt 5 [CSS_TRUE]: PARTY -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 3/100: Target = TRICK
+  Attempt 1 [LLM]: SPRIT -> --YYY (H:5, L:4)
+  Attempt 2 [VOI]: LITRE -> -YYY- (H:5, L:5)
+  Attempt 3 [VOI]: TRINA -> GGG-- (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: TRICK -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 4/100: Target = DIRTY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: MARES -> --G-- (H:4, L:4)
+  Attempt 2 [VOI]: THROW -> Y-G-- (H:4, L:4)
+  Attempt 3 [VOI]: KURTZ -> --GG- (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: DIRTY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 5/100: Target = USUAL
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: EARNS -> -Y--Y (H:5, L:5)
+  Attempt 2 [VOI]: SHALT -> Y-YY- (H:5, L:3)
+  Attempt 3 [VOI]: ALISA -> YY-Y- (H:5, L:5)
+  Attempt 4 [CSS_TRUE]: USUAL -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 6/100: Target = TRULY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: CARES -> --Y-- (H:5, L:5)
+  Attempt 2 [VOI]: WHORL -> ---YY (H:5, L:5)
+  Attempt 3 [VOI]: TRULY -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 7/100: Target = SPENT
+  Attempt 1 [LLM]: GRIDD -> ----- (H:5, L:5)
+  Attempt 2 [VOI]: PSALM -> YY--- (H:5, L:5)
+  Attempt 3 [VOI]: STEPS -> GYGY- (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: SPENT -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 8/100: Target = PAUSE
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ELIAS -> Y--YY (H:5, L:5)
+  Attempt 2 [VOI]: SAREE -> YG--G (H:3, L:3)
+  Attempt 3 [VOI]: PAUSE -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 9/100: Target = CRAZY
+  Attempt 1 [LLM]: SPRIG -> --Y-- (H:5, L:5)
+  Attempt 2 [VOI]: ULTRA -> ---YY (H:5, L:5)
+  Attempt 3 [VOI]: RAMAN -> YY--- (H:5, L:4)
+  Attempt 4 [CSS_TRUE]: BRACE -> -GGY- (H:3, L:3)
+  Attempt 5 [CSS_TRUE]: CRAZY -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 10/100: Target = BASES
+  Attempt 1 [LLM]: HARDY -> -G--- (H:4, L:4)
+  Attempt 2 [VOI]: CAUSE -> -G-YY (H:4, L:3)
+  Attempt 3 [VOI]: SAGES -> YG-GG (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: BASES -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 11/100: Target = YOUNG
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: EARLS -> ----- (H:5, L:5)
+  Attempt 2 [VOI]: PHOTO -> --Y-- (H:5, L:5)
+  Attempt 3 [VOI]: DOING -> -G-GG (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: YOUNG -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 12/100: Target = MEANS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: OATES -> -Y-YG (H:4, L:4)
+  Attempt 2 [VOI]: READS -> -GG-G (H:2, L:2)
+  Attempt 3 [VOI]: MEALS -> GGG-G (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: MEANS -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 13/100: Target = TRUTH
+  Attempt 1 [LLM]: GUESS -> -Y--- (H:5, L:5)
+  Attempt 2 [VOI]: TRULY -> GGG-- (H:2, L:2)
+  Attempt 3 [VOI]: TRUMP -> GGG-- (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: TRUNK -> GGG-- (H:2, L:2)
+  Attempt 5 [CSS_TRUE]: TRUTH -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 14/100: Target = FIRED
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: RATES -> Y--G- (H:4, L:4)
+  Attempt 2 [VOI]: DINER -> YG-GY (H:3, L:3)
+  Attempt 3 [VOI]: FIRED -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 15/100: Target = FOLKS
+  Attempt 1 [LLM]: SONIC -> YG--- (H:4, L:4)
+  Attempt 2 [VOI]: HOPES -> -G--G (H:3, L:3)
+  Attempt 3 [VOI]: ROOTS -> -G--G (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: FOLDS -> GGG-G (H:1, L:1)
+  Attempt 5 [CSS_TRUE]: FOLKS -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 16/100: Target = CHILE
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: EARLS -> Y--G- (H:4, L:4)
+  Attempt 2 [VOI]: WEILL -> -YGG- (H:3, L:3)
+  Attempt 3 [VOI]: CHILE -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 17/100: Target = BLACK
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: LANES -> YY--- (H:5, L:4)
+  Attempt 2 [VOI]: TRIAL -> ---YY (H:5, L:5)
+  Attempt 3 [VOI]: CHALK -> Y-GYG (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: BLACK -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 18/100: Target = GRANT
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: DANES -> -YY-- (H:5, L:4)
+  Attempt 2 [VOI]: TRINA -> YG-GY (H:3, L:3)
+  Attempt 3 [VOI]: GRANT -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 19/100: Target = MEALS
+  Attempt 1 [LLM]: BASED -> -YYY- (H:5, L:5)
+  Attempt 2 [VOI]: MEANS -> GGG-G (H:1, L:1)
+  Attempt 3 [VOI]: MEALS -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 20/100: Target = CREAM
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: AILES -> Y--Y- (H:5, L:5)
+  Attempt 2 [VOI]: CRAVE -> GGY-Y (H:3, L:3)
+  Attempt 3 [VOI]: CREAM -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 21/100: Target = AWAKE
+  Attempt 1 [LLM]: SHEDS -> --Y-- (H:5, L:5)
+  Attempt 2 [VOI]: BILGE -> ----G (H:4, L:4)
+  Attempt 3 [VOI]: CRAVE -> --G-G (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: AWAKE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 22/100: Target = OCCUR
+  Attempt 1 [LLM]: GUESS -> -Y--- (H:5, L:5)
+  Attempt 2 [VOI]: CHURN -> Y-YY- (H:5, L:3)
+  Attempt 3 [VOI]: OCCUR -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 23/100: Target = YEARS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: AIRES -> Y-YYG (H:4, L:4)
+  Attempt 2 [VOI]: MEARS -> -GGGG (H:1, L:1)
+  Attempt 3 [VOI]: BEARS -> -GGGG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: SEARS -> -GGGG (H:1, L:1)
+  Attempt 5 [CSS_TRUE]: WEARS -> -GGGG (H:1, L:1)
+  Attempt 6 [CSS_TRUE]: NEARS -> -GGGG (H:1, L:1)
+  Failed to find word
+
+Game 24/100: Target = GRADE
+  Attempt 1 [LLM]: BASED -> -Y-YY (H:5, L:4)
+  Attempt 2 [VOI]: DRAKE -> YGG-G (H:2, L:2)
+  Attempt 3 [VOI]: GRADE -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 25/100: Target = CHILL
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: LASER -> Y---- (H:5, L:5)
+  Attempt 2 [VOI]: GHOUL -> -G--G (H:3, L:3)
+  Attempt 3 [VOI]: CHILL -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 26/100: Target = FLOOD
+  Attempt 1 [LLM]: SWORD -> --G-G (H:3, L:3)
+  Attempt 2 [VOI]: AHOLD -> --GYG (H:3, L:3)
+  Attempt 3 [VOI]: BLOOD -> -GGGG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: FLOOD -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 27/100: Target = APPLY
+  Attempt 1 [LLM]: BASED -> -Y--- (H:5, L:5)
+  Attempt 2 [VOI]: GRANT -> --Y-- (H:5, L:5)
+  Attempt 3 [VOI]: CHULA -> ---GY (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: APPLY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 28/100: Target = SMILE
+  Attempt 1 [LLM]: BASED -> --YY- (H:5, L:5)
+  Attempt 2 [VOI]: STEPS -> G-Y-- (H:4, L:4)
+  Attempt 3 [VOI]: SENOR -> GY--- (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: SMILE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 29/100: Target = KNOCK
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: SIENA -> ---Y- (H:5, L:5)
+  Attempt 2 [VOI]: CONDÉ -> YYY-- (H:5, L:5)
+  Attempt 3 [VOI]: KNOCK -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 30/100: Target = SLEEP
+  Attempt 1 [LLM]: SHAKE -> G---Y (H:4, L:4)
+  Attempt 2 [VOI]: SPENT -> GYG-- (H:3, L:3)
+  Attempt 3 [VOI]: SWEEP -> G-GGG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: SLEEP -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 31/100: Target = BRICK
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: RAISE -> Y-G-- (H:4, L:4)
+  Attempt 2 [VOI]: TRICK -> -GGGG (H:1, L:1)
+  Attempt 3 [VOI]: PRICK -> -GGGG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: FRICK -> -GGGG (H:1, L:1)
+  Attempt 5 [CSS_TRUE]: BRICK -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 32/100: Target = WROTE
+  Attempt 1 [LLM]: SPRIT -> --Y-Y (H:5, L:4)
+  Attempt 2 [VOI]: TRUTH -> -G-G- (H:3, L:3)
+  Attempt 3 [VOI]: CRATE -> -G-GG (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: WROTE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 33/100: Target = RATED
+  Attempt 1 [LLM]: ARRIS -> YY--- (H:5, L:5)
+  Attempt 2 [VOI]: RAMAN -> GG--- (H:3, L:3)
+  Attempt 3 [VOI]: RAKED -> GG-GG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: RACED -> GG-GG (H:1, L:1)
+  Attempt 5 [CSS_TRUE]: RAZED -> GG-GG (H:1, L:1)
+  Attempt 6 [CSS_TRUE]: RAPED -> GG-GG (H:1, L:1)
+  Failed to find word
+
+Game 34/100: Target = ALERT
+  Attempt 1 [LLM]: GUESS -> --G-- (H:4, L:4)
+  Attempt 2 [VOI]: CREAM -> -YGY- (H:4, L:4)
+  Attempt 3 [VOI]: OPERA -> --GGY (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: AVERY -> G-GG- (H:2, L:2)
+  Attempt 5 [CSS_TRUE]: ALERT -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 35/100: Target = CAGES
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: EARLS -> YG--G (H:3, L:3)
+  Attempt 2 [VOI]: BASES -> -G-GG (H:2, L:2)
+  Attempt 3 [VOI]: MAGES -> -GGGG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: CAGES -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 36/100: Target = TEDDY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: RATES -> --YY- (H:5, L:5)
+  Attempt 2 [VOI]: DWELT -> Y-Y-Y (H:5, L:5)
+  Attempt 3 [VOI]: ETUDE -> YY-G- (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: TEDDY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 37/100: Target = COLES
+  Attempt 1 [LLM]: SPRIT -> Y---- (H:5, L:5)
+  Attempt 2 [VOI]: GAULS -> ---YG (H:4, L:4)
+  Attempt 3 [VOI]: FOLKS -> -GG-G (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: MOLES -> -GGGG (H:1, L:1)
+  Attempt 5 [CSS_TRUE]: HOLES -> -GGGG (H:1, L:1)
+  Attempt 6 [CSS_TRUE]: COLES -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 38/100: Target = HWANG
+  Attempt 1 [LLM]: GUESS -> Y---- (H:5, L:5)
+  Attempt 2 [VOI]: DOING -> ---GG (H:3, L:3)
+  Attempt 3 [VOI]: CHANG -> -YGGG (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: HWANG -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 39/100: Target = WRATH
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: AROSE -> YG--- (H:4, L:4)
+  Attempt 2 [VOI]: BRANT -> -GG-Y (H:3, L:3)
+  Attempt 3 [VOI]: TRACI -> YGG-- (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: WRATH -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 40/100: Target = MACHO
+  Attempt 1 [LLM]: WORDS -> -Y--- (H:5, L:5)
+  Attempt 2 [VOI]: GHOUL -> -YY-- (H:5, L:5)
+  Attempt 3 [VOI]: ETHNO -> --Y-G (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: MACHO -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 41/100: Target = LOPEZ
+  Attempt 1 [LLM]: GUESS -> --Y-- (H:5, L:5)
+  Attempt 2 [VOI]: TRACE -> ----Y (H:5, L:5)
+  Attempt 3 [VOI]: NEILL -> -Y-Y- (H:5, L:5)
+  Attempt 4 [CSS_TRUE]: LOVED -> GG-G- (H:2, L:2)
+  Attempt 5 [CSS_TRUE]: LOPEZ -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 42/100: Target = GOODY
+  Attempt 1 [LLM]: SHEDS -> ---G- (H:4, L:4)
+  Attempt 2 [VOI]: CONDÉ -> -G-G- (H:3, L:3)
+  Attempt 3 [VOI]: GOWDY -> GG-GG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: GOODY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 43/100: Target = BROTH
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: EARNS -> --Y-- (H:5, L:5)
+  Attempt 2 [VOI]: CROFT -> -GG-Y (H:3, L:3)
+  Attempt 3 [VOI]: PROTO -> -GGG- (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: BROTH -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 44/100: Target = VERDE
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: EARNS -> Y-G-- (H:4, L:4)
+  Attempt 2 [VOI]: FIRED -> --GYY (H:4, L:4)
+  Attempt 3 [VOI]: LORDE -> --GGG (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: VERDE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 45/100: Target = TAMED
+  Attempt 1 [LLM]: SORRY -> ----- (H:5, L:5)
+  Attempt 2 [VOI]: CHILL -> ----- (H:5, L:5)
+  Attempt 3 [VOI]: ETUDE -> YY-Y- (H:5, L:4)
+  Attempt 4 [CSS_TRUE]: MATED -> YGYGG (H:2, L:2)
+  Attempt 5 [CSS_TRUE]: TAMED -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 46/100: Target = LEAFS
+  Attempt 1 [LLM]: AGERY -> Y-Y-- (H:5, L:5)
+  Attempt 2 [VOI]: TAMED -> -Y-Y- (H:5, L:5)
+  Attempt 3 [VOI]: QUAKE -> --G-Y (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: LEAPS -> GGG-G (H:1, L:1)
+  Attempt 5 [CSS_TRUE]: LEAFS -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 47/100: Target = YACHT
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: OATES -> -GY-- (H:4, L:4)
+  Attempt 2 [VOI]: PARTY -> -G-YY (H:4, L:4)
+  Attempt 3 [VOI]: HAYAT -> YGY-G (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: YACHT -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 48/100: Target = MESSY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ARIES -> ---YY (H:5, L:5)
+  Attempt 2 [VOI]: SPENT -> Y-Y-- (H:5, L:5)
+  Attempt 3 [VOI]: DOUSE -> ---GY (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: WELSH -> -G-G- (H:3, L:3)
+  Attempt 5 [CSS_TRUE]: MESSY -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 49/100: Target = RYDER
+  Attempt 1 [LLM]: CIRCS -> --Y-- (H:5, L:5)
+  Attempt 2 [VOI]: ROUTE -> G---Y (H:4, L:4)
+  Attempt 3 [VOI]: RAGED -> G--GY (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: RYDER -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 50/100: Target = MOTIF
+  Attempt 1 [LLM]: SPRIG -> ---G- (H:4, L:4)
+  Attempt 2 [VOI]: COMIN -> -GYG- (H:3, L:3)
+  Attempt 3 [VOI]: MOBIL -> GG-G- (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: MOVIE -> GG-G- (H:2, L:2)
+  Attempt 5 [CSS_TRUE]: MOTIF -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 51/100: Target = RAVEN
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: AIRES -> Y-YG- (H:4, L:4)
+  Attempt 2 [VOI]: RAGED -> GG-G- (H:2, L:2)
+  Attempt 3 [VOI]: RAVEL -> GGGG- (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: RAVEN -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 52/100: Target = REICH
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: TASER -> ---YY (H:5, L:5)
+  Attempt 2 [VOI]: VERDE -> -GY-- (H:4, L:4)
+  Attempt 3 [VOI]: REIGN -> GGG-- (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: REICH -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 53/100: Target = ICONS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: LASER -> --Y-- (H:5, L:5)
+  Attempt 2 [VOI]: TOPPS -> -Y--G (H:4, L:4)
+  Attempt 3 [VOI]: NIKOS -> YY-YG (H:4, L:3)
+  Attempt 4 [CSS_TRUE]: ICONS -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 54/100: Target = SILKY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ELISA -> -YYY- (H:5, L:5)
+  Attempt 2 [VOI]: KILLS -> YGG-Y (H:3, L:3)
+  Attempt 3 [VOI]: SILKY -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 55/100: Target = CARVE
+  Attempt 1 [LLM]: SPRIG -> --G-- (H:4, L:4)
+  Attempt 2 [VOI]: BERTH -> -YG-- (H:4, L:4)
+  Attempt 3 [VOI]: LORDE -> --G-G (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: CARNE -> GGG-G (H:1, L:1)
+  Attempt 5 [CSS_TRUE]: CARVE -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 56/100: Target = LAGER
+  Attempt 1 [LLM]: BASED -> -G-G- (H:3, L:3)
+  Attempt 2 [VOI]: RAVEN -> YG-G- (H:3, L:3)
+  Attempt 3 [VOI]: MAREK -> -GYG- (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: TAPER -> -G-GG (H:2, L:2)
+  Attempt 5 [CSS_TRUE]: WAGER -> -GGGG (H:1, L:1)
+  Attempt 6 [CSS_TRUE]: EAGER -> -GGGG (H:1, L:1)
+  Failed to find word
+
+Game 57/100: Target = JERKS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: DARES -> --GYG (H:3, L:3)
+  Attempt 2 [VOI]: HERBS -> -GG-G (H:2, L:2)
+  Attempt 3 [VOI]: TERMS -> -GG-G (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: PERKS -> -GGGG (H:1, L:1)
+  Attempt 5 [CSS_TRUE]: JERKS -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 58/100: Target = LOTUS
+  Attempt 1 [LLM]: SMART -> Y---Y (H:5, L:5)
+  Attempt 2 [VOI]: TOPPS -> YG--G (H:3, L:3)
+  Attempt 3 [VOI]: BOLTS -> -GYYG (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: LOTUS -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 59/100: Target = LACEY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: LANES -> GG-G- (H:2, L:2)
+  Attempt 2 [VOI]: LAGER -> GG-G- (H:2, L:2)
+  Attempt 3 [VOI]: LACEY -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 60/100: Target = TUDOR
+  Attempt 1 [LLM]: GUESS -> -G--- (H:4, L:4)
+  Attempt 2 [VOI]: KURTZ -> -GYY- (H:4, L:4)
+  Attempt 3 [VOI]: OUTRO -> YGYY- (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: TUMOR -> GG-GG (H:1, L:1)
+  Attempt 5 [CSS_TRUE]: TUDOR -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 61/100: Target = QUOTA
+  Attempt 1 [LLM]: BREEZ -> ----- (H:5, L:5)
+  Attempt 2 [VOI]: LOONS -> --G-- (H:4, L:4)
+  Attempt 3 [VOI]: AVOID -> Y-G-- (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: QUOTA -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 62/100: Target = MOURN
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ARIES -> -Y--- (H:5, L:5)
+  Attempt 2 [VOI]: TUDOR -> -Y-YY (H:5, L:5)
+  Attempt 3 [VOI]: CORFU -> -GY-Y (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: ROUGH -> YGG-- (H:3, L:3)
+  Attempt 5 [CSS_TRUE]: MOURN -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 63/100: Target = PROMO
+  Attempt 1 [LLM]: GUESS -> ----- (H:5, L:5)
+  Attempt 2 [VOI]: CABIN -> ----- (H:5, L:5)
+  Attempt 3 [VOI]: THROW -> --YY- (H:5, L:4)
+  Attempt 4 [CSS_TRUE]: PROMO -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 64/100: Target = CASTE
+  Attempt 1 [LLM]: BASED -> -GGY- (H:3, L:3)
+  Attempt 2 [VOI]: HASTE -> -GGGG (H:1, L:1)
+  Attempt 3 [VOI]: PASTE -> -GGGG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: TASTE -> -GGGG (H:1, L:1)
+  Attempt 5 [CSS_TRUE]: WASTE -> -GGGG (H:1, L:1)
+  Attempt 6 [CSS_TRUE]: CASTE -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 65/100: Target = CAPRI
+  Attempt 1 [LLM]: BASED -> -G--- (H:4, L:4)
+  Attempt 2 [VOI]: PARTY -> YGY-- (H:4, L:4)
+  Attempt 3 [VOI]: RALPH -> YG-Y- (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: CAPRA -> GGGG- (H:1, L:1)
+  Attempt 5 [CSS_TRUE]: CAPRI -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 66/100: Target = ALIAS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ARISE -> G-GY- (H:3, L:3)
+  Attempt 2 [VOI]: ACIDS -> G-G-G (H:2, L:2)
+  Attempt 3 [VOI]: ALIAS -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 67/100: Target = PADDY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: TEARS -> --Y-- (H:5, L:5)
+  Attempt 2 [VOI]: AVOID -> Y---Y (H:5, L:5)
+  Attempt 3 [VOI]: BANDA -> -G-G- (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: PADDY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 68/100: Target = BLOBS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: REALS -> ---YG (H:4, L:4)
+  Attempt 2 [VOI]: BOLTS -> GYY-G (H:3, L:3)
+  Attempt 3 [VOI]: BLOWS -> GGG-G (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: BLOBS -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 69/100: Target = DILLY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: RAISE -> --Y-- (H:5, L:5)
+  Attempt 2 [VOI]: MOBIL -> ---YY (H:5, L:5)
+  Attempt 3 [VOI]: GILLY -> -GGGG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: LILLY -> -GGGG (H:1, L:1)
+  Attempt 5 [CSS_TRUE]: DILLY -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 70/100: Target = GUTSY
+  Attempt 1 [LLM]: GUESS -> GG-G- (H:2, L:2)
+  Attempt 2 [VOI]: GUTSY -> GGGGG (H:0, L:0)
+  Won in 2 attempts!
+
+Game 71/100: Target = TABOR
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ARIES -> YY--- (H:5, L:5)
+  Attempt 2 [VOI]: GARZA -> -GY-- (H:4, L:4)
+  Attempt 3 [VOI]: RALPH -> YG--- (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: MAURY -> -G-Y- (H:4, L:4)
+  Attempt 5 [CSS_TRUE]: FAVOR -> -G-GG (H:2, L:2)
+  Attempt 6 [CSS_TRUE]: TABOR -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 72/100: Target = INLAY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: TEARS -> --Y-- (H:5, L:5)
+  Attempt 2 [VOI]: PADDY -> -Y--G (H:4, L:4)
+  Attempt 3 [VOI]: ALLOY -> Y-G-G (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: INLAY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 73/100: Target = AHHHH
+  Attempt 1 [LLM]: BREED -> ----- (H:5, L:5)
+  Attempt 2 [VOI]: SALON -> -Y--- (H:5, L:5)
+  Attempt 3 [VOI]: VIJAY -> ---Y- (H:5, L:5)
+  Attempt 4 [CSS_TRUE]: WHACK -> -GY-- (H:4, L:4)
+  Attempt 5 [CSS_TRUE]: AHHHH -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 74/100: Target = ROUEN
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: EARLS -> Y-Y-- (H:5, L:5)
+  Attempt 2 [VOI]: REICH -> GY--- (H:4, L:4)
+  Attempt 3 [VOI]: RYDER -> G--G- (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: ROUEN -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 75/100: Target = BUENA
+  Attempt 1 [LLM]: BASED -> GY-Y- (H:4, L:4)
+  Attempt 2 [VOI]: BRACE -> G-Y-Y (H:4, L:4)
+  Attempt 3 [VOI]: BEGAN -> GY-YY (H:4, L:3)
+  Attempt 4 [CSS_TRUE]: BUENA -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 76/100: Target = MENON
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: LEAST -> -G--- (H:4, L:4)
+  Attempt 2 [VOI]: REICH -> -G--- (H:4, L:4)
+  Attempt 3 [VOI]: BENDY -> -GG-- (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: VENOM -> -GGGY (H:2, L:2)
+  Attempt 5 [CSS_TRUE]: MENON -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 77/100: Target = TRASK
+  Attempt 1 [LLM]: AURES -> Y-Y-Y (H:5, L:4)
+  Attempt 2 [VOI]: SAMAR -> YY--Y (H:5, L:5)
+  Attempt 3 [VOI]: RSPCA -> YY--Y (H:5, L:5)
+  Attempt 4 [CSS_TRUE]: BRASH -> -GGG- (H:2, L:2)
+  Attempt 5 [CSS_TRUE]: TRASK -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 78/100: Target = CASIO
+  Attempt 1 [LLM]: SHEDS -> Y---- (H:5, L:5)
+  Attempt 2 [VOI]: RSPCA -> -Y-YY (H:5, L:5)
+  Attempt 3 [VOI]: BASIC -> -GGGY (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: CASIO -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 79/100: Target = VOILA
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: EARLS -> -Y-G- (H:4, L:4)
+  Attempt 2 [VOI]: AHOLD -> Y-YG- (H:4, L:4)
+  Attempt 3 [VOI]: JOLLA -> -G-GG (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: KOALA -> -G-GG (H:2, L:2)
+  Attempt 5 [CSS_TRUE]: VOILA -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 80/100: Target = AURAL
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: EARLS -> -YGY- (H:4, L:4)
+  Attempt 2 [VOI]: AURAL -> GGGGG (H:0, L:0)
+  Won in 2 attempts!
+
+Game 81/100: Target = LEGER
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: AIRES -> --YG- (H:4, L:4)
+  Attempt 2 [VOI]: ROUEN -> Y--G- (H:4, L:4)
+  Attempt 3 [VOI]: CREEP -> -YYG- (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: METER -> -G-GG (H:2, L:2)
+  Attempt 5 [CSS_TRUE]: FEWER -> -G-GG (H:2, L:2)
+  Attempt 6 [CSS_TRUE]: LEVER -> GG-GG (H:1, L:1)
+  Failed to find word
+
+Game 82/100: Target = DALLY
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: RATES -> -G--- (H:4, L:4)
+  Attempt 2 [VOI]: PADDY -> -GY-G (H:3, L:3)
+  Attempt 3 [VOI]: DALLY -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 83/100: Target = INIGO
+  Attempt 1 [LLM]: AFTIG -> ---YY (H:5, L:4)
+  Attempt 2 [VOI]: REIGN -> --GGY (H:3, L:3)
+  Attempt 3 [VOI]: INIGO -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 84/100: Target = KRILL
+  Attempt 1 [LLM]: GUESS -> ----- (H:5, L:5)
+  Attempt 2 [VOI]: DAILY -> --GG- (H:3, L:3)
+  Attempt 3 [VOI]: TRILL -> -GGGG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: BRILL -> -GGGG (H:1, L:1)
+  Attempt 5 [CSS_TRUE]: KRILL -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 85/100: Target = SNIDE
+  Attempt 1 [LLM]: DISCO -> YYY-- (H:5, L:5)
+  Attempt 2 [VOI]: IDEAS -> YYY-Y (H:5, L:4)
+  Attempt 3 [VOI]: SNIDE -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 86/100: Target = LEWES
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: TEARS -> -G--G (H:3, L:3)
+  Attempt 2 [VOI]: SEEPS -> -GY-G (H:3, L:3)
+  Attempt 3 [VOI]: LEWES -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 87/100: Target = TAMER
+  Attempt 1 [LLM]: SORRY -> --Y-- (H:5, L:5)
+  Attempt 2 [VOI]: REGAL -> YY-Y- (H:5, L:5)
+  Attempt 3 [VOI]: BRACE -> -YY-Y (H:5, L:4)
+  Attempt 4 [CSS_TRUE]: TAMER -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 88/100: Target = COTTA
+  Attempt 1 [LLM]: VOWEL -> -G--- (H:4, L:4)
+  Attempt 2 [VOI]: FOURS -> -G--- (H:4, L:4)
+  Attempt 3 [VOI]: BOING -> -G--- (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: OOMPH -> -G--- (H:4, L:4)
+  Attempt 5 [CSS_TRUE]: TODAY -> YG-Y- (H:4, L:4)
+  Attempt 6 [CSS_TRUE]: COTTA -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 89/100: Target = CORBY
+  Attempt 1 [LLM]: SPRIG -> --G-- (H:4, L:4)
+  Attempt 2 [VOI]: CARVE -> G-G-- (H:3, L:3)
+  Attempt 3 [VOI]: CORFU -> GGG-- (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: CORBY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 90/100: Target = POLIS
+  Attempt 1 [LLM]: GREEN -> ----- (H:5, L:5)
+  Attempt 2 [VOI]: COALS -> -G-YG (H:3, L:3)
+  Attempt 3 [VOI]: BOLTS -> -GG-G (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: FOLDS -> -GG-G (H:2, L:2)
+  Attempt 5 [CSS_TRUE]: SOLIS -> -GGGG (H:1, L:1)
+  Attempt 6 [CSS_TRUE]: POLIS -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 91/100: Target = ROXAS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: CARES -> -YY-G (H:4, L:4)
+  Attempt 2 [VOI]: ROXAS -> GGGGG (H:0, L:0)
+  Won in 2 attempts!
+
+Game 92/100: Target = RANCE
+  Attempt 1 [LLM]: BREAK -> -YYY- (H:5, L:5)
+  Attempt 2 [VOI]: TAMER -> -G-YY (H:4, L:4)
+  Attempt 3 [VOI]: CARVE -> YGY-G (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: RANCE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 93/100: Target = CARON
+  Attempt 1 [LLM]: BASED -> -G--- (H:4, L:4)
+  Attempt 2 [VOI]: MAURO -> -G-YY (H:4, L:3)
+  Attempt 3 [VOI]: FAVOR -> -G-GY (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: CAROL -> GGGG- (H:1, L:1)
+  Attempt 5 [CSS_TRUE]: CARON -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 94/100: Target = SURYA
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: AILES -> Y---Y (H:5, L:5)
+  Attempt 2 [VOI]: STACK -> G-Y-- (H:4, L:4)
+  Attempt 3 [VOI]: SAGAR -> GY--Y (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: SUPRA -> GG-YG (H:2, L:2)
+  Attempt 5 [CSS_TRUE]: SURYA -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 95/100: Target = AGGIE
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: ARIES -> G-YY- (H:4, L:3)
+  Attempt 2 [VOI]: ADDIE -> G--GG (H:2, L:2)
+  Attempt 3 [VOI]: ANGIE -> G-GGG (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: AGGIE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 96/100: Target = CAUSA
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: AROSE -> Y--G- (H:4, L:4)
+  Attempt 2 [VOI]: BLAST -> --YG- (H:4, L:4)
+  Attempt 3 [VOI]: MISSA -> ---GG (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: CAUSA -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 97/100: Target = BAMBA
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: RAISE -> -G--- (H:4, L:4)
+  Attempt 2 [VOI]: GAUDY -> -G--- (H:4, L:4)
+  Attempt 3 [VOI]: HANZO -> -G--- (H:4, L:4)
+  Attempt 4 [CSS_TRUE]: MALTA -> YG--G (H:3, L:3)
+  Attempt 5 [CSS_TRUE]: BAMBA -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 98/100: Target = MAYNE
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: LASER -> -G-Y- (H:4, L:4)
+  Attempt 2 [VOI]: MADGE -> GG--G (H:2, L:2)
+  Attempt 3 [VOI]: MAUVE -> GG--G (H:2, L:2)
+  Attempt 4 [CSS_TRUE]: MAINE -> GG-GG (H:1, L:1)
+  Attempt 5 [CSS_TRUE]: MAYNE -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 99/100: Target = BOGGS
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 1 [LLM]: STARE -> Y---- (H:5, L:5)
+  Attempt 2 [VOI]: POLIS -> -G--G (H:3, L:3)
+  Attempt 3 [VOI]: BOGUS -> GGG-G (H:1, L:1)
+  Attempt 4 [CSS_TRUE]: BOGGS -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 100/100: Target = FINNS
+  Attempt 1 [LLM]: STEAD -> Y---- (H:5, L:5)
+  Attempt 2 [VOI]: BOGGS -> ----G (H:4, L:4)
+  Attempt 3 [VOI]: RICKS -> -G--G (H:3, L:3)
+  Attempt 4 [CSS_TRUE]: MILFS -> -G-YG (H:3, L:3)
+  Attempt 5 [CSS_TRUE]: FINNS -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 100
+Wins: 96
+Win rate: 96.0%
+Average attempts (when won): 4.14
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/workshop/results_true_css/group_a/L_to_V_then_C_true/raw_data/L_to_V_then_C_true_granite-3.3-8b-instruct_20260204_095350.csv
+  /Users/kevin/Desktop/projects/wordle/workshop/results_true_css/group_a/L_to_V_then_C_true/raw_data/summary_L_to_V_then_C_true_granite-3.3-8b-instruct_20260204_095350.json
+SUCCESS: A5_true granite-3.3-8b-instruct
+[4/20] A6_true | llama-3.1-8b-instruct
+================================================================================
+FLEXIBLE HYBRID EVALUATION: C_to_L_true
+================================================================================
+Model: llama-3.1-8b-instruct
+Prompt Type: zero-shot
+Schedule: {"1": "css_true", "2": "llm", "3": "llm", "4": "llm", "5": "llm", "6": "llm"}
+Games: 100
+================================================================================
+
+Game 1/100: Target = PHOTO
+  Attempt 1 [CSS_TRUE]: SCARE -> ----- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> YY--- (H:5, L:4)
+  Attempt 3 [LLM]: PHOTO -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 2/100: Target = PARTY
+  Attempt 1 [CSS_TRUE]: MALES -> -G--- (H:4, L:4)
+  Attempt 2 [LLM]: HOUSE -> ----- (H:5, L:5)
+  Attempt 3 [LLM]: STAMP -> -YY-Y (H:5, L:5)
+  Attempt 4 [LLM]: PARTY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 3/100: Target = TRICK
+  Attempt 1 [CSS_TRUE]: STARE -> -Y-Y- (H:5, L:5)
+  Attempt 2 [LLM]: BIRTH -> -YYY- (H:5, L:5)
+  Attempt 3 [LLM]: PRINT -> -GG-Y (H:3, L:3)
+  Attempt 4 [LLM]: TRILL -> GGG-- (H:2, L:2)
+  Attempt 5 [LLM]: TRICK -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 4/100: Target = DIRTY
+  Attempt 1 [CSS_TRUE]: CARES -> --G-- (H:4, L:4)
+  Attempt 2 [LLM]: MYRON -> -YG-- (H:4, L:4)
+  Attempt 3 [LLM]: BIRDY -> -GGYG (H:2, L:2)
+  Attempt 4 [LLM]: DIRTY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 5/100: Target = USUAL
+  Attempt 1 [CSS_TRUE]: RENTS -> ----Y (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> --GY- (H:4, L:4)
+  Attempt 3 [LLM]: ASUKA -> YGG-- (H:3, L:3)
+  Attempt 4 [LLM]: USUAL -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 6/100: Target = TRULY
+  Attempt 1 [CSS_TRUE]: OAKES -> ----- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> --G-- (H:4, L:4)
+  Attempt 3 [LLM]: PLUMB -> -YG-- (H:4, L:4)
+  Attempt 4 [LLM]: TRULY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 7/100: Target = SPENT
+  Attempt 1 [CSS_TRUE]: MARES -> ---YY (H:5, L:5)
+  Attempt 2 [LLM]: SPACE -> GG--Y (H:3, L:3)
+  Attempt 3 [LLM]: SPENT -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 8/100: Target = PAUSE
+  Attempt 1 [CSS_TRUE]: SPADE -> YYY-G (H:4, L:3)
+  Attempt 2 [LLM]: PARSE -> GG-GG (H:1, L:1)
+  Attempt 3 [LLM]: SPACE -> YYY-G (H:4, L:3)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 4 [LLM]: PAUSE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 9/100: Target = CRAZY
+  Attempt 1 [CSS_TRUE]: DARES -> -YY-- (H:5, L:5)
+  Attempt 2 [LLM]: SPACE -> --GY- (H:4, L:4)
+  Attempt 3 [LLM]: CIARA -> G-GY- (H:3, L:3)
+  Attempt 4 [LLM]: CRAFT -> GGG-- (H:2, L:2)
+  Attempt 5 [LLM]: CRANK -> GGG-- (H:2, L:2)
+  Attempt 6 [LLM]: CRAZY -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 10/100: Target = BASES
+  Attempt 1 [CSS_TRUE]: TRANS -> --Y-G (H:4, L:4)
+  Attempt 2 [LLM]: GRANT -> --Y-- (H:5, L:5)
+  Attempt 3 [LLM]: BRAVE -> G-Y-Y (H:4, L:3)
+  Attempt 4 [LLM]: BAKES -> GG-GG (H:1, L:1)
+  Attempt 5 [LLM]: BASES -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 11/100: Target = YOUNG
+  Attempt 1 [CSS_TRUE]: SOLAR -> -G--- (H:4, L:4)
+  Attempt 2 [LLM]: STORM -> --Y-- (H:5, L:5)
+  Attempt 3 [LLM]: CONDY -> -GY-Y (H:4, L:4)
+  Attempt 4 [LLM]: SLUNG -> --GGG (H:2, L:2)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 5 [LLM]: YOUNG -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 12/100: Target = MEANS
+  Attempt 1 [CSS_TRUE]: TASER -> -YYY- (H:5, L:5)
+  Attempt 2 [LLM]: SHAVE -> Y-G-Y (H:4, L:4)
+  Attempt 3 [LLM]: MEALS -> GGG-G (H:1, L:1)
+  Attempt 4 [LLM]: MEANS -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 13/100: Target = TRUTH
+  Attempt 1 [CSS_TRUE]: ARIES -> -G--- (H:4, L:4)
+  Attempt 2 [LLM]: GROUP -> -G-Y- (H:4, L:4)
+  Attempt 3 [LLM]: TRUNK -> GGG-- (H:2, L:2)
+  Attempt 4 [LLM]: TRUTH -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 14/100: Target = FIRED
+  Attempt 1 [CSS_TRUE]: RAINS -> Y-Y-- (H:5, L:5)
+  Attempt 2 [LLM]: MERIT -> -YGY- (H:4, L:4)
+  Attempt 3 [LLM]: WIRED -> -GGGG (H:1, L:1)
+  Attempt 4 [LLM]: HIRED -> -GGGG (H:1, L:1)
+  Attempt 5 [LLM]: HIDES -> -GYG- (H:3, L:3)
+  Attempt 6 [LLM]: FIRED -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 15/100: Target = FOLKS
+  Attempt 1 [CSS_TRUE]: IRATE -> ----- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> -G-Y- (H:4, L:4)
+  Attempt 3 [LLM]: FOLKS -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 16/100: Target = CHILE
+  Attempt 1 [CSS_TRUE]: LASER -> Y--Y- (H:5, L:5)
+  Attempt 2 [LLM]: SPACE -> ---YG (H:4, L:4)
+  Attempt 3 [LLM]: CLEVE -> GY--G (H:3, L:3)
+  Attempt 4 [LLM]: CHLOE -> GGY-G (H:2, L:2)
+  Attempt 5 [LLM]: CHILE -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 17/100: Target = BLACK
+  Attempt 1 [CSS_TRUE]: RAMOS -> -Y--- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> ----- (H:5, L:5)
+  Attempt 3 [LLM]: STAMP -> --G-- (H:4, L:4)
+  Attempt 4 [LLM]: STANK -> --G-G (H:3, L:3)
+  Attempt 5 [LLM]: FLACK -> -GGGG (H:1, L:1)
+  Attempt 6 [LLM]: BLACK -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 18/100: Target = GRANT
+  Attempt 1 [CSS_TRUE]: SIREN -> --Y-Y (H:5, L:4)
+  Attempt 2 [LLM]: BRONY -> -G-G- (H:3, L:3)
+  Attempt 3 [LLM]: FRANK -> -GGG- (H:2, L:2)
+  Attempt 4 [LLM]: GRAND -> GGGG- (H:1, L:1)
+  Attempt 5 [LLM]: GRANT -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 19/100: Target = MEALS
+  Attempt 1 [CSS_TRUE]: RAINE -> -Y--Y (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> ---YY (H:5, L:5)
+  Attempt 3 [LLM]: MEATS -> GGG-G (H:1, L:1)
+  Attempt 4 [LLM]: MEALS -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 20/100: Target = CREAM
+  Attempt 1 [CSS_TRUE]: SEDAN -> -Y-G- (H:4, L:4)
+  Attempt 2 [LLM]: CHEAP -> G-GG- (H:2, L:2)
+  Attempt 3 [LLM]: CREAM -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 21/100: Target = AWAKE
+  Attempt 1 [CSS_TRUE]: RACES -> -Y-Y- (H:5, L:4)
+  Attempt 2 [LLM]: HOUSE -> ----G (H:4, L:4)
+  Attempt 3 [LLM]: ANGLE -> G---G (H:3, L:3)
+  Attempt 4 [LLM]: ABATE -> G-G-G (H:2, L:2)
+  Attempt 5 [LLM]: AWAKE -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 22/100: Target = OCCUR
+  Attempt 1 [CSS_TRUE]: LARUE -> --YG- (H:4, L:4)
+  Attempt 2 [LLM]: PRIUS -> -Y-G- (H:4, L:4)
+  Attempt 3 [LLM]: ODOUR -> G--GG (H:2, L:2)
+  Attempt 4 [LLM]: OCURS -> GGYY- (H:3, L:2)
+  Attempt 5 [LLM]: OCCUR -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 23/100: Target = YEARS
+  Attempt 1 [CSS_TRUE]: SONAR -> Y--YY (H:5, L:4)
+  Attempt 2 [LLM]: BRANE -> -YG-Y (H:4, L:4)
+  Attempt 3 [LLM]: HEARS -> -GGGG (H:1, L:1)
+  Attempt 4 [LLM]: HEARY -> -GGGY (H:2, L:2)
+  Attempt 5 [LLM]: HEART -> -GGG- (H:2, L:2)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 6 [LLM]: YEARS -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 24/100: Target = GRADE
+  Attempt 1 [CSS_TRUE]: RIDES -> Y-YY- (H:5, L:3)
+  Attempt 2 [LLM]: TREND -> -GY-Y (H:4, L:4)
+  Attempt 3 [LLM]: PRUDE -> -G-GG (H:2, L:2)
+  Attempt 4 [LLM]: ERODE -> -G-GG (H:2, L:2)
+  Attempt 5 [LLM]: GRADE -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 25/100: Target = CHILL
+  Attempt 1 [CSS_TRUE]: DATES -> ----- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> Y---- (H:5, L:5)
+  Attempt 3 [LLM]: WHICH -> -GGY- (H:3, L:3)
+  Attempt 4 [LLM]: CHILL -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 26/100: Target = FLOOD
+  Attempt 1 [CSS_TRUE]: STALE -> ---Y- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> -Y--- (H:5, L:5)
+  Attempt 3 [LLM]: BLOOM -> -GGG- (H:2, L:2)
+  Attempt 4 [LLM]: FLOOD -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 27/100: Target = APPLY
+  Attempt 1 [CSS_TRUE]: ARSED -> G---- (H:4, L:4)
+  Attempt 2 [LLM]: ALPHA -> GYG-- (H:3, L:3)
+  Attempt 3 [LLM]: APPLY -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 28/100: Target = SMILE
+  Attempt 1 [CSS_TRUE]: CAGES -> ---YY (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> ---YG (H:4, L:4)
+  Attempt 3 [LLM]: SPIRE -> G-G-G (H:2, L:2)
+  Attempt 4 [LLM]: SEINE -> G-G-G (H:2, L:2)
+  Attempt 5 [LLM]: SLIDE -> GYG-G (H:2, L:2)
+  Attempt 6 [LLM]: SMILE -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 29/100: Target = KNOCK
+  Attempt 1 [CSS_TRUE]: LINER -> --Y-- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> -Y--- (H:5, L:5)
+  Attempt 3 [LLM]: BACON -> --YYY (H:5, L:5)
+  Attempt 4 [LLM]: KNICK -> GG-GG (H:1, L:1)
+  Attempt 5 [LLM]: KNOCK -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 30/100: Target = SLEEP
+  Attempt 1 [CSS_TRUE]: SAHEL -> G--GY (H:3, L:3)
+  Attempt 2 [LLM]: SLEEP -> GGGGG (H:0, L:0)
+  Won in 2 attempts!
+
+Game 31/100: Target = BRICK
+  Attempt 1 [CSS_TRUE]: GALES -> ----- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> ----- (H:5, L:5)
+  Attempt 3 [LLM]: CRYPT -> YG--- (H:4, L:4)
+  Attempt 4 [LLM]: FRICK -> -GGGG (H:1, L:1)
+  Attempt 5 [LLM]: BRICK -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 32/100: Target = WROTE
+  Attempt 1 [CSS_TRUE]: HANES -> ---Y- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> -Y--G (H:4, L:4)
+  Attempt 3 [LLM]: PROBE -> -GG-G (H:2, L:2)
+  Attempt 4 [LLM]: FROME -> -GG-G (H:2, L:2)
+  Attempt 5 [LLM]: TROVE -> YGG-G (H:2, L:2)
+  Attempt 6 [LLM]: WROTE -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 33/100: Target = RATED
+  Attempt 1 [CSS_TRUE]: AYERS -> Y-YY- (H:5, L:4)
+  Attempt 2 [LLM]: HOIST -> ----Y (H:5, L:5)
+  Attempt 3 [LLM]: TRACE -> YYY-Y (H:5, L:3)
+  Attempt 4 [LLM]: EATER -> -GGGY (H:2, L:2)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 5 [LLM]: RATED -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 34/100: Target = ALERT
+  Attempt 1 [CSS_TRUE]: CLOSE -> -G--Y (H:4, L:4)
+  Attempt 2 [LLM]: ELENA -> -GG-Y (H:3, L:3)
+  Attempt 3 [LLM]: BLEAK -> -GGY- (H:3, L:3)
+  Attempt 4 [LLM]: ALERT -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 35/100: Target = CAGES
+  Attempt 1 [CSS_TRUE]: ANSEL -> Y-YG- (H:4, L:4)
+  Attempt 2 [LLM]: RAVES -> -G-GG (H:2, L:2)
+  Attempt 3 [LLM]: CAKES -> GG-GG (H:1, L:1)
+  Attempt 4 [LLM]: CAPES -> GG-GG (H:1, L:1)
+  Attempt 5 [LLM]: CAFES -> GG-GG (H:1, L:1)
+  Attempt 6 [LLM]: CAGES -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 36/100: Target = TEDDY
+  Attempt 1 [CSS_TRUE]: LANES -> ---Y- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> ----Y (H:5, L:5)
+  Attempt 3 [LLM]: MERCY -> -G--G (H:3, L:3)
+  Attempt 4 [LLM]: TEDDY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 37/100: Target = COLES
+  Attempt 1 [CSS_TRUE]: HALES -> --GGG (H:2, L:2)
+  Attempt 2 [LLM]: FILES -> --GGG (H:2, L:2)
+  Attempt 3 [LLM]: MYLES -> --GGG (H:2, L:2)
+  Attempt 4 [LLM]: SOLES -> -GGGG (H:1, L:1)
+  Attempt 5 [LLM]: POLES -> -GGGG (H:1, L:1)
+  Attempt 6 [LLM]: ROLES -> -GGGG (H:1, L:1)
+  Failed to find word
+
+Game 38/100: Target = HWANG
+  Attempt 1 [CSS_TRUE]: ANISE -> YY--- (H:5, L:5)
+  Attempt 2 [LLM]: PRIDE -> ----- (H:5, L:5)
+  Attempt 3 [LLM]: STICK -> ----- (H:5, L:5)
+  Attempt 4 [LLM]: HANZO -> GYY-- (H:4, L:3)
+  Attempt 5 [LLM]: HUMAN -> G--YY (H:4, L:3)
+  Attempt 6 [LLM]: HWANG -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 39/100: Target = WRATH
+  Attempt 1 [CSS_TRUE]: OAKES -> -Y--- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> Y---- (H:5, L:5)
+  Attempt 3 [LLM]: CHAIR -> -YG-Y (H:4, L:4)
+  Attempt 4 [LLM]: WRATH -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 40/100: Target = MACHO
+  Attempt 1 [CSS_TRUE]: EARNS -> -G--- (H:4, L:4)
+  Attempt 2 [LLM]: HOUSE -> YY--- (H:5, L:5)
+  Attempt 3 [LLM]: MACHO -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 41/100: Target = LOPEZ
+  Attempt 1 [CSS_TRUE]: CESAR -> -Y--- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> -G--Y (H:4, L:4)
+  Attempt 3 [LLM]: MODEM -> -G-G- (H:3, L:3)
+  Attempt 4 [LLM]: NOBEL -> -G-GY (H:3, L:3)
+  Attempt 5 [LLM]: LOPEZ -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 42/100: Target = GOODY
+  Attempt 1 [CSS_TRUE]: MARES -> ----- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> -G--- (H:4, L:4)
+  Attempt 3 [LLM]: GOLLY -> GG--G (H:2, L:2)
+  Attempt 4 [LLM]: GOODY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 43/100: Target = BROTH
+  Attempt 1 [CSS_TRUE]: HARES -> Y-Y-- (H:5, L:5)
+  Attempt 2 [LLM]: CHORD -> -YGY- (H:4, L:4)
+  Attempt 3 [LLM]: BROTH -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 44/100: Target = VERDE
+  Attempt 1 [CSS_TRUE]: LASER -> ---YY (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> ----G (H:4, L:4)
+  Attempt 3 [LLM]: PRICE -> -Y--G (H:4, L:4)
+  Attempt 4 [LLM]: MERGE -> -GG-G (H:2, L:2)
+  Attempt 5 [LLM]: BERNE -> -GG-G (H:2, L:2)
+  Attempt 6 [LLM]: VERVE -> GGG-G (H:1, L:1)
+  Failed to find word
+
+Game 45/100: Target = TAMED
+  Attempt 1 [CSS_TRUE]: STADE -> -YYYY (H:5, L:3)
+  Attempt 2 [LLM]: HATED -> -GYGG (H:2, L:2)
+  Attempt 3 [LLM]: TAMED -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 46/100: Target = LEAFS
+  Attempt 1 [CSS_TRUE]: NILES -> --YYG (H:4, L:4)
+  Attempt 2 [LLM]: MEALS -> -GGYG (H:2, L:2)
+  Attempt 3 [LLM]: LEADS -> GGG-G (H:1, L:1)
+  Attempt 4 [LLM]: LEAPS -> GGG-G (H:1, L:1)
+  Attempt 5 [LLM]: LEAFS -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 47/100: Target = YACHT
+  Attempt 1 [CSS_TRUE]: TALES -> YG--- (H:4, L:4)
+  Attempt 2 [LLM]: PATIO -> -GY-- (H:4, L:4)
+  Attempt 3 [LLM]: MARTA -> -G-Y- (H:4, L:4)
+  Attempt 4 [LLM]: HAUNT -> YG--G (H:3, L:3)
+  Attempt 5 [LLM]: CHART -> YYY-G (H:4, L:4)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 6 [LLM]: YACHT -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 48/100: Target = MESSY
+  Attempt 1 [CSS_TRUE]: RISEN -> --GY- (H:4, L:4)
+  Attempt 2 [LLM]: MASSY -> G-GGG (H:1, L:1)
+  Attempt 3 [LLM]: MESSY -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 49/100: Target = RYDER
+  Attempt 1 [CSS_TRUE]: MARIS -> --Y-- (H:5, L:5)
+  Attempt 2 [LLM]: BLISS -> ----- (H:5, L:5)
+  Attempt 3 [LLM]: HOUSE -> ----Y (H:5, L:5)
+  Attempt 4 [LLM]: GREEN -> -Y-G- (H:4, L:4)
+  Attempt 5 [LLM]: DWYER -> Y-YGG (H:3, L:3)
+  Attempt 6 [LLM]: RYDER -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 50/100: Target = MOTIF
+  Attempt 1 [CSS_TRUE]: ARIES -> --Y-- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> -G--- (H:4, L:4)
+  Attempt 3 [LLM]: LOGIN -> -G-G- (H:3, L:3)
+  Attempt 4 [LLM]: COMIC -> -GYG- (H:3, L:3)
+  Attempt 5 [LLM]: MOTIF -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 51/100: Target = RAVEN
+  Attempt 1 [CSS_TRUE]: GEARS -> -YYY- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> ----Y (H:5, L:5)
+  Attempt 3 [LLM]: BREAK -> -YYY- (H:5, L:5)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 4 [LLM]: TAPER -> -G-GY (H:3, L:3)
+  Attempt 5 [LLM]: CARED -> -GYG- (H:3, L:3)
+  Attempt 6 [LLM]: RAVEL -> GGGG- (H:1, L:1)
+  Failed to find word
+
+Game 52/100: Target = REICH
+  Attempt 1 [CSS_TRUE]: LASER -> ---YY (H:5, L:5)
+  Attempt 2 [LLM]: HASTE -> Y---Y (H:5, L:5)
+  Attempt 3 [LLM]: MERCH -> -GYGG (H:2, L:2)
+  Attempt 4 [LLM]: REICH -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 53/100: Target = ICONS
+  Attempt 1 [CSS_TRUE]: ROSIE -> -YYY- (H:5, L:5)
+  Attempt 2 [LLM]: SCION -> YGYYY (H:4, L:3)
+  Attempt 3 [LLM]: ICONS -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 54/100: Target = SILKY
+  Attempt 1 [CSS_TRUE]: ARNIE -> ---Y- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> ---Y- (H:5, L:5)
+  Attempt 3 [LLM]: DICKS -> -G-GY (H:3, L:3)
+  Attempt 4 [LLM]: DILKY -> -GGGG (H:1, L:1)
+  Attempt 5 [LLM]: SILKY -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 55/100: Target = CARVE
+  Attempt 1 [CSS_TRUE]: SALON -> -G--- (H:4, L:4)
+  Attempt 2 [LLM]: STORK -> ---Y- (H:5, L:5)
+  Attempt 3 [LLM]: RADAR -> YG--- (H:4, L:4)
+  Attempt 4 [LLM]: CARVE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 56/100: Target = LAGER
+  Attempt 1 [CSS_TRUE]: SIREN -> --YG- (H:4, L:4)
+  Attempt 2 [LLM]: HOUSE -> ----Y (H:5, L:5)
+  Attempt 3 [LLM]: FREER -> ---GG (H:3, L:3)
+  Attempt 4 [LLM]: WAVER -> -G-GG (H:2, L:2)
+  Attempt 5 [LLM]: MAYER -> -G-GG (H:2, L:2)
+  Attempt 6 [LLM]: CATER -> -G-GG (H:2, L:2)
+  Failed to find word
+
+Game 57/100: Target = JERKS
+  Attempt 1 [CSS_TRUE]: TALES -> ---YG (H:4, L:4)
+  Attempt 2 [LLM]: STAMP -> Y---- (H:5, L:5)
+  Attempt 3 [LLM]: STEPS -> --Y-G (H:4, L:4)
+  Attempt 4 [LLM]: GENUS -> -G--G (H:3, L:3)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 5 [LLM]: HERBS -> -GG-G (H:2, L:2)
+  Attempt 6 [LLM]: ZEROS -> -GG-G (H:2, L:2)
+  Failed to find word
+
+Game 58/100: Target = LOTUS
+  Attempt 1 [CSS_TRUE]: TOKEN -> YG--- (H:4, L:4)
+  Attempt 2 [LLM]: PORTS -> -G-YG (H:3, L:3)
+  Attempt 3 [LLM]: MOTHS -> -GG-G (H:2, L:2)
+  Attempt 4 [LLM]: LOTUS -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 59/100: Target = LACEY
+  Attempt 1 [CSS_TRUE]: RAINS -> -G--- (H:4, L:4)
+  Attempt 2 [LLM]: HOUSE -> ----Y (H:5, L:5)
+  Attempt 3 [LLM]: FACED -> -GGG- (H:2, L:2)
+  Attempt 4 [LLM]: SPACE -> --YYY (H:5, L:3)
+  Attempt 5 [LLM]: LACES -> GGGG- (H:1, L:1)
+  Attempt 6 [LLM]: LACER -> GGGG- (H:1, L:1)
+  Failed to find word
+
+Game 60/100: Target = TUDOR
+  Attempt 1 [CSS_TRUE]: NEARS -> ---Y- (H:5, L:5)
+  Attempt 2 [LLM]: STARE -> -Y-Y- (H:5, L:5)
+  Attempt 3 [LLM]: TROTS -> GYY-- (H:4, L:4)
+  Attempt 4 [LLM]: TORCH -> GYY-- (H:4, L:4)
+  Attempt 5 [LLM]: TUDOR -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 61/100: Target = QUOTA
+  Attempt 1 [CSS_TRUE]: RAILS -> -Y--- (H:5, L:5)
+  Attempt 2 [LLM]: STAIN -> -YY-- (H:5, L:5)
+  Attempt 3 [LLM]: CHEAT -> ---YY (H:5, L:5)
+  Attempt 4 [LLM]: OUTTA -> YG-GG (H:2, L:2)
+  Attempt 5 [LLM]: QUOTA -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 62/100: Target = MOURN
+  Attempt 1 [CSS_TRUE]: HAIRS -> ---G- (H:4, L:4)
+  Attempt 2 [LLM]: RETRO -> ---GY (H:4, L:4)
+  Attempt 3 [LLM]: LOWRY -> -G-G- (H:3, L:3)
+  Attempt 4 [LLM]: MOURN -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 63/100: Target = PROMO
+  Attempt 1 [CSS_TRUE]: ACRES -> --Y-- (H:5, L:5)
+  Attempt 2 [LLM]: SHORE -> --GY- (H:4, L:4)
+  Attempt 3 [LLM]: GROUP -> -GG-Y (H:3, L:3)
+  Attempt 4 [LLM]: PROTO -> GGG-G (H:1, L:1)
+  Attempt 5 [LLM]: PROVO -> GGG-G (H:1, L:1)
+  Attempt 6 [LLM]: PROMO -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 64/100: Target = CASTE
+  Attempt 1 [CSS_TRUE]: ARIES -> Y--YY (H:5, L:4)
+  Attempt 2 [LLM]: PHASE -> --YYG (H:4, L:3)
+  Attempt 3 [LLM]: SAUCE -> YG-YG (H:3, L:3)
+  Attempt 4 [LLM]: CASES -> GGGY- (H:2, L:2)
+  Attempt 5 [LLM]: CASEY -> GGGY- (H:2, L:2)
+  Attempt 6 [LLM]: CASET -> GGGYY (H:2, L:2)
+  Failed to find word
+
+Game 65/100: Target = CAPRI
+  Attempt 1 [CSS_TRUE]: RINSE -> YY--- (H:5, L:5)
+  Attempt 2 [LLM]: HAIRY -> -GYG- (H:3, L:3)
+  Attempt 3 [LLM]: MAORI -> -G-GG (H:2, L:2)
+  Attempt 4 [LLM]: CAPIR -> GGGYY (H:2, L:2)
+  Attempt 5 [LLM]: CAPRI -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 66/100: Target = ALIAS
+  Attempt 1 [CSS_TRUE]: GEARS -> --Y-G (H:4, L:4)
+  Attempt 2 [LLM]: SHAPE -> Y-Y-- (H:5, L:5)
+  Attempt 3 [LLM]: CASTS -> -Y--G (H:4, L:4)
+  Attempt 4 [LLM]: ALIAS -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 67/100: Target = PADDY
+  Attempt 1 [CSS_TRUE]: AIRES -> Y---- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> ----- (H:5, L:5)
+  Attempt 3 [LLM]: STICK -> ----- (H:5, L:5)
+  Attempt 4 [LLM]: PAGAN -> GG--- (H:3, L:3)
+  Attempt 5 [LLM]: PADDY -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 68/100: Target = BLOBS
+  Attempt 1 [CSS_TRUE]: REINA -> ----- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> -Y-Y- (H:5, L:4)
+  Attempt 3 [LLM]: SCOOT -> Y-G-- (H:4, L:4)
+  Attempt 4 [LLM]: GLOWS -> -GG-G (H:2, L:2)
+  Attempt 5 [LLM]: FLOPS -> -GG-G (H:2, L:2)
+  Attempt 6 [LLM]: BLOBS -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 69/100: Target = DILLY
+  Attempt 1 [CSS_TRUE]: AYERS -> -Y--- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> ----- (H:5, L:5)
+  Attempt 3 [LLM]: DILLY -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 70/100: Target = GUTSY
+  Attempt 1 [CSS_TRUE]: LINES -> ----Y (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> --YG- (H:4, L:4)
+  Attempt 3 [LLM]: BURST -> -G-GY (H:3, L:3)
+  Attempt 4 [LLM]: GUSTY -> GGYYG (H:2, L:2)
+  Attempt 5 [LLM]: GUSTS -> GGYY- (H:3, L:2)
+  Attempt 6 [LLM]: GUTSY -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 71/100: Target = TABOR
+  Attempt 1 [CSS_TRUE]: HIRES -> --Y-- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> -Y--- (H:5, L:5)
+  Attempt 3 [LLM]: CROOK -> -Y-G- (H:4, L:4)
+  Attempt 4 [LLM]: RATON -> YGYG- (H:3, L:3)
+  Attempt 5 [LLM]: TABOR -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 72/100: Target = INLAY
+  Attempt 1 [CSS_TRUE]: NEARS -> Y-Y-- (H:5, L:4)
+  Attempt 2 [LLM]: HOUSE -> ----- (H:5, L:5)
+  Attempt 3 [LLM]: PANDA -> -YY-- (H:5, L:4)
+  Attempt 4 [LLM]: ALVIN -> YY-YY (H:5, L:5)
+  Attempt 5 [LLM]: INLAY -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 73/100: Target = AHHHH
+  Attempt 1 [CSS_TRUE]: MARIS -> -Y--- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> Y---- (H:5, L:5)
+  Attempt 3 [LLM]: THANG -> -GY-- (H:4, L:4)
+  Attempt 4 [LLM]: CHAIR -> -GY-- (H:4, L:4)
+  Attempt 5 [LLM]: CHAMP -> -GY-- (H:4, L:4)
+  Attempt 6 [LLM]: GUESS -> ----- (H:5, L:5)
+  Failed to find word
+
+Game 74/100: Target = ROUEN
+  Attempt 1 [CSS_TRUE]: LATER -> ---GY (H:4, L:4)
+  Attempt 2 [LLM]: FIRES -> --YG- (H:4, L:4)
+  Attempt 3 [LLM]: CREED -> -Y-G- (H:4, L:4)
+  Attempt 4 [LLM]: ROMEO -> GG-G- (H:2, L:2)
+  Attempt 5 [LLM]: ROGEN -> GG-GG (H:1, L:1)
+  Attempt 6 [LLM]: ROUGE -> GGG-Y (H:2, L:2)
+  Failed to find word
+
+Game 75/100: Target = BUENA
+  Attempt 1 [CSS_TRUE]: RAINS -> -Y-G- (H:4, L:4)
+  Attempt 2 [LLM]: THANE -> --YGY (H:4, L:4)
+  Attempt 3 [LLM]: BUENA -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 76/100: Target = MENON
+  Attempt 1 [CSS_TRUE]: PANES -> --GY- (H:4, L:4)
+  Attempt 2 [LLM]: XENON -> -GGGG (H:1, L:1)
+  Attempt 3 [LLM]: MENON -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 77/100: Target = TRASK
+  Attempt 1 [CSS_TRUE]: ROSIE -> Y-Y-- (H:5, L:4)
+  Attempt 2 [LLM]: HOUSE -> ---G- (H:4, L:4)
+  Attempt 3 [LLM]: GRASS -> -GGG- (H:2, L:2)
+  Attempt 4 [LLM]: TRASK -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 78/100: Target = CASIO
+  Attempt 1 [CSS_TRUE]: ARIEL -> Y-Y-- (H:5, L:4)
+  Attempt 2 [LLM]: HOUSE -> -Y-Y- (H:5, L:5)
+  Attempt 3 [LLM]: CASIO -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 79/100: Target = VOILA
+  Attempt 1 [CSS_TRUE]: LIENS -> YY--- (H:5, L:5)
+  Attempt 2 [LLM]: GUILT -> --GG- (H:3, L:3)
+  Attempt 3 [LLM]: CHILL -> --GG- (H:3, L:3)
+  Attempt 4 [LLM]: VOILA -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 80/100: Target = AURAL
+  Attempt 1 [CSS_TRUE]: LINES -> Y---- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> --Y-- (H:5, L:5)
+  Attempt 3 [LLM]: CALUM -> -YYY- (H:5, L:5)
+  Attempt 4 [LLM]: ULTRA -> YY-YY (H:5, L:4)
+  Attempt 5 [LLM]: AURAL -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 81/100: Target = LEGER
+  Attempt 1 [CSS_TRUE]: CRIES -> -Y-G- (H:4, L:4)
+  Attempt 2 [LLM]: HOUSE -> ----Y (H:5, L:5)
+  Attempt 3 [LLM]: MEYER -> -G-GG (H:2, L:2)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 4 [LLM]: FEWER -> -G-GG (H:2, L:2)
+  Attempt 5 [LLM]: LEPER -> GG-GG (H:1, L:1)
+  Attempt 6 [LLM]: LEVER -> GG-GG (H:1, L:1)
+  Failed to find word
+
+Game 82/100: Target = DALLY
+  Attempt 1 [CSS_TRUE]: ROSIE -> ----- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> ----- (H:5, L:5)
+  Attempt 3 [LLM]: STAMP -> --Y-- (H:5, L:5)
+  Attempt 4 [LLM]: NADAL -> -GY-Y (H:4, L:4)
+  Attempt 5 [LLM]: DALLY -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 83/100: Target = INIGO
+  Attempt 1 [CSS_TRUE]: OATES -> Y---- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> -Y--- (H:5, L:5)
+  Attempt 3 [LLM]: STORM -> --Y-- (H:5, L:5)
+  Attempt 4 [LLM]: LINGO -> -YYGG (H:3, L:2)
+  Attempt 5 [LLM]: LIGOS -> -YYY- (H:5, L:3)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 6 [LLM]: INIGO -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 84/100: Target = KRILL
+  Attempt 1 [CSS_TRUE]: OLSEN -> -Y--- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> ----- (H:5, L:5)
+  Attempt 3 [LLM]: STORM -> ---Y- (H:5, L:5)
+  Attempt 4 [LLM]: RIVAL -> YY--G (H:4, L:3)
+  Attempt 5 [LLM]: KRILL -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 85/100: Target = SNIDE
+  Attempt 1 [CSS_TRUE]: LANES -> --YYY (H:5, L:5)
+  Attempt 2 [LLM]: STENT -> G-YY- (H:4, L:4)
+  Attempt 3 [LLM]: SNIDE -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 86/100: Target = LEWES
+  Attempt 1 [CSS_TRUE]: SLADE -> YY--Y (H:5, L:4)
+  Attempt 2 [LLM]: LEXUS -> GG--G (H:2, L:2)
+  Attempt 3 [LLM]: LEVIS -> GG--G (H:2, L:2)
+  Attempt 4 [LLM]: LEGOS -> GG--G (H:2, L:2)
+  Attempt 5 [LLM]: LEWES -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 87/100: Target = TAMER
+  Attempt 1 [CSS_TRUE]: SNAKE -> --Y-Y (H:5, L:4)
+  Attempt 2 [LLM]: HOUSE -> ----Y (H:5, L:5)
+  Attempt 3 [LLM]: STAGE -> -YY-Y (H:5, L:3)
+  Attempt 4 [LLM]: ALTER -> Y-YGG (H:3, L:3)
+  Attempt 5 [LLM]: TAMER -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 88/100: Target = COTTA
+  Attempt 1 [CSS_TRUE]: LORNA -> -G--G (H:3, L:3)
+  Attempt 2 [LLM]: POOGA -> -G--G (H:3, L:3)
+  Attempt 3 [LLM]: COSTA -> GG-GG (H:1, L:1)
+  Attempt 4 [LLM]: COTTA -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 89/100: Target = CORBY
+  Attempt 1 [CSS_TRUE]: LOANS -> -G--- (H:4, L:4)
+  Attempt 2 [LLM]: STAMP -> ----- (H:5, L:5)
+  Attempt 3 [LLM]: HOUSE -> -G--- (H:4, L:4)
+  Attempt 4 [LLM]: ROCKY -> YGY-G (H:3, L:3)
+  Attempt 5 [LLM]: CORBY -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 90/100: Target = POLIS
+  Attempt 1 [CSS_TRUE]: ARIEL -> --Y-Y (H:5, L:5)
+  Attempt 2 [LLM]: FLUID -> -Y-G- (H:4, L:4)
+  Attempt 3 [LLM]: LOGIN -> YG-G- (H:3, L:3)
+  Attempt 4 [LLM]: POLIS -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 91/100: Target = ROXAS
+  Attempt 1 [CSS_TRUE]: TASER -> -YY-Y (H:5, L:5)
+  Attempt 2 [LLM]: SPARK -> Y-YY- (H:5, L:5)
+  Attempt 3 [LLM]: ARGOS -> YY-YG (H:4, L:4)
+  Attempt 4 [LLM]: ROXAS -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 92/100: Target = RANCE
+  Attempt 1 [CSS_TRUE]: RAIDS -> GG--- (H:3, L:3)
+  Attempt 2 [LLM]: RANGE -> GGG-G (H:1, L:1)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 3 [LLM]: RANCE -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 93/100: Target = CARON
+  Attempt 1 [CSS_TRUE]: ONSET -> YY--- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> -Y--- (H:5, L:5)
+  Attempt 3 [LLM]: PRONG -> -YYY- (H:5, L:3)
+  Attempt 4 [LLM]: BYRON -> --GGG (H:2, L:2)
+  Attempt 5 [LLM]: AKRON -> Y-GGG (H:2, L:2)
+  Attempt 6 [LLM]: CORON -> G-GGG (H:1, L:1)
+  Failed to find word
+
+Game 94/100: Target = SURYA
+  Attempt 1 [CSS_TRUE]: ARSON -> YYY-- (H:5, L:5)
+  Attempt 2 [LLM]: TASTE -> -YY-- (H:5, L:5)
+  Attempt 3 [LLM]: SHARK -> G-YY- (H:4, L:4)
+  Attempt 4 [LLM]: SURYA -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 95/100: Target = AGGIE
+  Attempt 1 [CSS_TRUE]: CORSA -> ----Y (H:5, L:5)
+  Attempt 2 [LLM]: BROOM -> ----- (H:5, L:5)
+  Attempt 3 [LLM]: STARE -> --Y-G (H:4, L:4)
+  Attempt 4 [LLM]: GAUGE -> YY-YG (H:4, L:3)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 5 [LLM]: AGGIE -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 96/100: Target = CAUSA
+  Attempt 1 [CSS_TRUE]: LORNA -> ----G (H:4, L:4)
+  Attempt 2 [LLM]: HOUSE -> --GG- (H:3, L:3)
+  Attempt 3 [LLM]: CAUSE -> GGGG- (H:1, L:1)
+  Attempt 4 [LLM]: CAUSA -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 97/100: Target = BAMBA
+  Attempt 1 [CSS_TRUE]: STRAY -> ---Y- (H:5, L:5)
+  Attempt 2 [LLM]: HOUSE -> ----- (H:5, L:5)
+  Attempt 3 [LLM]: STAGE -> --Y-- (H:5, L:5)
+  Attempt 4 [LLM]: DALIA -> -G--G (H:3, L:3)
+  Attempt 5 [LLM]: MAMBA -> -GGGG (H:1, L:1)
+  Attempt 6 [LLM]: BAMBA -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 98/100: Target = MAYNE
+  Attempt 1 [CSS_TRUE]: CARES -> -G-Y- (H:4, L:4)
+  Attempt 2 [LLM]: VALUE -> -G--G (H:3, L:3)
+  Attempt 3 [LLM]: MATTE -> GG--G (H:2, L:2)
+  Attempt 4 [LLM]: MAINE -> GG-GG (H:1, L:1)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 5 [LLM]: MAYNE -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 99/100: Target = BOGGS
+  Attempt 1 [CSS_TRUE]: LIARS -> ----G (H:4, L:4)
+  Attempt 2 [LLM]: SPACE -> Y---- (H:5, L:5)
+  Attempt 3 [LLM]: HOOKS -> -G--G (H:3, L:3)
+  Attempt 4 [LLM]: BONDS -> GG--G (H:2, L:2)
+  Attempt 5 [LLM]: BOGUS -> GGG-G (H:1, L:1)
+  Attempt 6 [LLM]: BOGGS -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 100/100: Target = FINNS
+  Attempt 1 [CSS_TRUE]: LIARS -> -G--G (H:3, L:3)
+  Attempt 2 [LLM]: HIKES -> -G--G (H:3, L:3)
+  Attempt 3 [LLM]: SINGS -> -GG-G (H:2, L:2)
+  Attempt 4 [LLM]: BINDS -> -GG-G (H:2, L:2)
+  Attempt 5 [LLM]: MINTS -> -GG-G (H:2, L:2)
+  Attempt 6 [LLM]: PINUS -> -GG-G (H:2, L:2)
+  Failed to find word
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 100
+Wins: 88
+Win rate: 88.0%
+Average attempts (when won): 4.49
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/workshop/results_true_css/group_a/C_to_L_true/raw_data/C_to_L_true_llama-3.1-8b-instruct_20260204_095500.csv
+  /Users/kevin/Desktop/projects/wordle/workshop/results_true_css/group_a/C_to_L_true/raw_data/summary_C_to_L_true_llama-3.1-8b-instruct_20260204_095500.json
+SUCCESS: A6_true llama-3.1-8b-instruct
+[5/20] A6_true | granite-3.3-8b-instruct
+================================================================================
+FLEXIBLE HYBRID EVALUATION: C_to_L_true
+================================================================================
+Model: granite-3.3-8b-instruct
+Prompt Type: zero-shot
+Schedule: {"1": "css_true", "2": "llm", "3": "llm", "4": "llm", "5": "llm", "6": "llm"}
+Games: 100
+================================================================================
+
+Game 1/100: Target = PHOTO
+  Attempt 1 [CSS_TRUE]: LATER -> --Y-- (H:5, L:5)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 2 [LLM]: TUNIS -> Y---- (H:5, L:5)
+  Attempt 3 [LLM]: FOOTY -> -YGG- (H:3, L:3)
+  Attempt 4 [LLM]: PHOTO -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 2/100: Target = PARTY
+  Attempt 1 [CSS_TRUE]: LASER -> -G--Y (H:4, L:4)
+  Attempt 2 [LLM]: GRIND -> -Y--- (H:5, L:5)
+  Attempt 3 [LLM]: CARRY -> -GG-G (H:2, L:2)
+  Attempt 4 [LLM]: MARTY -> -GGGG (H:1, L:1)
+  Attempt 5 [LLM]: PARTY -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 3/100: Target = TRICK
+  Attempt 1 [CSS_TRUE]: SOLAR -> ----Y (H:5, L:5)
+  Attempt 2 [LLM]: SUNNY -> ----- (H:5, L:5)
+  Attempt 3 [LLM]: GLOWS -> ----- (H:5, L:5)
+  Attempt 4 [LLM]: CREPE -> YG--- (H:4, L:4)
+  Attempt 5 [LLM]: FRICK -> -GGGG (H:1, L:1)
+  Attempt 6 [LLM]: BRICK -> -GGGG (H:1, L:1)
+  Failed to find word
+
+Game 4/100: Target = DIRTY
+  Attempt 1 [CSS_TRUE]: PANES -> ----- (H:5, L:5)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 2 [LLM]: RICOH -> YG--- (H:4, L:4)
+  Attempt 3 [LLM]: GIRTY -> -GGGG (H:1, L:1)
+  Attempt 4 [LLM]: DIRTY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 5/100: Target = USUAL
+  Attempt 1 [CSS_TRUE]: EARNS -> -Y--Y (H:5, L:5)
+  Attempt 2 [LLM]: SLACK -> YYY-- (H:5, L:4)
+  Attempt 3 [LLM]: TULSA -> -YYYY (H:5, L:4)
+  Attempt 4 [LLM]: USUAL -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 6/100: Target = TRULY
+  Attempt 1 [CSS_TRUE]: MAINS -> ----- (H:5, L:5)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 2 [LLM]: YOURE -> Y-GY- (H:4, L:4)
+  Attempt 3 [LLM]: TRUDY -> GGG-G (H:1, L:1)
+  Attempt 4 [LLM]: TRULY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 7/100: Target = SPENT
+  Attempt 1 [CSS_TRUE]: MAIER -> ---Y- (H:5, L:5)
+  Attempt 2 [LLM]: ZESTS -> -YYY- (H:5, L:4)
+  Attempt 3 [LLM]: STONE -> GY-GY (H:3, L:3)
+  Attempt 4 [LLM]: SCENT -> G-GGG (H:1, L:1)
+  Attempt 5 [LLM]: RENTS -> -YYYY (H:5, L:3)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 6 [LLM]: SPENT -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 8/100: Target = PAUSE
+  Attempt 1 [CSS_TRUE]: ASTER -> YY-Y- (H:5, L:4)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 2 [LLM]: LEAPS -> -YYYY (H:5, L:4)
+  Attempt 3 [LLM]: SPEAK -> YYYY- (H:5, L:5)
+  Attempt 4 [LLM]: PAUSE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 9/100: Target = CRAZY
+  Attempt 1 [CSS_TRUE]: SNARL -> --GY- (H:4, L:4)
+  Attempt 2 [LLM]: GRATE -> -GG-- (H:3, L:3)
+  Attempt 3 [LLM]: CRACK -> GGG-- (H:2, L:2)
+  Attempt 4 [LLM]: CRABB -> GGG-- (H:2, L:2)
+  Attempt 5 [LLM]: CRAMP -> GGG-- (H:2, L:2)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 6 [LLM]: CRAZY -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 10/100: Target = BASES
+  Attempt 1 [CSS_TRUE]: ARIEL -> Y--G- (H:4, L:4)
+  Attempt 2 [LLM]: ZEBRA -> -YY-Y (H:5, L:5)
+  Attempt 3 [LLM]: BAKES -> GG-GG (H:1, L:1)
+  Attempt 4 [LLM]: BATES -> GG-GG (H:1, L:1)
+  Attempt 5 [LLM]: BASES -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 11/100: Target = YOUNG
+  Attempt 1 [CSS_TRUE]: RAILS -> ----- (H:5, L:5)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 2 [LLM]: TOKEN -> -G--Y (H:4, L:4)
+  Attempt 3 [LLM]: HOUND -> -GGG- (H:2, L:2)
+  Attempt 4 [LLM]: YOUNG -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 12/100: Target = MEANS
+  Attempt 1 [CSS_TRUE]: RAISE -> -Y-YY (H:5, L:4)
+  Attempt 2 [LLM]: SEATS -> -GG-G (H:2, L:2)
+  Attempt 3 [LLM]: BEANS -> -GGGG (H:1, L:1)
+  Attempt 4 [LLM]: LEANS -> -GGGG (H:1, L:1)
+  Attempt 5 [LLM]: DEANS -> -GGGG (H:1, L:1)
+  Attempt 6 [LLM]: MEANS -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 13/100: Target = TRUTH
+  Attempt 1 [CSS_TRUE]: TALES -> G---- (H:4, L:4)
+  Attempt 2 [LLM]: THICK -> GY--- (H:4, L:4)
+  Attempt 3 [LLM]: TOUGH -> G-G-G (H:2, L:2)
+  Attempt 4 [LLM]: TRUTH -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 14/100: Target = FIRED
+  Attempt 1 [CSS_TRUE]: SOREN -> --GG- (H:3, L:3)
+  Attempt 2 [LLM]: CURED -> --GGG (H:2, L:2)
+  Attempt 3 [LLM]: WIRED -> -GGGG (H:1, L:1)
+  Attempt 4 [LLM]: AIRED -> -GGGG (H:1, L:1)
+  Attempt 5 [LLM]: MIRED -> -GGGG (H:1, L:1)
+  Attempt 6 [LLM]: HIRED -> -GGGG (H:1, L:1)
+  Failed to find word
+
+Game 15/100: Target = FOLKS
+  Attempt 1 [CSS_TRUE]: SHONE -> Y-Y-- (H:5, L:5)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 2 [LLM]: COLTS -> -GG-G (H:2, L:2)
+  Attempt 3 [LLM]: GOLDS -> -GG-G (H:2, L:2)
+  Attempt 4 [LLM]: ROLLS -> -GG-G (H:2, L:2)
+  Attempt 5 [LLM]: FOLKS -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 16/100: Target = CHILE
+  Attempt 1 [CSS_TRUE]: REALS -> -Y-G- (H:4, L:4)
+  Attempt 2 [LLM]: YIELD -> -YYG- (H:4, L:4)
+  Attempt 3 [LLM]: EXILE -> --GGG (H:2, L:2)
+  Attempt 4 [LLM]: WHILE -> -GGGG (H:1, L:1)
+  Attempt 5 [LLM]: CHILE -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 17/100: Target = BLACK
+  Attempt 1 [CSS_TRUE]: DANES -> -Y--- (H:5, L:5)
+  Attempt 2 [LLM]: GIVEN -> ----- (H:5, L:5)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 3 [LLM]: PLATA -> -GG-- (H:3, L:3)
+  Attempt 4 [LLM]: CLACK -> -GGGG (H:1, L:1)
+  Attempt 5 [LLM]: FLACK -> -GGGG (H:1, L:1)
+  Attempt 6 [LLM]: BALLS -> GYY-- (H:4, L:4)
+  Failed to find word
+
+Game 18/100: Target = GRANT
+  Attempt 1 [CSS_TRUE]: ACRES -> Y-Y-- (H:5, L:5)
+  Attempt 2 [LLM]: BREWS -> -G--- (H:4, L:4)
+  Attempt 3 [LLM]: DRAFT -> -GG-G (H:2, L:2)
+  Attempt 4 [LLM]: PRATT -> -GG-G (H:2, L:2)
+  Attempt 5 [LLM]: GRANT -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 19/100: Target = MEALS
+  Attempt 1 [CSS_TRUE]: SNARE -> Y-G-Y (H:4, L:4)
+  Attempt 2 [LLM]: BEAST -> -GGY- (H:3, L:3)
+  Attempt 3 [LLM]: PEAKS -> -GG-G (H:2, L:2)
+  Attempt 4 [LLM]: DEALS -> -GGGG (H:1, L:1)
+  Attempt 5 [LLM]: HEALS -> -GGGG (H:1, L:1)
+  Attempt 6 [LLM]: MEALS -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 20/100: Target = CREAM
+  Attempt 1 [CSS_TRUE]: ADLER -> Y--YY (H:5, L:5)
+  Attempt 2 [LLM]: ZIGGS -> ----- (H:5, L:5)
+  Attempt 3 [LLM]: TARTE -> -YY-Y (H:5, L:5)
+  Attempt 4 [LLM]: CREAM -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 21/100: Target = AWAKE
+  Attempt 1 [CSS_TRUE]: DIANE -> --G-G (H:3, L:3)
+  Attempt 2 [LLM]: GLARE -> --G-G (H:3, L:3)
+  Attempt 3 [LLM]: CHOSE -> ----G (H:4, L:4)
+  Attempt 4 [LLM]: ABATE -> G-G-G (H:2, L:2)
+  Attempt 5 [LLM]: AWAKE -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 22/100: Target = OCCUR
+  Attempt 1 [CSS_TRUE]: MORES -> -YY-- (H:5, L:5)
+  Attempt 2 [LLM]: COULD -> YYY-- (H:5, L:4)
+  Attempt 3 [LLM]: OCCUR -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 23/100: Target = YEARS
+  Attempt 1 [CSS_TRUE]: OLSEN -> --YY- (H:5, L:5)
+  Attempt 2 [LLM]: HARSH -> -YYY- (H:5, L:3)
+  Attempt 3 [LLM]: SCARE -> Y-GGY (H:3, L:3)
+  Attempt 4 [LLM]: PEARS -> -GGGG (H:1, L:1)
+  Attempt 5 [LLM]: BEARS -> -GGGG (H:1, L:1)
+  Attempt 6 [LLM]: FEARS -> -GGGG (H:1, L:1)
+  Failed to find word
+
+Game 24/100: Target = GRADE
+  Attempt 1 [CSS_TRUE]: LITER -> ---YY (H:5, L:5)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 2 [LLM]: SCORE -> ---YG (H:4, L:4)
+  Attempt 3 [LLM]: GRAVE -> GGG-G (H:1, L:1)
+  Attempt 4 [LLM]: GRASP -> GGG-- (H:2, L:2)
+  Attempt 5 [LLM]: GRAZE -> GGG-G (H:1, L:1)
+  Attempt 6 [LLM]: GRADE -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 25/100: Target = CHILL
+  Attempt 1 [CSS_TRUE]: RACES -> --Y-- (H:5, L:5)
+  Attempt 2 [LLM]: GRIND -> --G-- (H:4, L:4)
+  Attempt 3 [LLM]: THICC -> -GGY- (H:3, L:3)
+  Attempt 4 [LLM]: CHINE -> GGG-- (H:2, L:2)
+  Attempt 5 [LLM]: CHINN -> GGG-- (H:2, L:2)
+  Attempt 6 [LLM]: CHIME -> GGG-- (H:2, L:2)
+  Failed to find word
+
+Game 26/100: Target = FLOOD
+  Attempt 1 [CSS_TRUE]: EARNS -> ----- (H:5, L:5)
+  Attempt 2 [LLM]: GUESS -> ----- (H:5, L:5)
+  Attempt 3 [LLM]: ZINGY -> ----- (H:5, L:5)
+  Attempt 4 [LLM]: MERRY -> ----- (H:5, L:5)
+  Attempt 5 [LLM]: CLOCK -> -GG-- (H:3, L:3)
+  Attempt 6 [LLM]: FLOOD -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 27/100: Target = APPLY
+  Attempt 1 [CSS_TRUE]: READS -> --Y-- (H:5, L:5)
+  Attempt 2 [LLM]: REACH -> --Y-- (H:5, L:5)
+  Attempt 3 [LLM]: BEING -> ----- (H:5, L:5)
+  Attempt 4 [LLM]: TACKS -> -Y--- (H:5, L:5)
+  Attempt 5 [LLM]: ALLOY -> GY--G (H:3, L:3)
+  Attempt 6 [LLM]: APPLY -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 28/100: Target = SMILE
+  Attempt 1 [CSS_TRUE]: ELISA -> YYGY- (H:4, L:4)
+  Attempt 2 [LLM]: SPILE -> G-GGG (H:1, L:1)
+  Attempt 3 [LLM]: SMILE -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 29/100: Target = KNOCK
+  Attempt 1 [CSS_TRUE]: EAMON -> ---YY (H:5, L:5)
+  Attempt 2 [LLM]: ZESTS -> ----- (H:5, L:5)
+  Attempt 3 [LLM]: HONKY -> -YYY- (H:5, L:4)
+  Attempt 4 [LLM]: KNOCK -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 30/100: Target = SLEEP
+  Attempt 1 [CSS_TRUE]: EARLS -> Y--YY (H:5, L:5)
+  Attempt 2 [LLM]: SLEET -> GGGG- (H:1, L:1)
+  Attempt 3 [LLM]: SLEEP -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 31/100: Target = BRICK
+  Attempt 1 [CSS_TRUE]: RAISE -> Y-G-- (H:4, L:4)
+  Attempt 2 [LLM]: DRILL -> -GG-- (H:3, L:3)
+  Attempt 3 [LLM]: PRIMO -> -GG-- (H:3, L:3)
+  Attempt 4 [LLM]: BRICK -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 32/100: Target = WROTE
+  Attempt 1 [CSS_TRUE]: HEARN -> -Y-Y- (H:5, L:5)
+  Attempt 2 [LLM]: SHEAF -> --Y-- (H:5, L:5)
+  Attempt 3 [LLM]: HARSH -> --Y-- (H:5, L:5)
+  Attempt 4 [LLM]: ZINGY -> ----- (H:5, L:5)
+  Attempt 5 [LLM]: RULES -> Y--Y- (H:5, L:4)
+  Attempt 6 [LLM]: TROVE -> YGG-G (H:2, L:2)
+  Failed to find word
+
+Game 33/100: Target = RATED
+  Attempt 1 [CSS_TRUE]: SWEAR -> --YYY (H:5, L:5)
+  Attempt 2 [LLM]: SURES -> --YG- (H:4, L:4)
+  Attempt 3 [LLM]: RAVEN -> GG-G- (H:2, L:2)
+  Attempt 4 [LLM]: RATED -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 34/100: Target = ALERT
+  Attempt 1 [CSS_TRUE]: SAITO -> -Y-Y- (H:5, L:5)
+  Attempt 2 [LLM]: CARTS -> -YYY- (H:5, L:4)
+  Attempt 3 [LLM]: HARTS -> -YYY- (H:5, L:4)
+  Attempt 4 [LLM]: TREAT -> -YGYG (H:3, L:3)
+  Attempt 5 [LLM]: AVERT -> G-GGG (H:1, L:1)
+  Attempt 6 [LLM]: ALERT -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 35/100: Target = CAGES
+  Attempt 1 [CSS_TRUE]: DARES -> -G-GG (H:2, L:2)
+  Attempt 2 [LLM]: FACES -> -GYGG (H:2, L:2)
+  Attempt 3 [LLM]: CAGES -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 36/100: Target = TEDDY
+  Attempt 1 [CSS_TRUE]: LAKES -> ---Y- (H:5, L:5)
+  Attempt 2 [LLM]: BRANS -> ----- (H:5, L:5)
+  Attempt 3 [LLM]: THIRD -> G---Y (H:4, L:4)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 4 [LLM]: TEDDY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 37/100: Target = COLES
+  Attempt 1 [CSS_TRUE]: SIREN -> Y--G- (H:4, L:4)
+  Attempt 2 [LLM]: ZEBRA -> -Y--- (H:5, L:5)
+  Attempt 3 [LLM]: CLUES -> GY-GG (H:2, L:2)
+  Attempt 4 [LLM]: CORES -> GG-GG (H:1, L:1)
+  Attempt 5 [LLM]: COLES -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 38/100: Target = HWANG
+  Attempt 1 [CSS_TRUE]: RAGES -> -YY-- (H:5, L:5)
+  Attempt 2 [LLM]: GLOAT -> Y--Y- (H:5, L:5)
+  Attempt 3 [LLM]: HANGA -> GYYY- (H:4, L:2)
+  Attempt 4 [LLM]: HWANG -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 39/100: Target = WRATH
+  Attempt 1 [CSS_TRUE]: RANTS -> YY-G- (H:4, L:3)
+  Attempt 2 [LLM]: GRATE -> -GGG- (H:2, L:2)
+  Attempt 3 [LLM]: PRATT -> -GGG- (H:2, L:2)
+  Attempt 4 [LLM]: WRATH -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 40/100: Target = MACHO
+  Attempt 1 [CSS_TRUE]: SLOAN -> --YY- (H:5, L:5)
+  Attempt 2 [LLM]: SORGE -> -Y--- (H:5, L:5)
+  Attempt 3 [LLM]: AUDIO -> Y---G (H:4, L:4)
+  Attempt 4 [LLM]: CHAMP -> YYYY- (H:5, L:5)
+  Attempt 5 [LLM]: MACHO -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 41/100: Target = LOPEZ
+  Attempt 1 [CSS_TRUE]: MARES -> ---G- (H:4, L:4)
+  Attempt 2 [LLM]: ZARES -> Y--G- (H:4, L:4)
+  Attempt 3 [LLM]: BEZEL -> --YGY (H:4, L:4)
+  Attempt 4 [LLM]: LOPEZ -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 42/100: Target = GOODY
+  Attempt 1 [CSS_TRUE]: ALTER -> ----- (H:5, L:5)
+  Attempt 2 [LLM]: ZESTS -> ----- (H:5, L:5)
+  Attempt 3 [LLM]: GRAFT -> G---- (H:4, L:4)
+  Attempt 4 [LLM]: GOADS -> GG-G- (H:2, L:2)
+  Attempt 5 [LLM]: GOWDY -> GG-GG (H:1, L:1)
+  Attempt 6 [LLM]: GOATY -> GG--G (H:2, L:2)
+  Failed to find word
+
+Game 43/100: Target = BROTH
+  Attempt 1 [CSS_TRUE]: CANES -> ----- (H:5, L:5)
+  Attempt 2 [LLM]: SWORD -> --GY- (H:4, L:4)
+  Attempt 3 [LLM]: GROOM -> -GG-- (H:3, L:3)
+  Attempt 4 [LLM]: TROTH -> -GGGG (H:1, L:1)
+  Attempt 5 [LLM]: BROTH -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 44/100: Target = VERDE
+  Attempt 1 [CSS_TRUE]: LATER -> ---YY (H:5, L:5)
+  Attempt 2 [LLM]: BASED -> ---YY (H:5, L:5)
+  Attempt 3 [LLM]: DEERE -> YG-YG (H:3, L:3)
+  Attempt 4 [LLM]: VERDE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 45/100: Target = TAMED
+  Attempt 1 [CSS_TRUE]: DARES -> YG-G- (H:3, L:3)
+  Attempt 2 [LLM]: GATED -> -GYGG (H:2, L:2)
+  Attempt 3 [LLM]: TAXED -> GG-GG (H:1, L:1)
+  Attempt 4 [LLM]: TAPED -> GG-GG (H:1, L:1)
+  Attempt 5 [LLM]: TAMED -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 46/100: Target = LEAFS
+  Attempt 1 [CSS_TRUE]: TAHOE -> -Y--Y (H:5, L:5)
+  Attempt 2 [LLM]: TARES -> -Y-YG (H:4, L:4)
+  Attempt 3 [LLM]: SEALS -> -GGYG (H:2, L:2)
+  Attempt 4 [LLM]: LEAPS -> GGG-G (H:1, L:1)
+  Attempt 5 [LLM]: LEAFS -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 47/100: Target = YACHT
+  Attempt 1 [CSS_TRUE]: OATES -> -GY-- (H:4, L:4)
+  Attempt 2 [LLM]: GUESS -> ----- (H:5, L:5)
+  Attempt 3 [LLM]: TACKY -> YGG-Y (H:3, L:3)
+  Attempt 4 [LLM]: YACHT -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 48/100: Target = MESSY
+  Attempt 1 [CSS_TRUE]: LANES -> ---YY (H:5, L:5)
+  Attempt 2 [LLM]: STARE -> Y---Y (H:5, L:5)
+  Attempt 3 [LLM]: MESSI -> GGGG- (H:1, L:1)
+  Attempt 4 [LLM]: DIRTY -> ----G (H:4, L:4)
+  Attempt 5 [LLM]: MESSY -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 49/100: Target = RYDER
+  Attempt 1 [CSS_TRUE]: RIOTS -> G---- (H:4, L:4)
+  Attempt 2 [LLM]: REVEL -> G--G- (H:3, L:3)
+  Attempt 3 [LLM]: RAPER -> G--GG (H:2, L:2)
+  Attempt 4 [LLM]: RUGER -> G--GG (H:2, L:2)
+  Attempt 5 [LLM]: RYDER -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 50/100: Target = MOTIF
+  Attempt 1 [CSS_TRUE]: BENDS -> ----- (H:5, L:5)
+  Attempt 2 [LLM]: WHICH -> --Y-- (H:5, L:5)
+  Attempt 3 [LLM]: BASED -> ----- (H:5, L:5)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 4 [LLM]: PILOT -> -Y-YY (H:5, L:5)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 5 [LLM]: MOTIF -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 51/100: Target = RAVEN
+  Attempt 1 [CSS_TRUE]: OATES -> -G-G- (H:3, L:3)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 2 [LLM]: BADER -> -G-GY (H:3, L:3)
+  Attempt 3 [LLM]: HAREM -> -GYG- (H:3, L:3)
+  Attempt 4 [LLM]: RAVEN -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 52/100: Target = REICH
+  Attempt 1 [CSS_TRUE]: LOANS -> ----- (H:5, L:5)
+  Attempt 2 [LLM]: ZEBRA -> -G-Y- (H:4, L:4)
+  Attempt 3 [LLM]: REEVE -> GG--- (H:3, L:3)
+  Attempt 4 [LLM]: REMIX -> GG-Y- (H:3, L:3)
+  Attempt 5 [LLM]: REIKI -> GGG-- (H:2, L:2)
+  Attempt 6 [LLM]: RIEGE -> GYY-- (H:4, L:4)
+  Failed to find word
+
+Game 53/100: Target = ICONS
+  Attempt 1 [CSS_TRUE]: INLET -> GY--- (H:4, L:4)
+  Attempt 2 [LLM]: ICONS -> GGGGG (H:0, L:0)
+  Won in 2 attempts!
+
+Game 54/100: Target = SILKY
+  Attempt 1 [CSS_TRUE]: CLARE -> -Y--- (H:5, L:5)
+  Attempt 2 [LLM]: BRANS -> ----Y (H:5, L:5)
+  Attempt 3 [LLM]: SILLY -> GGG-G (H:1, L:1)
+  Attempt 4 [LLM]: SILKY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 55/100: Target = CARVE
+  Attempt 1 [CSS_TRUE]: LENDS -> -Y--- (H:5, L:5)
+  Attempt 2 [LLM]: RENTS -> YY--- (H:5, L:5)
+  Attempt 3 [LLM]: STILL -> ----- (H:5, L:5)
+  Attempt 4 [LLM]: SENTS -> -Y--- (H:5, L:5)
+  Attempt 5 [LLM]: RENDS -> YY--- (H:5, L:5)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 6 [LLM]: CAPER -> GG-YY (H:3, L:3)
+  Failed to find word
+
+Game 56/100: Target = LAGER
+  Attempt 1 [CSS_TRUE]: SNARE -> --YYY (H:5, L:4)
+  Attempt 2 [LLM]: CHESS -> --Y-- (H:5, L:5)
+  Attempt 3 [LLM]: TATER -> -G-GG (H:2, L:2)
+  Attempt 4 [LLM]: PIECE -> --Y-- (H:5, L:5)
+  Attempt 5 [LLM]: LAVER -> GG-GG (H:1, L:1)
+  Attempt 6 [LLM]: LAZER -> GG-GG (H:1, L:1)
+  Failed to find word
+
+Game 57/100: Target = JERKS
+  Attempt 1 [CSS_TRUE]: RACES -> Y--YG (H:4, L:4)
+  Attempt 2 [LLM]: DEERS -> -G-YG (H:3, L:3)
+  Attempt 3 [LLM]: GERMS -> -GG-G (H:2, L:2)
+  Attempt 4 [LLM]: JERKS -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 58/100: Target = LOTUS
+  Attempt 1 [CSS_TRUE]: ELISA -> -Y-Y- (H:5, L:5)
+  Attempt 2 [LLM]: ROLLS -> -GY-G (H:3, L:3)
+  Attempt 3 [LLM]: LONGS -> GG--G (H:2, L:2)
+  Attempt 4 [LLM]: LOOPS -> GG--G (H:2, L:2)
+  Attempt 5 [LLM]: LOTUS -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 59/100: Target = LACEY
+  Attempt 1 [CSS_TRUE]: RATES -> -G-G- (H:3, L:3)
+  Attempt 2 [LLM]: GALLS -> -GY-- (H:4, L:4)
+  Attempt 3 [LLM]: HAZEL -> -G-GY (H:3, L:3)
+  Attempt 4 [LLM]: LACEY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 60/100: Target = TUDOR
+  Attempt 1 [CSS_TRUE]: DOERS -> YY-Y- (H:5, L:4)
+  Attempt 2 [LLM]: BROAD -> -YY-Y (H:5, L:5)
+  Attempt 3 [LLM]: TUDOR -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 61/100: Target = QUOTA
+  Attempt 1 [CSS_TRUE]: DARES -> -Y--- (H:5, L:5)
+  Attempt 2 [LLM]: ZARES -> -Y--- (H:5, L:5)
+  Attempt 3 [LLM]: DAMPS -> -Y--- (H:5, L:5)
+  Attempt 4 [LLM]: SHOWN -> --G-- (H:4, L:4)
+  Attempt 5 [LLM]: GLOAT -> --GYY (H:4, L:4)
+  Attempt 6 [LLM]: QUOTA -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 62/100: Target = MOURN
+  Attempt 1 [CSS_TRUE]: LORNA -> -GYY- (H:4, L:3)
+  Attempt 2 [LLM]: HORSE -> -GY-- (H:4, L:4)
+  Attempt 3 [LLM]: ROBIN -> YG--G (H:3, L:3)
+  Attempt 4 [LLM]: MOURN -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 63/100: Target = PROMO
+  Attempt 1 [CSS_TRUE]: SHORE -> --GY- (H:4, L:4)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 2 [LLM]: GROOT -> -GGY- (H:3, L:3)
+  Attempt 3 [LLM]: PROVO -> GGG-G (H:1, L:1)
+  Attempt 4 [LLM]: PROMO -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 64/100: Target = CASTE
+  Attempt 1 [CSS_TRUE]: BEANS -> -YY-Y (H:5, L:5)
+  Attempt 2 [LLM]: SWORD -> Y---- (H:5, L:5)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 3 [LLM]: PASTE -> -GGGG (H:1, L:1)
+  Attempt 4 [LLM]: HASTE -> -GGGG (H:1, L:1)
+  Attempt 5 [LLM]: CASTE -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 65/100: Target = CAPRI
+  Attempt 1 [CSS_TRUE]: DARIO -> -GYY- (H:4, L:3)
+  Attempt 2 [LLM]: RAISE -> YGY-- (H:4, L:4)
+  Attempt 3 [LLM]: CAPRI -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 66/100: Target = ALIAS
+  Attempt 1 [CSS_TRUE]: ERASE -> --YY- (H:5, L:4)
+  Attempt 2 [LLM]: MEANS -> --Y-G (H:4, L:4)
+  Attempt 3 [LLM]: SACKS -> -Y--G (H:4, L:4)
+  Attempt 4 [LLM]: ALIBI -> GGG-- (H:2, L:2)
+  Attempt 5 [LLM]: ALIAS -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 67/100: Target = PADDY
+  Attempt 1 [CSS_TRUE]: ROSIE -> ----- (H:5, L:5)
+  Attempt 2 [LLM]: ZIGGY -> ----G (H:4, L:4)
+  Attempt 3 [LLM]: MUMMY -> ----G (H:4, L:4)
+  Attempt 4 [LLM]: ALLAY -> Y---G (H:4, L:4)
+  Attempt 5 [LLM]: TACKY -> -G--G (H:3, L:3)
+  Attempt 6 [LLM]: HANDY -> -G-GG (H:2, L:2)
+  Failed to find word
+
+Game 68/100: Target = BLOBS
+  Attempt 1 [CSS_TRUE]: IDEAS -> ----G (H:4, L:4)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 2 [LLM]: CLOTS -> -GG-G (H:2, L:2)
+  Attempt 3 [LLM]: GLOWS -> -GG-G (H:2, L:2)
+  Attempt 4 [LLM]: BLOWS -> GGG-G (H:1, L:1)
+  Attempt 5 [LLM]: BLOBS -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 69/100: Target = DILLY
+  Attempt 1 [CSS_TRUE]: LEANS -> Y---- (H:5, L:5)
+  Attempt 2 [LLM]: COULD -> ---GY (H:4, L:4)
+  Attempt 3 [LLM]: DIMLY -> GG-GG (H:1, L:1)
+  Attempt 4 [LLM]: DILLY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 70/100: Target = GUTSY
+  Attempt 1 [CSS_TRUE]: STALE -> YY--- (H:5, L:5)
+  Attempt 2 [LLM]: GRAND -> G---- (H:4, L:4)
+  Attempt 3 [LLM]: GUSTS -> GGYY- (H:3, L:2)
+  Attempt 4 [LLM]: GUEST -> GG-GY (H:2, L:2)
+  Attempt 5 [LLM]: GUTSY -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 71/100: Target = TABOR
+  Attempt 1 [CSS_TRUE]: DATES -> -GY-- (H:4, L:4)
+  Attempt 2 [LLM]: TANGO -> GG--Y (H:3, L:3)
+  Attempt 3 [LLM]: TABOR -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 72/100: Target = INLAY
+  Attempt 1 [CSS_TRUE]: ARNIE -> Y-YY- (H:5, L:5)
+  Attempt 2 [LLM]: PAINS -> -YYY- (H:5, L:5)
+  Attempt 3 [LLM]: INLAY -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 73/100: Target = AHHHH
+  Attempt 1 [CSS_TRUE]: SAITO -> -Y--- (H:5, L:5)
+  Attempt 2 [LLM]: SAVAN -> -Y--- (H:5, L:5)
+  Attempt 3 [LLM]: SAYER -> -Y--- (H:5, L:5)
+  Attempt 4 [LLM]: WHACK -> -GY-- (H:4, L:4)
+  Attempt 5 [LLM]: AHHHH -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 74/100: Target = ROUEN
+  Attempt 1 [CSS_TRUE]: RAMEN -> G--GG (H:2, L:2)
+  Attempt 2 [LLM]: RIVEN -> G--GG (H:2, L:2)
+  Attempt 3 [LLM]: ROGEN -> GG-GG (H:1, L:1)
+  Attempt 4 [LLM]: ROUEN -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 75/100: Target = BUENA
+  Attempt 1 [CSS_TRUE]: MATER -> -Y-Y- (H:5, L:5)
+  Attempt 2 [LLM]: SPADE -> --Y-Y (H:5, L:5)
+  Attempt 3 [LLM]: BELLA -> GY--G (H:3, L:3)
+  Attempt 4 [LLM]: BUENA -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 76/100: Target = MENON
+  Attempt 1 [CSS_TRUE]: SAFER -> ---Y- (H:5, L:5)
+  Attempt 2 [LLM]: MEANS -> GG-Y- (H:3, L:3)
+  Attempt 3 [LLM]: MENON -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 77/100: Target = TRASK
+  Attempt 1 [CSS_TRUE]: TEARS -> G-GYY (H:3, L:3)
+  Attempt 2 [LLM]: TRASK -> GGGGG (H:0, L:0)
+  Won in 2 attempts!
+
+Game 78/100: Target = CASIO
+  Attempt 1 [CSS_TRUE]: EATIN -> -G-G- (H:3, L:3)
+  Attempt 2 [LLM]: FISHT -> -YG-- (H:4, L:4)
+  Attempt 3 [LLM]: BASIL -> -GGG- (H:2, L:2)
+  Attempt 4 [LLM]: OASIS -> YGGG- (H:2, L:2)
+  Attempt 5 [LLM]: CASIO -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 79/100: Target = VOILA
+  Attempt 1 [CSS_TRUE]: RELAY -> --YY- (H:5, L:4)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 2 [LLM]: COALS -> -GYG- (H:3, L:3)
+  Attempt 3 [LLM]: VOILA -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 80/100: Target = AURAL
+  Attempt 1 [CSS_TRUE]: AROSE -> GY--- (H:4, L:4)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 2 [LLM]: ALARM -> GYYY- (H:4, L:4)
+  Attempt 3 [LLM]: AURAL -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 81/100: Target = LEGER
+  Attempt 1 [CSS_TRUE]: ARISE -> -Y--Y (H:5, L:5)
+  Attempt 2 [LLM]: OTHER -> ---GG (H:3, L:3)
+  Attempt 3 [LLM]: EMBER -> Y--GG (H:3, L:3)
+  Attempt 4 [LLM]: LEVER -> GG-GG (H:1, L:1)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 5 [LLM]: LEPER -> GG-GG (H:1, L:1)
+  Attempt 6 [LLM]: LEGER -> GGGGG (H:0, L:0)
+  Won in 6 attempts!
+
+Game 82/100: Target = DALLY
+  Attempt 1 [CSS_TRUE]: RAIDS -> -G-Y- (H:4, L:4)
+  Attempt 2 [LLM]: TAXED -> -G--Y (H:4, L:4)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 3 [LLM]: MADLY -> -GYGG (H:2, L:2)
+  Attempt 4 [LLM]: DALLY -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 83/100: Target = INIGO
+  Attempt 1 [CSS_TRUE]: STARE -> ----- (H:5, L:5)
+  Attempt 2 [LLM]: GLOWS -> Y-Y-- (H:5, L:5)
+  Attempt 3 [LLM]: DOGGY -> -Y-G- (H:4, L:4)
+  Attempt 4 [LLM]: BINGO -> -YYGG (H:3, L:2)
+  Attempt 5 [LLM]: INIGO -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 84/100: Target = KRILL
+  Attempt 1 [CSS_TRUE]: HALES -> --Y-- (H:5, L:5)
+  Attempt 2 [LLM]: SPARS -> ---Y- (H:5, L:5)
+  Attempt 3 [LLM]: CURLY -> --YG- (H:4, L:4)
+  Attempt 4 [LLM]: TROLL -> -G-GG (H:2, L:2)
+  Attempt 5 [LLM]: GRILL -> -GGGG (H:1, L:1)
+  Attempt 6 [LLM]: DRILL -> -GGGG (H:1, L:1)
+  Failed to find word
+
+Game 85/100: Target = SNIDE
+  Attempt 1 [CSS_TRUE]: RIOTS -> -Y--Y (H:5, L:5)
+  Attempt 2 [LLM]: SWAMI -> G---Y (H:4, L:4)
+  Attempt 3 [LLM]: SHINE -> G-GYG (H:2, L:2)
+  Attempt 4 [LLM]: SNIPE -> GGG-G (H:1, L:1)
+  Attempt 5 [LLM]: SNIDE -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 86/100: Target = LEWES
+  Attempt 1 [CSS_TRUE]: LEANS -> GG--G (H:2, L:2)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 2 [LLM]: LEWES -> GGGGG (H:0, L:0)
+  Won in 2 attempts!
+
+Game 87/100: Target = TAMER
+  Attempt 1 [CSS_TRUE]: YATES -> -GYG- (H:3, L:3)
+  Attempt 2 [LLM]: CARET -> -GYGY (H:3, L:3)
+  Attempt 3 [LLM]: TAMER -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 88/100: Target = COTTA
+  Attempt 1 [CSS_TRUE]: RACES -> -YY-- (H:5, L:5)
+  Attempt 2 [LLM]: CHAIS -> G-Y-- (H:4, L:4)
+  Attempt 3 [LLM]: CUBAN -> G--Y- (H:4, L:4)
+  Attempt 4 [LLM]: COTTA -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 89/100: Target = CORBY
+  Attempt 1 [CSS_TRUE]: HERAT -> --G-- (H:4, L:4)
+  Attempt 2 [LLM]: CURLY -> G-G-G (H:2, L:2)
+  Attempt 3 [LLM]: CORKY -> GGG-G (H:1, L:1)
+  Attempt 4 [LLM]: CORNY -> GGG-G (H:1, L:1)
+  Attempt 5 [LLM]: CORBY -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 90/100: Target = POLIS
+  Attempt 1 [CSS_TRUE]: SIENA -> YY--- (H:5, L:5)
+  Attempt 2 [LLM]: CRISP -> --YYY (H:5, L:4)
+  Attempt 3 [LLM]: POSIT -> GGYG- (H:2, L:2)
+  Attempt 4 [LLM]: POLIS -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 91/100: Target = ROXAS
+  Attempt 1 [CSS_TRUE]: CLOSE -> --YY- (H:5, L:5)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 2 [LLM]: TOURS -> -G-YG (H:3, L:3)
+  Attempt 3 [LLM]: HORNS -> -GY-G (H:3, L:3)
+  Attempt 4 [LLM]: ROADS -> GGY-G (H:2, L:2)
+  Attempt 5 [LLM]: ROJAS -> GG-GG (H:1, L:1)
+  Attempt 6 [LLM]: ROXAN -> GGGG- (H:1, L:1)
+  Failed to find word
+
+Game 92/100: Target = RANCE
+  Attempt 1 [CSS_TRUE]: SIREN -> --YYY (H:5, L:5)
+  Attempt 2 [LLM]: CRANE -> YYYYG (H:4, L:2)
+  Attempt 3 [LLM]: RANCE -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+Game 93/100: Target = CARON
+  Attempt 1 [CSS_TRUE]: FEARS -> --YY- (H:5, L:4)
+  Attempt 2 [LLM]: BRIGE -> -Y--- (H:5, L:5)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 3 [LLM]: DARLA -> -GG-- (H:3, L:3)
+  Attempt 4 [LLM]: MARCO -> -GGYY (H:3, L:3)
+  Attempt 5 [LLM]: CARON -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 94/100: Target = SURYA
+  Attempt 1 [CSS_TRUE]: RISEN -> Y-Y-- (H:5, L:5)
+  Attempt 2 [LLM]: SARED -> GYG-- (H:3, L:3)
+  Attempt 3 [LLM]: STRAT -> G-GY- (H:3, L:3)
+  Attempt 4 [LLM]: SURGE -> GGG-- (H:2, L:2)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 5 [LLM]: SURYA -> GGGGG (H:0, L:0)
+  Won in 5 attempts!
+
+Game 95/100: Target = AGGIE
+  Attempt 1 [CSS_TRUE]: GALES -> YY-Y- (H:5, L:4)
+  Attempt 2 [LLM]: AGAIN -> GG-G- (H:2, L:2)
+  Attempt 3 [LLM]: AGGER -> GGGY- (H:2, L:2)
+  Attempt 4 [LLM]: AGGIE -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 96/100: Target = CAUSA
+  Attempt 1 [CSS_TRUE]: RATES -> -G--Y (H:4, L:4)
+  Attempt 2 [LLM]: SALLY -> YG--- (H:4, L:4)
+  Attempt 3 [LLM]: CASIO -> GGY-- (H:3, L:3)
+  Attempt 4 [LLM]: CARES -> GG--Y (H:3, L:3)
+  Attempt 5 [LLM]: CAUSE -> GGGG- (H:1, L:1)
+  Attempt 6 [LLM]: POINT -> ----- (H:5, L:5)
+  Failed to find word
+
+Game 97/100: Target = BAMBA
+  Attempt 1 [CSS_TRUE]: ALTER -> Y---- (H:5, L:5)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 2 [LLM]: SONIA -> ----G (H:4, L:4)
+LLM failed to provide valid guess, falling back to algorithm
+  Attempt 3 [LLM]: PADMA -> -G-YG (H:3, L:3)
+  Attempt 4 [LLM]: BAMBA -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 98/100: Target = MAYNE
+  Attempt 1 [CSS_TRUE]: LEICA -> -Y--Y (H:5, L:5)
+  Attempt 2 [LLM]: BRAID -> --Y-- (H:5, L:5)
+  Attempt 3 [LLM]: TRUMP -> ---Y- (H:5, L:5)
+  Attempt 4 [LLM]: MAZES -> GG-Y- (H:3, L:3)
+  Attempt 5 [LLM]: MAEVE -> GG--G (H:2, L:2)
+  Attempt 6 [LLM]: MAINE -> GG-GG (H:1, L:1)
+  Failed to find word
+
+Game 99/100: Target = BOGGS
+  Attempt 1 [CSS_TRUE]: NASIR -> --Y-- (H:5, L:5)
+  Attempt 2 [LLM]: GUESS -> Y---G (H:4, L:4)
+  Attempt 3 [LLM]: BLOGS -> G-YGG (H:2, L:2)
+  Attempt 4 [LLM]: BOGGS -> GGGGG (H:0, L:0)
+  Won in 4 attempts!
+
+Game 100/100: Target = FINNS
+  Attempt 1 [CSS_TRUE]: SIRED -> YG--- (H:4, L:4)
+  Attempt 2 [LLM]: FILLS -> GG--G (H:2, L:2)
+  Attempt 3 [LLM]: FINNS -> GGGGG (H:0, L:0)
+  Won in 3 attempts!
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 100
+Wins: 85
+Win rate: 85.0%
+Average attempts (when won): 4.31
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/workshop/results_true_css/group_a/C_to_L_true/raw_data/C_to_L_true_granite-3.3-8b-instruct_20260204_095833.csv
+  /Users/kevin/Desktop/projects/wordle/workshop/results_true_css/group_a/C_to_L_true/raw_data/summary_C_to_L_true_granite-3.3-8b-instruct_20260204_095833.json
+SUCCESS: A6_true granite-3.3-8b-instruct
+[6/20] A6_true | mistral-7b-instruct

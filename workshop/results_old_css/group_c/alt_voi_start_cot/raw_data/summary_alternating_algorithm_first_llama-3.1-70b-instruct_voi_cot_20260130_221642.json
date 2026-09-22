@@ -1,0 +1,12 @@
+{
+  "strategy": "alternating_algorithm_first",
+  "model_name": "llama-3.1-70b-instruct",
+  "start_with": "algorithm",
+  "prompt_type": "cot",
+  "algorithm": "voi",
+  "total_games": 100,
+  "wins": 97,
+  "win_rate": 0.97,
+  "avg_attempts_when_won": 4.061855670103093,
+  "timestamp": "20260130_221642"
+}

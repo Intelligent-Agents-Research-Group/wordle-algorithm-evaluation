@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "rerank_voi_cot",
+  "repair_mode": "rerank",
+  "algorithm": "voi",
+  "model_name": "mistral-7b-instruct",
+  "prompt_type": "cot",
+  "top_k": 5,
+  "total_games": 100,
+  "wins": 99,
+  "win_rate": 0.99,
+  "avg_attempts_when_won": 4.232323232323233,
+  "llm_accepted": 360,
+  "llm_repaired": 3,
+  "repair_rate": 0.008264462809917356,
+  "timestamp": "20260201_152209"
+}

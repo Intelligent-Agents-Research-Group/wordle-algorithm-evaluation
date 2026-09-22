@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "constraint_filter_css",
+  "repair_mode": "constraint_filter",
+  "algorithm": "css",
+  "model_name": "llama-3.1-70b-instruct",
+  "prompt_type": "zero-shot",
+  "top_k": null,
+  "total_games": 100,
+  "wins": 96,
+  "win_rate": 0.96,
+  "avg_attempts_when_won": 4.177083333333333,
+  "llm_accepted": 349,
+  "llm_repaired": 76,
+  "repair_rate": 0.17882352941176471,
+  "timestamp": "20260130_235918"
+}

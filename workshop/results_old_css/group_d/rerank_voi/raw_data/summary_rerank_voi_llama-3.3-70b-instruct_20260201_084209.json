@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "rerank_voi",
+  "repair_mode": "rerank",
+  "algorithm": "voi",
+  "model_name": "llama-3.3-70b-instruct",
+  "prompt_type": "zero-shot",
+  "top_k": 5,
+  "total_games": 100,
+  "wins": 97,
+  "win_rate": 0.97,
+  "avg_attempts_when_won": 4.134020618556701,
+  "llm_accepted": 304,
+  "llm_repaired": 62,
+  "repair_rate": 0.16939890710382513,
+  "timestamp": "20260201_084209"
+}

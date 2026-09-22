@@ -1,0 +1,229 @@
+========================================
+OVERNIGHT CSS_TRUE RUN (NO FALLBACK)
+Started: Tue Feb  3 18:07:39 EST 2026
+Games per run: 100
+Output: /Users/kevin/Desktop/projects/wordle/workshop/results_true_css
+Log: /Users/kevin/Desktop/projects/wordle/workshop/results_true_css/overnight_no_fallback_20260203_180739.log
+NO_LLM_FALLBACK: ENABLED
+========================================
+Loading environment from /Users/kevin/Desktop/projects/wordle/.env
+
+========================================
+GROUP A - SINGLE HANDOFF (CSS_TRUE)
+========================================
+
+[1] A1_true | Model: llama-3.3-70b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A1_true llama-3.3-70b-instruct
+
+[2] A1_true | Model: llama-3.1-70b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A1_true llama-3.1-70b-instruct
+
+[3] A1_true | Model: llama-3.1-8b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A1_true llama-3.1-8b-instruct
+
+[4] A1_true | Model: codestral-22b
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A1_true codestral-22b
+
+[5] A1_true | Model: gemma-3-27b-it
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A1_true gemma-3-27b-it
+
+[6] A1_true | Model: granite-3.3-8b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A1_true granite-3.3-8b-instruct
+
+[7] A1_true | Model: mistral-7b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A1_true mistral-7b-instruct
+
+[8] A3_true | Model: llama-3.3-70b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A3_true llama-3.3-70b-instruct
+
+[9] A3_true | Model: llama-3.1-70b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A3_true llama-3.1-70b-instruct
+
+[10] A3_true | Model: llama-3.1-8b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A3_true llama-3.1-8b-instruct
+
+[11] A3_true | Model: codestral-22b
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A3_true codestral-22b
+
+[12] A3_true | Model: gemma-3-27b-it
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A3_true gemma-3-27b-it
+
+[13] A3_true | Model: granite-3.3-8b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A3_true granite-3.3-8b-instruct
+
+[14] A3_true | Model: mistral-7b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A3_true mistral-7b-instruct
+
+[15] A4_true | Model: llama-3.3-70b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A4_true llama-3.3-70b-instruct
+
+[16] A4_true | Model: llama-3.1-70b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A4_true llama-3.1-70b-instruct
+
+[17] A4_true | Model: llama-3.1-8b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A4_true llama-3.1-8b-instruct
+
+[18] A4_true | Model: codestral-22b
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A4_true codestral-22b
+
+[19] A4_true | Model: gemma-3-27b-it
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A4_true gemma-3-27b-it
+
+[20] A4_true | Model: granite-3.3-8b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A4_true granite-3.3-8b-instruct
+
+[21] A4_true | Model: mistral-7b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A4_true mistral-7b-instruct
+
+[22] A5_true | Model: llama-3.3-70b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A5_true llama-3.3-70b-instruct
+
+[23] A5_true | Model: llama-3.1-70b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A5_true llama-3.1-70b-instruct
+
+[24] A5_true | Model: llama-3.1-8b-instruct
+Traceback (most recent call last):
+  File "/Users/kevin/Desktop/projects/wordle/workshop/scripts/flexible_hybrid.py", line 35, in <module>
+    from css_strategy import CSSStrategy
+  File "/Users/kevin/Desktop/projects/wordle/algorithms/css_strategy.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+SUCCESS: A5_true llama-3.1-8b-instruct

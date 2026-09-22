@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "rerank_css_true",
+  "repair_mode": "rerank",
+  "algorithm": "css_true",
+  "model_name": "gemma-3-27b-it",
+  "prompt_type": "zero-shot",
+  "top_k": 5,
+  "total_games": 100,
+  "wins": 95,
+  "win_rate": 0.95,
+  "avg_attempts_when_won": 4.168421052631579,
+  "llm_accepted": 368,
+  "llm_repaired": 2,
+  "repair_rate": 0.005405405405405406,
+  "timestamp": "20260204_042317"
+}

@@ -1,0 +1,106 @@
+================================================================================
+REPEATED MEASURES ANOVA: HAMMING_3
+================================================================================
+
+Generated: 2026-02-02 18:13:31
+Metric: hamming_3
+Description: Hamming distance after round 3
+Lower is better: Yes
+
+--------------------------------------------------------------------------------
+DESIGN
+--------------------------------------------------------------------------------
+Complete cases (subjects): 94
+Conditions (approaches): 8
+Within-subjects factor: approach
+Subject: target_word
+
+--------------------------------------------------------------------------------
+ANOVA TABLE
+--------------------------------------------------------------------------------
+Source                         SS     df           MS            F            p
+----------------------------------------------------------------------
+Conditions               559.4450      7      79.9207      64.8756     9.87e-71
+Error                    801.9714    651       1.2319
+
+--------------------------------------------------------------------------------
+EFFECT SIZES
+--------------------------------------------------------------------------------
+Partial eta-squared (eta^2p): 0.4109
+Omega-squared (omega^2): 0.4042
+
+--------------------------------------------------------------------------------
+INTERPRETATION
+--------------------------------------------------------------------------------
+Result: HIGHLY SIGNIFICANT (p < 0.001)
+Effect size: large (eta^2p = 0.4109)
+
+F(7, 651) = 64.8756, p = 9.87e-71, eta^2p = 0.4109
+
+--------------------------------------------------------------------------------
+DESCRIPTIVE STATISTICS BY APPROACH
+--------------------------------------------------------------------------------
+    approach       mean        std   min        max  count         se     95% CI
+         CSS   1.585106   1.540909   0.0   5.000000     94   0.158933   0.311508
+         VOI   1.787234   1.501772   0.0   5.000000     94   0.154896   0.303596
+Frontier_LLM   2.235816   1.157906   0.0   4.333333     94   0.119429   0.234081
+     Mid_LLM   2.331560   0.976270   0.0   4.333333     94   0.100695   0.197361
+   Small_LLM   2.369149   0.794034   0.2   4.400000     94   0.081898   0.160521
+      Hybrid   2.142200   0.587189   1.1   4.000000     94   0.060564   0.118705
+      Random   2.414894   1.417324   0.0   5.000000     94   0.146186   0.286524
+ Pure_Random   4.595745   0.661038   2.0   5.000000     94   0.068181   0.133634
+
+--------------------------------------------------------------------------------
+POST-HOC PAIRWISE COMPARISONS (Bonferroni-corrected)
+--------------------------------------------------------------------------------
+Significant comparisons: 12 out of 28
+
+Significant Pairwise Differences (p-corr < 0.05):
+           A            B          T        p-unc       p-corr    cohen
+         CSS       Hybrid  -3.604983     5.04e-04     1.41e-02      nan
+         CSS      Mid_LLM  -4.209183     5.91e-05     1.65e-03      nan
+         CSS  Pure_Random -17.292181     8.31e-31     2.33e-29      nan
+         CSS       Random  -3.816381     2.44e-04     6.83e-03      nan
+         CSS    Small_LLM  -4.663832     1.04e-05     2.90e-04      nan
+Frontier_LLM  Pure_Random -17.036769     2.39e-30     6.68e-29      nan
+      Hybrid  Pure_Random -26.186872     1.07e-44     2.99e-43      nan
+     Mid_LLM  Pure_Random -17.575834     2.60e-31     7.28e-30      nan
+ Pure_Random       Random  13.876483     2.21e-24     6.19e-23      nan
+ Pure_Random    Small_LLM  19.993787     1.94e-35     5.44e-34      nan
+ Pure_Random          VOI  16.330765     4.61e-29     1.29e-27      nan
+   Small_LLM          VOI   3.614276     4.89e-04     1.37e-02      nan
+
+All Pairwise Comparisons (sorted by p-value):
+           A            B          T    dof        p-unc       p-corr    cohen
+      Hybrid  Pure_Random -26.186872   93.0     1.07e-44     2.99e-43      nan
+ Pure_Random    Small_LLM  19.993787   93.0     1.94e-35     5.44e-34      nan
+     Mid_LLM  Pure_Random -17.575834   93.0     2.60e-31     7.28e-30      nan
+         CSS  Pure_Random -17.292181   93.0     8.31e-31     2.33e-29      nan
+Frontier_LLM  Pure_Random -17.036769   93.0     2.39e-30     6.68e-29      nan
+ Pure_Random          VOI  16.330765   93.0     4.61e-29     1.29e-27      nan
+ Pure_Random       Random  13.876483   93.0     2.21e-24     6.19e-23      nan
+         CSS    Small_LLM  -4.663832   93.0     1.04e-05     2.90e-04      nan
+         CSS      Mid_LLM  -4.209183   93.0     5.91e-05     1.65e-03      nan
+         CSS       Random  -3.816381   93.0     2.44e-04     6.83e-03      nan
+   Small_LLM          VOI   3.614276   93.0     4.89e-04     1.37e-02      nan
+         CSS       Hybrid  -3.604983   93.0     5.04e-04     1.41e-02      nan
+         CSS Frontier_LLM  -3.082957   93.0     2.70e-03     7.55e-02      nan
+     Mid_LLM          VOI   3.070196   93.0     2.80e-03     7.85e-02      nan
+      Hybrid    Small_LLM  -2.984383   93.0     3.63e-03     1.02e-01      nan
+      Random          VOI   2.823604   93.0     5.81e-03     1.63e-01      nan
+Frontier_LLM          VOI   2.361896   93.0     2.03e-02     5.67e-01      nan
+      Hybrid          VOI   2.168240   93.0     3.27e-02     9.15e-01      nan
+      Hybrid      Mid_LLM  -1.813273   93.0     7.30e-02     1.00e+00      nan
+      Hybrid       Random  -1.669191   93.0     9.84e-02     1.00e+00      nan
+Frontier_LLM    Small_LLM  -1.091884   93.0     2.78e-01     1.00e+00      nan
+Frontier_LLM       Random  -0.928905   93.0     3.55e-01     1.00e+00      nan
+         CSS          VOI  -0.901820   93.0     3.69e-01     1.00e+00      nan
+Frontier_LLM       Hybrid   0.850119   93.0     3.97e-01     1.00e+00      nan
+Frontier_LLM      Mid_LLM  -0.666165   93.0     5.07e-01     1.00e+00      nan
+     Mid_LLM       Random  -0.474484   93.0     6.36e-01     1.00e+00      nan
+     Mid_LLM    Small_LLM  -0.351242   93.0     7.26e-01     1.00e+00      nan
+      Random    Small_LLM   0.280895   93.0     7.79e-01     1.00e+00      nan
+
+================================================================================
+END OF REPORT
+================================================================================

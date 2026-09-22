@@ -1,0 +1,12 @@
+{
+  "strategy": "alternating_algorithm_first",
+  "model_name": "mistral-7b-instruct",
+  "start_with": "algorithm",
+  "prompt_type": "zero-shot",
+  "algorithm": "css_true",
+  "total_games": 100,
+  "wins": 96,
+  "win_rate": 0.96,
+  "avg_attempts_when_won": 4.333333333333333,
+  "timestamp": "20260204_110838"
+}

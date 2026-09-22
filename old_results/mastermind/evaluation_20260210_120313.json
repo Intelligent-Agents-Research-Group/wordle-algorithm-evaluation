@@ -1,0 +1,4296 @@
+{
+  "classic": {
+    "CSS": {
+      "strategy": "CSS",
+      "variant": "classic",
+      "num_colors": 6,
+      "search_space": 1296,
+      "num_games": 100,
+      "games": [
+        {
+          "game_id": 1,
+          "target": "BYYW",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.9
+        },
+        {
+          "game_id": 2,
+          "target": "RWYY",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.6000000000000005
+        },
+        {
+          "game_id": 3,
+          "target": "WBOO",
+          "won": true,
+          "attempts": 3,
+          "reward": 9.4
+        },
+        {
+          "game_id": 4,
+          "target": "WWYW",
+          "won": true,
+          "attempts": 4,
+          "reward": 5.7
+        },
+        {
+          "game_id": 5,
+          "target": "BGRO",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.9
+        },
+        {
+          "game_id": 6,
+          "target": "GOWR",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.4
+        },
+        {
+          "game_id": 7,
+          "target": "YWGB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.5
+        },
+        {
+          "game_id": 8,
+          "target": "ROYW",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.1
+        },
+        {
+          "game_id": 9,
+          "target": "BBRY",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.5
+        },
+        {
+          "game_id": 10,
+          "target": "YGGO",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.6
+        },
+        {
+          "game_id": 11,
+          "target": "OBYY",
+          "won": true,
+          "attempts": 5,
+          "reward": 7.1
+        },
+        {
+          "game_id": 12,
+          "target": "WGGO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.0
+        },
+        {
+          "game_id": 13,
+          "target": "WBGO",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.8
+        },
+        {
+          "game_id": 14,
+          "target": "BGOW",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.3
+        },
+        {
+          "game_id": 15,
+          "target": "WGBO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.2
+        },
+        {
+          "game_id": 16,
+          "target": "RGYW",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.1
+        },
+        {
+          "game_id": 17,
+          "target": "RRRB",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.9
+        },
+        {
+          "game_id": 18,
+          "target": "YGRB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.4
+        },
+        {
+          "game_id": 19,
+          "target": "YBBY",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.1
+        },
+        {
+          "game_id": 20,
+          "target": "YOYO",
+          "won": true,
+          "attempts": 2,
+          "reward": 9.5
+        },
+        {
+          "game_id": 21,
+          "target": "GORY",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.9
+        },
+        {
+          "game_id": 22,
+          "target": "GGRG",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.1
+        },
+        {
+          "game_id": 23,
+          "target": "WYYR",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.8
+        },
+        {
+          "game_id": 24,
+          "target": "WWGR",
+          "won": true,
+          "attempts": 3,
+          "reward": 9.0
+        },
+        {
+          "game_id": 25,
+          "target": "GYBY",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.5
+        },
+        {
+          "game_id": 26,
+          "target": "GBWO",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.9
+        },
+        {
+          "game_id": 27,
+          "target": "YGYG",
+          "won": true,
+          "attempts": 3,
+          "reward": 9.0
+        },
+        {
+          "game_id": 28,
+          "target": "GRBY",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.6
+        },
+        {
+          "game_id": 29,
+          "target": "BYOG",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.6
+        },
+        {
+          "game_id": 30,
+          "target": "WBYY",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.6
+        },
+        {
+          "game_id": 31,
+          "target": "WBWG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.9
+        },
+        {
+          "game_id": 32,
+          "target": "YRGY",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.6
+        },
+        {
+          "game_id": 33,
+          "target": "RGWB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.9
+        },
+        {
+          "game_id": 34,
+          "target": "WBYR",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.1
+        },
+        {
+          "game_id": 35,
+          "target": "GORG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.5
+        },
+        {
+          "game_id": 36,
+          "target": "ROBG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.7
+        },
+        {
+          "game_id": 37,
+          "target": "WRRO",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.6
+        },
+        {
+          "game_id": 38,
+          "target": "BBGY",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.0
+        },
+        {
+          "game_id": 39,
+          "target": "WOGG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.2
+        },
+        {
+          "game_id": 40,
+          "target": "GOOY",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.4
+        },
+        {
+          "game_id": 41,
+          "target": "OWOY",
+          "won": true,
+          "attempts": 4,
+          "reward": 5.8
+        },
+        {
+          "game_id": 42,
+          "target": "YWYW",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.1
+        },
+        {
+          "game_id": 43,
+          "target": "RYWR",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.3
+        },
+        {
+          "game_id": 44,
+          "target": "OGGW",
+          "won": true,
+          "attempts": 3,
+          "reward": 8.7
+        },
+        {
+          "game_id": 45,
+          "target": "OWGR",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.4
+        },
+        {
+          "game_id": 46,
+          "target": "GOGG",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.6
+        },
+        {
+          "game_id": 47,
+          "target": "OORB",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.9000000000000004
+        },
+        {
+          "game_id": 48,
+          "target": "WOBO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.2
+        },
+        {
+          "game_id": 49,
+          "target": "YBWO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.9
+        },
+        {
+          "game_id": 50,
+          "target": "WGGR",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.2
+        },
+        {
+          "game_id": 51,
+          "target": "ROBB",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.2
+        },
+        {
+          "game_id": 52,
+          "target": "OYGY",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.0
+        },
+        {
+          "game_id": 53,
+          "target": "YBGB",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.1
+        },
+        {
+          "game_id": 54,
+          "target": "BGWY",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.0
+        },
+        {
+          "game_id": 55,
+          "target": "RYYG",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.9
+        },
+        {
+          "game_id": 56,
+          "target": "WWWY",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.3
+        },
+        {
+          "game_id": 57,
+          "target": "BROB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.800000000000001
+        },
+        {
+          "game_id": 58,
+          "target": "BYBR",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.4
+        },
+        {
+          "game_id": 59,
+          "target": "GBGW",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.0
+        },
+        {
+          "game_id": 60,
+          "target": "RBWO",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.3
+        },
+        {
+          "game_id": 61,
+          "target": "WORW",
+          "won": true,
+          "attempts": 2,
+          "reward": 10.0
+        },
+        {
+          "game_id": 62,
+          "target": "ORBW",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.3
+        },
+        {
+          "game_id": 63,
+          "target": "OYYR",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.6
+        },
+        {
+          "game_id": 64,
+          "target": "GROR",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.8
+        },
+        {
+          "game_id": 65,
+          "target": "YGBY",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.2
+        },
+        {
+          "game_id": 66,
+          "target": "ROBB",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.5
+        },
+        {
+          "game_id": 67,
+          "target": "ROOB",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.0
+        },
+        {
+          "game_id": 68,
+          "target": "BBYO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.3
+        },
+        {
+          "game_id": 69,
+          "target": "WYOB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.5
+        },
+        {
+          "game_id": 70,
+          "target": "RGYO",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.7
+        },
+        {
+          "game_id": 71,
+          "target": "GGRY",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.6
+        },
+        {
+          "game_id": 72,
+          "target": "BBRG",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.199999999999999
+        },
+        {
+          "game_id": 73,
+          "target": "OOWY",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.9000000000000004
+        },
+        {
+          "game_id": 74,
+          "target": "GRGR",
+          "won": true,
+          "attempts": 3,
+          "reward": 8.3
+        },
+        {
+          "game_id": 75,
+          "target": "OOWO",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.3
+        },
+        {
+          "game_id": 76,
+          "target": "OYRY",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.4
+        },
+        {
+          "game_id": 77,
+          "target": "OGOR",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.7
+        },
+        {
+          "game_id": 78,
+          "target": "GOWG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.8
+        },
+        {
+          "game_id": 79,
+          "target": "RWYO",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.3
+        },
+        {
+          "game_id": 80,
+          "target": "OGGR",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.3
+        },
+        {
+          "game_id": 81,
+          "target": "YYRO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.6
+        },
+        {
+          "game_id": 82,
+          "target": "OYWB",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.8
+        },
+        {
+          "game_id": 83,
+          "target": "GYYO",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.4
+        },
+        {
+          "game_id": 84,
+          "target": "GYYO",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.5
+        },
+        {
+          "game_id": 85,
+          "target": "RBYR",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.2
+        },
+        {
+          "game_id": 86,
+          "target": "RBGO",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.0999999999999996
+        },
+        {
+          "game_id": 87,
+          "target": "YWYO",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.1
+        },
+        {
+          "game_id": 88,
+          "target": "YWRY",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.1
+        },
+        {
+          "game_id": 89,
+          "target": "YBOY",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.8
+        },
+        {
+          "game_id": 90,
+          "target": "OYWR",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.800000000000001
+        },
+        {
+          "game_id": 91,
+          "target": "BBWY",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.3
+        },
+        {
+          "game_id": 92,
+          "target": "YGYR",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.2
+        },
+        {
+          "game_id": 93,
+          "target": "YOOO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.5
+        },
+        {
+          "game_id": 94,
+          "target": "YBGY",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.9
+        },
+        {
+          "game_id": 95,
+          "target": "OYYG",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.5
+        },
+        {
+          "game_id": 96,
+          "target": "YYGR",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.7000000000000002
+        },
+        {
+          "game_id": 97,
+          "target": "RBYG",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.1
+        },
+        {
+          "game_id": 98,
+          "target": "OOOY",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.8
+        },
+        {
+          "game_id": 99,
+          "target": "RWOR",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.1
+        },
+        {
+          "game_id": 100,
+          "target": "YYWR",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.4000000000000004
+        }
+      ],
+      "wins": 100,
+      "total_attempts": 439,
+      "total_reward": 615.6,
+      "win_rate": 1.0,
+      "avg_attempts": 4.39,
+      "avg_reward": 6.156000000000001
+    },
+    "VOI": {
+      "strategy": "VOI",
+      "variant": "classic",
+      "num_colors": 6,
+      "search_space": 1296,
+      "num_games": 100,
+      "games": [
+        {
+          "game_id": 1,
+          "target": "BGGO",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.6
+        },
+        {
+          "game_id": 2,
+          "target": "BWRG",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.9
+        },
+        {
+          "game_id": 3,
+          "target": "WOOB",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.5
+        },
+        {
+          "game_id": 4,
+          "target": "RBRY",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.5
+        },
+        {
+          "game_id": 5,
+          "target": "BBRW",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.3
+        },
+        {
+          "game_id": 6,
+          "target": "YBYB",
+          "won": true,
+          "attempts": 3,
+          "reward": 9.2
+        },
+        {
+          "game_id": 7,
+          "target": "WGBY",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.9
+        },
+        {
+          "game_id": 8,
+          "target": "YOYW",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.6
+        },
+        {
+          "game_id": 9,
+          "target": "OWWO",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.0
+        },
+        {
+          "game_id": 10,
+          "target": "OWOB",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.7
+        },
+        {
+          "game_id": 11,
+          "target": "BRGW",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.6000000000000005
+        },
+        {
+          "game_id": 12,
+          "target": "YBWG",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.4
+        },
+        {
+          "game_id": 13,
+          "target": "OWBO",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.5
+        },
+        {
+          "game_id": 14,
+          "target": "WYOR",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.3
+        },
+        {
+          "game_id": 15,
+          "target": "YYBO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.1
+        },
+        {
+          "game_id": 16,
+          "target": "GGGG",
+          "won": true,
+          "attempts": 5,
+          "reward": 2.5
+        },
+        {
+          "game_id": 17,
+          "target": "WGYR",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.9
+        },
+        {
+          "game_id": 18,
+          "target": "WRYR",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.1
+        },
+        {
+          "game_id": 19,
+          "target": "GGWW",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.1
+        },
+        {
+          "game_id": 20,
+          "target": "BWWG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.6
+        },
+        {
+          "game_id": 21,
+          "target": "BWGG",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.7
+        },
+        {
+          "game_id": 22,
+          "target": "GGOG",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.4000000000000004
+        },
+        {
+          "game_id": 23,
+          "target": "GOBB",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.8
+        },
+        {
+          "game_id": 24,
+          "target": "BRBG",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.8
+        },
+        {
+          "game_id": 25,
+          "target": "OYGB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.800000000000001
+        },
+        {
+          "game_id": 26,
+          "target": "BYWO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.4
+        },
+        {
+          "game_id": 27,
+          "target": "GRYB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.6
+        },
+        {
+          "game_id": 28,
+          "target": "YBOR",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.6
+        },
+        {
+          "game_id": 29,
+          "target": "WYYG",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.5
+        },
+        {
+          "game_id": 30,
+          "target": "OWRY",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.2
+        },
+        {
+          "game_id": 31,
+          "target": "YGOO",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.0
+        },
+        {
+          "game_id": 32,
+          "target": "RBYW",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.0
+        },
+        {
+          "game_id": 33,
+          "target": "YWBG",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.4
+        },
+        {
+          "game_id": 34,
+          "target": "GWRO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.6
+        },
+        {
+          "game_id": 35,
+          "target": "OGOW",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.4
+        },
+        {
+          "game_id": 36,
+          "target": "OYBW",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.9
+        },
+        {
+          "game_id": 37,
+          "target": "BOWR",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.7
+        },
+        {
+          "game_id": 38,
+          "target": "OWRO",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.6
+        },
+        {
+          "game_id": 39,
+          "target": "OYYR",
+          "won": true,
+          "attempts": 3,
+          "reward": 10.0
+        },
+        {
+          "game_id": 40,
+          "target": "ORWG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.800000000000001
+        },
+        {
+          "game_id": 41,
+          "target": "RBBR",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.5
+        },
+        {
+          "game_id": 42,
+          "target": "RROO",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.6
+        },
+        {
+          "game_id": 43,
+          "target": "WYWG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.4
+        },
+        {
+          "game_id": 44,
+          "target": "GBYR",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.8
+        },
+        {
+          "game_id": 45,
+          "target": "BRYW",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.7
+        },
+        {
+          "game_id": 46,
+          "target": "WBOR",
+          "won": true,
+          "attempts": 3,
+          "reward": 8.7
+        },
+        {
+          "game_id": 47,
+          "target": "GGWW",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.7
+        },
+        {
+          "game_id": 48,
+          "target": "GRGG",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.9000000000000004
+        },
+        {
+          "game_id": 49,
+          "target": "GYGO",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.8
+        },
+        {
+          "game_id": 50,
+          "target": "RROB",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.0
+        },
+        {
+          "game_id": 51,
+          "target": "RGYO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.4
+        },
+        {
+          "game_id": 52,
+          "target": "RBRG",
+          "won": true,
+          "attempts": 3,
+          "reward": 9.9
+        },
+        {
+          "game_id": 53,
+          "target": "RRYY",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.9
+        },
+        {
+          "game_id": 54,
+          "target": "GBGB",
+          "won": true,
+          "attempts": 3,
+          "reward": 8.5
+        },
+        {
+          "game_id": 55,
+          "target": "WRWR",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.8
+        },
+        {
+          "game_id": 56,
+          "target": "GWWW",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.8
+        },
+        {
+          "game_id": 57,
+          "target": "GOYB",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.0
+        },
+        {
+          "game_id": 58,
+          "target": "WGOG",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.3
+        },
+        {
+          "game_id": 59,
+          "target": "OWWW",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.7
+        },
+        {
+          "game_id": 60,
+          "target": "OGOW",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.7
+        },
+        {
+          "game_id": 61,
+          "target": "ORGW",
+          "won": true,
+          "attempts": 2,
+          "reward": 10.9
+        },
+        {
+          "game_id": 62,
+          "target": "ORWG",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.2
+        },
+        {
+          "game_id": 63,
+          "target": "WWBG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.9
+        },
+        {
+          "game_id": 64,
+          "target": "BWBG",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.6
+        },
+        {
+          "game_id": 65,
+          "target": "BGRY",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.800000000000001
+        },
+        {
+          "game_id": 66,
+          "target": "ORWO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.199999999999999
+        },
+        {
+          "game_id": 67,
+          "target": "OBRY",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.9
+        },
+        {
+          "game_id": 68,
+          "target": "OGYR",
+          "won": true,
+          "attempts": 3,
+          "reward": 8.7
+        },
+        {
+          "game_id": 69,
+          "target": "GWRY",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.5
+        },
+        {
+          "game_id": 70,
+          "target": "BGRW",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.4
+        },
+        {
+          "game_id": 71,
+          "target": "GYBY",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.0
+        },
+        {
+          "game_id": 72,
+          "target": "YBOO",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.0
+        },
+        {
+          "game_id": 73,
+          "target": "RYGW",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.7
+        },
+        {
+          "game_id": 74,
+          "target": "BYYB",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.6
+        },
+        {
+          "game_id": 75,
+          "target": "WYOG",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.3
+        },
+        {
+          "game_id": 76,
+          "target": "OBBR",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.7
+        },
+        {
+          "game_id": 77,
+          "target": "GGWY",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.7
+        },
+        {
+          "game_id": 78,
+          "target": "GWYR",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.2
+        },
+        {
+          "game_id": 79,
+          "target": "OORB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.5
+        },
+        {
+          "game_id": 80,
+          "target": "BYGW",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.0
+        },
+        {
+          "game_id": 81,
+          "target": "OGRW",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.300000000000001
+        },
+        {
+          "game_id": 82,
+          "target": "YGBG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.3
+        },
+        {
+          "game_id": 83,
+          "target": "GWBY",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.5
+        },
+        {
+          "game_id": 84,
+          "target": "YYGG",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.8
+        },
+        {
+          "game_id": 85,
+          "target": "GBRY",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.2
+        },
+        {
+          "game_id": 86,
+          "target": "BYGB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.800000000000001
+        },
+        {
+          "game_id": 87,
+          "target": "YYBY",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.4
+        },
+        {
+          "game_id": 88,
+          "target": "RYBB",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.3
+        },
+        {
+          "game_id": 89,
+          "target": "GRYB",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.1
+        },
+        {
+          "game_id": 90,
+          "target": "GRWY",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.1
+        },
+        {
+          "game_id": 91,
+          "target": "YWOO",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.5
+        },
+        {
+          "game_id": 92,
+          "target": "BORB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.1
+        },
+        {
+          "game_id": 93,
+          "target": "BBRR",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.1
+        },
+        {
+          "game_id": 94,
+          "target": "RGWO",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.0
+        },
+        {
+          "game_id": 95,
+          "target": "WWRR",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.9
+        },
+        {
+          "game_id": 96,
+          "target": "BWRG",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.0
+        },
+        {
+          "game_id": 97,
+          "target": "ORRB",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.8
+        },
+        {
+          "game_id": 98,
+          "target": "OBYW",
+          "won": true,
+          "attempts": 3,
+          "reward": 10.0
+        },
+        {
+          "game_id": 99,
+          "target": "OBBB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.9
+        },
+        {
+          "game_id": 100,
+          "target": "GYGG",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.4
+        }
+      ],
+      "wins": 100,
+      "total_attempts": 445,
+      "total_reward": 617.8999999999996,
+      "win_rate": 1.0,
+      "avg_attempts": 4.45,
+      "avg_reward": 6.178999999999997
+    },
+    "Random": {
+      "strategy": "Random",
+      "variant": "classic",
+      "num_colors": 6,
+      "search_space": 1296,
+      "num_games": 100,
+      "games": [
+        {
+          "game_id": 1,
+          "target": "BRWR",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.1
+        },
+        {
+          "game_id": 2,
+          "target": "RORG",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.5
+        },
+        {
+          "game_id": 3,
+          "target": "WWRG",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.5
+        },
+        {
+          "game_id": 4,
+          "target": "BORB",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.8
+        },
+        {
+          "game_id": 5,
+          "target": "OYBG",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.3
+        },
+        {
+          "game_id": 6,
+          "target": "RROG",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.4
+        },
+        {
+          "game_id": 7,
+          "target": "RBBW",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.4
+        },
+        {
+          "game_id": 8,
+          "target": "YGOY",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.5
+        },
+        {
+          "game_id": 9,
+          "target": "OGGG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.4
+        },
+        {
+          "game_id": 10,
+          "target": "BGWR",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.0
+        },
+        {
+          "game_id": 11,
+          "target": "WROY",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.9
+        },
+        {
+          "game_id": 12,
+          "target": "GBGB",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.5
+        },
+        {
+          "game_id": 13,
+          "target": "BGWO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.199999999999999
+        },
+        {
+          "game_id": 14,
+          "target": "OOGR",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.7
+        },
+        {
+          "game_id": 15,
+          "target": "BORB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.699999999999999
+        },
+        {
+          "game_id": 16,
+          "target": "BRGY",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.1
+        },
+        {
+          "game_id": 17,
+          "target": "RGYY",
+          "won": true,
+          "attempts": 6,
+          "reward": 0.7000000000000002
+        },
+        {
+          "game_id": 18,
+          "target": "BBWO",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.5
+        },
+        {
+          "game_id": 19,
+          "target": "OROR",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.4
+        },
+        {
+          "game_id": 20,
+          "target": "BROW",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.0
+        },
+        {
+          "game_id": 21,
+          "target": "WORW",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.3
+        },
+        {
+          "game_id": 22,
+          "target": "WOGO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.2
+        },
+        {
+          "game_id": 23,
+          "target": "YYOB",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.1
+        },
+        {
+          "game_id": 24,
+          "target": "OBGW",
+          "won": true,
+          "attempts": 6,
+          "reward": 3.5
+        },
+        {
+          "game_id": 25,
+          "target": "BBYO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.3
+        },
+        {
+          "game_id": 26,
+          "target": "GRBY",
+          "won": true,
+          "attempts": 3,
+          "reward": 9.0
+        },
+        {
+          "game_id": 27,
+          "target": "BRYB",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.9
+        },
+        {
+          "game_id": 28,
+          "target": "GWWY",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.8
+        },
+        {
+          "game_id": 29,
+          "target": "BRRG",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.4
+        },
+        {
+          "game_id": 30,
+          "target": "OBBO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.2
+        },
+        {
+          "game_id": 31,
+          "target": "RGYY",
+          "won": true,
+          "attempts": 3,
+          "reward": 9.0
+        },
+        {
+          "game_id": 32,
+          "target": "GBYO",
+          "won": true,
+          "attempts": 3,
+          "reward": 10.0
+        },
+        {
+          "game_id": 33,
+          "target": "YOWR",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.6
+        },
+        {
+          "game_id": 34,
+          "target": "YWRY",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.6
+        },
+        {
+          "game_id": 35,
+          "target": "OOOG",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.9
+        },
+        {
+          "game_id": 36,
+          "target": "OOYY",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.3
+        },
+        {
+          "game_id": 37,
+          "target": "YOGO",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.6999999999999993
+        },
+        {
+          "game_id": 38,
+          "target": "ORGW",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.3
+        },
+        {
+          "game_id": 39,
+          "target": "ORWW",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.5999999999999996
+        },
+        {
+          "game_id": 40,
+          "target": "RGRG",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.0
+        },
+        {
+          "game_id": 41,
+          "target": "RRBO",
+          "won": true,
+          "attempts": 2,
+          "reward": 11.0
+        },
+        {
+          "game_id": 42,
+          "target": "OWOW",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.1
+        },
+        {
+          "game_id": 43,
+          "target": "BBYW",
+          "won": true,
+          "attempts": 5,
+          "reward": 7.0
+        },
+        {
+          "game_id": 44,
+          "target": "YBRO",
+          "won": true,
+          "attempts": 3,
+          "reward": 9.3
+        },
+        {
+          "game_id": 45,
+          "target": "RRBR",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.5
+        },
+        {
+          "game_id": 46,
+          "target": "YYRY",
+          "won": true,
+          "attempts": 3,
+          "reward": 8.5
+        },
+        {
+          "game_id": 47,
+          "target": "YRGY",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.5
+        },
+        {
+          "game_id": 48,
+          "target": "YROR",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.8
+        },
+        {
+          "game_id": 49,
+          "target": "OGRO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.4
+        },
+        {
+          "game_id": 50,
+          "target": "YOGR",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.6
+        },
+        {
+          "game_id": 51,
+          "target": "YBBY",
+          "won": true,
+          "attempts": 3,
+          "reward": 7.9
+        },
+        {
+          "game_id": 52,
+          "target": "GROR",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.1999999999999993
+        },
+        {
+          "game_id": 53,
+          "target": "BBWR",
+          "won": true,
+          "attempts": 6,
+          "reward": 0.7000000000000002
+        },
+        {
+          "game_id": 54,
+          "target": "BBOW",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.9
+        },
+        {
+          "game_id": 55,
+          "target": "RYWY",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.1
+        },
+        {
+          "game_id": 56,
+          "target": "OOWO",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.2
+        },
+        {
+          "game_id": 57,
+          "target": "BWBW",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.1
+        },
+        {
+          "game_id": 58,
+          "target": "GOBB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.6
+        },
+        {
+          "game_id": 59,
+          "target": "WGOR",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.1
+        },
+        {
+          "game_id": 60,
+          "target": "WYGB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.8
+        },
+        {
+          "game_id": 61,
+          "target": "OROY",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.5
+        },
+        {
+          "game_id": 62,
+          "target": "GGOG",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.4
+        },
+        {
+          "game_id": 63,
+          "target": "BROB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.3
+        },
+        {
+          "game_id": 64,
+          "target": "GOBY",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.8
+        },
+        {
+          "game_id": 65,
+          "target": "BOGW",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.2
+        },
+        {
+          "game_id": 66,
+          "target": "GBBO",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.9
+        },
+        {
+          "game_id": 67,
+          "target": "WOWO",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.4
+        },
+        {
+          "game_id": 68,
+          "target": "YRYG",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.9
+        },
+        {
+          "game_id": 69,
+          "target": "WOBO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.6
+        },
+        {
+          "game_id": 70,
+          "target": "RRBY",
+          "won": true,
+          "attempts": 6,
+          "reward": 4.0
+        },
+        {
+          "game_id": 71,
+          "target": "GBWO",
+          "won": true,
+          "attempts": 3,
+          "reward": 8.7
+        },
+        {
+          "game_id": 72,
+          "target": "BYRO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.8
+        },
+        {
+          "game_id": 73,
+          "target": "WYWG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.5
+        },
+        {
+          "game_id": 74,
+          "target": "RROW",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.5
+        },
+        {
+          "game_id": 75,
+          "target": "WWGR",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.6
+        },
+        {
+          "game_id": 76,
+          "target": "OBWW",
+          "won": true,
+          "attempts": 2,
+          "reward": 9.7
+        },
+        {
+          "game_id": 77,
+          "target": "BRYR",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.9
+        },
+        {
+          "game_id": 78,
+          "target": "OBWR",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.7
+        },
+        {
+          "game_id": 79,
+          "target": "WRWR",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.6
+        },
+        {
+          "game_id": 80,
+          "target": "WGRB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.9
+        },
+        {
+          "game_id": 81,
+          "target": "GBYG",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.9
+        },
+        {
+          "game_id": 82,
+          "target": "BOBO",
+          "won": true,
+          "attempts": 4,
+          "reward": 5.7
+        },
+        {
+          "game_id": 83,
+          "target": "YGBO",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.5
+        },
+        {
+          "game_id": 84,
+          "target": "YRBY",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.7
+        },
+        {
+          "game_id": 85,
+          "target": "RGGY",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.4
+        },
+        {
+          "game_id": 86,
+          "target": "OGOY",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.9
+        },
+        {
+          "game_id": 87,
+          "target": "RBBB",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.4
+        },
+        {
+          "game_id": 88,
+          "target": "BBBG",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.1000000000000005
+        },
+        {
+          "game_id": 89,
+          "target": "WRWB",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.4000000000000004
+        },
+        {
+          "game_id": 90,
+          "target": "GWGY",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.3000000000000007
+        },
+        {
+          "game_id": 91,
+          "target": "RORG",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.6
+        },
+        {
+          "game_id": 92,
+          "target": "YOOO",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.7
+        },
+        {
+          "game_id": 93,
+          "target": "WBRB",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.4
+        },
+        {
+          "game_id": 94,
+          "target": "RYOW",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.6
+        },
+        {
+          "game_id": 95,
+          "target": "WORO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.3
+        },
+        {
+          "game_id": 96,
+          "target": "OWRR",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.8
+        },
+        {
+          "game_id": 97,
+          "target": "OBYR",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.3999999999999995
+        },
+        {
+          "game_id": 98,
+          "target": "GGWW",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.5
+        },
+        {
+          "game_id": 99,
+          "target": "YRWO",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.2
+        },
+        {
+          "game_id": 100,
+          "target": "WORW",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.5
+        }
+      ],
+      "wins": 100,
+      "total_attempts": 455,
+      "total_reward": 602.7999999999998,
+      "win_rate": 1.0,
+      "avg_attempts": 4.55,
+      "avg_reward": 6.027999999999999
+    }
+  },
+  "extended": {
+    "CSS": {
+      "strategy": "CSS",
+      "variant": "extended",
+      "num_colors": 8,
+      "search_space": 4096,
+      "num_games": 100,
+      "games": [
+        {
+          "game_id": 1,
+          "target": "OYKB",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.2
+        },
+        {
+          "game_id": 2,
+          "target": "RGKB",
+          "won": true,
+          "attempts": 7,
+          "reward": -3.1999999999999993
+        },
+        {
+          "game_id": 3,
+          "target": "GBGP",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.4
+        },
+        {
+          "game_id": 4,
+          "target": "KGKW",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.9
+        },
+        {
+          "game_id": 5,
+          "target": "GPYG",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.3
+        },
+        {
+          "game_id": 6,
+          "target": "WBOR",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.8
+        },
+        {
+          "game_id": 7,
+          "target": "OPOB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.1
+        },
+        {
+          "game_id": 8,
+          "target": "PWOW",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.1
+        },
+        {
+          "game_id": 9,
+          "target": "GKOB",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.3
+        },
+        {
+          "game_id": 10,
+          "target": "GKGP",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.5
+        },
+        {
+          "game_id": 11,
+          "target": "OPPG",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.9000000000000004
+        },
+        {
+          "game_id": 12,
+          "target": "PPBY",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.5999999999999996
+        },
+        {
+          "game_id": 13,
+          "target": "WPGY",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.8000000000000007
+        },
+        {
+          "game_id": 14,
+          "target": "KBRK",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.7
+        },
+        {
+          "game_id": 15,
+          "target": "YBPW",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.3000000000000007
+        },
+        {
+          "game_id": 16,
+          "target": "PKWO",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.0
+        },
+        {
+          "game_id": 17,
+          "target": "YRRW",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.3
+        },
+        {
+          "game_id": 18,
+          "target": "OKRP",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.0
+        },
+        {
+          "game_id": 19,
+          "target": "RBKO",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.7
+        },
+        {
+          "game_id": 20,
+          "target": "GYBY",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.5
+        },
+        {
+          "game_id": 21,
+          "target": "RKGO",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.1
+        },
+        {
+          "game_id": 22,
+          "target": "OKOG",
+          "won": true,
+          "attempts": 6,
+          "reward": 3.9000000000000004
+        },
+        {
+          "game_id": 23,
+          "target": "RKYO",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.1
+        },
+        {
+          "game_id": 24,
+          "target": "GWKW",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.1
+        },
+        {
+          "game_id": 25,
+          "target": "OOBG",
+          "won": true,
+          "attempts": 6,
+          "reward": 3.0999999999999996
+        },
+        {
+          "game_id": 26,
+          "target": "RPWK",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.8
+        },
+        {
+          "game_id": 27,
+          "target": "OGKK",
+          "won": true,
+          "attempts": 6,
+          "reward": 0.8999999999999995
+        },
+        {
+          "game_id": 28,
+          "target": "OPWY",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.0
+        },
+        {
+          "game_id": 29,
+          "target": "PRKB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.6
+        },
+        {
+          "game_id": 30,
+          "target": "YGBG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.3
+        },
+        {
+          "game_id": 31,
+          "target": "YRBP",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.699999999999999
+        },
+        {
+          "game_id": 32,
+          "target": "KYKO",
+          "won": true,
+          "attempts": 6,
+          "reward": 3.5
+        },
+        {
+          "game_id": 33,
+          "target": "YGGK",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.9000000000000004
+        },
+        {
+          "game_id": 34,
+          "target": "RYRW",
+          "won": true,
+          "attempts": 6,
+          "reward": 3.5
+        },
+        {
+          "game_id": 35,
+          "target": "BPRG",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.7000000000000002
+        },
+        {
+          "game_id": 36,
+          "target": "YKBG",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.3000000000000007
+        },
+        {
+          "game_id": 37,
+          "target": "PRGW",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.9
+        },
+        {
+          "game_id": 38,
+          "target": "OGYO",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.6999999999999993
+        },
+        {
+          "game_id": 39,
+          "target": "BGBW",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.5
+        },
+        {
+          "game_id": 40,
+          "target": "BYBY",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.4000000000000004
+        },
+        {
+          "game_id": 41,
+          "target": "YOPO",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.1
+        },
+        {
+          "game_id": 42,
+          "target": "WPGG",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.9000000000000004
+        },
+        {
+          "game_id": 43,
+          "target": "KGKO",
+          "won": true,
+          "attempts": 3,
+          "reward": 10.0
+        },
+        {
+          "game_id": 44,
+          "target": "POYK",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.4
+        },
+        {
+          "game_id": 45,
+          "target": "OPBO",
+          "won": true,
+          "attempts": 6,
+          "reward": 0.40000000000000036
+        },
+        {
+          "game_id": 46,
+          "target": "GBWB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.9
+        },
+        {
+          "game_id": 47,
+          "target": "OKOR",
+          "won": true,
+          "attempts": 7,
+          "reward": 2.7
+        },
+        {
+          "game_id": 48,
+          "target": "GGYK",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.9000000000000004
+        },
+        {
+          "game_id": 49,
+          "target": "WGYK",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.1
+        },
+        {
+          "game_id": 50,
+          "target": "KGOO",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.7
+        },
+        {
+          "game_id": 51,
+          "target": "GRYB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.8
+        },
+        {
+          "game_id": 52,
+          "target": "KYRR",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.6000000000000005
+        },
+        {
+          "game_id": 53,
+          "target": "YKBP",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.8999999999999995
+        },
+        {
+          "game_id": 54,
+          "target": "KWRO",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.1
+        },
+        {
+          "game_id": 55,
+          "target": "KBOR",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.2
+        },
+        {
+          "game_id": 56,
+          "target": "WRKR",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.6
+        },
+        {
+          "game_id": 57,
+          "target": "GKRY",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.199999999999999
+        },
+        {
+          "game_id": 58,
+          "target": "OYPG",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.0
+        },
+        {
+          "game_id": 59,
+          "target": "OGGW",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.5
+        },
+        {
+          "game_id": 60,
+          "target": "KROO",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.5999999999999996
+        },
+        {
+          "game_id": 61,
+          "target": "WBWP",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.8
+        },
+        {
+          "game_id": 62,
+          "target": "YYPB",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.0999999999999996
+        },
+        {
+          "game_id": 63,
+          "target": "YBKO",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.6
+        },
+        {
+          "game_id": 64,
+          "target": "ORPR",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.0999999999999996
+        },
+        {
+          "game_id": 65,
+          "target": "GYOW",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.5999999999999996
+        },
+        {
+          "game_id": 66,
+          "target": "BOBR",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.6999999999999993
+        },
+        {
+          "game_id": 67,
+          "target": "KROW",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.4
+        },
+        {
+          "game_id": 68,
+          "target": "GRRO",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.8
+        },
+        {
+          "game_id": 69,
+          "target": "GBPK",
+          "won": true,
+          "attempts": 6,
+          "reward": 3.5
+        },
+        {
+          "game_id": 70,
+          "target": "YGGR",
+          "won": true,
+          "attempts": 7,
+          "reward": -1.8000000000000007
+        },
+        {
+          "game_id": 71,
+          "target": "OWYG",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.3999999999999995
+        },
+        {
+          "game_id": 72,
+          "target": "OYGR",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.7
+        },
+        {
+          "game_id": 73,
+          "target": "YPBO",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.8999999999999995
+        },
+        {
+          "game_id": 74,
+          "target": "GBGO",
+          "won": true,
+          "attempts": 7,
+          "reward": 1.2000000000000002
+        },
+        {
+          "game_id": 75,
+          "target": "OBOR",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.3
+        },
+        {
+          "game_id": 76,
+          "target": "YYKP",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.7
+        },
+        {
+          "game_id": 77,
+          "target": "KPRG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.7
+        },
+        {
+          "game_id": 78,
+          "target": "RWGY",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.699999999999999
+        },
+        {
+          "game_id": 79,
+          "target": "KYWG",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.5
+        },
+        {
+          "game_id": 80,
+          "target": "WBOW",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.9
+        },
+        {
+          "game_id": 81,
+          "target": "WOGR",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.2
+        },
+        {
+          "game_id": 82,
+          "target": "BKPG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.9
+        },
+        {
+          "game_id": 83,
+          "target": "GRRW",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.299999999999999
+        },
+        {
+          "game_id": 84,
+          "target": "KYPP",
+          "won": true,
+          "attempts": 6,
+          "reward": 3.7
+        },
+        {
+          "game_id": 85,
+          "target": "BPYW",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.199999999999999
+        },
+        {
+          "game_id": 86,
+          "target": "OPWP",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.5
+        },
+        {
+          "game_id": 87,
+          "target": "KBWW",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.8
+        },
+        {
+          "game_id": 88,
+          "target": "KOOK",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.4
+        },
+        {
+          "game_id": 89,
+          "target": "WGOK",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.1
+        },
+        {
+          "game_id": 90,
+          "target": "RYWW",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.8
+        },
+        {
+          "game_id": 91,
+          "target": "OWBB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.6
+        },
+        {
+          "game_id": 92,
+          "target": "PYGB",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.2
+        },
+        {
+          "game_id": 93,
+          "target": "RGWG",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.0
+        },
+        {
+          "game_id": 94,
+          "target": "GOPG",
+          "won": true,
+          "attempts": 6,
+          "reward": 3.4000000000000004
+        },
+        {
+          "game_id": 95,
+          "target": "BPPG",
+          "won": true,
+          "attempts": 6,
+          "reward": 0.5
+        },
+        {
+          "game_id": 96,
+          "target": "GGOB",
+          "won": true,
+          "attempts": 6,
+          "reward": 3.0999999999999996
+        },
+        {
+          "game_id": 97,
+          "target": "RPPW",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.8
+        },
+        {
+          "game_id": 98,
+          "target": "RRWY",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.6
+        },
+        {
+          "game_id": 99,
+          "target": "RBKR",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.1
+        },
+        {
+          "game_id": 100,
+          "target": "BPBK",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.9000000000000004
+        }
+      ],
+      "wins": 100,
+      "total_attempts": 525,
+      "total_reward": 414.6999999999999,
+      "win_rate": 1.0,
+      "avg_attempts": 5.25,
+      "avg_reward": 4.1469999999999985
+    },
+    "VOI": {
+      "strategy": "VOI",
+      "variant": "extended",
+      "num_colors": 8,
+      "search_space": 4096,
+      "num_games": 100,
+      "games": [
+        {
+          "game_id": 1,
+          "target": "PGWG",
+          "won": true,
+          "attempts": 6,
+          "reward": 3.2
+        },
+        {
+          "game_id": 2,
+          "target": "KYGK",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.1
+        },
+        {
+          "game_id": 3,
+          "target": "POGB",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.0
+        },
+        {
+          "game_id": 4,
+          "target": "PBGY",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.9000000000000004
+        },
+        {
+          "game_id": 5,
+          "target": "BPRK",
+          "won": true,
+          "attempts": 6,
+          "reward": 3.4000000000000004
+        },
+        {
+          "game_id": 6,
+          "target": "GOWP",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.199999999999999
+        },
+        {
+          "game_id": 7,
+          "target": "BPWK",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.8
+        },
+        {
+          "game_id": 8,
+          "target": "GOOR",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.0999999999999996
+        },
+        {
+          "game_id": 9,
+          "target": "RKKP",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.9000000000000004
+        },
+        {
+          "game_id": 10,
+          "target": "PGBK",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.5
+        },
+        {
+          "game_id": 11,
+          "target": "WKOP",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.8
+        },
+        {
+          "game_id": 12,
+          "target": "PKWK",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.3
+        },
+        {
+          "game_id": 13,
+          "target": "RYWP",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.5
+        },
+        {
+          "game_id": 14,
+          "target": "KRYO",
+          "won": true,
+          "attempts": 6,
+          "reward": 3.9000000000000004
+        },
+        {
+          "game_id": 15,
+          "target": "BOGR",
+          "won": true,
+          "attempts": 6,
+          "reward": 4.6
+        },
+        {
+          "game_id": 16,
+          "target": "KBWR",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.0
+        },
+        {
+          "game_id": 17,
+          "target": "YPGY",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.4
+        },
+        {
+          "game_id": 18,
+          "target": "GYYG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.4
+        },
+        {
+          "game_id": 19,
+          "target": "WPGP",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.3
+        },
+        {
+          "game_id": 20,
+          "target": "RGBB",
+          "won": true,
+          "attempts": 7,
+          "reward": 1.7000000000000002
+        },
+        {
+          "game_id": 21,
+          "target": "GGRW",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.8
+        },
+        {
+          "game_id": 22,
+          "target": "YWGB",
+          "won": true,
+          "attempts": 6,
+          "reward": 5.7
+        },
+        {
+          "game_id": 23,
+          "target": "RRBO",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.0
+        },
+        {
+          "game_id": 24,
+          "target": "BOPY",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.7999999999999998
+        },
+        {
+          "game_id": 25,
+          "target": "GKPY",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.9
+        },
+        {
+          "game_id": 26,
+          "target": "OKOR",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.2
+        },
+        {
+          "game_id": 27,
+          "target": "WOGR",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.9
+        },
+        {
+          "game_id": 28,
+          "target": "PYOK",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.6
+        },
+        {
+          "game_id": 29,
+          "target": "WRRW",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.6
+        },
+        {
+          "game_id": 30,
+          "target": "BPPY",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.1
+        },
+        {
+          "game_id": 31,
+          "target": "OWKB",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.9
+        },
+        {
+          "game_id": 32,
+          "target": "GKPG",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.4
+        },
+        {
+          "game_id": 33,
+          "target": "PKWP",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.9
+        },
+        {
+          "game_id": 34,
+          "target": "KYWO",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.4
+        },
+        {
+          "game_id": 35,
+          "target": "KPOO",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.6
+        },
+        {
+          "game_id": 36,
+          "target": "RKOY",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.9
+        },
+        {
+          "game_id": 37,
+          "target": "PWOB",
+          "won": true,
+          "attempts": 7,
+          "reward": -0.1999999999999993
+        },
+        {
+          "game_id": 38,
+          "target": "GOWG",
+          "won": true,
+          "attempts": 6,
+          "reward": 0.3000000000000007
+        },
+        {
+          "game_id": 39,
+          "target": "KWPG",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.5
+        },
+        {
+          "game_id": 40,
+          "target": "PRYR",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.0
+        },
+        {
+          "game_id": 41,
+          "target": "RKBO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.0
+        },
+        {
+          "game_id": 42,
+          "target": "WRKY",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.2
+        },
+        {
+          "game_id": 43,
+          "target": "OYBG",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.4
+        },
+        {
+          "game_id": 44,
+          "target": "KPPW",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.8
+        },
+        {
+          "game_id": 45,
+          "target": "ORPO",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.7
+        },
+        {
+          "game_id": 46,
+          "target": "YWYR",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.5
+        },
+        {
+          "game_id": 47,
+          "target": "YRPB",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.5000000000000009
+        },
+        {
+          "game_id": 48,
+          "target": "GGKG",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.5
+        },
+        {
+          "game_id": 49,
+          "target": "WBWR",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.2000000000000002
+        },
+        {
+          "game_id": 50,
+          "target": "RRRO",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.9000000000000004
+        },
+        {
+          "game_id": 51,
+          "target": "WPKY",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.0
+        },
+        {
+          "game_id": 52,
+          "target": "KRWY",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.8
+        },
+        {
+          "game_id": 53,
+          "target": "RGOK",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.6
+        },
+        {
+          "game_id": 54,
+          "target": "BRWO",
+          "won": true,
+          "attempts": 3,
+          "reward": 9.3
+        },
+        {
+          "game_id": 55,
+          "target": "BYBY",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.4000000000000004
+        },
+        {
+          "game_id": 56,
+          "target": "YPBK",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.6
+        },
+        {
+          "game_id": 57,
+          "target": "KRGR",
+          "won": true,
+          "attempts": 6,
+          "reward": 4.0
+        },
+        {
+          "game_id": 58,
+          "target": "KYWB",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.6
+        },
+        {
+          "game_id": 59,
+          "target": "WOBG",
+          "won": true,
+          "attempts": 3,
+          "reward": 9.4
+        },
+        {
+          "game_id": 60,
+          "target": "OGWO",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.5
+        },
+        {
+          "game_id": 61,
+          "target": "GWGY",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.9
+        },
+        {
+          "game_id": 62,
+          "target": "KWRP",
+          "won": true,
+          "attempts": 7,
+          "reward": 1.4000000000000004
+        },
+        {
+          "game_id": 63,
+          "target": "GGYG",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.7000000000000002
+        },
+        {
+          "game_id": 64,
+          "target": "ORKP",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.199999999999999
+        },
+        {
+          "game_id": 65,
+          "target": "BGBY",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.3
+        },
+        {
+          "game_id": 66,
+          "target": "YYPG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.1
+        },
+        {
+          "game_id": 67,
+          "target": "WWGG",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.0
+        },
+        {
+          "game_id": 68,
+          "target": "GYWP",
+          "won": true,
+          "attempts": 6,
+          "reward": 0.7000000000000002
+        },
+        {
+          "game_id": 69,
+          "target": "BGKW",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.5
+        },
+        {
+          "game_id": 70,
+          "target": "YBKW",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.5
+        },
+        {
+          "game_id": 71,
+          "target": "RKOY",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.5
+        },
+        {
+          "game_id": 72,
+          "target": "WOPK",
+          "won": true,
+          "attempts": 3,
+          "reward": 9.2
+        },
+        {
+          "game_id": 73,
+          "target": "RGBP",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.1
+        },
+        {
+          "game_id": 74,
+          "target": "RPKR",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.3
+        },
+        {
+          "game_id": 75,
+          "target": "ORPB",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.1
+        },
+        {
+          "game_id": 76,
+          "target": "WOWG",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.1
+        },
+        {
+          "game_id": 77,
+          "target": "BOOB",
+          "won": true,
+          "attempts": 6,
+          "reward": 0.7999999999999998
+        },
+        {
+          "game_id": 78,
+          "target": "GOBB",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.5
+        },
+        {
+          "game_id": 79,
+          "target": "GPYB",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.0999999999999996
+        },
+        {
+          "game_id": 80,
+          "target": "YBWW",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.9
+        },
+        {
+          "game_id": 81,
+          "target": "GPGW",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.4
+        },
+        {
+          "game_id": 82,
+          "target": "RROY",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.1
+        },
+        {
+          "game_id": 83,
+          "target": "GRKW",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.0
+        },
+        {
+          "game_id": 84,
+          "target": "GPPG",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.2
+        },
+        {
+          "game_id": 85,
+          "target": "GKPG",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.5
+        },
+        {
+          "game_id": 86,
+          "target": "BWKP",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.9000000000000004
+        },
+        {
+          "game_id": 87,
+          "target": "GPGG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.7
+        },
+        {
+          "game_id": 88,
+          "target": "GKKG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.6
+        },
+        {
+          "game_id": 89,
+          "target": "WWWW",
+          "won": true,
+          "attempts": 4,
+          "reward": 5.5
+        },
+        {
+          "game_id": 90,
+          "target": "YGRB",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.0999999999999996
+        },
+        {
+          "game_id": 91,
+          "target": "PBRR",
+          "won": true,
+          "attempts": 6,
+          "reward": 0.7999999999999998
+        },
+        {
+          "game_id": 92,
+          "target": "RPOR",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.6
+        },
+        {
+          "game_id": 93,
+          "target": "RPGP",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.1
+        },
+        {
+          "game_id": 94,
+          "target": "ORPG",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.5999999999999996
+        },
+        {
+          "game_id": 95,
+          "target": "BRGR",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.4
+        },
+        {
+          "game_id": 96,
+          "target": "YRBB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.9
+        },
+        {
+          "game_id": 97,
+          "target": "BKKO",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.4
+        },
+        {
+          "game_id": 98,
+          "target": "RGBB",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.5
+        },
+        {
+          "game_id": 99,
+          "target": "BBOP",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.4000000000000004
+        },
+        {
+          "game_id": 100,
+          "target": "RYBB",
+          "won": true,
+          "attempts": 3,
+          "reward": 9.1
+        }
+      ],
+      "wins": 100,
+      "total_attempts": 502,
+      "total_reward": 471.9000000000001,
+      "win_rate": 1.0,
+      "avg_attempts": 5.02,
+      "avg_reward": 4.719000000000001
+    },
+    "Random": {
+      "strategy": "Random",
+      "variant": "extended",
+      "num_colors": 8,
+      "search_space": 4096,
+      "num_games": 100,
+      "games": [
+        {
+          "game_id": 1,
+          "target": "ORGR",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.5999999999999996
+        },
+        {
+          "game_id": 2,
+          "target": "YPYB",
+          "won": true,
+          "attempts": 7,
+          "reward": -2.4000000000000004
+        },
+        {
+          "game_id": 3,
+          "target": "KGWB",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.6
+        },
+        {
+          "game_id": 4,
+          "target": "OKKP",
+          "won": true,
+          "attempts": 6,
+          "reward": 0.7000000000000002
+        },
+        {
+          "game_id": 5,
+          "target": "YKPY",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.3
+        },
+        {
+          "game_id": 6,
+          "target": "GPPY",
+          "won": true,
+          "attempts": 6,
+          "reward": 0.1999999999999993
+        },
+        {
+          "game_id": 7,
+          "target": "PRBG",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.1
+        },
+        {
+          "game_id": 8,
+          "target": "WGRK",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.7000000000000002
+        },
+        {
+          "game_id": 9,
+          "target": "RYGP",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.2
+        },
+        {
+          "game_id": 10,
+          "target": "PKWG",
+          "won": true,
+          "attempts": 7,
+          "reward": 0.5999999999999996
+        },
+        {
+          "game_id": 11,
+          "target": "RRPW",
+          "won": true,
+          "attempts": 6,
+          "reward": 3.5
+        },
+        {
+          "game_id": 12,
+          "target": "WRWR",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.300000000000001
+        },
+        {
+          "game_id": 13,
+          "target": "GKRK",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.1999999999999993
+        },
+        {
+          "game_id": 14,
+          "target": "RPPB",
+          "won": true,
+          "attempts": 6,
+          "reward": 3.7
+        },
+        {
+          "game_id": 15,
+          "target": "YWBR",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.6
+        },
+        {
+          "game_id": 16,
+          "target": "BOYG",
+          "won": true,
+          "attempts": 7,
+          "reward": -2.9000000000000004
+        },
+        {
+          "game_id": 17,
+          "target": "BGKP",
+          "won": true,
+          "attempts": 3,
+          "reward": 9.3
+        },
+        {
+          "game_id": 18,
+          "target": "OWGY",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.2
+        },
+        {
+          "game_id": 19,
+          "target": "WPKR",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.3
+        },
+        {
+          "game_id": 20,
+          "target": "YOBY",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.6
+        },
+        {
+          "game_id": 21,
+          "target": "POYY",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.6999999999999993
+        },
+        {
+          "game_id": 22,
+          "target": "RRGR",
+          "won": true,
+          "attempts": 7,
+          "reward": -1.3000000000000007
+        },
+        {
+          "game_id": 23,
+          "target": "OORW",
+          "won": true,
+          "attempts": 7,
+          "reward": -1.0999999999999996
+        },
+        {
+          "game_id": 24,
+          "target": "GRYB",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.3
+        },
+        {
+          "game_id": 25,
+          "target": "PGRB",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.8
+        },
+        {
+          "game_id": 26,
+          "target": "BRPG",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.2
+        },
+        {
+          "game_id": 27,
+          "target": "BBGW",
+          "won": true,
+          "attempts": 7,
+          "reward": 2.7
+        },
+        {
+          "game_id": 28,
+          "target": "GYGB",
+          "won": true,
+          "attempts": 8,
+          "reward": -6.199999999999999
+        },
+        {
+          "game_id": 29,
+          "target": "BOKP",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.5999999999999996
+        },
+        {
+          "game_id": 30,
+          "target": "PYPW",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.5
+        },
+        {
+          "game_id": 31,
+          "target": "RYWR",
+          "won": true,
+          "attempts": 6,
+          "reward": 4.2
+        },
+        {
+          "game_id": 32,
+          "target": "WKBK",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.4
+        },
+        {
+          "game_id": 33,
+          "target": "KRBR",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.6000000000000005
+        },
+        {
+          "game_id": 34,
+          "target": "OBBO",
+          "won": true,
+          "attempts": 8,
+          "reward": -2.9000000000000004
+        },
+        {
+          "game_id": 35,
+          "target": "BKGP",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.6999999999999993
+        },
+        {
+          "game_id": 36,
+          "target": "WKGB",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.2
+        },
+        {
+          "game_id": 37,
+          "target": "POOY",
+          "won": true,
+          "attempts": 6,
+          "reward": 0.40000000000000036
+        },
+        {
+          "game_id": 38,
+          "target": "OPRR",
+          "won": true,
+          "attempts": 7,
+          "reward": 0.9000000000000004
+        },
+        {
+          "game_id": 39,
+          "target": "BORG",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.3999999999999995
+        },
+        {
+          "game_id": 40,
+          "target": "PGKR",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.1
+        },
+        {
+          "game_id": 41,
+          "target": "WGBO",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.7
+        },
+        {
+          "game_id": 42,
+          "target": "YKKB",
+          "won": true,
+          "attempts": 3,
+          "reward": 10.2
+        },
+        {
+          "game_id": 43,
+          "target": "RYWG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.3
+        },
+        {
+          "game_id": 44,
+          "target": "PBOO",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.2
+        },
+        {
+          "game_id": 45,
+          "target": "WGOG",
+          "won": true,
+          "attempts": 7,
+          "reward": -0.40000000000000036
+        },
+        {
+          "game_id": 46,
+          "target": "BOGG",
+          "won": true,
+          "attempts": 3,
+          "reward": 8.2
+        },
+        {
+          "game_id": 47,
+          "target": "PYKG",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.4
+        },
+        {
+          "game_id": 48,
+          "target": "GBKY",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.4
+        },
+        {
+          "game_id": 49,
+          "target": "PKGO",
+          "won": true,
+          "attempts": 6,
+          "reward": 0.9000000000000004
+        },
+        {
+          "game_id": 50,
+          "target": "ROWW",
+          "won": true,
+          "attempts": 7,
+          "reward": -1.0
+        },
+        {
+          "game_id": 51,
+          "target": "GPBO",
+          "won": true,
+          "attempts": 5,
+          "reward": 7.5
+        },
+        {
+          "game_id": 52,
+          "target": "RPGY",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.0
+        },
+        {
+          "game_id": 53,
+          "target": "OYPB",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.8
+        },
+        {
+          "game_id": 54,
+          "target": "PBBB",
+          "won": true,
+          "attempts": 4,
+          "reward": 5.7
+        },
+        {
+          "game_id": 55,
+          "target": "POOY",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.7999999999999998
+        },
+        {
+          "game_id": 56,
+          "target": "KWOW",
+          "won": true,
+          "attempts": 3,
+          "reward": 8.5
+        },
+        {
+          "game_id": 57,
+          "target": "OKYR",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.7
+        },
+        {
+          "game_id": 58,
+          "target": "PGRG",
+          "won": true,
+          "attempts": 8,
+          "reward": -7.0
+        },
+        {
+          "game_id": 59,
+          "target": "OPYP",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.7999999999999998
+        },
+        {
+          "game_id": 60,
+          "target": "GBGK",
+          "won": true,
+          "attempts": 7,
+          "reward": 0.1999999999999993
+        },
+        {
+          "game_id": 61,
+          "target": "OPRK",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.4000000000000004
+        },
+        {
+          "game_id": 62,
+          "target": "BRPO",
+          "won": true,
+          "attempts": 6,
+          "reward": 0.1999999999999993
+        },
+        {
+          "game_id": 63,
+          "target": "WRKR",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.8
+        },
+        {
+          "game_id": 64,
+          "target": "BKWW",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.199999999999999
+        },
+        {
+          "game_id": 65,
+          "target": "PBPB",
+          "won": true,
+          "attempts": 7,
+          "reward": -1.3000000000000007
+        },
+        {
+          "game_id": 66,
+          "target": "PYYP",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.1
+        },
+        {
+          "game_id": 67,
+          "target": "OKWP",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.1
+        },
+        {
+          "game_id": 68,
+          "target": "PPBO",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.1
+        },
+        {
+          "game_id": 69,
+          "target": "PBWW",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.7
+        },
+        {
+          "game_id": 70,
+          "target": "PGYY",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.6999999999999993
+        },
+        {
+          "game_id": 71,
+          "target": "ROKK",
+          "won": true,
+          "attempts": 7,
+          "reward": 1.7000000000000002
+        },
+        {
+          "game_id": 72,
+          "target": "RWKY",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.7
+        },
+        {
+          "game_id": 73,
+          "target": "KGYP",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.9
+        },
+        {
+          "game_id": 74,
+          "target": "GYKG",
+          "won": true,
+          "attempts": 7,
+          "reward": 2.0
+        },
+        {
+          "game_id": 75,
+          "target": "YBYY",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.4
+        },
+        {
+          "game_id": 76,
+          "target": "PWYY",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.4000000000000004
+        },
+        {
+          "game_id": 77,
+          "target": "BOBK",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.9
+        },
+        {
+          "game_id": 78,
+          "target": "BOGG",
+          "won": true,
+          "attempts": 7,
+          "reward": 2.2
+        },
+        {
+          "game_id": 79,
+          "target": "OKBO",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.5999999999999996
+        },
+        {
+          "game_id": 80,
+          "target": "WKRO",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.7
+        },
+        {
+          "game_id": 81,
+          "target": "YYYW",
+          "won": true,
+          "attempts": 7,
+          "reward": -1.6999999999999993
+        },
+        {
+          "game_id": 82,
+          "target": "KGGO",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.4000000000000004
+        },
+        {
+          "game_id": 83,
+          "target": "KWWK",
+          "won": true,
+          "attempts": 6,
+          "reward": 1.0
+        },
+        {
+          "game_id": 84,
+          "target": "BGPP",
+          "won": true,
+          "attempts": 7,
+          "reward": 0.09999999999999964
+        },
+        {
+          "game_id": 85,
+          "target": "PBPG",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.9000000000000004
+        },
+        {
+          "game_id": 86,
+          "target": "GKOY",
+          "won": true,
+          "attempts": 3,
+          "reward": 8.8
+        },
+        {
+          "game_id": 87,
+          "target": "GGOO",
+          "won": true,
+          "attempts": 7,
+          "reward": 2.5999999999999996
+        },
+        {
+          "game_id": 88,
+          "target": "BWRB",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.0999999999999996
+        },
+        {
+          "game_id": 89,
+          "target": "BRKY",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.3
+        },
+        {
+          "game_id": 90,
+          "target": "WWWW",
+          "won": true,
+          "attempts": 4,
+          "reward": 5.5
+        },
+        {
+          "game_id": 91,
+          "target": "BGGP",
+          "won": true,
+          "attempts": 4,
+          "reward": 6.0
+        },
+        {
+          "game_id": 92,
+          "target": "WRKO",
+          "won": true,
+          "attempts": 3,
+          "reward": 9.4
+        },
+        {
+          "game_id": 93,
+          "target": "RKPY",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.0
+        },
+        {
+          "game_id": 94,
+          "target": "GOPG",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.6
+        },
+        {
+          "game_id": 95,
+          "target": "RWRY",
+          "won": true,
+          "attempts": 3,
+          "reward": 8.7
+        },
+        {
+          "game_id": 96,
+          "target": "PWBR",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.5
+        },
+        {
+          "game_id": 97,
+          "target": "WRYB",
+          "won": true,
+          "attempts": 6,
+          "reward": 0.0
+        },
+        {
+          "game_id": 98,
+          "target": "PYWP",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.7
+        },
+        {
+          "game_id": 99,
+          "target": "GWRO",
+          "won": true,
+          "attempts": 6,
+          "reward": 2.5999999999999996
+        },
+        {
+          "game_id": 100,
+          "target": "BRWK",
+          "won": true,
+          "attempts": 5,
+          "reward": 3.6999999999999993
+        }
+      ],
+      "wins": 100,
+      "total_attempts": 541,
+      "total_reward": 354.2,
+      "win_rate": 1.0,
+      "avg_attempts": 5.41,
+      "avg_reward": 3.542
+    }
+  }
+}

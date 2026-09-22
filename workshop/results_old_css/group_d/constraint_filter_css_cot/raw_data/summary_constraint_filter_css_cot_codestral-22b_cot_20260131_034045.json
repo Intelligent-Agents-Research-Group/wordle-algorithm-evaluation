@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "constraint_filter_css_cot",
+  "repair_mode": "constraint_filter",
+  "algorithm": "css",
+  "model_name": "codestral-22b",
+  "prompt_type": "cot",
+  "top_k": null,
+  "total_games": 100,
+  "wins": 98,
+  "win_rate": 0.98,
+  "avg_attempts_when_won": 4.244897959183674,
+  "llm_accepted": 374,
+  "llm_repaired": 54,
+  "repair_rate": 0.1261682242990654,
+  "timestamp": "20260131_034045"
+}

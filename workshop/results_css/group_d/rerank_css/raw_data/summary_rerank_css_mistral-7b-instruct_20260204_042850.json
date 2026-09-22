@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "rerank_css_true",
+  "repair_mode": "rerank",
+  "algorithm": "css_true",
+  "model_name": "mistral-7b-instruct",
+  "prompt_type": "zero-shot",
+  "top_k": 5,
+  "total_games": 100,
+  "wins": 92,
+  "win_rate": 0.92,
+  "avg_attempts_when_won": 4.293478260869565,
+  "llm_accepted": 385,
+  "llm_repaired": 7,
+  "repair_rate": 0.017857142857142856,
+  "timestamp": "20260204_042850"
+}

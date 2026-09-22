@@ -1,0 +1,19 @@
+{
+  "strategy": "flexible_hybrid",
+  "config_name": "L3_to_voi",
+  "model_name": "llama-3.1-nemotron-nano-8b-v1",
+  "prompt_type": "zero-shot",
+  "schedule": {
+    "1": "llm",
+    "2": "llm",
+    "3": "llm",
+    "4": "voi",
+    "5": "voi",
+    "6": "voi"
+  },
+  "total_games": 100,
+  "wins": 92,
+  "win_rate": 0.92,
+  "avg_attempts_when_won": 4.043478260869565,
+  "timestamp": "20260130_161235"
+}

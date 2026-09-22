@@ -1,0 +1,24 @@
+{
+  "strategy": "flexible_hybrid",
+  "config_name": "V_to_L",
+  "variant": "classic",
+  "model_name": "granite-3.3-8b-instruct",
+  "prompt_type": "zero-shot",
+  "schedule": {
+    "1": "voi",
+    "2": "llm",
+    "3": "llm",
+    "4": "llm",
+    "5": "llm",
+    "6": "llm",
+    "7": "llm",
+    "8": "llm",
+    "9": "llm",
+    "10": "llm"
+  },
+  "total_games": 100,
+  "wins": 79,
+  "win_rate": 0.79,
+  "avg_attempts_when_won": 4.468354430379747,
+  "timestamp": "20260212_214638"
+}

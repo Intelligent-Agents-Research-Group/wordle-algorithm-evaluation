@@ -1,0 +1,14 @@
+========================================
+RE-RUNNING ALL CSS EXPERIMENTS WITH CSS_TRUE
+Started: Tue Feb  3 13:40:17 EST 2026
+Games per run: 100
+Output: /Users/kevin/Desktop/wordle/workshop/results_true_css
+Log: /Users/kevin/Desktop/wordle/workshop/results_true_css/run_all_css_true_20260203_134017.log
+========================================
+Loading environment from /Users/kevin/Desktop/wordle/.env
+
+========================================
+GROUP A - SINGLE HANDOFF (CSS_TRUE)
+========================================
+
+[1] A1_true | Model: llama-3.3-70b-instruct

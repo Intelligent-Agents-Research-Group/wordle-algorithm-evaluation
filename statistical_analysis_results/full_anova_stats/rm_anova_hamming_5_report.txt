@@ -1,0 +1,94 @@
+================================================================================
+REPEATED MEASURES ANOVA: HAMMING_5
+================================================================================
+
+Generated: 2026-02-02 18:13:31
+Metric: hamming_5
+Description: Hamming distance after round 5
+Lower is better: Yes
+
+--------------------------------------------------------------------------------
+DESIGN
+--------------------------------------------------------------------------------
+Complete cases (subjects): 3
+Conditions (approaches): 8
+Within-subjects factor: approach
+Subject: target_word
+
+--------------------------------------------------------------------------------
+ANOVA TABLE
+--------------------------------------------------------------------------------
+Source                         SS     df           MS            F            p
+----------------------------------------------------------------------
+Conditions                30.5992      7       4.3713       9.5931     2.05e-04
+Error                      6.3794     14       0.4557
+
+--------------------------------------------------------------------------------
+EFFECT SIZES
+--------------------------------------------------------------------------------
+Partial eta-squared (eta^2p): 0.8275
+Omega-squared (omega^2): 0.7322
+
+--------------------------------------------------------------------------------
+INTERPRETATION
+--------------------------------------------------------------------------------
+Result: HIGHLY SIGNIFICANT (p < 0.001)
+Effect size: large (eta^2p = 0.8275)
+
+F(7, 14) = 9.5931, p = 2.05e-04, eta^2p = 0.8275
+
+--------------------------------------------------------------------------------
+DESCRIPTIVE STATISTICS BY APPROACH
+--------------------------------------------------------------------------------
+    approach       mean        std   min        max  count         se     95% CI
+         CSS   0.333333   0.577350   0.0   1.000000      3   0.333333   0.653333
+         VOI   1.000000   1.000000   0.0   2.000000      3   0.577350   1.131607
+Frontier_LLM   1.666667   1.154701   1.0   3.000000      3   0.666667   1.306667
+     Mid_LLM   1.666667   0.577350   1.0   2.000000      3   0.333333   0.653333
+   Small_LLM   1.533333   0.808290   0.6   2.000000      3   0.466667   0.914667
+      Hybrid   0.965849   0.197719   0.8   1.190476      3   0.114153   0.223740
+      Random   1.000000   1.000000   0.0   2.000000      3   0.577350   1.131607
+ Pure_Random   4.333333   0.577350   4.0   5.000000      3   0.333333   0.653333
+
+--------------------------------------------------------------------------------
+POST-HOC PAIRWISE COMPARISONS (Bonferroni-corrected)
+--------------------------------------------------------------------------------
+Significant comparisons: 0 out of 28
+
+Significant Pairwise Differences (p-corr < 0.05):
+           A            B          T        p-unc       p-corr    cohen
+
+All Pairwise Comparisons (sorted by p-value):
+           A            B          T    dof        p-unc       p-corr    cohen
+ Pure_Random          VOI  10.000000    2.0     9.85e-03     2.66e-01      nan
+ Pure_Random       Random  10.000000    2.0     9.85e-03     2.66e-01      nan
+      Hybrid  Pure_Random  -8.700742    2.0     1.30e-02     3.50e-01      nan
+     Mid_LLM  Pure_Random  -8.000000    2.0     1.53e-02     4.12e-01      nan
+Frontier_LLM  Pure_Random  -8.000000    2.0     1.53e-02     4.12e-01      nan
+         CSS  Pure_Random  -6.928203    2.0     2.02e-02     5.46e-01      nan
+ Pure_Random    Small_LLM   6.725382    2.0     2.14e-02     5.78e-01      nan
+         CSS       Hybrid  -2.849680    2.0     1.04e-01     1.00e+00      nan
+         CSS      Mid_LLM  -2.000000    2.0     1.84e-01     1.00e+00      nan
+Frontier_LLM       Random   2.000000    2.0     1.84e-01     1.00e+00      nan
+Frontier_LLM          VOI   2.000000    2.0     1.84e-01     1.00e+00      nan
+      Hybrid      Mid_LLM  -1.570938    2.0     2.57e-01     1.00e+00      nan
+         CSS Frontier_LLM  -1.511858    2.0     2.70e-01     1.00e+00      nan
+         CSS    Small_LLM  -1.500000    2.0     2.72e-01     1.00e+00      nan
+     Mid_LLM       Random   1.000000    2.0     4.23e-01     1.00e+00      nan
+     Mid_LLM    Small_LLM   1.000000    2.0     4.23e-01     1.00e+00      nan
+     Mid_LLM          VOI   1.000000    2.0     4.23e-01     1.00e+00      nan
+         CSS          VOI  -1.000000    2.0     4.23e-01     1.00e+00      nan
+         CSS       Random  -1.000000    2.0     4.23e-01     1.00e+00      nan
+Frontier_LLM       Hybrid   0.982515    2.0     4.29e-01     1.00e+00      nan
+      Hybrid    Small_LLM  -0.979536    2.0     4.31e-01     1.00e+00      nan
+      Random    Small_LLM  -0.718421    2.0     5.47e-01     1.00e+00      nan
+   Small_LLM          VOI   0.718421    2.0     5.47e-01     1.00e+00      nan
+Frontier_LLM    Small_LLM   0.225018    2.0     8.43e-01     1.00e+00      nan
+      Hybrid       Random  -0.060109    2.0     9.58e-01     1.00e+00      nan
+      Hybrid          VOI  -0.060109    2.0     9.58e-01     1.00e+00      nan
+Frontier_LLM      Mid_LLM   0.000000    2.0     1.00e+00     1.00e+00      nan
+      Random          VOI        NaN    2.0          NaN          NaN      NaN
+
+================================================================================
+END OF REPORT
+================================================================================

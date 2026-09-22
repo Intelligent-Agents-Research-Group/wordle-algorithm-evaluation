@@ -29,6 +29,7 @@ from test_set_loader import get_test_words_only
 from css_strategy import CSSStrategy
 from voi_strategy import VOIStrategy
 from random_strategy import RandomStrategy
+from css_true_strategy import CSSTrueStrategy
 
 
 # ----------------- Hybrid Strategy -----------------
@@ -42,17 +43,19 @@ class AlternatingHybridStrategy:
         self.temperature = temperature
         self.start_with = start_with.lower()  # "llm" or "algorithm"
         self.prompt_type = prompt_type.lower()  # "zero-shot" or "cot"
-        self.algorithm = algorithm.lower()  # "css", "voi", or "random"
+        self.algorithm = algorithm.lower()  # "css", "css_true", "voi", or "random"
 
         # Initialize the appropriate algorithm strategy
         if self.algorithm == "css":
             self.algo_strategy = CSSStrategy()
+        elif self.algorithm == "css_true":
+            self.algo_strategy = CSSTrueStrategy()
         elif self.algorithm == "voi":
             self.algo_strategy = VOIStrategy()
         elif self.algorithm == "random":
             self.algo_strategy = RandomStrategy()
         else:
-            raise ValueError(f"Unknown algorithm: {algorithm}. Must be 'css', 'voi', or 'random'")
+            raise ValueError(f"Unknown algorithm: {algorithm}. Must be 'css', 'css_true', 'voi', or 'random'")
 
         self.turn_number = 0
         self.api_base = os.getenv("NAVIGATOR_API_ENDPOINT", "https://api.navigator.uf.edu/v1")
@@ -354,10 +357,11 @@ def run_evaluation(num_games=100, model_name="llama-3.3-70b-instruct", start_wit
             feedback_str = ''.join(feedback)
 
             # Determine which strategy was used
+            algo_name = algorithm.upper()
             if start_with.lower() == "llm":
-                strategy_used = "LLM" if attempt % 2 == 1 else "CSS"
+                strategy_used = "LLM" if attempt % 2 == 1 else algo_name
             else:
-                strategy_used = "CSS" if attempt % 2 == 1 else "LLM"
+                strategy_used = algo_name if attempt % 2 == 1 else "LLM"
 
             game_result['strategy_used'].append(strategy_used)
 
@@ -395,8 +399,12 @@ def run_evaluation(num_games=100, model_name="llama-3.3-70b-instruct", start_wit
     print(f"Average attempts (when won): {avg_attempts:.2f}")
     print("="*80)
 
-    # Save results
-    output_dir = script_dir / 'results' / 'hybrids'
+    # Save results (use OUTPUT_DIR env var if set, otherwise default)
+    output_dir_env = os.getenv("OUTPUT_DIR")
+    if output_dir_env:
+        output_dir = Path(output_dir_env)
+    else:
+        output_dir = script_dir / 'results' / 'hybrids'
     output_dir.mkdir(parents=True, exist_ok=True)
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -460,7 +468,7 @@ if __name__ == "__main__":
     num_games = int(os.getenv("NUM_GAMES", "100"))
     start_with = os.getenv("START_WITH", "llm")  # "llm" or "algorithm"
     prompt_type = os.getenv("PROMPT_TYPE", "zero-shot")  # "zero-shot" or "cot"
-    algorithm = os.getenv("ALGORITHM", "css")  # "css", "voi", or "random"
+    algorithm = os.getenv("ALGORITHM", "css")  # "css", "css_true", "voi", or "random"
 
     # Check API key
     if not os.getenv("NAVIGATOR_UF_API_KEY"):

@@ -1,0 +1,12 @@
+{
+  "strategy": "alternating_algorithm_first",
+  "model_name": "llama-3.1-nemotron-nano-8b-v1",
+  "start_with": "algorithm",
+  "prompt_type": "cot",
+  "algorithm": "css",
+  "total_games": 100,
+  "wins": 97,
+  "win_rate": 0.97,
+  "avg_attempts_when_won": 3.9896907216494846,
+  "timestamp": "20260130_204324"
+}

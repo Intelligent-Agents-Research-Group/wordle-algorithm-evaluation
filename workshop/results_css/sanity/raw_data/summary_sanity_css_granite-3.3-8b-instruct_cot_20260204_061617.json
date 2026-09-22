@@ -1,0 +1,19 @@
+{
+  "strategy": "flexible_hybrid",
+  "config_name": "sanity_css_true",
+  "model_name": "granite-3.3-8b-instruct",
+  "prompt_type": "cot",
+  "schedule": {
+    "1": "llm",
+    "2": "css_true",
+    "3": "css_true",
+    "4": "css_true",
+    "5": "css_true",
+    "6": "css_true"
+  },
+  "total_games": 100,
+  "wins": 98,
+  "win_rate": 0.98,
+  "avg_attempts_when_won": 3.9489795918367347,
+  "timestamp": "20260204_061617"
+}

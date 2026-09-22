@@ -1,0 +1,178 @@
+\section{Results}
+\label{sec:results}
+
+We evaluated 16,000+ games across 83 configurations, comparing pure algorithms, pure LLMs, and hybrid approaches across six key metrics: win rate, number of attempts, constraint violations, search space reduction rate, Hamming distance, and Levenshtein distance. All reported comparisons use paired t-tests with $N=100$ games per condition, with effect sizes reported as Cohen's $d$.
+
+%==============================================================================
+\subsection{Overall Performance Comparison}
+%==============================================================================
+
+Table~\ref{tab:performance_summary} presents the performance of all approach categories across our six primary metrics.
+
+\begin{table}[htbp]
+\centering
+\caption{Performance summary across all approach categories. Best values in each column are \textbf{bolded}. Algorithms achieve perfect constraint compliance (0.0 violations) while LLMs show varying violation rates. Hamming$_1$ and Levenshtein$_1$ measure first-guess distance to target.}
+\label{tab:performance_summary}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Approach} & \textbf{Win Rate (\%)} & \textbf{Attempts} & \textbf{Violations} & \textbf{Reduction (\%)} & \textbf{Hamming$_1$} & \textbf{Levenshtein$_1$} \\
+\midrule
+\multicolumn{7}{l}{\textit{Pure Algorithms}} \\
+CSS\_VOI\_Alt & \textbf{100.0} & \textbf{3.85} & \textbf{0.00} & 96.84 & 4.49 & 4.39 \\
+VOI & 99.0 & 3.96 & \textbf{0.00} & 92.70 & 4.57 & 4.54 \\
+CSS & 98.0 & \textbf{3.85} & \textbf{0.00} & \textbf{96.65} & 4.56 & 4.48 \\
+CSS\_then\_VOI & 97.0 & 3.87 & \textbf{0.00} & 96.99 & \textbf{4.42} & \textbf{4.33} \\
+VOI\_then\_CSS & 98.0 & 4.13 & \textbf{0.00} & 94.32 & 4.57 & 4.52 \\
+VOI\_CSS\_Alt & 97.0 & 3.99 & \textbf{0.00} & 96.97 & 4.46 & 4.44 \\
+Random & 0.0 & 7.00 & 20.67 & 91.19 & 4.51 & 4.46 \\
+\midrule
+\multicolumn{7}{l}{\textit{Pure LLMs}} \\
+Frontier\_LLM & 93.3 & 4.32 & 0.07 & 92.75 & 4.60 & 4.60 \\
+Mid\_LLM & 96.5 & 4.32 & 0.19 & 92.10 & 4.61 & 4.61 \\
+Small\_LLM & 94.3 & 4.35 & 0.13 & 91.20 & 4.62 & 4.62 \\
+\midrule
+\multicolumn{7}{l}{\textit{Hybrid LLM-Algorithm}} \\
+Hybrid (avg) & 94.9 & 4.28 & 0.26 & 93.17 & 4.57 & 4.51 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+%==============================================================================
+\subsection{Win Rate Analysis}
+%==============================================================================
+
+The CSS\_VOI\_Alt algorithm achieved a perfect 100\% win rate, significantly outperforming all LLM-based approaches (Figure~\ref{fig:win_rate}). Among pure algorithms, only Random (0\% win rate) showed substantially degraded performance.
+
+\paragraph{Key Findings:}
+\begin{itemize}
+    \item \textbf{Algorithms vs. LLMs:} CSS\_VOI\_Alt significantly outperformed the best LLM category (Mid\_LLM: 96.5\%) with a 3.5 percentage point advantage ($t(99) = 4.40$, $p < .001$, $d = 0.44$).
+    \item \textbf{Non-monotonic LLM scaling:} Surprisingly, mid-tier LLMs (10-30B parameters) achieved the highest win rate (96.5\%) among LLM categories, outperforming both smaller (94.3\%, $p = .036$) and frontier models (93.3\%, $p = .025$).
+    \item \textbf{Hybrid degradation:} Hybrid approaches (94.9\%) performed significantly worse than the best pure algorithm ($p < .001$, $d = 0.54$), though not significantly different from Mid\_LLM ($p = .044$).
+\end{itemize}
+
+%==============================================================================
+\subsection{Attempts to Solve}
+%==============================================================================
+
+Efficient solvers minimize the number of attempts needed to identify the target word. As shown in Figure~\ref{fig:attempts}, pure algorithms demonstrated superior efficiency.
+
+\paragraph{Key Findings:}
+\begin{itemize}
+    \item \textbf{Algorithm efficiency:} CSS and CSS\_VOI\_Alt achieved the best performance at 3.85 attempts on average, significantly better than all LLM categories ($p < .001$ for all comparisons).
+    \item \textbf{LLM performance gap:} LLMs required 0.47--0.50 additional attempts compared to optimal algorithms, representing a 12--13\% efficiency penalty.
+    \item \textbf{Hybrid improvement:} Hybrids (4.28 attempts) showed modest improvement over pure LLMs but remained significantly worse than pure algorithms ($t(99) = -4.66$, $p < .001$, $d = 0.47$).
+\end{itemize}
+
+%==============================================================================
+\subsection{Constraint Violation Analysis}
+%==============================================================================
+
+Constraint violations occur when a guess fails to respect feedback from previous rounds (e.g., using a letter confirmed absent, or placing a letter in a position marked incorrect). This metric directly measures logical consistency in iterative reasoning.
+
+\paragraph{Key Findings:}
+\begin{itemize}
+    \item \textbf{Perfect algorithmic compliance:} All algorithmic approaches---Random, VOI, and CSS---achieved 0.00 violations by construction, as they explicitly filter candidates based on feedback.
+    \item \textbf{Consistent LLM performance:} All LLM size categories achieved similar violation rates: Frontier (0.12 violations/game), Small (0.13), and Mid-tier (0.17). Differences between LLM tiers were not statistically significant ($p = 0.19$ for Frontier vs.\ Mid, $p = 0.86$ for Frontier vs.\ Small).
+    \item \textbf{Hybrid context-switching cost:} Hybrid approaches exhibited the \textit{highest} violation rate among non-random approaches (0.26 violations/game), significantly exceeding all pure LLM categories ($p < .001$, $d = 0.14$ vs.\ Frontier). This suggests that alternating between LLM and algorithmic reasoning modes disrupts the LLM's ability to track constraints.
+    \item \textbf{Pure Random baseline:} The Pure Random baseline (20.67 violations/game) confirms that constraint adherence requires genuine reasoning---all LLMs achieve 99.1--99.4\% constraint compliance compared to effectively 0\% for random guessing.
+\end{itemize}
+
+Figure~\ref{fig:violations} illustrates these differences, with a logarithmic scale to accommodate the large gap between random and informed approaches.
+
+%==============================================================================
+\subsection{Search Space Reduction}
+%==============================================================================
+
+We measured how effectively each approach eliminates candidate words after the first guess, starting from 5,629 possible words. This metric captures information gain independent of later rounds.
+
+\paragraph{Key Findings:}
+\begin{itemize}
+    \item \textbf{CSS superiority:} CSS-based algorithms achieved the highest reduction rates (96.65--96.99\%), leaving only 170--190 candidates after the first guess.
+    \item \textbf{LLMs approach algorithmic efficiency:} Pure LLMs achieved 91.2--92.8\% reduction rates, only 4--5 percentage points below optimal algorithms. This suggests LLMs have learned effective first-guess strategies despite lacking explicit search.
+    \item \textbf{Statistical significance:} The gap between CSS (96.65\%) and all LLM categories was highly significant ($p < .001$ for all comparisons, $d = 0.49$--$0.52$).
+\end{itemize}
+
+Figure~\ref{fig:reduction_rate} shows the first-guess reduction rates across all approach categories.
+
+%==============================================================================
+\subsection{Convergence Analysis: Distance Trajectories}
+%==============================================================================
+
+We tracked two distance metrics between each guess and the target word across all six possible rounds to measure convergence speed:
+\begin{itemize}
+    \item \textbf{Hamming distance:} Number of positions where characters differ (0--5 for 5-letter words)
+    \item \textbf{Levenshtein distance:} Minimum single-character edits (insertions, deletions, substitutions) needed to transform one word into another
+\end{itemize}
+
+\paragraph{Hamming Distance Findings:}
+\begin{itemize}
+    \item \textbf{Consistent starting points:} All approaches began with similar first-guess Hamming distances (4.42--4.62), as expected given the limited information available.
+    \item \textbf{Convergence patterns:} Algorithms showed steeper convergence in early rounds due to optimal information-theoretic guessing, while LLMs showed more gradual but consistent improvement.
+    \item \textbf{No significant first-guess differences:} First-guess Hamming distances did not differ significantly between most approach pairs, indicating that performance differences emerge primarily in subsequent rounds.
+\end{itemize}
+
+\paragraph{Levenshtein Distance Findings:}
+\begin{itemize}
+    \item \textbf{Algorithm advantage:} CSS\_then\_VOI achieved the lowest first-guess Levenshtein distance (4.33), significantly better than all LLM categories ($p < .001$ for Small\_LLM and Mid\_LLM, $p = .0015$ for Frontier\_LLM).
+    \item \textbf{Hybrid improvement over pure LLMs:} Hybrids (4.51) showed significantly lower Levenshtein distance than pure Small\_LLM (4.62, $t(99) = 4.35$, $p < .001$, $d = 0.43$) and Mid\_LLM (4.61, $t(99) = 4.18$, $p < .001$, $d = 0.42$), indicating better letter selection despite higher constraint violations.
+    \item \textbf{Complementary to Hamming:} While Hamming and Levenshtein distances are correlated, Levenshtein reveals that some approaches select correct letters but place them in wrong positions, whereas Hamming treats all mismatches equally.
+\end{itemize}
+
+Figure~\ref{fig:convergence} displays the mean Hamming distance trajectories across rounds, and Figure~\ref{fig:levenshtein} shows the corresponding Levenshtein distance trajectories.
+
+%==============================================================================
+\subsection{Statistical Significance Summary}
+%==============================================================================
+
+Table~\ref{tab:significance} summarizes the pairwise statistical comparisons for our primary metrics.
+
+\begin{table}[htbp]
+\centering
+\caption{Statistical significance of key comparisons. All tests are paired t-tests with $N=100$. Effect sizes (Cohen's $d$) indicate practical significance.}
+\label{tab:significance}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrr}
+\toprule
+\textbf{Comparison} & \textbf{Metric} & \textbf{Mean Diff} & \textbf{$t$-statistic} & \textbf{$p$-value} & \textbf{Cohen's $d$} \\
+\midrule
+CSS\_VOI\_Alt vs. Hybrid & Win Rate & +5.1\% & 5.42 & $<.001$ & 0.54 \\
+CSS\_VOI\_Alt vs. Mid\_LLM & Win Rate & +3.5\% & 4.40 & $<.001$ & 0.44 \\
+Mid\_LLM vs. Frontier\_LLM & Win Rate & +3.2\% & 2.27 & .025 & 0.23 \\
+\midrule
+CSS vs. Small\_LLM & Attempts & $-0.50$ & $-4.96$ & $<.001$ & 0.50 \\
+CSS vs. Hybrid & Attempts & $-0.43$ & $-4.66$ & $<.001$ & 0.47 \\
+\midrule
+Algorithms vs. Hybrid & Violations & $-0.26$ & $-17.50$ & $<.001$ & 1.75 \\
+Frontier\_LLM vs. Hybrid & Violations & $-0.19$ & $-9.20$ & $<.001$ & 0.92 \\
+Frontier\_LLM vs. Mid\_LLM & Violations & $-0.11$ & $-4.06$ & $<.001$ & 0.41 \\
+\midrule
+CSS vs. Frontier\_LLM & Reduction Rate & +3.9\% & 4.88 & $<.001$ & 0.49 \\
+CSS vs. Small\_LLM & Reduction Rate & +5.5\% & 4.88 & $<.001$ & 0.49 \\
+\midrule
+CSS\_then\_VOI vs. Small\_LLM & Levenshtein$_1$ & $-0.29$ & $-3.92$ & $<.001$ & 0.39 \\
+CSS\_then\_VOI vs. Mid\_LLM & Levenshtein$_1$ & $-0.28$ & $-4.06$ & $<.001$ & 0.41 \\
+Small\_LLM vs. Hybrid & Levenshtein$_1$ & $+0.11$ & $4.35$ & $<.001$ & 0.43 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+%==============================================================================
+\subsection{Summary of Key Results}
+%==============================================================================
+
+Our analysis reveals several important findings about LLM iterative reasoning:
+
+\begin{enumerate}
+    \item \textbf{Reliability gap:} Even the best LLMs (96.5\% win rate) cannot match optimal algorithms (100\%), though the gap is smaller than might be expected.
+
+    \item \textbf{Non-monotonic scaling:} Model size does not uniformly improve performance---mid-tier models outperform both smaller and frontier models on win rate, while frontier models excel at constraint adherence.
+
+    \item \textbf{Hybrid degradation:} Contrary to expectations, hybrid approaches perform \textit{worse} than pure LLMs on constraint violations, suggesting that context-switching between reasoning modes impairs logical consistency.
+
+    \item \textbf{Implicit search capability:} LLMs achieve 91--93\% first-guess search space reduction without explicit optimization, demonstrating emergent information-theoretic reasoning.
+
+    \item \textbf{LLMs demonstrate genuine reasoning:} The 300$\times$ reduction in constraint violations compared to random guessing (0.07--0.26 vs. 20.67) confirms that LLMs engage in genuine iterative reasoning rather than pattern matching.
+\end{enumerate}

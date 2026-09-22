@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "constraint_filter_voi",
+  "repair_mode": "constraint_filter",
+  "algorithm": "voi",
+  "model_name": "llama-3.1-70b-instruct",
+  "prompt_type": "zero-shot",
+  "top_k": null,
+  "total_games": 100,
+  "wins": 92,
+  "win_rate": 0.92,
+  "avg_attempts_when_won": 4.206521739130435,
+  "llm_accepted": 363,
+  "llm_repaired": 72,
+  "repair_rate": 0.16551724137931034,
+  "timestamp": "20260131_062926"
+}

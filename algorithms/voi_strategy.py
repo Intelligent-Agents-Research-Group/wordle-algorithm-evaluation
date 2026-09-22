@@ -248,6 +248,42 @@ class VOIStrategy:
                 
         return expected_reward
     
+    def score_candidates(self, candidates: List[str], history: List[Tuple[str, List[int]]], top_k: int = 5) -> List[Tuple[str, float]]:
+        """Score and rank candidates, returning top-k (word, score) pairs.
+
+        Used by repair hybrids (D19) to generate a shortlist for LLM reranking.
+        """
+        if not candidates:
+            return []
+        if len(candidates) <= top_k:
+            return [(w, self.beliefs.get(w, 0)) for w in candidates]
+
+        if not self.beliefs:
+            self.initialize_beliefs(candidates)
+
+        self.current_attempt = len(history) + 1
+        exploration_factor = max(0.2, 1.0 - (self.current_attempt / 6.0))
+
+        sample_size = min(len(candidates), 200)
+        sampled_candidates = random.sample(candidates, sample_size)
+
+        scored = []
+        used = {h[0] for h in history}
+        for guess in sampled_candidates:
+            if guess in used:
+                continue
+            voi = self.calculate_voi(guess, candidates)
+            expected_reward = self.calculate_expected_reward(guess, candidates)
+            score = (exploration_factor * voi +
+                     (1 - exploration_factor) * self.reward_weight * expected_reward)
+            if guess in candidates:
+                candidate_bonus = 0.5 * (1 - exploration_factor)
+                score += candidate_bonus
+            scored.append((guess, score))
+
+        scored.sort(key=lambda x: x[1], reverse=True)
+        return scored[:top_k]
+
     def select_guess(self, candidates: List[str], history: List[Tuple[str, List[int]]]) -> str:
         """Select the next guess using VOI strategy and expected rewards."""
         if not candidates:

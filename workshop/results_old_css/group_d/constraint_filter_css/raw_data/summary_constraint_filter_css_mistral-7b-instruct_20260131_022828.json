@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "constraint_filter_css",
+  "repair_mode": "constraint_filter",
+  "algorithm": "css",
+  "model_name": "mistral-7b-instruct",
+  "prompt_type": "zero-shot",
+  "top_k": null,
+  "total_games": 100,
+  "wins": 96,
+  "win_rate": 0.96,
+  "avg_attempts_when_won": 4.072916666666667,
+  "llm_accepted": 287,
+  "llm_repaired": 128,
+  "repair_rate": 0.30843373493975906,
+  "timestamp": "20260131_022828"
+}

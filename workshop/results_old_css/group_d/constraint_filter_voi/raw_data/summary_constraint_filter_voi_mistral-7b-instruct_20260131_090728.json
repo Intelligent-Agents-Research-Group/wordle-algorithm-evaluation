@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "constraint_filter_voi",
+  "repair_mode": "constraint_filter",
+  "algorithm": "voi",
+  "model_name": "mistral-7b-instruct",
+  "prompt_type": "zero-shot",
+  "top_k": null,
+  "total_games": 100,
+  "wins": 96,
+  "win_rate": 0.96,
+  "avg_attempts_when_won": 4.21875,
+  "llm_accepted": 295,
+  "llm_repaired": 134,
+  "repair_rate": 0.3123543123543124,
+  "timestamp": "20260131_090728"
+}

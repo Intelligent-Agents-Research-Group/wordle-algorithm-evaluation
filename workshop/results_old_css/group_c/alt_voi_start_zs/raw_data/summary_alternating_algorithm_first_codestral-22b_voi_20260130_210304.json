@@ -1,0 +1,12 @@
+{
+  "strategy": "alternating_algorithm_first",
+  "model_name": "codestral-22b",
+  "start_with": "algorithm",
+  "prompt_type": "zero-shot",
+  "algorithm": "voi",
+  "total_games": 100,
+  "wins": 93,
+  "win_rate": 0.93,
+  "avg_attempts_when_won": 4.419354838709677,
+  "timestamp": "20260130_210304"
+}

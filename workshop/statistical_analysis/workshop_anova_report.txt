@@ -1,0 +1,70 @@
+================================================================================
+WORKSHOP ANOVA ANALYSIS - SUMMARY REPORT
+Hybrid Degradation in LLM-Algorithm Systems
+================================================================================
+Generated: 2026-02-04 15:12:28
+
+APPROACHES COMPARED:
+----------------------------------------
+1. CSS - Pure algorithm (minimax regret)
+2. VOI - Pure algorithm (value of information)
+3. Hybrid_LLM_First - LLM starts, then algorithm
+4. Hybrid_Algo_First - Algorithm starts, then LLM
+5. Hybrid_Alternating - Alternates each round
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+
+WIN RATE
+  F = 20.7373, p = 4.46e-17
+  η² = 0.0039 (negligible)
+  Significance: ***
+
+ATTEMPTS (WHEN WON)
+  F = 14.2245, p = 1.35e-11
+  η² = 0.0028 (negligible)
+  Significance: ***
+
+CONVERGENCE RATE
+  F = 24.6400, p = 2.22e-20
+  η² = 0.0046 (negligible)
+  Significance: ***
+
+AVERAGE HAMMING DISTANCE
+  F = 11.5589, p = 2.25e-09
+  η² = 0.0022 (negligible)
+  Significance: ***
+
+FIRST-ROUND REDUCTION RATE
+  F = 63.8735, p = 1.02e-53
+  η² = 0.0138 (small)
+  Significance: ***
+
+CONSTRAINT VIOLATIONS
+  F = 295.4893, p = 8.49e-248
+  η² = 0.0524 (small)
+  Significance: ***
+
+================================================================================
+KEY FINDINGS
+================================================================================
+
+- Win Rate: Significant difference (p < .05)
+- Attempts (when won): Significant difference (p < .05)
+- Convergence Rate: Significant difference (p < .05)
+- Average Hamming Distance: Significant difference (p < .05)
+- First-Round Reduction Rate: Significant difference (p < .05)
+- Constraint Violations: Significant difference (p < .05)
+
+================================================================================
+INTERPRETATION
+================================================================================
+
+If violations show significant differences with Alternating highest,
+this supports the thesis that context-switching introduces state
+inconsistency that degrades logical reasoning.
+
+================================================================================
+END OF REPORT
+================================================================================

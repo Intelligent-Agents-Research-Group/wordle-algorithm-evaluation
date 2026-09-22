@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "constraint_filter_css",
+  "repair_mode": "constraint_filter",
+  "algorithm": "css",
+  "model_name": "granite-3.3-8b-instruct",
+  "prompt_type": "zero-shot",
+  "top_k": null,
+  "total_games": 100,
+  "wins": 98,
+  "win_rate": 0.98,
+  "avg_attempts_when_won": 4.1020408163265305,
+  "llm_accepted": 229,
+  "llm_repaired": 185,
+  "repair_rate": 0.4468599033816425,
+  "timestamp": "20260131_002614"
+}

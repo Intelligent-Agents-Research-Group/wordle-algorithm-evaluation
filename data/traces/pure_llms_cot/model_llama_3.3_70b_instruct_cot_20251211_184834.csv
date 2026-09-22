@@ -1,0 +1,115 @@
+game_id,target_word,model_name,prompt_type,attempt_number,guess,feedback,win,attempts_to_win,timestamp,prompt,cot_trace,raw_response,is_valid_word,is_error,candidates_before,candidates_after,candidate_reduction_rate,information_gain_bits,violated_green_constraint,violated_yellow_constraint,violated_gray_constraint,total_constraint_violations
+0,PHOTO,llama-3.3-70b-instruct,cot,1,HOUSE,YY---,False,1,2025-12-11T18:48:35.019643,"You are playing Wordle. Return ONLY the next guess as a single 5-letter English word from the allowed list. Do NOT repeat previous guesses.
+
+Feedback codes: G=green (correct letter, correct position), Y=yellow (correct letter, wrong position), -=letter not in word.
+Each feedback position corresponds to the letter at that position in your guess.
+
+Allowed words remaining: 5629
+Candidate words: ABOUT, THEIR, THERE, WHICH, WOULD, OTHER, AFTER, FIRST, THINK, COULD, THESE, WHERE, RIGHT, YEARS, BEING, GOING, STILL, NEVER, THOSE, WORLD, GREAT, WHILE, EVERY, STATE, THREE, SINCE, UNDER, THING, HOUSE, PLACE, ..., ZENIT, ARRAS, BANDY, BENDY, BOGAN, CAUSA, COWER, CRIST, CROAT, CUBBY, DALIA, DIKES, DIMER, ESHOP, FLAIL, GARBO, GOGOL, HAMMY, HERAT, HOARE
+
+Answer with just the word.","Game 1/2 | Target: PHOTO | Attempt 1/6 | Candidates: 5629
+
+HOUSE","Game 1/2 | Target: PHOTO | Attempt 1/6 | Candidates: 5629
+
+HOUSE",True,False,5629,43,0.9924,7.0324,False,False,False,0
+0,PHOTO,llama-3.3-70b-instruct,cot,2,CHOIR,-GG--,False,2,2025-12-11T18:48:35.321665,"You are playing Wordle. Return ONLY the next guess as a single 5-letter English word from the allowed list. Do NOT repeat previous guesses.
+
+Feedback codes: G=green (correct letter, correct position), Y=yellow (correct letter, wrong position), -=letter not in word.
+Each feedback position corresponds to the letter at that position in your guess.
+
+Previous attempts:
+Guess: HOUSE, Feedback: YY---
+  Per letter: H:Y  O:Y  U:-  S:-  E:-
+Allowed words remaining: 43
+Candidate words: PHOTO, THROW, CLOTH, IDAHO, CHOIR, YAHOO, CHORD, OMAHA, RHINO, OPRAH, THORN, BROTH, PHONY, MACHO, CHICO, WHOOP, THONG, CHONG, ALOHA, CHINO, NACHO, PHNOM, DHONI, OHHHH, PHILO, BLOCH, AHOLD, CHOCK, OCHOA, ORTHO, CHAPO, FROTH, RHODA, THROB, ZHONG, GROHL, ALTHO, MAHON, ABHOR, CHOCO, RICOH, WAHOO, WHORL
+
+Answer with just the word.","Game 1/2 | Target: PHOTO | Attempt 2/6 | Candidates: 43
+
+CHOIR","Game 1/2 | Target: PHOTO | Attempt 2/6 | Candidates: 43
+
+CHOIR",True,False,43,6,0.8605,2.8413,False,False,False,0
+0,PHOTO,llama-3.3-70b-instruct,cot,3,PHOTO,GGGGG,True,3,2025-12-11T18:48:35.553777,"You are playing Wordle. Return ONLY the next guess as a single 5-letter English word from the allowed list. Do NOT repeat previous guesses.
+
+Feedback codes: G=green (correct letter, correct position), Y=yellow (correct letter, wrong position), -=letter not in word.
+Each feedback position corresponds to the letter at that position in your guess.
+
+Previous attempts:
+Guess: HOUSE, Feedback: YY---
+  Per letter: H:Y  O:Y  U:-  S:-  E:-
+Guess: CHOIR, Feedback: -GG--
+  Per letter: C:-  H:G  O:G  I:-  R:-
+Allowed words remaining: 6
+Candidate words: PHOTO, PHONY, WHOOP, THONG, AHOLD, ZHONG
+
+Answer with just the word.","Game 1/2 | Target: PHOTO | Attempt 3/6 | Candidates: 6
+
+PHOTO","Game 1/2 | Target: PHOTO | Attempt 3/6 | Candidates: 6
+
+PHOTO",True,False,6,1,0.8333,2.5850,False,False,False,0
+1,PARTY,llama-3.3-70b-instruct,cot,1,HOUSE,-----,False,1,2025-12-11T18:48:35.741390,"You are playing Wordle. Return ONLY the next guess as a single 5-letter English word from the allowed list. Do NOT repeat previous guesses.
+
+Feedback codes: G=green (correct letter, correct position), Y=yellow (correct letter, wrong position), -=letter not in word.
+Each feedback position corresponds to the letter at that position in your guess.
+
+Allowed words remaining: 5629
+Candidate words: ABOUT, THEIR, THERE, WHICH, WOULD, OTHER, AFTER, FIRST, THINK, COULD, THESE, WHERE, RIGHT, YEARS, BEING, GOING, STILL, NEVER, THOSE, WORLD, GREAT, WHILE, EVERY, STATE, THREE, SINCE, UNDER, THING, HOUSE, PLACE, ..., ZENIT, ARRAS, BANDY, BENDY, BOGAN, CAUSA, COWER, CRIST, CROAT, CUBBY, DALIA, DIKES, DIMER, ESHOP, FLAIL, GARBO, GOGOL, HAMMY, HERAT, HOARE
+
+Answer with just the word.","Game 2/2 | Target: PARTY | Attempt 1/6 | Candidates: 5629
+
+HOUSE","Game 2/2 | Target: PARTY | Attempt 1/6 | Candidates: 5629
+
+HOUSE",True,False,5629,694,0.8767,3.0199,False,False,False,0
+1,PARTY,llama-3.3-70b-instruct,cot,2,BRAIN,-YY--,False,2,2025-12-11T18:48:36.015169,"You are playing Wordle. Return ONLY the next guess as a single 5-letter English word from the allowed list. Do NOT repeat previous guesses.
+
+Feedback codes: G=green (correct letter, correct position), Y=yellow (correct letter, wrong position), -=letter not in word.
+Each feedback position corresponds to the letter at that position in your guess.
+
+Previous attempts:
+Guess: HOUSE, Feedback: -----
+  Per letter: H:-  O:-  U:-  S:-  E:-
+Allowed words remaining: 694
+Candidate words: AGAIN, PARTY, BLACK, FINAL, BRING, APRIL, DAVID, CRAZY, DAILY, INDIA, WANNA, TRACK, TRAIN, CLAIM, BRAIN, CIVIL, GRAND, DRINK, CARRY, JAPAN, PLANT, AWARD, TRIAL, BRAND, CLICK, APPLY, APART, MAGIC, FRANK, LIMIT, ..., IRFAN, KANDY, LANZA, RIKKI, YALTA, AKRAM, AMARI, BAMBA, BAWDY, CATTY, CRABB, FLAGG, LALLY, NAZIR, PAPPY, TRACI, TWANG, BANDY, DALIA, FLAIL
+
+Answer with just the word.","Game 2/2 | Target: PARTY | Attempt 2/6 | Candidates: 694
+
+BRAIN","Game 2/2 | Target: PARTY | Attempt 2/6 | Candidates: 694
+
+BRAIN",True,False,694,49,0.9294,3.8241,False,False,False,0
+1,PARTY,llama-3.3-70b-instruct,cot,3,MARRY,-GG-G,False,3,2025-12-11T18:48:36.289448,"You are playing Wordle. Return ONLY the next guess as a single 5-letter English word from the allowed list. Do NOT repeat previous guesses.
+
+Feedback codes: G=green (correct letter, correct position), Y=yellow (correct letter, wrong position), -=letter not in word.
+Each feedback position corresponds to the letter at that position in your guess.
+
+Previous attempts:
+Guess: HOUSE, Feedback: -----
+  Per letter: H:-  O:-  U:-  S:-  E:-
+Guess: BRAIN, Feedback: -YY--
+  Per letter: B:-  R:Y  A:Y  I:-  N:-
+Allowed words remaining: 49
+Candidate words: PARTY, CARRY, MARRY, RALLY, LARRY, RADAR, KARMA, ALTAR, QATAR, MARTY, LAMAR, CARLA, PARRY, DARYL, CARLY, DARCY, GARRY, MARTA, CARAT, MARÍA, ACCRA, PARMA, LARVA, DAKAR, CAMRY, MARCY, GARZA, KARLA, CARTA, TAMAR, GARDA, YARRA, LAZAR, TATAR, DARPA, PARKA, MARLA, RAQQA, TARDY, VARDY, JAFAR, LYCRA, PARRA, KARAT, RAZAK, RAJYA, CAPRA, DARLA, AKRAM
+
+Answer with just the word.","Game 2/2 | Target: PARTY | Attempt 3/6 | Candidates: 49
+
+MARRY","Game 2/2 | Target: PARTY | Attempt 3/6 | Candidates: 49
+
+MARRY",True,False,49,0,1.0000,5.6147,False,False,False,0
+1,PARTY,llama-3.3-70b-instruct,cot,4,PARTY,GGGGG,True,4,2025-12-11T18:48:36.519902,"You are playing Wordle. Return ONLY the next guess as a single 5-letter English word from the allowed list. Do NOT repeat previous guesses.
+
+Feedback codes: G=green (correct letter, correct position), Y=yellow (correct letter, wrong position), -=letter not in word.
+Each feedback position corresponds to the letter at that position in your guess.
+
+Previous attempts:
+Guess: HOUSE, Feedback: -----
+  Per letter: H:-  O:-  U:-  S:-  E:-
+Guess: BRAIN, Feedback: -YY--
+  Per letter: B:-  R:Y  A:Y  I:-  N:-
+Guess: MARRY, Feedback: -GG-G
+  Per letter: M:-  A:G  R:G  R:-  Y:G
+Allowed words remaining: 5
+Candidate words: PARTY, CARLY, DARCY, TARDY, VARDY
+
+Answer with just the word.","Game 2/2 | Target: PARTY | Attempt 4/6 | Candidates: 0
+
+PARTY","Game 2/2 | Target: PARTY | Attempt 4/6 | Candidates: 0
+
+PARTY",True,False,0,0,0.0000,0.0000,False,False,False,0

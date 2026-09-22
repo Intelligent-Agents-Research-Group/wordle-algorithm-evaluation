@@ -1,0 +1,68 @@
+========================================================================
+RUNNING MISSING EXPERIMENTS ONLY
+========================================================================
+Target: both
+
+================================================================
+WORDLE - Group C (Alternation) Missing Runs
+================================================================
+SKIP: alt_css_start_cot llama-3.3-70b-instruct (exists)
+SKIP: alt_css_start_cot llama-3.1-70b-instruct (exists)
+SKIP: alt_css_start_cot llama-3.1-8b-instruct (exists)
+SKIP: alt_css_start_cot codestral-22b (exists)
+SKIP: alt_css_start_cot gemma-3-27b-it (exists)
+SKIP: alt_css_start_cot granite-3.3-8b-instruct (exists)
+SKIP: alt_css_start_cot llama-3.1-nemotron-nano-8b-v1 (exists)
+SKIP: alt_css_start_cot mistral-7b-instruct (exists)
+SKIP: alt_voi_start_zs llama-3.3-70b-instruct (exists)
+SKIP: alt_voi_start_zs llama-3.1-70b-instruct (exists)
+SKIP: alt_voi_start_zs llama-3.1-8b-instruct (exists)
+SKIP: alt_voi_start_zs codestral-22b (exists)
+SKIP: alt_voi_start_zs gemma-3-27b-it (exists)
+SKIP: alt_voi_start_zs granite-3.3-8b-instruct (exists)
+SKIP: alt_voi_start_zs llama-3.1-nemotron-nano-8b-v1 (exists)
+SKIP: alt_voi_start_zs mistral-7b-instruct (exists)
+SKIP: alt_voi_start_cot llama-3.3-70b-instruct (exists)
+SKIP: alt_voi_start_cot llama-3.1-70b-instruct (exists)
+SKIP: alt_voi_start_cot llama-3.1-8b-instruct (exists)
+SKIP: alt_voi_start_cot codestral-22b (exists)
+SKIP: alt_voi_start_cot gemma-3-27b-it (exists)
+SKIP: alt_voi_start_cot granite-3.3-8b-instruct (exists)
+SKIP: alt_voi_start_cot llama-3.1-nemotron-nano-8b-v1 (exists)
+SKIP: alt_voi_start_cot mistral-7b-instruct (exists)
+
+Wordle missing runs complete!
+
+================================================================
+MASTERMIND - Group B Missing Runs
+================================================================
+SKIP: voi1_to_L llama-3.3-70b-instruct (exists)
+SKIP: voi1_to_L llama-3.1-70b-instruct (exists)
+SKIP: voi1_to_L llama-3.1-8b-instruct (exists)
+SKIP: voi1_to_L codestral-22b (exists)
+SKIP: voi1_to_L gemma-3-27b-it (exists)
+SKIP: voi1_to_L granite-3.3-8b-instruct (exists)
+SKIP: voi1_to_L llama-3.1-nemotron-nano-8b-v1 (exists)
+SKIP: voi1_to_L mistral-7b-instruct (exists)
+SKIP: voi2_to_L llama-3.3-70b-instruct (exists)
+SKIP: voi2_to_L llama-3.1-70b-instruct (exists)
+SKIP: voi2_to_L llama-3.1-8b-instruct (exists)
+SKIP: voi2_to_L codestral-22b (exists)
+SKIP: voi2_to_L gemma-3-27b-it (exists)
+SKIP: voi2_to_L granite-3.3-8b-instruct (exists)
+SKIP: voi2_to_L llama-3.1-nemotron-nano-8b-v1 (exists)
+SKIP: voi2_to_L mistral-7b-instruct (exists)
+SKIP: voi3_to_L llama-3.3-70b-instruct (exists)
+SKIP: voi3_to_L llama-3.1-70b-instruct (exists)
+SKIP: voi3_to_L llama-3.1-8b-instruct (exists)
+SKIP: voi3_to_L codestral-22b (exists)
+SKIP: voi3_to_L gemma-3-27b-it (exists)
+SKIP: voi3_to_L granite-3.3-8b-instruct (exists)
+SKIP: voi3_to_L llama-3.1-nemotron-nano-8b-v1 (exists)
+SKIP: voi3_to_L mistral-7b-instruct (exists)
+
+Mastermind missing runs complete!
+
+========================================================================
+ALL MISSING RUNS COMPLETE
+========================================================================

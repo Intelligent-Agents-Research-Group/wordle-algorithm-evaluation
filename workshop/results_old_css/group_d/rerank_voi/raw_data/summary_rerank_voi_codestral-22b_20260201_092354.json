@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "rerank_voi",
+  "repair_mode": "rerank",
+  "algorithm": "voi",
+  "model_name": "codestral-22b",
+  "prompt_type": "zero-shot",
+  "top_k": 5,
+  "total_games": 100,
+  "wins": 95,
+  "win_rate": 0.95,
+  "avg_attempts_when_won": 4.178947368421053,
+  "llm_accepted": 366,
+  "llm_repaired": 5,
+  "repair_rate": 0.013477088948787063,
+  "timestamp": "20260201_092354"
+}

@@ -1,0 +1,1086 @@
+Loading environment from /Users/kevin/Desktop/projects/wordle/.env
+Using direct Anthropic API (CLAUDE_API_KEY)
+========================================
+CLAUDE-4-SONNET MASTERMIND RE-RUN
+========================================
+Model: claude-4-sonnet (direct Anthropic API)
+Games per run: 50
+Total configs: 32
+========================================
+
+===== MASTERMIND CLASSIC =====
+
+========================================
+[RUN 1/32] L_to_C | claude-4-sonnet | --variant classic
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: L_to_C
+================================================================================
+Variant: classic
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "llm", "2": "css", "3": "css", "4": "css", "5": "css", "6": "css"}
+Games: 50
+================================================================================
+Colors: RGBYOW (6 colors)
+Search space: 1296 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 4.56
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_a/L_to_C/raw_data/L_to_C_claude-4-sonnet_20260407_170526.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_a/L_to_C/raw_data/summary_L_to_C_claude-4-sonnet_20260407_170526.json
+SUCCESS: L_to_C
+
+========================================
+[RUN 2/32] L_to_V | claude-4-sonnet | --variant classic
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: L_to_V
+================================================================================
+Variant: classic
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "llm", "2": "voi", "3": "voi", "4": "voi", "5": "voi", "6": "voi"}
+Games: 50
+================================================================================
+Colors: RGBYOW (6 colors)
+Search space: 1296 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 4.44
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_a/L_to_V/raw_data/L_to_V_claude-4-sonnet_20260407_170828.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_a/L_to_V/raw_data/summary_L_to_V_claude-4-sonnet_20260407_170828.json
+SUCCESS: L_to_V
+
+========================================
+[RUN 3/32] C_to_L | claude-4-sonnet | --variant classic
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: C_to_L
+================================================================================
+Variant: classic
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "css", "2": "llm", "3": "llm", "4": "llm", "5": "llm", "6": "llm"}
+Games: 50
+================================================================================
+Colors: RGBYOW (6 colors)
+Search space: 1296 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 4.42
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_a/C_to_L/raw_data/C_to_L_claude-4-sonnet_20260407_172325.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_a/C_to_L/raw_data/summary_C_to_L_claude-4-sonnet_20260407_172325.json
+SUCCESS: C_to_L
+
+========================================
+[RUN 4/32] V_to_L | claude-4-sonnet | --variant classic
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: V_to_L
+================================================================================
+Variant: classic
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "voi", "2": "llm", "3": "llm", "4": "llm", "5": "llm", "6": "llm"}
+Games: 50
+================================================================================
+Colors: RGBYOW (6 colors)
+Search space: 1296 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 4.66
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_a/V_to_L/raw_data/V_to_L_claude-4-sonnet_20260407_173816.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_a/V_to_L/raw_data/summary_V_to_L_claude-4-sonnet_20260407_173816.json
+SUCCESS: V_to_L
+
+========================================
+[RUN 5/32] css1_to_L | claude-4-sonnet | --variant classic
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: css1_to_L
+================================================================================
+Variant: classic
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "css", "2": "llm", "3": "llm", "4": "llm", "5": "llm", "6": "llm"}
+Games: 50
+================================================================================
+Colors: RGBYOW (6 colors)
+Search space: 1296 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 4.94
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/css1_to_L/raw_data/css1_to_L_claude-4-sonnet_20260407_175440.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/css1_to_L/raw_data/summary_css1_to_L_claude-4-sonnet_20260407_175440.json
+SUCCESS: css1_to_L
+
+========================================
+[RUN 6/32] css2_to_L | claude-4-sonnet | --variant classic
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: css2_to_L
+================================================================================
+Variant: classic
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "css", "2": "css", "3": "llm", "4": "llm", "5": "llm", "6": "llm"}
+Games: 50
+================================================================================
+Colors: RGBYOW (6 colors)
+Search space: 1296 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+LLM API attempt 1/5 failed: LLM returned no valid code from response: I need to analyze the previous guesses and their feedback to make the best next guess.
+
+From OGOW: 1
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 4.36
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/css2_to_L/raw_data/css2_to_L_claude-4-sonnet_20260407_180430.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/css2_to_L/raw_data/summary_css2_to_L_claude-4-sonnet_20260407_180430.json
+SUCCESS: css2_to_L
+
+========================================
+[RUN 7/32] css3_to_L | claude-4-sonnet | --variant classic
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: css3_to_L
+================================================================================
+Variant: classic
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "css", "2": "css", "3": "css", "4": "llm", "5": "llm", "6": "llm"}
+Games: 50
+================================================================================
+Colors: RGBYOW (6 colors)
+Search space: 1296 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 4.46
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/css3_to_L/raw_data/css3_to_L_claude-4-sonnet_20260407_180930.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/css3_to_L/raw_data/summary_css3_to_L_claude-4-sonnet_20260407_180930.json
+SUCCESS: css3_to_L
+
+========================================
+[RUN 8/32] voi1_to_L | claude-4-sonnet | --variant classic
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: voi1_to_L
+================================================================================
+Variant: classic
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "voi", "2": "llm", "3": "llm", "4": "llm", "5": "llm", "6": "llm"}
+Games: 50
+================================================================================
+Colors: RGBYOW (6 colors)
+Search space: 1296 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 4.68
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/voi1_to_L/raw_data/voi1_to_L_claude-4-sonnet_20260407_182327.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/voi1_to_L/raw_data/summary_voi1_to_L_claude-4-sonnet_20260407_182327.json
+SUCCESS: voi1_to_L
+
+========================================
+[RUN 9/32] voi2_to_L | claude-4-sonnet | --variant classic
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: voi2_to_L
+================================================================================
+Variant: classic
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "voi", "2": "voi", "3": "llm", "4": "llm", "5": "llm", "6": "llm"}
+Games: 50
+================================================================================
+Colors: RGBYOW (6 colors)
+Search space: 1296 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 4.54
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/voi2_to_L/raw_data/voi2_to_L_claude-4-sonnet_20260407_183330.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/voi2_to_L/raw_data/summary_voi2_to_L_claude-4-sonnet_20260407_183330.json
+SUCCESS: voi2_to_L
+
+========================================
+[RUN 10/32] voi3_to_L | claude-4-sonnet | --variant classic
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: voi3_to_L
+================================================================================
+Variant: classic
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "voi", "2": "voi", "3": "voi", "4": "llm", "5": "llm", "6": "llm"}
+Games: 50
+================================================================================
+Colors: RGBYOW (6 colors)
+Search space: 1296 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 4.68
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/voi3_to_L/raw_data/voi3_to_L_claude-4-sonnet_20260407_183934.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/voi3_to_L/raw_data/summary_voi3_to_L_claude-4-sonnet_20260407_183934.json
+SUCCESS: voi3_to_L
+
+========================================
+[RUN 11/32] L1_to_css | claude-4-sonnet | --variant classic
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: L1_to_css
+================================================================================
+Variant: classic
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "llm", "2": "css", "3": "css", "4": "css", "5": "css", "6": "css"}
+Games: 50
+================================================================================
+Colors: RGBYOW (6 colors)
+Search space: 1296 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 4.40
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/L1_to_css/raw_data/L1_to_css_claude-4-sonnet_20260407_184235.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/L1_to_css/raw_data/summary_L1_to_css_claude-4-sonnet_20260407_184235.json
+SUCCESS: L1_to_css
+
+========================================
+[RUN 12/32] L2_to_css | claude-4-sonnet | --variant classic
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: L2_to_css
+================================================================================
+Variant: classic
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "llm", "2": "llm", "3": "css", "4": "css", "5": "css", "6": "css"}
+Games: 50
+================================================================================
+Colors: RGBYOW (6 colors)
+Search space: 1296 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 4.54
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/L2_to_css/raw_data/L2_to_css_claude-4-sonnet_20260407_184952.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/L2_to_css/raw_data/summary_L2_to_css_claude-4-sonnet_20260407_184952.json
+SUCCESS: L2_to_css
+
+========================================
+[RUN 13/32] L3_to_css | claude-4-sonnet | --variant classic
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: L3_to_css
+================================================================================
+Variant: classic
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "llm", "2": "llm", "3": "llm", "4": "css", "5": "css", "6": "css"}
+Games: 50
+================================================================================
+Colors: RGBYOW (6 colors)
+Search space: 1296 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 4.64
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/L3_to_css/raw_data/L3_to_css_claude-4-sonnet_20260407_190215.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/L3_to_css/raw_data/summary_L3_to_css_claude-4-sonnet_20260407_190215.json
+SUCCESS: L3_to_css
+
+========================================
+[RUN 14/32] L1_to_voi | claude-4-sonnet | --variant classic
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: L1_to_voi
+================================================================================
+Variant: classic
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "llm", "2": "voi", "3": "voi", "4": "voi", "5": "voi", "6": "voi"}
+Games: 50
+================================================================================
+Colors: RGBYOW (6 colors)
+Search space: 1296 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 4.62
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/L1_to_voi/raw_data/L1_to_voi_claude-4-sonnet_20260407_190518.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/L1_to_voi/raw_data/summary_L1_to_voi_claude-4-sonnet_20260407_190518.json
+SUCCESS: L1_to_voi
+
+========================================
+[RUN 15/32] L2_to_voi | claude-4-sonnet | --variant classic
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: L2_to_voi
+================================================================================
+Variant: classic
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "llm", "2": "llm", "3": "voi", "4": "voi", "5": "voi", "6": "voi"}
+Games: 50
+================================================================================
+Colors: RGBYOW (6 colors)
+Search space: 1296 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 5.00
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/L2_to_voi/raw_data/L2_to_voi_claude-4-sonnet_20260407_191237.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/L2_to_voi/raw_data/summary_L2_to_voi_claude-4-sonnet_20260407_191237.json
+SUCCESS: L2_to_voi
+
+========================================
+[RUN 16/32] L3_to_voi | claude-4-sonnet | --variant classic
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: L3_to_voi
+================================================================================
+Variant: classic
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "llm", "2": "llm", "3": "llm", "4": "voi", "5": "voi", "6": "voi"}
+Games: 50
+================================================================================
+Colors: RGBYOW (6 colors)
+Search space: 1296 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 4.58
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/L3_to_voi/raw_data/L3_to_voi_claude-4-sonnet_20260407_192501.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/classic/group_b/L3_to_voi/raw_data/summary_L3_to_voi_claude-4-sonnet_20260407_192501.json
+SUCCESS: L3_to_voi
+
+===== MASTERMIND EXTENDED =====
+
+========================================
+[RUN 17/32] L_to_C | claude-4-sonnet | --variant extended
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: L_to_C
+================================================================================
+Variant: extended
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "llm", "2": "css", "3": "css", "4": "css", "5": "css", "6": "css", "7": "css", "8": "css", "9": "css", "10": "css"}
+Games: 50
+================================================================================
+Colors: RGBYOWPK (8 colors)
+Search space: 4096 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 5.46
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_a/L_to_C/raw_data/L_to_C_claude-4-sonnet_20260407_192807.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_a/L_to_C/raw_data/summary_L_to_C_claude-4-sonnet_20260407_192807.json
+SUCCESS: L_to_C
+
+========================================
+[RUN 18/32] L_to_V | claude-4-sonnet | --variant extended
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: L_to_V
+================================================================================
+Variant: extended
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "llm", "2": "voi", "3": "voi", "4": "voi", "5": "voi", "6": "voi", "7": "voi", "8": "voi", "9": "voi", "10": "voi"}
+Games: 50
+================================================================================
+Colors: RGBYOWPK (8 colors)
+Search space: 4096 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 5.38
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_a/L_to_V/raw_data/L_to_V_claude-4-sonnet_20260407_193133.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_a/L_to_V/raw_data/summary_L_to_V_claude-4-sonnet_20260407_193133.json
+SUCCESS: L_to_V
+
+========================================
+[RUN 19/32] C_to_L | claude-4-sonnet | --variant extended
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: C_to_L
+================================================================================
+Variant: extended
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "css", "2": "llm", "3": "llm", "4": "llm", "5": "llm", "6": "llm", "7": "llm", "8": "llm", "9": "llm", "10": "llm"}
+Games: 50
+================================================================================
+Colors: RGBYOWPK (8 colors)
+Search space: 4096 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 5.38
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_a/C_to_L/raw_data/C_to_L_claude-4-sonnet_20260407_195204.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_a/C_to_L/raw_data/summary_C_to_L_claude-4-sonnet_20260407_195204.json
+SUCCESS: C_to_L
+
+========================================
+[RUN 20/32] V_to_L | claude-4-sonnet | --variant extended
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: V_to_L
+================================================================================
+Variant: extended
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "voi", "2": "llm", "3": "llm", "4": "llm", "5": "llm", "6": "llm", "7": "llm", "8": "llm", "9": "llm", "10": "llm"}
+Games: 50
+================================================================================
+Colors: RGBYOWPK (8 colors)
+Search space: 4096 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 5.22
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_a/V_to_L/raw_data/V_to_L_claude-4-sonnet_20260407_201048.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_a/V_to_L/raw_data/summary_V_to_L_claude-4-sonnet_20260407_201048.json
+SUCCESS: V_to_L
+
+========================================
+[RUN 21/32] css1_to_L | claude-4-sonnet | --variant extended
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: css1_to_L
+================================================================================
+Variant: extended
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "css", "2": "llm", "3": "llm", "4": "llm", "5": "llm", "6": "llm", "7": "llm", "8": "llm", "9": "llm", "10": "llm"}
+Games: 50
+================================================================================
+Colors: RGBYOWPK (8 colors)
+Search space: 4096 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+LLM API attempt 1/5 failed: LLM returned no valid code from response: I need to analyze the previous guesses and their feedback to make the best next guess.
+
+From RGRY: 0
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 5.38
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/css1_to_L/raw_data/css1_to_L_claude-4-sonnet_20260407_203046.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/css1_to_L/raw_data/summary_css1_to_L_claude-4-sonnet_20260407_203046.json
+SUCCESS: css1_to_L
+
+========================================
+[RUN 22/32] css2_to_L | claude-4-sonnet | --variant extended
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: css2_to_L
+================================================================================
+Variant: extended
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "css", "2": "css", "3": "llm", "4": "llm", "5": "llm", "6": "llm", "7": "llm", "8": "llm", "9": "llm", "10": "llm"}
+Games: 50
+================================================================================
+Colors: RGBYOWPK (8 colors)
+Search space: 4096 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+LLM API attempt 1/5 failed: LLM returned no valid code from response: I need to analyze the previous guesses and their feedback to make the best next guess.
+
+From YBPK: 0
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 5.24
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/css2_to_L/raw_data/css2_to_L_claude-4-sonnet_20260407_204543.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/css2_to_L/raw_data/summary_css2_to_L_claude-4-sonnet_20260407_204543.json
+SUCCESS: css2_to_L
+
+========================================
+[RUN 23/32] css3_to_L | claude-4-sonnet | --variant extended
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: css3_to_L
+================================================================================
+Variant: extended
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "css", "2": "css", "3": "css", "4": "llm", "5": "llm", "6": "llm", "7": "llm", "8": "llm", "9": "llm", "10": "llm"}
+Games: 50
+================================================================================
+Colors: RGBYOWPK (8 colors)
+Search space: 4096 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 5.26
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/css3_to_L/raw_data/css3_to_L_claude-4-sonnet_20260407_205433.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/css3_to_L/raw_data/summary_css3_to_L_claude-4-sonnet_20260407_205433.json
+SUCCESS: css3_to_L
+
+========================================
+[RUN 24/32] voi1_to_L | claude-4-sonnet | --variant extended
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: voi1_to_L
+================================================================================
+Variant: extended
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "voi", "2": "llm", "3": "llm", "4": "llm", "5": "llm", "6": "llm", "7": "llm", "8": "llm", "9": "llm", "10": "llm"}
+Games: 50
+================================================================================
+Colors: RGBYOWPK (8 colors)
+Search space: 4096 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 5.30
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/voi1_to_L/raw_data/voi1_to_L_claude-4-sonnet_20260407_211356.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/voi1_to_L/raw_data/summary_voi1_to_L_claude-4-sonnet_20260407_211356.json
+SUCCESS: voi1_to_L
+
+========================================
+[RUN 25/32] voi2_to_L | claude-4-sonnet | --variant extended
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: voi2_to_L
+================================================================================
+Variant: extended
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "voi", "2": "voi", "3": "llm", "4": "llm", "5": "llm", "6": "llm", "7": "llm", "8": "llm", "9": "llm", "10": "llm"}
+Games: 50
+================================================================================
+Colors: RGBYOWPK (8 colors)
+Search space: 4096 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+LLM API attempt 1/5 failed: LLM returned no valid code from response: I need to analyze the previous guesses and their feedback to choose the best next guess from the rem
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 5.38
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/voi2_to_L/raw_data/voi2_to_L_claude-4-sonnet_20260407_213004.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/voi2_to_L/raw_data/summary_voi2_to_L_claude-4-sonnet_20260407_213004.json
+SUCCESS: voi2_to_L
+
+========================================
+[RUN 26/32] voi3_to_L | claude-4-sonnet | --variant extended
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: voi3_to_L
+================================================================================
+Variant: extended
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "voi", "2": "voi", "3": "voi", "4": "llm", "5": "llm", "6": "llm", "7": "llm", "8": "llm", "9": "llm", "10": "llm"}
+Games: 50
+================================================================================
+Colors: RGBYOWPK (8 colors)
+Search space: 4096 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 5.48
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/voi3_to_L/raw_data/voi3_to_L_claude-4-sonnet_20260407_214037.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/voi3_to_L/raw_data/summary_voi3_to_L_claude-4-sonnet_20260407_214037.json
+SUCCESS: voi3_to_L
+
+========================================
+[RUN 27/32] L1_to_css | claude-4-sonnet | --variant extended
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: L1_to_css
+================================================================================
+Variant: extended
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "llm", "2": "css", "3": "css", "4": "css", "5": "css", "6": "css", "7": "css", "8": "css", "9": "css", "10": "css"}
+Games: 50
+================================================================================
+Colors: RGBYOWPK (8 colors)
+Search space: 4096 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 5.28
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/L1_to_css/raw_data/L1_to_css_claude-4-sonnet_20260407_214346.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/L1_to_css/raw_data/summary_L1_to_css_claude-4-sonnet_20260407_214346.json
+SUCCESS: L1_to_css
+
+========================================
+[RUN 28/32] L2_to_css | claude-4-sonnet | --variant extended
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: L2_to_css
+================================================================================
+Variant: extended
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "llm", "2": "llm", "3": "css", "4": "css", "5": "css", "6": "css", "7": "css", "8": "css", "9": "css", "10": "css"}
+Games: 50
+================================================================================
+Colors: RGBYOWPK (8 colors)
+Search space: 4096 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 5.28
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/L2_to_css/raw_data/L2_to_css_claude-4-sonnet_20260407_215119.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/L2_to_css/raw_data/summary_L2_to_css_claude-4-sonnet_20260407_215119.json
+SUCCESS: L2_to_css
+
+========================================
+[RUN 29/32] L3_to_css | claude-4-sonnet | --variant extended
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: L3_to_css
+================================================================================
+Variant: extended
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "llm", "2": "llm", "3": "llm", "4": "css", "5": "css", "6": "css", "7": "css", "8": "css", "9": "css", "10": "css"}
+Games: 50
+================================================================================
+Colors: RGBYOWPK (8 colors)
+Search space: 4096 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 5.54
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/L3_to_css/raw_data/L3_to_css_claude-4-sonnet_20260407_220514.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/L3_to_css/raw_data/summary_L3_to_css_claude-4-sonnet_20260407_220514.json
+SUCCESS: L3_to_css
+
+========================================
+[RUN 30/32] L1_to_voi | claude-4-sonnet | --variant extended
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: L1_to_voi
+================================================================================
+Variant: extended
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "llm", "2": "voi", "3": "voi", "4": "voi", "5": "voi", "6": "voi", "7": "voi", "8": "voi", "9": "voi", "10": "voi"}
+Games: 50
+================================================================================
+Colors: RGBYOWPK (8 colors)
+Search space: 4096 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 5.26
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/L1_to_voi/raw_data/L1_to_voi_claude-4-sonnet_20260407_220902.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/L1_to_voi/raw_data/summary_L1_to_voi_claude-4-sonnet_20260407_220902.json
+SUCCESS: L1_to_voi
+
+========================================
+[RUN 31/32] L2_to_voi | claude-4-sonnet | --variant extended
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: L2_to_voi
+================================================================================
+Variant: extended
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "llm", "2": "llm", "3": "voi", "4": "voi", "5": "voi", "6": "voi", "7": "voi", "8": "voi", "9": "voi", "10": "voi"}
+Games: 50
+================================================================================
+Colors: RGBYOWPK (8 colors)
+Search space: 4096 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 5.50
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/L2_to_voi/raw_data/L2_to_voi_claude-4-sonnet_20260407_221705.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/L2_to_voi/raw_data/summary_L2_to_voi_claude-4-sonnet_20260407_221705.json
+SUCCESS: L2_to_voi
+
+========================================
+[RUN 32/32] L3_to_voi | claude-4-sonnet | --variant extended
+========================================
+================================================================================
+MASTERMIND FLEXIBLE HYBRID EVALUATION: L3_to_voi
+================================================================================
+Variant: extended
+Model: claude-4-sonnet
+Prompt Type: zero-shot
+Schedule: {"1": "llm", "2": "llm", "3": "llm", "4": "voi", "5": "voi", "6": "voi", "7": "voi", "8": "voi", "9": "voi", "10": "voi"}
+Games: 50
+================================================================================
+Colors: RGBYOWPK (8 colors)
+Search space: 4096 codes
+================================================================================
+Using fixed test set (seed=42): 50 targets
+  Progress: 20/50 games (20 wins so far)
+  Progress: 40/50 games (40 wins so far)
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 50
+Wins: 50
+Win rate: 100.0%
+Average attempts (when won): 5.42
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/L3_to_voi/raw_data/L3_to_voi_claude-4-sonnet_20260407_223110.csv
+  /Users/kevin/Desktop/projects/wordle/results/mastermind/hybrids/extended/group_b/L3_to_voi/raw_data/summary_L3_to_voi_claude-4-sonnet_20260407_223110.json
+SUCCESS: L3_to_voi
+
+========================================
+COMPLETE
+========================================
+Ran: 32
+Failed: 0
+========================================

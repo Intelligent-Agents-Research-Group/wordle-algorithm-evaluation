@@ -1,0 +1,105 @@
+================================================================================
+REPEATED MEASURES ANOVA: CANDIDATES_AFTER_1
+================================================================================
+
+Generated: 2026-02-02 18:13:31
+Metric: candidates_after_1
+Description: Remaining candidates after round 1 (search space)
+Lower is better: Yes
+
+--------------------------------------------------------------------------------
+DESIGN
+--------------------------------------------------------------------------------
+Complete cases (subjects): 100
+Conditions (approaches): 8
+Within-subjects factor: approach
+Subject: target_word
+
+--------------------------------------------------------------------------------
+ANOVA TABLE
+--------------------------------------------------------------------------------
+Source                         SS     df           MS            F            p
+----------------------------------------------------------------------
+Conditions           7642541.4657      7 1091791.6380       7.8542     3.55e-09
+Error                96331665.2380    693  139006.7319
+
+--------------------------------------------------------------------------------
+EFFECT SIZES
+--------------------------------------------------------------------------------
+Partial eta-squared (eta^2p): 0.0735
+Omega-squared (omega^2): 0.0641
+
+--------------------------------------------------------------------------------
+INTERPRETATION
+--------------------------------------------------------------------------------
+Result: HIGHLY SIGNIFICANT (p < 0.001)
+Effect size: medium (eta^2p = 0.0735)
+
+F(7, 693) = 7.8542, p = 3.55e-09, eta^2p = 0.0735
+
+--------------------------------------------------------------------------------
+DESCRIPTIVE STATISTICS BY APPROACH
+--------------------------------------------------------------------------------
+    approach       mean        std   min        max  count         se     95% CI
+         CSS 194.180000 169.271009   4.0 622.000000    100  16.927101  33.177118
+         VOI 410.800000 441.589507   3.0 1710.000000    100  44.158951  86.551543
+Frontier_LLM 402.756667 289.493299  15.0 1219.666667    100  28.949330  56.740687
+     Mid_LLM 451.426667 336.742769   3.7 1360.000000    100  33.674277  66.001583
+   Small_LLM 478.596000 256.547525  43.6 1136.600000    100  25.654753  50.283315
+      Hybrid 326.665556 137.726323  73.9 701.370370    100  13.772632  26.994359
+      Random 505.380000 541.863037   1.0 2594.000000    100  54.186304 106.205155
+ Pure_Random 495.770000 611.698610   2.0 2925.000000    100  61.169861 119.892927
+
+--------------------------------------------------------------------------------
+POST-HOC PAIRWISE COMPARISONS (Bonferroni-corrected)
+--------------------------------------------------------------------------------
+Significant comparisons: 11 out of 28
+
+Significant Pairwise Differences (p-corr < 0.05):
+           A            B          T        p-unc       p-corr    cohen
+         CSS Frontier_LLM  -5.957070     3.94e-08     1.10e-06      nan
+         CSS       Hybrid  -6.502056     3.24e-09     9.08e-08      nan
+         CSS      Mid_LLM  -7.220728     1.07e-10     3.01e-09      nan
+         CSS  Pure_Random  -4.618059     1.17e-05     3.26e-04      nan
+         CSS       Random  -5.461521     3.51e-07     9.84e-06      nan
+         CSS    Small_LLM  -9.804182     2.93e-16     8.19e-15      nan
+         CSS          VOI  -4.712155     8.02e-06     2.24e-04      nan
+Frontier_LLM       Hybrid   3.267067     1.49e-03     4.18e-02      nan
+      Hybrid      Mid_LLM  -3.790899     2.58e-04     7.23e-03      nan
+      Hybrid       Random  -3.240537     1.63e-03     4.55e-02      nan
+      Hybrid    Small_LLM  -5.543465     2.46e-07     6.89e-06      nan
+
+All Pairwise Comparisons (sorted by p-value):
+           A            B          T    dof        p-unc       p-corr    cohen
+         CSS    Small_LLM  -9.804182   99.0     2.93e-16     8.19e-15      nan
+         CSS      Mid_LLM  -7.220728   99.0     1.07e-10     3.01e-09      nan
+         CSS       Hybrid  -6.502056   99.0     3.24e-09     9.08e-08      nan
+         CSS Frontier_LLM  -5.957070   99.0     3.94e-08     1.10e-06      nan
+      Hybrid    Small_LLM  -5.543465   99.0     2.46e-07     6.89e-06      nan
+         CSS       Random  -5.461521   99.0     3.51e-07     9.84e-06      nan
+         CSS          VOI  -4.712155   99.0     8.02e-06     2.24e-04      nan
+         CSS  Pure_Random  -4.618059   99.0     1.17e-05     3.26e-04      nan
+      Hybrid      Mid_LLM  -3.790899   99.0     2.58e-04     7.23e-03      nan
+Frontier_LLM       Hybrid   3.267067   99.0     1.49e-03     4.18e-02      nan
+      Hybrid       Random  -3.240537   99.0     1.63e-03     4.55e-02      nan
+      Hybrid  Pure_Random  -2.783494   99.0     6.44e-03     1.80e-01      nan
+Frontier_LLM    Small_LLM  -2.034209   99.0     4.46e-02     1.00e+00      nan
+      Hybrid          VOI  -1.862193   99.0     6.55e-02     1.00e+00      nan
+Frontier_LLM       Random  -1.672600   99.0     9.76e-02     1.00e+00      nan
+   Small_LLM          VOI   1.499765   99.0     1.37e-01     1.00e+00      nan
+Frontier_LLM  Pure_Random  -1.409991   99.0     1.62e-01     1.00e+00      nan
+      Random          VOI   1.339235   99.0     1.84e-01     1.00e+00      nan
+Frontier_LLM      Mid_LLM  -1.189579   99.0     2.37e-01     1.00e+00      nan
+ Pure_Random          VOI   1.137938   99.0     2.58e-01     1.00e+00      nan
+     Mid_LLM       Random  -0.900663   99.0     3.70e-01     1.00e+00      nan
+     Mid_LLM          VOI   0.744997   99.0     4.58e-01     1.00e+00      nan
+     Mid_LLM    Small_LLM  -0.726238   99.0     4.69e-01     1.00e+00      nan
+     Mid_LLM  Pure_Random  -0.619795   99.0     5.37e-01     1.00e+00      nan
+      Random    Small_LLM   0.471750   99.0     6.38e-01     1.00e+00      nan
+ Pure_Random    Small_LLM   0.255614   99.0     7.99e-01     1.00e+00      nan
+Frontier_LLM          VOI  -0.161774   99.0     8.72e-01     1.00e+00      nan
+ Pure_Random       Random  -0.121659   99.0     9.03e-01     1.00e+00      nan
+
+================================================================================
+END OF REPORT
+================================================================================

@@ -1,0 +1,12 @@
+{
+  "strategy": "alternating_algorithm_first",
+  "model_name": "granite-3.3-8b-instruct",
+  "start_with": "algorithm",
+  "prompt_type": "cot",
+  "algorithm": "css",
+  "total_games": 100,
+  "wins": 93,
+  "win_rate": 0.93,
+  "avg_attempts_when_won": 4.053763440860215,
+  "timestamp": "20260130_195123"
+}

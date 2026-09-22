@@ -1,0 +1,12 @@
+{
+  "strategy": "alternating_algorithm_first",
+  "model_name": "mistral-7b-instruct",
+  "start_with": "algorithm",
+  "prompt_type": "cot",
+  "algorithm": "voi",
+  "total_games": 100,
+  "wins": 95,
+  "win_rate": 0.95,
+  "avg_attempts_when_won": 3.905263157894737,
+  "timestamp": "20260130_235528"
+}

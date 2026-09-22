@@ -5,3 +5,8 @@ __pycache__/
 results/
 scripts/test_results/
 scripts/evaluation_logs/
+
+# Large data files (>100MB, exceed GitHub limit)
+data/wordle_games.csv
+data/wordle_round_scores.csv
+data/wordle_6round_violations.csv

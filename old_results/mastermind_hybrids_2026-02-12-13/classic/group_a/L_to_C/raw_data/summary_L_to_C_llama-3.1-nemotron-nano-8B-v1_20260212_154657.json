@@ -1,0 +1,24 @@
+{
+  "strategy": "flexible_hybrid",
+  "config_name": "L_to_C",
+  "variant": "classic",
+  "model_name": "llama-3.1-nemotron-nano-8B-v1",
+  "prompt_type": "zero-shot",
+  "schedule": {
+    "1": "llm",
+    "2": "css",
+    "3": "css",
+    "4": "css",
+    "5": "css",
+    "6": "css",
+    "7": "css",
+    "8": "css",
+    "9": "css",
+    "10": "css"
+  },
+  "total_games": 100,
+  "wins": 0,
+  "win_rate": 0.0,
+  "avg_attempts_when_won": 0,
+  "timestamp": "20260212_154657"
+}

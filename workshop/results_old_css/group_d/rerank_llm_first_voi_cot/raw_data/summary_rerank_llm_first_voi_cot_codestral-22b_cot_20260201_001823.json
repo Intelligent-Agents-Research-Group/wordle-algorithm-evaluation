@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "rerank_llm_first_voi_cot",
+  "repair_mode": "rerank_llm_first",
+  "algorithm": "voi",
+  "model_name": "codestral-22b",
+  "prompt_type": "cot",
+  "top_k": null,
+  "total_games": 100,
+  "wins": 96,
+  "win_rate": 0.96,
+  "avg_attempts_when_won": 4.145833333333333,
+  "llm_accepted": 403,
+  "llm_repaired": 19,
+  "repair_rate": 0.045023696682464455,
+  "timestamp": "20260201_001823"
+}

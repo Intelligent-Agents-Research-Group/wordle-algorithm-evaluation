@@ -92,6 +92,29 @@ class CSSStrategy:
 
         return feedback
     
+    def score_candidates(self, candidates: List[str], history: List[Tuple[str, List[str]]], top_k: int = 5) -> List[Tuple[str, float]]:
+        """Score and rank candidates, returning top-k (word, score) pairs.
+
+        Used by repair hybrids (D19) to generate a shortlist for LLM reranking.
+        """
+        if not candidates:
+            return []
+        if len(candidates) <= top_k:
+            return [(w, 1.0) for w in candidates]
+
+        sample_size = min(len(candidates), 100)
+        sample_candidates = random.sample(candidates, sample_size)
+
+        scored = []
+        for guess in sample_candidates:
+            info_gain = self._calculate_information_gain(guess, sample_candidates)
+            expected_reward = self._calculate_expected_reward(guess, candidates)
+            score = info_gain + 0.5 * expected_reward
+            scored.append((guess, score))
+
+        scored.sort(key=lambda x: x[1], reverse=True)
+        return scored[:top_k]
+
     def _calculate_information_gain(self, guess: str, candidates: List[str]) -> float:
         """Calculate expected information gain using entropy."""
         feedback_counts = {}

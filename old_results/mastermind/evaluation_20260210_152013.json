@@ -1,0 +1,157 @@
+{
+  "classic": {
+    "CSS": {
+      "strategy": "CSS",
+      "variant": "classic",
+      "num_colors": 6,
+      "search_space": 1296,
+      "num_games": 5,
+      "test_set_seed": 42,
+      "games": [
+        {
+          "game_id": 1,
+          "target": "GRBR",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.2
+        },
+        {
+          "game_id": 2,
+          "target": "RGBY",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.6
+        },
+        {
+          "game_id": 3,
+          "target": "BYYW",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.5
+        },
+        {
+          "game_id": 4,
+          "target": "BGWY",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.9
+        },
+        {
+          "game_id": 5,
+          "target": "BROG",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.2
+        }
+      ],
+      "wins": 5,
+      "total_attempts": 22,
+      "total_reward": 32.400000000000006,
+      "win_rate": 1.0,
+      "avg_attempts": 4.4,
+      "avg_reward": 6.480000000000001
+    },
+    "VOI": {
+      "strategy": "VOI",
+      "variant": "classic",
+      "num_colors": 6,
+      "search_space": 1296,
+      "num_games": 5,
+      "test_set_seed": 42,
+      "games": [
+        {
+          "game_id": 1,
+          "target": "GRBR",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.6
+        },
+        {
+          "game_id": 2,
+          "target": "RGBY",
+          "won": true,
+          "attempts": 3,
+          "reward": 9.4
+        },
+        {
+          "game_id": 3,
+          "target": "BYYW",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.6
+        },
+        {
+          "game_id": 4,
+          "target": "BGWY",
+          "won": true,
+          "attempts": 4,
+          "reward": 8.4
+        },
+        {
+          "game_id": 5,
+          "target": "BROG",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.1
+        }
+      ],
+      "wins": 5,
+      "total_attempts": 22,
+      "total_reward": 34.1,
+      "win_rate": 1.0,
+      "avg_attempts": 4.4,
+      "avg_reward": 6.82
+    },
+    "Random": {
+      "strategy": "Random",
+      "variant": "classic",
+      "num_colors": 6,
+      "search_space": 1296,
+      "num_games": 5,
+      "test_set_seed": 42,
+      "games": [
+        {
+          "game_id": 1,
+          "target": "GRBR",
+          "won": true,
+          "attempts": 4,
+          "reward": 7.4
+        },
+        {
+          "game_id": 2,
+          "target": "RGBY",
+          "won": true,
+          "attempts": 5,
+          "reward": 5.9
+        },
+        {
+          "game_id": 3,
+          "target": "BYYW",
+          "won": true,
+          "attempts": 5,
+          "reward": 6.1
+        },
+        {
+          "game_id": 4,
+          "target": "BGWY",
+          "won": true,
+          "attempts": 6,
+          "reward": 3.0999999999999996
+        },
+        {
+          "game_id": 5,
+          "target": "BROG",
+          "won": true,
+          "attempts": 5,
+          "reward": 4.6
+        }
+      ],
+      "wins": 5,
+      "total_attempts": 25,
+      "total_reward": 27.1,
+      "win_rate": 1.0,
+      "avg_attempts": 5.0,
+      "avg_reward": 5.42
+    }
+  }
+}

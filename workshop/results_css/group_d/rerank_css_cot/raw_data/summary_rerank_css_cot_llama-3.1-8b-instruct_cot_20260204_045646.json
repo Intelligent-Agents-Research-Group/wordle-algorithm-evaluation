@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "rerank_css_true_cot",
+  "repair_mode": "rerank",
+  "algorithm": "css_true",
+  "model_name": "llama-3.1-8b-instruct",
+  "prompt_type": "cot",
+  "top_k": 5,
+  "total_games": 100,
+  "wins": 94,
+  "win_rate": 0.94,
+  "avg_attempts_when_won": 4.3936170212765955,
+  "llm_accepted": 393,
+  "llm_repaired": 6,
+  "repair_rate": 0.015037593984962405,
+  "timestamp": "20260204_045646"
+}

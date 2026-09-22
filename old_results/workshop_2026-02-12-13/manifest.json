@@ -1,0 +1,38 @@
+{
+  "experiment": "workshop_hybrid_experiments",
+  "generated": "2026-02-13T13:51:21Z",
+  "num_games_per_config": 100,
+  "groups_run": "all",
+  "elapsed_seconds": 64073,
+  "groups": {
+    "group_a": {
+      "description": "Single handoff (ZS, 9 models)",
+      "configs": ["A1_L_to_C", "A2_L_to_V", "A3_L_to_C_alt", "A4_L_to_C_then_V", "A5_L_to_V_then_C", "A6_C_to_L", "A7_V_to_L"],
+      "runs": 63
+    },
+    "group_b": {
+      "description": "K-handoff sweeps (ZS, 9 models, k=1,2,3)",
+      "configs": ["B8_Lk_to_css", "B9_Lk_to_voi", "B10_cssk_to_L", "B11_voik_to_L"],
+      "runs": 108
+    },
+    "group_c": {
+      "description": "Alternation patterns (ZS+CoT, 9 models)",
+      "configs": ["C13_alt_css_start", "C15_alt_voi_start"],
+      "runs": 36
+    },
+    "group_d": {
+      "description": "Repair hybrids (ZS+CoT, 9 models)",
+      "configs": ["D18_constraint_filter_css", "D18b_constraint_filter_voi", "D19_rerank_css", "D19b_rerank_voi"],
+      "runs": 72
+    },
+    "group_e": {
+      "description": "Controls (no LLM)",
+      "configs": ["E20_random_to_css", "E21_random_to_voi"],
+      "runs": 2
+    },
+    "sanity": {
+      "description": "L->CSS with CoT (k=1)",
+      "runs": 9
+    }
+  }
+}

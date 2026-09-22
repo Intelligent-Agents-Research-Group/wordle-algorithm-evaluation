@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "constraint_filter_voi",
+  "repair_mode": "constraint_filter",
+  "algorithm": "voi",
+  "model_name": "gemma-3-27b-it",
+  "prompt_type": "zero-shot",
+  "top_k": null,
+  "total_games": 100,
+  "wins": 98,
+  "win_rate": 0.98,
+  "avg_attempts_when_won": 3.9591836734693877,
+  "llm_accepted": 341,
+  "llm_repaired": 59,
+  "repair_rate": 0.1475,
+  "timestamp": "20260131_065305"
+}

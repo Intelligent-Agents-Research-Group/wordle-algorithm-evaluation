@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "rerank_voi_cot",
+  "repair_mode": "rerank",
+  "algorithm": "voi",
+  "model_name": "llama-3.1-8b-instruct",
+  "prompt_type": "cot",
+  "top_k": 5,
+  "total_games": 100,
+  "wins": 96,
+  "win_rate": 0.96,
+  "avg_attempts_when_won": 3.9270833333333335,
+  "llm_accepted": 349,
+  "llm_repaired": 0,
+  "repair_rate": 0.0,
+  "timestamp": "20260201_122023"
+}

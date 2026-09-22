@@ -1,0 +1,112 @@
+================================================================================
+REPEATED MEASURES ANOVA: TOTAL_VIOLATIONS
+================================================================================
+
+Generated: 2026-02-02 18:13:31
+Metric: total_violations
+Description: Sum of all constraint violations across all rounds
+Lower is better: Yes
+
+--------------------------------------------------------------------------------
+DESIGN
+--------------------------------------------------------------------------------
+Complete cases (subjects): 100
+Conditions (approaches): 8
+Within-subjects factor: approach
+Subject: target_word
+
+--------------------------------------------------------------------------------
+ANOVA TABLE
+--------------------------------------------------------------------------------
+Source                         SS     df           MS            F            p
+----------------------------------------------------------------------
+Conditions             37080.9463      7    5297.2780    2652.9611     0.00e+00
+Error                   1383.7420    693       1.9967
+
+--------------------------------------------------------------------------------
+EFFECT SIZES
+--------------------------------------------------------------------------------
+Partial eta-squared (eta^2p): 0.9640
+Omega-squared (omega^2): 0.9636
+
+--------------------------------------------------------------------------------
+INTERPRETATION
+--------------------------------------------------------------------------------
+Result: HIGHLY SIGNIFICANT (p < 0.001)
+Effect size: large (eta^2p = 0.9640)
+
+F(7, 693) = 2652.9611, p = 0.00e+00, eta^2p = 0.9640
+
+--------------------------------------------------------------------------------
+DESCRIPTIVE STATISTICS BY APPROACH
+--------------------------------------------------------------------------------
+    approach       mean        std   min        max  count         se     95% CI
+         CSS   0.000000   0.000000   0.0   0.000000    100   0.000000   0.000000
+         VOI   0.000000   0.000000   0.0   0.000000    100   0.000000   0.000000
+Frontier_LLM   0.043333   0.181372   0.0   1.000000    100   0.018137   0.035549
+     Mid_LLM   0.156667   0.408811   0.0   2.333333    100   0.040881   0.080127
+   Small_LLM   0.120000   0.251058   0.0   1.000000    100   0.025106   0.049207
+      Hybrid   0.281481   0.213574   0.0   0.925926    100   0.021357   0.041861
+      Random   0.000000   0.000000   0.0   0.000000    100   0.000000   0.000000
+ Pure_Random  20.670000   3.946754  10.0  31.000000    100   0.394675   0.773564
+
+--------------------------------------------------------------------------------
+POST-HOC PAIRWISE COMPARISONS (Bonferroni-corrected)
+--------------------------------------------------------------------------------
+Significant comparisons: 18 out of 28
+
+Significant Pairwise Differences (p-corr < 0.05):
+           A            B          T        p-unc       p-corr    cohen
+         CSS       Hybrid -13.179571     1.64e-23     4.11e-22      nan
+         CSS      Mid_LLM  -3.832247     2.23e-04     5.58e-03      nan
+         CSS  Pure_Random -52.372149     5.51e-74     1.38e-72      nan
+         CSS    Small_LLM  -4.779765     6.11e-06     1.53e-04      nan
+Frontier_LLM       Hybrid  -8.395972     3.38e-13     8.45e-12      nan
+Frontier_LLM  Pure_Random -52.289544     6.41e-74     1.60e-72      nan
+      Hybrid  Pure_Random -51.422173     3.17e-73     7.92e-72      nan
+      Hybrid       Random  13.179571     1.64e-23     4.11e-22      nan
+      Hybrid    Small_LLM   4.678769     9.16e-06     2.29e-04      nan
+      Hybrid          VOI  13.179571     1.64e-23     4.11e-22      nan
+     Mid_LLM  Pure_Random -50.715813     1.19e-72     2.96e-71      nan
+     Mid_LLM       Random   3.832247     2.23e-04     5.58e-03      nan
+     Mid_LLM          VOI   3.832247     2.23e-04     5.58e-03      nan
+ Pure_Random       Random  52.372149     5.51e-74     1.38e-72      nan
+ Pure_Random    Small_LLM  52.069453     9.59e-74     2.40e-72      nan
+ Pure_Random          VOI  52.372149     5.51e-74     1.38e-72      nan
+      Random    Small_LLM  -4.779765     6.11e-06     1.53e-04      nan
+   Small_LLM          VOI   4.779765     6.11e-06     1.53e-04      nan
+
+All Pairwise Comparisons (sorted by p-value):
+           A            B          T    dof        p-unc       p-corr    cohen
+ Pure_Random          VOI  52.372149   99.0     5.51e-74     1.38e-72      nan
+         CSS  Pure_Random -52.372149   99.0     5.51e-74     1.38e-72      nan
+ Pure_Random       Random  52.372149   99.0     5.51e-74     1.38e-72      nan
+Frontier_LLM  Pure_Random -52.289544   99.0     6.41e-74     1.60e-72      nan
+ Pure_Random    Small_LLM  52.069453   99.0     9.59e-74     2.40e-72      nan
+      Hybrid  Pure_Random -51.422173   99.0     3.17e-73     7.92e-72      nan
+     Mid_LLM  Pure_Random -50.715813   99.0     1.19e-72     2.96e-71      nan
+         CSS       Hybrid -13.179571   99.0     1.64e-23     4.11e-22      nan
+      Hybrid          VOI  13.179571   99.0     1.64e-23     4.11e-22      nan
+      Hybrid       Random  13.179571   99.0     1.64e-23     4.11e-22      nan
+Frontier_LLM       Hybrid  -8.395972   99.0     3.38e-13     8.45e-12      nan
+      Random    Small_LLM  -4.779765   99.0     6.11e-06     1.53e-04      nan
+   Small_LLM          VOI   4.779765   99.0     6.11e-06     1.53e-04      nan
+         CSS    Small_LLM  -4.779765   99.0     6.11e-06     1.53e-04      nan
+      Hybrid    Small_LLM   4.678769   99.0     9.16e-06     2.29e-04      nan
+     Mid_LLM       Random   3.832247   99.0     2.23e-04     5.58e-03      nan
+     Mid_LLM          VOI   3.832247   99.0     2.23e-04     5.58e-03      nan
+         CSS      Mid_LLM  -3.832247   99.0     2.23e-04     5.58e-03      nan
+Frontier_LLM    Small_LLM  -2.696427   99.0     8.24e-03     2.06e-01      nan
+      Hybrid      Mid_LLM   2.635645   99.0     9.75e-03     2.44e-01      nan
+Frontier_LLM      Mid_LLM  -2.576188   99.0     1.15e-02     2.87e-01      nan
+Frontier_LLM          VOI   2.389203   99.0     1.88e-02     4.69e-01      nan
+Frontier_LLM       Random   2.389203   99.0     1.88e-02     4.69e-01      nan
+         CSS Frontier_LLM  -2.389203   99.0     1.88e-02     4.69e-01      nan
+     Mid_LLM    Small_LLM   0.740414   99.0     4.61e-01     1.00e+00      nan
+         CSS       Random        NaN   99.0          NaN          NaN      NaN
+         CSS          VOI        NaN   99.0          NaN          NaN      NaN
+      Random          VOI        NaN   99.0          NaN          NaN      NaN
+
+================================================================================
+END OF REPORT
+================================================================================

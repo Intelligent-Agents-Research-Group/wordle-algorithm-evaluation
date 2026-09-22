@@ -1,0 +1,3054 @@
+ERROR: NAVIGATOR_UF_API_KEY not set
+Loading environment from /Users/kevin/Desktop/projects/wordle/.env
+========================================
+VOI-Informed Integration Experiment
+========================================
+Models: llama-3.3-70b-instruct llama-3.1-70b-instruct llama-3.1-8b-instruct llama-3.1-nemotron-nano-8b-v1 mistral-7b-instruct granite-3.3-8b-instruct gemma-3-27b-it codestral-22b
+Algorithms: css voi
+Conditions: baseline voi_informed shuffled_ranking
+Games per run: 100
+Output: /Users/kevin/Desktop/projects/wordle/voi_integration/results/wordle
+========================================
+
+[1/48] Model=llama-3.3-70b-instruct  Algo=css  Condition=baseline
+  Schedule: {"1":"llm","2":"llm","3":"llm","4":"llm","5":"llm","6":"llm"}
+  Config: baseline_css
+================================================================================
+VOI-INFORMED HYBRID EVALUATION: baseline_css
+================================================================================
+Model: llama-3.3-70b-instruct
+Algorithm: CSS
+Condition: baseline
+Prompt Type: zero-shot
+Top-K: 5
+Schedule: {"1": "llm", "2": "llm", "3": "llm", "4": "llm", "5": "llm", "6": "llm"}
+Games: 100
+================================================================================
+
+Game 1/100: Target = PHOTO
+  Attempt 1 [LLM]: HOUSE -> YY--- (H:5, L:4) [algo_top1=TRIES, followed=False]
+  Attempt 2 [LLM]: BROTH -> --GGY (H:3, L:3) [algo_top1=CHOIR, followed=False]
+  Attempt 3 [LLM]: PHOTO -> GGGGG (H:0, L:0) [algo_top1=PHOTO, followed=True]
+  Won in 3 attempts!
+
+Game 2/100: Target = PARTY
+  Attempt 1 [LLM]: TABLE -> YG--- (H:4, L:4) [algo_top1=CODES, followed=False]
+  Attempt 2 [LLM]: PATCH -> GGY-- (H:3, L:3) [algo_top1=RANTS, followed=False]
+  Attempt 3 [LLM]: PANTS -> GG-G- (H:2, L:2) [algo_top1=PARTS, followed=False]
+  Attempt 4 [LLM]: PARTY -> GGGGG (H:0, L:0) [algo_top1=PARTY, followed=True]
+  Won in 4 attempts!
+
+Game 3/100: Target = TRICK
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=SHINE, followed=False]
+  Attempt 2 [LLM]: VALID -> ---Y- (H:5, L:5) [algo_top1=TALIA, followed=False]
+  Attempt 3 [LLM]: MINTY -> -Y-Y- (H:5, L:5) [algo_top1=TWINK, followed=False]
+  Attempt 4 [LLM]: TRICK -> GGGGG (H:0, L:0) [algo_top1=TRICK, followed=True]
+  Won in 4 attempts!
+
+Game 4/100: Target = DIRTY
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=MORSE, followed=False]
+  Attempt 2 [LLM]: PRINT -> -YY-Y (H:5, L:4) [algo_top1=LAMAR, followed=False]
+  Attempt 3 [LLM]: TARIK -> Y-GY- (H:4, L:4) [algo_top1=MITRA, followed=False]
+  Attempt 4 [LLM]: DIRTY -> GGGGG (H:0, L:0) [algo_top1=DIRTY, followed=True]
+  Won in 4 attempts!
+
+Game 5/100: Target = USUAL
+  Attempt 1 [LLM]: TABLE -> -Y-Y- (H:5, L:5) [algo_top1=RAGES, followed=False]
+  Attempt 2 [LLM]: MILAN -> --YG- (H:4, L:4) [algo_top1=ALLAN, followed=False]
+  Attempt 3 [LLM]: LOCAL -> ---GG (H:3, L:3) [algo_top1=LOCAL, followed=True]
+  Attempt 4 [LLM]: AURAL -> -Y-GG (H:3, L:3) [algo_top1=USUAL, followed=False]
+  Attempt 5 [LLM]: USUAL -> GGGGG (H:0, L:0) [algo_top1=USUAL, followed=True]
+  Won in 5 attempts!
+
+Game 6/100: Target = TRULY
+  Attempt 1 [LLM]: STAMP -> -Y--- (H:5, L:5) [algo_top1=NEARS, followed=False]
+  Attempt 2 [LLM]: TRITE -> GG--- (H:3, L:3) [algo_top1=TRITE, followed=True]
+  Attempt 3 [LLM]: TRUNK -> GGG-- (H:2, L:2) [algo_top1=TRUDY, followed=False]
+  Attempt 4 [LLM]: TRULY -> GGGGG (H:0, L:0) [algo_top1=TRULY, followed=True]
+  Won in 4 attempts!
+
+Game 7/100: Target = SPENT
+  Attempt 1 [LLM]: MEANS -> -Y-GY (H:4, L:4) [algo_top1=RITES, followed=False]
+  Attempt 2 [LLM]: SCENT -> G-GGG (H:1, L:1) [algo_top1=SCENT, followed=True]
+  Attempt 3 [LLM]: STENT -> G-GGG (H:1, L:1) [algo_top1=SPENT, followed=False]
+  Attempt 4 [LLM]: SPENT -> GGGGG (H:0, L:0) [algo_top1=SPENT, followed=True]
+  Won in 4 attempts!
+
+Game 8/100: Target = PAUSE
+  Attempt 1 [LLM]: HOUSE -> --GGG (H:2, L:2) [algo_top1=TONES, followed=False]
+  Attempt 2 [LLM]: PAUSE -> GGGGG (H:0, L:0) [algo_top1=PAUSE, followed=True]
+  Won in 2 attempts!
+
+Game 9/100: Target = CRAZY
+  Attempt 1 [LLM]: HALES -> -Y--- (H:5, L:5) [algo_top1=HEIRS, followed=False]
+  Attempt 2 [LLM]: DRAIN -> -GG-- (H:3, L:3) [algo_top1=TRAIN, followed=False]
+  Attempt 3 [LLM]: CRACK -> GGG-- (H:2, L:2) [algo_top1=TRACY, followed=False]
+  Attempt 4 [LLM]: CRAMP -> GGG-- (H:2, L:2) [algo_top1=CRAZY, followed=False]
+  Attempt 5 [LLM]: CRAFT -> GGG-- (H:2, L:2) [algo_top1=CRAZY, followed=False]
+  Attempt 6 [LLM]: CRABB -> GGG-- (H:2, L:2) [algo_top1=CRAZY, followed=False]
+  Failed to find word
+
+Game 10/100: Target = BASES
+  Attempt 1 [LLM]: HOUSE -> ---YY (H:5, L:4) [algo_top1=MEANS, followed=False]
+  Attempt 2 [LLM]: TEARS -> -YY-G (H:4, L:4) [algo_top1=RATES, followed=False]
+  Attempt 3 [LLM]: WALES -> -G-GG (H:2, L:2) [algo_top1=SALES, followed=False]
+  Attempt 4 [LLM]: SAVES -> YG-GG (H:2, L:2) [algo_top1=CASES, followed=False]
+  Attempt 5 [LLM]: CASES -> -GGGG (H:1, L:1) [algo_top1=CASES, followed=True]
+  Attempt 6 [LLM]: BASES -> GGGGG (H:0, L:0) [algo_top1=BASES, followed=True]
+  Won in 6 attempts!
+
+Game 11/100: Target = YOUNG
+  Attempt 1 [LLM]: HOUSE -> -GG-- (H:3, L:3) [algo_top1=NOTES, followed=False]
+  Attempt 2 [LLM]: ROUND -> -GGG- (H:2, L:2) [algo_top1=MOUND, followed=False]
+  Attempt 3 [LLM]: MOUNT -> -GGG- (H:2, L:2) [algo_top1=YOUNG, followed=False]
+  Attempt 4 [LLM]: YOUNG -> GGGGG (H:0, L:0) [algo_top1=YOUNG, followed=True]
+  Won in 4 attempts!
+
+Game 12/100: Target = MEANS
+  Attempt 1 [LLM]: HOUSE -> ---YY (H:5, L:5) [algo_top1=COLES, followed=False]
+  Attempt 2 [LLM]: PIKES -> ---YG (H:4, L:4) [algo_top1=TILES, followed=False]
+  Attempt 3 [LLM]: LEADS -> -GG-G (H:2, L:2) [algo_top1=REALS, followed=False]
+  Attempt 4 [LLM]: BEAMS -> -GGYG (H:2, L:2) [algo_top1=REAMS, followed=False]
+  Attempt 5 [LLM]: MEATS -> GGG-G (H:1, L:1) [algo_top1=MEANS, followed=False]
+  Attempt 6 [LLM]: MEANS -> GGGGG (H:0, L:0) [algo_top1=MEANS, followed=True]
+  Won in 6 attempts!
+
+Game 13/100: Target = TRUTH
+  Attempt 1 [LLM]: BATES -> --Y-- (H:5, L:5) [algo_top1=RACES, followed=False]
+  Attempt 2 [LLM]: LIMIT -> ----Y (H:5, L:5) [algo_top1=MOUNT, followed=False]
+  Attempt 3 [LLM]: TOOTH -> G--GG (H:2, L:2) [algo_top1=FROTH, followed=False]
+  Attempt 4 [LLM]: TRUTH -> GGGGG (H:0, L:0) [algo_top1=TRUTH, followed=True]
+  Won in 4 attempts!
+
+Game 14/100: Target = FIRED
+  Attempt 1 [LLM]: HOUSE -> ----Y (H:5, L:5) [algo_top1=ROLES, followed=False]
+  Attempt 2 [LLM]: PERKY -> -YG-- (H:4, L:4) [algo_top1=ELDER, followed=False]
+  Attempt 3 [LLM]: WIRED -> -GGGG (H:1, L:1) [algo_top1=CARER, followed=False]
+  Attempt 4 [LLM]: TIRED -> -GGGG (H:1, L:1) [algo_top1=TIRED, followed=True]
+  Attempt 5 [LLM]: FIRED -> GGGGG (H:0, L:0) [algo_top1=FIRED, followed=True]
+  Won in 5 attempts!
+
+Game 15/100: Target = FOLKS
+  Attempt 1 [LLM]: NOISE -> -G-Y- (H:4, L:4) [algo_top1=NEARS, followed=False]
+  Attempt 2 [LLM]: COOLS -> -G-YG (H:3, L:3) [algo_top1=COLTS, followed=False]
+  Attempt 3 [LLM]: GOLDS -> -GG-G (H:2, L:2) [algo_top1=FOLDS, followed=False]
+  Attempt 4 [LLM]: BOLTS -> -GG-G (H:2, L:2) [algo_top1=FOLKS, followed=False]
+  Attempt 5 [LLM]: YOLKS -> -GGGG (H:1, L:1) [algo_top1=FOLKS, followed=False]
+  Attempt 6 [LLM]: FOLKS -> GGGGG (H:0, L:0) [algo_top1=FOLKS, followed=True]
+  Won in 6 attempts!
+
+Game 16/100: Target = CHILE
+  Attempt 1 [LLM]: HOUSE -> Y---G (H:4, L:4) [algo_top1=DARES, followed=False]
+  Attempt 2 [LLM]: WHILE -> -GGGG (H:1, L:1) [algo_top1=THINE, followed=False]
+  Attempt 3 [LLM]: CHILE -> GGGGG (H:0, L:0) [algo_top1=CHILE, followed=True]
+  Won in 3 attempts!
+
+Game 17/100: Target = BLACK
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=LOREN, followed=False]
+  Attempt 2 [LLM]: MIMIC -> ----Y (H:5, L:5) [algo_top1=TRAIN, followed=False]
+  Attempt 3 [LLM]: CRACK -> --GGG (H:2, L:2) [algo_top1=CLARK, followed=False]
+  Attempt 4 [LLM]: KNACK -> --GGG (H:2, L:2) [algo_top1=BLACK, followed=False]
+  Attempt 5 [LLM]: BLACK -> GGGGG (H:0, L:0) [algo_top1=BLACK, followed=True]
+  Won in 5 attempts!
+
+Game 18/100: Target = GRANT
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=GILES, followed=False]
+  Attempt 2 [LLM]: NAVAL -> YY--- (H:5, L:5) [algo_top1=DALIA, followed=False]
+  Attempt 3 [LLM]: BRAIN -> -GG-Y (H:3, L:3) [algo_top1=DRAIN, followed=False]
+  Attempt 4 [LLM]: GRANT -> GGGGG (H:0, L:0) [algo_top1=FRANK, followed=False]
+  Won in 4 attempts!
+
+Game 19/100: Target = MEALS
+  Attempt 1 [LLM]: HOUSE -> ---YY (H:5, L:5) [algo_top1=LEARN, followed=False]
+  Attempt 2 [LLM]: STEEL -> Y-Y-Y (H:5, L:4) [algo_top1=AIRES, followed=False]
+  Attempt 3 [LLM]: LEADS -> YGG-G (H:2, L:2) [algo_top1=DEALS, followed=False]
+  Attempt 4 [LLM]: MEALS -> GGGGG (H:0, L:0) [algo_top1=MEALS, followed=True]
+  Won in 4 attempts!
+
+Game 20/100: Target = CREAM
+  Attempt 1 [LLM]: HOUSE -> ----Y (H:5, L:5) [algo_top1=TIRES, followed=False]
+  Attempt 2 [LLM]: PACER -> -YYYY (H:5, L:5) [algo_top1=CEDAR, followed=False]
+  Attempt 3 [LLM]: REACT -> YYYY- (H:5, L:3) [algo_top1=CREAM, followed=False]
+  Attempt 4 [LLM]: CREAM -> GGGGG (H:0, L:0) [algo_top1=CREAM, followed=True]
+  Won in 4 attempts!
+
+Game 21/100: Target = AWAKE
+  Attempt 1 [LLM]: HOUSE -> ----G (H:4, L:4) [algo_top1=TEARS, followed=False]
+  Attempt 2 [LLM]: EAGLE -> -Y--G (H:4, L:4) [algo_top1=ALINE, followed=False]
+  Attempt 3 [LLM]: CRANE -> --G-G (H:3, L:3) [algo_top1=TRADE, followed=False]
+  Attempt 4 [LLM]: AWAKE -> GGGGG (H:0, L:0) [algo_top1=AWAKE, followed=True]
+  Won in 4 attempts!
+
+Game 22/100: Target = OCCUR
+  Attempt 1 [LLM]: HOUSE -> -YY-- (H:5, L:5) [algo_top1=AIRES, followed=False]
+  Attempt 2 [LLM]: AUDIO -> -Y--Y (H:5, L:5) [algo_top1=TUMOR, followed=False]
+  Attempt 3 [LLM]: CLOUT -> Y-YG- (H:4, L:4) [algo_top1=GROUP, followed=False]
+  Attempt 4 [LLM]: OCCUR -> GGGGG (H:0, L:0) [algo_top1=OCCUR, followed=True]
+  Won in 4 attempts!
+
+Game 23/100: Target = YEARS
+  Attempt 1 [LLM]: TRACE -> -YG-Y (H:4, L:4) [algo_top1=SAMIR, followed=False]
+  Attempt 2 [LLM]: HEARS -> -GGGG (H:1, L:1) [algo_top1=REALY, followed=False]
+  Attempt 3 [LLM]: YEARS -> GGGGG (H:0, L:0) [algo_top1=FEARS, followed=False]
+  Won in 3 attempts!
+
+Game 24/100: Target = GRADE
+  Attempt 1 [LLM]: SLACK -> --G-- (H:4, L:4) [algo_top1=PORES, followed=False]
+  Attempt 2 [LLM]: AWAIT -> --G-- (H:4, L:4) [algo_top1=GRATE, followed=False]
+  Attempt 3 [LLM]: GUARD -> G-GYY (H:3, L:3) [algo_top1=GRADE, followed=False]
+  Attempt 4 [LLM]: GRADE -> GGGGG (H:0, L:0) [algo_top1=GRADE, followed=True]
+  Won in 4 attempts!
+
+Game 25/100: Target = CHILL
+  Attempt 1 [LLM]: HOUSE -> Y---- (H:5, L:5) [algo_top1=GALES, followed=False]
+  Attempt 2 [LLM]: BIRCH -> -Y-YY (H:5, L:5) [algo_top1=CHART, followed=False]
+  Attempt 3 [LLM]: CHILL -> GGGGG (H:0, L:0) [algo_top1=CHINA, followed=False]
+  Won in 3 attempts!
+
+Game 26/100: Target = FLOOD
+  Attempt 1 [LLM]: HOUSE -> -Y--- (H:5, L:5) [algo_top1=DATES, followed=False]
+  Attempt 2 [LLM]: ORBIT -> Y---- (H:5, L:5) [algo_top1=CARLO, followed=False]
+  Attempt 3 [LLM]: ALLOY -> -G-G- (H:3, L:3) [algo_top1=MACON, followed=False]
+  Attempt 4 [LLM]: GLOOM -> -GGG- (H:2, L:2) [algo_top1=FLOOD, followed=False]
+  Attempt 5 [LLM]: FLOOD -> GGGGG (H:0, L:0) [algo_top1=FLOOD, followed=True]
+  Won in 5 attempts!
+
+Game 27/100: Target = APPLY
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=RAILS, followed=False]
+  Attempt 2 [LLM]: BLAND -> -YY-- (H:5, L:5) [algo_top1=DARIN, followed=False]
+  Attempt 3 [LLM]: KAYLA -> -YYG- (H:4, L:4) [algo_top1=MARLA, followed=False]
+  Attempt 4 [LLM]: AMPLY -> G-GGG (H:1, L:1) [algo_top1=APPLY, followed=False]
+  Attempt 5 [LLM]: APPLY -> GGGGG (H:0, L:0) [algo_top1=APPLY, followed=True]
+  Won in 5 attempts!
+
+Game 28/100: Target = SMILE
+  Attempt 1 [LLM]: HOUSE -> ---YG (H:4, L:4) [algo_top1=HORSE, followed=False]
+  Attempt 2 [LLM]: SWINE -> G-G-G (H:2, L:2) [algo_top1=SPATE, followed=False]
+  Attempt 3 [LLM]: SPITE -> G-G-G (H:2, L:2) [algo_top1=SMITE, followed=False]
+  Attempt 4 [LLM]: SLIME -> GYGYG (H:2, L:2) [algo_top1=SMILE, followed=False]
+  Attempt 5 [LLM]: SMILE -> GGGGG (H:0, L:0) [algo_top1=SMILE, followed=True]
+  Won in 5 attempts!
+
+Game 29/100: Target = KNOCK
+  Attempt 1 [LLM]: HOUSE -> -Y--- (H:5, L:5) [algo_top1=HARES, followed=False]
+  Attempt 2 [LLM]: MANOR -> --YY- (H:5, L:4) [algo_top1=CARON, followed=False]
+  Attempt 3 [LLM]: KNOWN -> GGG-- (H:2, L:2) [algo_top1=CLOWN, followed=False]
+  Attempt 4 [LLM]: KNOCK -> GGGGG (H:0, L:0) [algo_top1=KNOCK, followed=True]
+  Won in 4 attempts!
+
+Game 30/100: Target = SLEEP
+  Attempt 1 [LLM]: HOUSE -> ---YY (H:5, L:5) [algo_top1=METRO, followed=False]
+  Attempt 2 [LLM]: MAKES -> ---GY (H:4, L:4) [algo_top1=SALES, followed=False]
+  Attempt 3 [LLM]: STEER -> G-GG- (H:2, L:2) [algo_top1=STEER, followed=True]
+  Attempt 4 [LLM]: SPEED -> GYGG- (H:2, L:2) [algo_top1=SLEEP, followed=False]
+  Attempt 5 [LLM]: SLEEP -> GGGGG (H:0, L:0) [algo_top1=SLEEP, followed=True]
+  Won in 5 attempts!
+
+Game 31/100: Target = BRICK
+  Attempt 1 [LLM]: BREWS -> GG--- (H:3, L:3) [algo_top1=LEANS, followed=False]
+  Attempt 2 [LLM]: BRAID -> GG-Y- (H:3, L:3) [algo_top1=BRIAN, followed=False]
+  Attempt 3 [LLM]: BRINK -> GGG-G (H:1, L:1) [algo_top1=BRINK, followed=True]
+  Attempt 4 [LLM]: BRICK -> GGGGG (H:0, L:0) [algo_top1=BRICK, followed=True]
+  Won in 4 attempts!
+
+Game 32/100: Target = WROTE
+  Attempt 1 [LLM]: HOUSE -> -Y--G (H:4, L:4) [algo_top1=LASER, followed=False]
+  Attempt 2 [LLM]: GROVE -> -GG-G (H:2, L:2) [algo_top1=DROVE, followed=False]
+  Attempt 3 [LLM]: PROBE -> -GG-G (H:2, L:2) [algo_top1=PRONE, followed=False]
+  Attempt 4 [LLM]: CROWE -> -GGYG (H:2, L:2) [algo_top1=CRONE, followed=False]
+  Attempt 5 [LLM]: WROTE -> GGGGG (H:0, L:0) [algo_top1=WROTE, followed=True]
+  Won in 5 attempts!
+
+Game 33/100: Target = RATED
+  Attempt 1 [LLM]: ROUND -> G---G (H:3, L:3) [algo_top1=RATES, followed=False]
+  Attempt 2 [LLM]: RAPID -> GG--G (H:2, L:2) [algo_top1=RAPID, followed=True]
+  Attempt 3 [LLM]: RATED -> GGGGG (H:0, L:0) [algo_top1=RATED, followed=True]
+  Won in 3 attempts!
+
+Game 34/100: Target = ALERT
+  Attempt 1 [LLM]: HOUSE -> ----Y (H:5, L:5) [algo_top1=TESLA, followed=False]
+  Attempt 2 [LLM]: RELAY -> YYYY- (H:5, L:5) [algo_top1=CEDAR, followed=False]
+  Attempt 3 [LLM]: ALERT -> GGGGG (H:0, L:0) [algo_top1=LATER, followed=False]
+  Won in 3 attempts!
+
+Game 35/100: Target = CAGES
+  Attempt 1 [LLM]: HOUSE -> ---YY (H:5, L:5) [algo_top1=DANTE, followed=False]
+  Attempt 2 [LLM]: TEARS -> -YY-G (H:4, L:4) [algo_top1=TIRES, followed=False]
+  Attempt 3 [LLM]: GALES -> YG-GG (H:2, L:2) [algo_top1=SALES, followed=False]
+  Attempt 4 [LLM]: PAGES -> -GGGG (H:1, L:1) [algo_top1=PAGES, followed=True]
+  Attempt 5 [LLM]: SAGES -> -GGGG (H:1, L:1) [algo_top1=WAGES, followed=False]
+  Attempt 6 [LLM]: WAGES -> -GGGG (H:1, L:1) [algo_top1=WAGES, followed=True]
+  Failed to find word
+
+Game 36/100: Target = TEDDY
+  Attempt 1 [LLM]: HOUSE -> ----Y (H:5, L:5) [algo_top1=SIREN, followed=False]
+  Attempt 2 [LLM]: PETTY -> -GY-G (H:3, L:3) [algo_top1=AIRED, followed=False]
+  Attempt 3 [LLM]: TEARY -> GG--G (H:2, L:2) [algo_top1=TERRY, followed=False]
+  Attempt 4 [LLM]: TEENY -> GG--G (H:2, L:2) [algo_top1=TEDDY, followed=False]
+  Attempt 5 [LLM]: TEDDY -> GGGGG (H:0, L:0) [algo_top1=TEDDY, followed=True]
+  Won in 5 attempts!
+
+Game 37/100: Target = COLES
+  Attempt 1 [LLM]: HAUTE -> ----Y (H:5, L:5) [algo_top1=RIDES, followed=False]
+  Attempt 2 [LLM]: WIVES -> ---GG (H:3, L:3) [algo_top1=LOREN, followed=False]
+  Attempt 3 [LLM]: NOSES -> -G-GG (H:2, L:2) [algo_top1=SORES, followed=False]
+  Attempt 4 [LLM]: POLES -> -GGGG (H:1, L:1) [algo_top1=MORES, followed=False]
+  Attempt 5 [LLM]: ROLES -> -GGGG (H:1, L:1) [algo_top1=ROLES, followed=True]
+  Attempt 6 [LLM]: MOLES -> -GGGG (H:1, L:1) [algo_top1=COLES, followed=False]
+  Failed to find word
+
+Game 38/100: Target = HWANG
+  Attempt 1 [LLM]: SHIFT -> -Y--- (H:5, L:5) [algo_top1=ALICE, followed=False]
+  Attempt 2 [LLM]: HAZEL -> GY--- (H:4, L:4) [algo_top1=HEARN, followed=False]
+  Attempt 3 [LLM]: HUMAN -> G--YY (H:4, L:3) [algo_top1=HUMAN, followed=True]
+  Attempt 4 [LLM]: HONDA -> G-Y-Y (H:4, L:4) [algo_top1=HONDA, followed=True]
+  Attempt 5 [LLM]: HWANG -> GGGGG (H:0, L:0) [algo_top1=HWANG, followed=True]
+  Won in 5 attempts!
+
+Game 39/100: Target = WRATH
+  Attempt 1 [LLM]: HOUSE -> Y---- (H:5, L:5) [algo_top1=DARES, followed=False]
+  Attempt 2 [LLM]: MATCH -> -YY-G (H:4, L:3) [algo_top1=CHART, followed=False]
+  Attempt 3 [LLM]: WRATH -> GGGGG (H:0, L:0) [algo_top1=WRATH, followed=True]
+  Won in 3 attempts!
+
+Game 40/100: Target = MACHO
+  Attempt 1 [LLM]: HOUSE -> YY--- (H:5, L:5) [algo_top1=AIRED, followed=False]
+  Attempt 2 [LLM]: CLOTH -> Y-Y-Y (H:5, L:5) [algo_top1=CHOIR, followed=False]
+  Attempt 3 [LLM]: NACHO -> -GGGG (H:1, L:1) [algo_top1=MACHO, followed=False]
+  Attempt 4 [LLM]: MACHO -> GGGGG (H:0, L:0) [algo_top1=MACHO, followed=True]
+  Won in 4 attempts!
+
+Game 41/100: Target = LOPEZ
+  Attempt 1 [LLM]: HOUSE -> -G--Y (H:4, L:4) [algo_top1=TRINA, followed=False]
+  Attempt 2 [LLM]: VOTER -> -G-G- (H:3, L:3) [algo_top1=ROWED, followed=False]
+  Attempt 3 [LLM]: MODEM -> -G-G- (H:3, L:3) [algo_top1=BONED, followed=False]
+  Attempt 4 [LLM]: BOGEY -> -G-G- (H:3, L:3) [algo_top1=BOWEL, followed=False]
+  Attempt 5 [LLM]: COWEN -> -G-G- (H:3, L:3) [algo_top1=LOPEZ, followed=False]
+  Attempt 6 [LLM]: LOPEZ -> GGGGG (H:0, L:0) [algo_top1=LOPEZ, followed=True]
+  Won in 6 attempts!
+
+Game 42/100: Target = GOODY
+  Attempt 1 [LLM]: HOUSE -> -G--- (H:4, L:4) [algo_top1=DANES, followed=False]
+  Attempt 2 [LLM]: GOING -> GG--- (H:3, L:3) [algo_top1=RONDA, followed=False]
+  Attempt 3 [LLM]: GODLY -> GGY-G (H:2, L:2) [algo_top1=GOODY, followed=False]
+  Attempt 4 [LLM]: GOODY -> GGGGG (H:0, L:0) [algo_top1=GOODY, followed=True]
+  Won in 4 attempts!
+
+Game 43/100: Target = BROTH
+  Attempt 1 [LLM]: HOUSE -> YY--- (H:5, L:5) [algo_top1=SCARE, followed=False]
+  Attempt 2 [LLM]: CHORD -> -YGY- (H:4, L:4) [algo_top1=CHOIR, followed=False]
+  Attempt 3 [LLM]: BROTH -> GGGGG (H:0, L:0) [algo_top1=BROTH, followed=True]
+  Won in 3 attempts!
+
+Game 44/100: Target = VERDE
+  Attempt 1 [LLM]: SENSE -> -G--G (H:3, L:3) [algo_top1=TEARS, followed=False]
+  Attempt 2 [LLM]: LEAVE -> -G-YG (H:3, L:3) [algo_top1=DELVE, followed=False]
+  Attempt 3 [LLM]: VERGE -> GGG-G (H:1, L:1) [algo_top1=VERGE, followed=True]
+  Attempt 4 [LLM]: VERDE -> GGGGG (H:0, L:0) [algo_top1=VERDE, followed=True]
+  Won in 4 attempts!
+
+Game 45/100: Target = TAMED
+  Attempt 1 [LLM]: HOUSE -> ----Y (H:5, L:5) [algo_top1=MARES, followed=False]
+  Attempt 2 [LLM]: GAZED -> -G-GG (H:2, L:2) [algo_top1=TIRED, followed=False]
+  Attempt 3 [LLM]: WADED -> -G-GG (H:2, L:2) [algo_top1=CARED, followed=False]
+  Attempt 4 [LLM]: PAVED -> -G-GG (H:2, L:2) [algo_top1=RACED, followed=False]
+  Attempt 5 [LLM]: FAKED -> -G-GG (H:2, L:2) [algo_top1=CARED, followed=False]
+  Attempt 6 [LLM]: TAMED -> GGGGG (H:0, L:0) [algo_top1=RATED, followed=False]
+  Won in 6 attempts!
+
+Game 46/100: Target = LEAFS
+  Attempt 1 [LLM]: SLOTH -> YY--- (H:5, L:5) [algo_top1=AIRES, followed=False]
+  Attempt 2 [LLM]: LURES -> G--YG (H:3, L:3) [algo_top1=MALES, followed=False]
+  Attempt 3 [LLM]: LEANS -> GGG-G (H:1, L:1) [algo_top1=LIENS, followed=False]
+  Attempt 4 [LLM]: LEAPS -> GGG-G (H:1, L:1) [algo_top1=LEADS, followed=False]
+  Attempt 5 [LLM]: LEAKS -> GGG-G (H:1, L:1) [algo_top1=LEADS, followed=False]
+  Attempt 6 [LLM]: LEAFS -> GGGGG (H:0, L:0) [algo_top1=LEADS, followed=False]
+  Won in 6 attempts!
+
+Game 47/100: Target = YACHT
+  Attempt 1 [LLM]: HOUSE -> Y---- (H:5, L:5) [algo_top1=STERN, followed=False]
+  Attempt 2 [LLM]: WHICH -> -Y-Y- (H:5, L:4) [algo_top1=RANCH, followed=False]
+  Attempt 3 [LLM]: CATHY -> YGYGY (H:3, L:3) [algo_top1=YACHT, followed=False]
+  Attempt 4 [LLM]: YACHT -> GGGGG (H:0, L:0) [algo_top1=YACHT, followed=True]
+  Won in 4 attempts!
+
+Game 48/100: Target = MESSY
+  Attempt 1 [LLM]: REACH -> -G--- (H:4, L:4) [algo_top1=TEARS, followed=False]
+  Attempt 2 [LLM]: KEENE -> -G--- (H:4, L:4) [algo_top1=DENSE, followed=False]
+  Attempt 3 [LLM]: LEVIS -> -G--Y (H:4, L:4) [algo_top1=BELTS, followed=False]
+  Attempt 4 [LLM]: BETSY -> -G-GG (H:2, L:2) [algo_top1=SETUP, followed=False]
+  Attempt 5 [LLM]: MESSY -> GGGGG (H:0, L:0) [algo_top1=MESSY, followed=True]
+  Won in 5 attempts!
+
+Game 49/100: Target = RYDER
+  Attempt 1 [LLM]: SPIRE -> ---YY (H:5, L:5) [algo_top1=ARISE, followed=False]
+  Attempt 2 [LLM]: HOYER -> --YGG (H:3, L:3) [algo_top1=RATED, followed=False]
+  Attempt 3 [LLM]: RYDER -> GGGGG (H:0, L:0) [algo_top1=TYLER, followed=False]
+  Won in 3 attempts!
+
+Game 50/100: Target = MOTIF
+  Attempt 1 [LLM]: HOUSE -> -G--- (H:4, L:4) [algo_top1=DATES, followed=False]
+  Attempt 2 [LLM]: ROBOT -> -G--Y (H:4, L:4) [algo_top1=LORNA, followed=False]
+  Attempt 3 [LLM]: TONIC -> YG-G- (H:3, L:3) [algo_top1=TONYA, followed=False]
+  Attempt 4 [LLM]: MOTIF -> GGGGG (H:0, L:0) [algo_top1=MOTIF, followed=True]
+  Won in 4 attempts!
+
+Game 51/100: Target = RAVEN
+  Attempt 1 [LLM]: HOUSE -> ----Y (H:5, L:5) [algo_top1=SLOAN, followed=False]
+  Attempt 2 [LLM]: REVEL -> G-GG- (H:2, L:2) [algo_top1=ARIEL, followed=False]
+  Attempt 3 [LLM]: RIVEN -> G-GGG (H:1, L:1) [algo_top1=RIVER, followed=False]
+  Attempt 4 [LLM]: RAVEN -> GGGGG (H:0, L:0) [algo_top1=RAVEN, followed=True]
+  Won in 4 attempts!
+
+Game 52/100: Target = REICH
+  Attempt 1 [LLM]: SHARE -> -Y-YY (H:5, L:5) [algo_top1=RAILS, followed=False]
+  Attempt 2 [LLM]: PERCH -> -GYGG (H:2, L:2) [algo_top1=PERTH, followed=False]
+  Attempt 3 [LLM]: REICH -> GGGGG (H:0, L:0) [algo_top1=REICH, followed=True]
+  Won in 3 attempts!
+
+Game 53/100: Target = ICONS
+  Attempt 1 [LLM]: HOUSE -> -Y-Y- (H:5, L:4) [algo_top1=RAIDS, followed=False]
+  Attempt 2 [LLM]: STOOP -> Y-G-- (H:4, L:4) [algo_top1=SNORT, followed=False]
+  Attempt 3 [LLM]: BROWS -> --G-G (H:3, L:3) [algo_top1=CLOGS, followed=False]
+  Attempt 4 [LLM]: ICONS -> GGGGG (H:0, L:0) [algo_top1=LIONS, followed=False]
+  Won in 4 attempts!
+
+Game 54/100: Target = SILKY
+  Attempt 1 [LLM]: BRAIN -> ---Y- (H:5, L:5) [algo_top1=RAGES, followed=False]
+  Attempt 2 [LLM]: SHIFT -> G-Y-- (H:4, L:4) [algo_top1=TIDES, followed=False]
+  Attempt 3 [LLM]: SILKS -> GGGG- (H:1, L:1) [algo_top1=SIXES, followed=False]
+  Attempt 4 [LLM]: SILKY -> GGGGG (H:0, L:0) [algo_top1=SILKY, followed=True]
+  Won in 4 attempts!
+
+Game 55/100: Target = CARVE
+  Attempt 1 [LLM]: HOUSE -> ----G (H:4, L:4) [algo_top1=RATED, followed=False]
+  Attempt 2 [LLM]: PRIME -> -Y--G (H:4, L:4) [algo_top1=ALINE, followed=False]
+  Attempt 3 [LLM]: GENRE -> ---YG (H:4, L:4) [algo_top1=CARNE, followed=False]
+  Attempt 4 [LLM]: CARVE -> GGGGG (H:0, L:0) [algo_top1=CARVE, followed=True]
+  Won in 4 attempts!
+
+Game 56/100: Target = LAGER
+  Attempt 1 [LLM]: HOUSE -> ----Y (H:5, L:5) [algo_top1=YEARS, followed=False]
+  Attempt 2 [LLM]: PALEY -> -GYG- (H:3, L:3) [algo_top1=EARED, followed=False]
+  Attempt 3 [LLM]: LABEL -> GG-G- (H:2, L:2) [algo_top1=LAGER, followed=False]
+  Attempt 4 [LLM]: LATER -> GG-GG (H:1, L:1) [algo_top1=LATER, followed=True]
+  Attempt 5 [LLM]: LAVER -> GG-GG (H:1, L:1) [algo_top1=LAGER, followed=False]
+  Attempt 6 [LLM]: LAZER -> GG-GG (H:1, L:1) [algo_top1=LAGER, followed=False]
+  Failed to find word
+
+Game 57/100: Target = JERKS
+  Attempt 1 [LLM]: HOUSE -> ---YY (H:5, L:5) [algo_top1=NEARS, followed=False]
+  Attempt 2 [LLM]: LANES -> ---YG (H:4, L:4) [algo_top1=RATES, followed=False]
+  Attempt 3 [LLM]: PERKS -> -GGGG (H:1, L:1) [algo_top1=RESTS, followed=False]
+  Attempt 4 [LLM]: JERKS -> GGGGG (H:0, L:0) [algo_top1=JERKS, followed=True]
+  Won in 4 attempts!
+
+Game 58/100: Target = LOTUS
+  Attempt 1 [LLM]: HOUSE -> -GYY- (H:4, L:3) [algo_top1=ACRES, followed=False]
+  Attempt 2 [LLM]: BOGUS -> -G-GG (H:2, L:2) [algo_top1=LOTUS, followed=False]
+  Attempt 3 [LLM]: LOCUS -> GG-GG (H:1, L:1) [algo_top1=POTUS, followed=False]
+  Attempt 4 [LLM]: LOTUS -> GGGGG (H:0, L:0) [algo_top1=LOTUS, followed=True]
+  Won in 4 attempts!
+
+Game 59/100: Target = LACEY
+  Attempt 1 [LLM]: HOUSE -> ----Y (H:5, L:5) [algo_top1=DRIES, followed=False]
+  Attempt 2 [LLM]: FERAL -> -Y-YY (H:5, L:5) [algo_top1=RATED, followed=False]
+  Attempt 3 [LLM]: VALET -> -GYG- (H:3, L:3) [algo_top1=LADEN, followed=False]
+  Attempt 4 [LLM]: LACED -> GGGG- (H:1, L:1) [algo_top1=LADEN, followed=False]
+  Attempt 5 [LLM]: LACEY -> GGGGG (H:0, L:0) [algo_top1=LACEY, followed=True]
+  Won in 5 attempts!
+
+Game 60/100: Target = TUDOR
+  Attempt 1 [LLM]: INTRO -> --YYY (H:5, L:5) [algo_top1=CANOE, followed=False]
+  Attempt 2 [LLM]: WORTH -> -YYY- (H:5, L:5) [algo_top1=TORTS, followed=False]
+  Attempt 3 [LLM]: TROOP -> GY-G- (H:3, L:3) [algo_top1=TUDOR, followed=False]
+  Attempt 4 [LLM]: TUDOR -> GGGGG (H:0, L:0) [algo_top1=TUMOR, followed=False]
+  Won in 4 attempts!
+
+Game 61/100: Target = QUOTA
+  Attempt 1 [LLM]: HOUSE -> -YY-- (H:5, L:5) [algo_top1=HORNS, followed=False]
+  Attempt 2 [LLM]: LUXOR -> -G-Y- (H:4, L:4) [algo_top1=TUMOR, followed=False]
+  Attempt 3 [LLM]: QUOTA -> GGGGG (H:0, L:0) [algo_top1=MUNDO, followed=False]
+  Won in 3 attempts!
+
+Game 62/100: Target = MOURN
+  Attempt 1 [LLM]: HOUSE -> -GG-- (H:3, L:3) [algo_top1=HEROS, followed=False]
+  Attempt 2 [LLM]: ROUND -> YGGY- (H:3, L:3) [algo_top1=MOUND, followed=False]
+  Attempt 3 [LLM]: MOURN -> GGGGG (H:0, L:0) [algo_top1=MOURN, followed=True]
+  Won in 3 attempts!
+
+Game 63/100: Target = PROMO
+  Attempt 1 [LLM]: HOUSE -> -Y--- (H:5, L:5) [algo_top1=SAULT, followed=False]
+  Attempt 2 [LLM]: MINOR -> Y--YY (H:5, L:5) [algo_top1=MARLO, followed=False]
+  Attempt 3 [LLM]: AROMA -> -GGG- (H:2, L:2) [algo_top1=PROMO, followed=False]
+  Attempt 4 [LLM]: PROMO -> GGGGG (H:0, L:0) [algo_top1=PROMO, followed=True]
+  Won in 4 attempts!
+
+Game 64/100: Target = CASTE
+  Attempt 1 [LLM]: HOUSE -> ---YG (H:4, L:4) [algo_top1=MATES, followed=False]
+  Attempt 2 [LLM]: SPITE -> Y--GG (H:3, L:3) [algo_top1=SPATE, followed=False]
+  Attempt 3 [LLM]: TASTE -> -GGGG (H:1, L:1) [algo_top1=WASTE, followed=False]
+  Attempt 4 [LLM]: WASTE -> -GGGG (H:1, L:1) [algo_top1=WASTE, followed=True]
+  Attempt 5 [LLM]: CASTE -> GGGGG (H:0, L:0) [algo_top1=CASTE, followed=True]
+  Won in 5 attempts!
+
+Game 65/100: Target = CAPRI
+  Attempt 1 [LLM]: GRADE -> -YY-- (H:5, L:5) [algo_top1=AISLE, followed=False]
+  Attempt 2 [LLM]: MAURA -> -G-G- (H:3, L:3) [algo_top1=MARIA, followed=False]
+  Attempt 3 [LLM]: HAIRY -> -GYG- (H:3, L:3) [algo_top1=HAIRS, followed=False]
+  Attempt 4 [LLM]: CAPRI -> GGGGG (H:0, L:0) [algo_top1=CAPRI, followed=True]
+  Won in 4 attempts!
+
+Game 66/100: Target = ALIAS
+  Attempt 1 [LLM]: SHAPE -> Y-Y-- (H:5, L:5) [algo_top1=RAINS, followed=False]
+  Attempt 2 [LLM]: BASIC -> -YYY- (H:5, L:4) [algo_top1=CARTS, followed=False]
+  Attempt 3 [LLM]: ALIAS -> GGGGG (H:0, L:0) [algo_top1=MIDAS, followed=False]
+  Won in 3 attempts!
+
+Game 67/100: Target = PADDY
+  Attempt 1 [LLM]: SPEND -> -Y--Y (H:5, L:4) [algo_top1=MOANS, followed=False]
+  Attempt 2 [LLM]: PADMA -> GGG-- (H:2, L:2) [algo_top1=PRADO, followed=False]
+  Attempt 3 [LLM]: PADDY -> GGGGG (H:0, L:0) [algo_top1=PADDY, followed=True]
+  Won in 3 attempts!
+
+Game 68/100: Target = BLOBS
+  Attempt 1 [LLM]: HOUSE -> -Y-Y- (H:5, L:4) [algo_top1=ALINE, followed=False]
+  Attempt 2 [LLM]: SCION -> Y--Y- (H:5, L:5) [algo_top1=SCORN, followed=False]
+  Attempt 3 [LLM]: BROWS -> G-G-G (H:2, L:2) [algo_top1=PROBS, followed=False]
+  Attempt 4 [LLM]: BLOBS -> GGGGG (H:0, L:0) [algo_top1=BLOGS, followed=False]
+  Won in 4 attempts!
+
+Game 69/100: Target = DILLY
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=STARE, followed=False]
+  Attempt 2 [LLM]: BLIND -> -YY-Y (H:5, L:5) [algo_top1=TRINA, followed=False]
+  Attempt 3 [LLM]: LYDIA -> YYYY- (H:5, L:5) [algo_top1=TIDAL, followed=False]
+  Attempt 4 [LLM]: DILLY -> GGGGG (H:0, L:0) [algo_top1=DIMLY, followed=False]
+  Won in 4 attempts!
+
+Game 70/100: Target = GUTSY
+  Attempt 1 [LLM]: HOUSE -> --YG- (H:4, L:4) [algo_top1=AILES, followed=False]
+  Attempt 2 [LLM]: GUTSY -> GGGGG (H:0, L:0) [algo_top1=TUTSI, followed=False]
+  Won in 2 attempts!
+
+Game 71/100: Target = TABOR
+  Attempt 1 [LLM]: HOUSE -> -Y--- (H:5, L:5) [algo_top1=AILES, followed=False]
+  Attempt 2 [LLM]: LIMBO -> ---YY (H:5, L:4) [algo_top1=TALON, followed=False]
+  Attempt 3 [LLM]: BROOD -> YY-G- (H:4, L:4) [algo_top1=BACON, followed=False]
+  Attempt 4 [LLM]: GABOR -> -GGGG (H:1, L:1) [algo_top1=TABOR, followed=False]
+  Attempt 5 [LLM]: TABOR -> GGGGG (H:0, L:0) [algo_top1=TABOR, followed=True]
+  Won in 5 attempts!
+
+Game 72/100: Target = INLAY
+  Attempt 1 [LLM]: VIEWS -> -Y--- (H:5, L:5) [algo_top1=RAISE, followed=False]
+  Attempt 2 [LLM]: QUICK -> --Y-- (H:5, L:5) [algo_top1=CURIA, followed=False]
+  Attempt 3 [LLM]: FLAIR -> -YYY- (H:5, L:4) [algo_top1=DARIN, followed=False]
+  Attempt 4 [LLM]: INLAY -> GGGGG (H:0, L:0) [algo_top1=DALAI, followed=False]
+  Won in 4 attempts!
+
+Game 73/100: Target = AHHHH
+  Attempt 1 [LLM]: HOUSE -> Y---- (H:5, L:5) [algo_top1=NASIR, followed=False]
+  Attempt 2 [LLM]: THINK -> -G--- (H:4, L:4) [algo_top1=CHART, followed=False]
+  Attempt 3 [LLM]: CHARM -> -GY-- (H:4, L:4) [algo_top1=CHARM, followed=True]
+  Attempt 4 [LLM]: AHHHH -> GGGGG (H:0, L:0) [algo_top1=AHHHH, followed=True]
+  Won in 4 attempts!
+
+Game 74/100: Target = ROUEN
+  Attempt 1 [LLM]: HOUSE -> -GG-Y (H:3, L:3) [algo_top1=RAINS, followed=False]
+  Attempt 2 [LLM]: ROUEN -> GGGGG (H:0, L:0) [algo_top1=ROUEN, followed=True]
+  Won in 2 attempts!
+
+Game 75/100: Target = BUENA
+  Attempt 1 [LLM]: HOUSE -> --Y-Y (H:5, L:5) [algo_top1=PANEL, followed=False]
+  Attempt 2 [LLM]: DEBUG -> -YYY- (H:5, L:5) [algo_top1=LURED, followed=False]
+  Attempt 3 [LLM]: BUYER -> GG-Y- (H:3, L:3) [algo_top1=BUYER, followed=True]
+  Attempt 4 [LLM]: BUENA -> GGGGG (H:0, L:0) [algo_top1=BUENA, followed=True]
+  Won in 4 attempts!
+
+Game 76/100: Target = MENON
+  Attempt 1 [LLM]: TIGER -> ---Y- (H:5, L:5) [algo_top1=TIRES, followed=False]
+  Attempt 2 [LLM]: PEEKS -> -G--- (H:4, L:4) [algo_top1=LEASE, followed=False]
+  Attempt 3 [LLM]: LEACH -> -G--- (H:4, L:4) [algo_top1=DELAY, followed=False]
+  Attempt 4 [LLM]: BENNY -> -GGY- (H:3, L:3) [algo_top1=DEMON, followed=False]
+  Attempt 5 [LLM]: MENON -> GGGGG (H:0, L:0) [algo_top1=XENON, followed=False]
+  Won in 5 attempts!
+
+Game 77/100: Target = TRASK
+  Attempt 1 [LLM]: HOUSE -> ---G- (H:4, L:4) [algo_top1=WARES, followed=False]
+  Attempt 2 [LLM]: PRISM -> -G-G- (H:3, L:3) [algo_top1=GRASS, followed=False]
+  Attempt 3 [LLM]: BRASS -> -GGG- (H:2, L:2) [algo_top1=BRASS, followed=True]
+  Attempt 4 [LLM]: TRASK -> GGGGG (H:0, L:0) [algo_top1=TRASK, followed=True]
+  Won in 4 attempts!
+
+Game 78/100: Target = CASIO
+  Attempt 1 [LLM]: ENTER -> ----- (H:5, L:5) [algo_top1=RAINS, followed=False]
+  Attempt 2 [LLM]: HOUSE -> -Y-Y- (H:5, L:5) [algo_top1=COILS, followed=False]
+  Attempt 3 [LLM]: PLOWS -> --Y-Y (H:5, L:5) [algo_top1=PALOS, followed=False]
+  Attempt 4 [LLM]: OSAMA -> YYY-- (H:5, L:5) [algo_top1=VASCO, followed=False]
+  Attempt 5 [LLM]: CASIO -> GGGGG (H:0, L:0) [algo_top1=SAVOY, followed=False]
+  Won in 5 attempts!
+
+Game 79/100: Target = VOILA
+  Attempt 1 [LLM]: HOUSE -> -G--- (H:4, L:4) [algo_top1=COALS, followed=False]
+  Attempt 2 [LLM]: POLIO -> -GYY- (H:4, L:4) [algo_top1=DORAN, followed=False]
+  Attempt 3 [LLM]: VOILA -> GGGGG (H:0, L:0) [algo_top1=VOILA, followed=True]
+  Won in 3 attempts!
+
+Game 80/100: Target = AURAL
+  Attempt 1 [LLM]: RATES -> YY--- (H:5, L:5) [algo_top1=NAMES, followed=False]
+  Attempt 2 [LLM]: BRIAR -> -Y-G- (H:4, L:4) [algo_top1=ARIAN, followed=False]
+  Attempt 3 [LLM]: MORAL -> --GGG (H:2, L:2) [algo_top1=MORAN, followed=False]
+  Attempt 4 [LLM]: AURAL -> GGGGG (H:0, L:0) [algo_top1=AURAL, followed=True]
+  Won in 4 attempts!
+
+Game 81/100: Target = LEGER
+  Attempt 1 [LLM]: LIVER -> G--GG (H:2, L:2) [algo_top1=SABLE, followed=False]
+  Attempt 2 [LLM]: LASER -> G--GG (H:2, L:2) [algo_top1=LAGER, followed=False]
+  Attempt 3 [LLM]: LEPER -> GG-GG (H:1, L:1) [algo_top1=LOWER, followed=False]
+  Attempt 4 [LLM]: LEGER -> GGGGG (H:0, L:0) [algo_top1=LEGER, followed=True]
+  Won in 4 attempts!
+
+Game 82/100: Target = DALLY
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=MARNE, followed=False]
+  Attempt 2 [LLM]: KAYLA -> -GYG- (H:3, L:3) [algo_top1=TRINA, followed=False]
+  Attempt 3 [LLM]: DALLY -> GGGGG (H:0, L:0) [algo_top1=DALLY, followed=True]
+  Won in 3 attempts!
+
+Game 83/100: Target = INIGO
+  Attempt 1 [LLM]: TRAIN -> ---YY (H:5, L:5) [algo_top1=RAGES, followed=False]
+  Attempt 2 [LLM]: WINES -> -YY-- (H:5, L:4) [algo_top1=SINCE, followed=False]
+  Attempt 3 [LLM]: CLING -> --GYY (H:4, L:4) [algo_top1=CLING, followed=True]
+  Attempt 4 [LLM]: INIGO -> GGGGG (H:0, L:0) [algo_top1=INIGO, followed=True]
+  Won in 4 attempts!
+
+Game 84/100: Target = KRILL
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=AILES, followed=False]
+  Attempt 2 [LLM]: CRANK -> -G--Y (H:4, L:4) [algo_top1=TRAIN, followed=False]
+  Attempt 3 [LLM]: KRILL -> GGGGG (H:0, L:0) [algo_top1=KRILL, followed=True]
+  Won in 3 attempts!
+
+Game 85/100: Target = SNIDE
+  Attempt 1 [LLM]: HOUSE -> ---YG (H:4, L:4) [algo_top1=DARES, followed=False]
+  Attempt 2 [LLM]: STARE -> G---G (H:3, L:3) [algo_top1=SPATE, followed=False]
+  Attempt 3 [LLM]: SPICE -> G-G-G (H:2, L:2) [algo_top1=SPINE, followed=False]
+  Attempt 4 [LLM]: SLIME -> G-G-G (H:2, L:2) [algo_top1=SEINE, followed=False]
+  Attempt 5 [LLM]: SEIZE -> G-G-G (H:2, L:2) [algo_top1=SEIZE, followed=True]
+  Attempt 6 [LLM]: SWINE -> G-GYG (H:2, L:2) [algo_top1=SWINE, followed=True]
+  Failed to find word
+
+Game 86/100: Target = LEWES
+  Attempt 1 [LLM]: HOUSE -> ---YY (H:5, L:5) [algo_top1=SALEH, followed=False]
+  Attempt 2 [LLM]: PESTS -> -G--G (H:3, L:3) [algo_top1=SALES, followed=False]
+  Attempt 3 [LLM]: WEEDS -> YGY-G (H:3, L:3) [algo_top1=REELS, followed=False]
+  Attempt 4 [LLM]: LEWES -> GGGGG (H:0, L:0) [algo_top1=LEWES, followed=True]
+  Won in 4 attempts!
+
+Game 87/100: Target = TAMER
+  Attempt 1 [LLM]: HOUSE -> ----Y (H:5, L:5) [algo_top1=PARED, followed=False]
+  Attempt 2 [LLM]: WRECK -> -YY-- (H:5, L:5) [algo_top1=RATED, followed=False]
+  Attempt 3 [LLM]: MERRY -> YYY-- (H:5, L:4) [algo_top1=LATER, followed=False]
+  Attempt 4 [LLM]: TAMER -> GGGGG (H:0, L:0) [algo_top1=TAMER, followed=True]
+  Won in 4 attempts!
+
+Game 88/100: Target = COTTA
+  Attempt 1 [LLM]: PRICE -> ---Y- (H:5, L:5) [algo_top1=TILES, followed=False]
+  Attempt 2 [LLM]: COALS -> GGY-- (H:3, L:3) [algo_top1=CLAUS, followed=False]
+  Attempt 3 [LLM]: CONAN -> GG-Y- (H:3, L:3) [algo_top1=CONAN, followed=True]
+  Attempt 4 [LLM]: COMMA -> GG--G (H:2, L:2) [algo_top1=COCOA, followed=False]
+  Attempt 5 [LLM]: COCOA -> GG--G (H:2, L:2) [algo_top1=COCOA, followed=True]
+  Attempt 6 [LLM]: COTTA -> GGGGG (H:0, L:0) [algo_top1=COTTA, followed=True]
+  Won in 6 attempts!
+
+Game 89/100: Target = CORBY
+  Attempt 1 [LLM]: HOUSE -> -G--- (H:4, L:4) [algo_top1=SLATE, followed=False]
+  Attempt 2 [LLM]: POLKA -> -G--- (H:4, L:4) [algo_top1=DORAN, followed=False]
+  Attempt 3 [LLM]: GORDY -> -GG-G (H:2, L:2) [algo_top1=RONDO, followed=False]
+  Attempt 4 [LLM]: MORTY -> -GG-G (H:2, L:2) [algo_top1=WORRY, followed=False]
+  Attempt 5 [LLM]: WORRY -> -GG-G (H:2, L:2) [algo_top1=WORRY, followed=True]
+  Attempt 6 [LLM]: CORNY -> GGG-G (H:1, L:1) [algo_top1=CORNY, followed=True]
+  Failed to find word
+
+Game 90/100: Target = POLIS
+  Attempt 1 [LLM]: HOUSE -> -G-Y- (H:4, L:4) [algo_top1=MARES, followed=False]
+  Attempt 2 [LLM]: LOADS -> YG--G (H:3, L:3) [algo_top1=TOOLS, followed=False]
+  Attempt 3 [LLM]: FOOLS -> -G-YG (H:3, L:3) [algo_top1=TOOLS, followed=False]
+  Attempt 4 [LLM]: BOLTS -> -GG-G (H:2, L:2) [algo_top1=BOLTS, followed=True]
+  Attempt 5 [LLM]: YOLKS -> -GG-G (H:2, L:2) [algo_top1=YOLKS, followed=True]
+  Attempt 6 [LLM]: POLIS -> GGGGG (H:0, L:0) [algo_top1=SOLIS, followed=False]
+  Won in 6 attempts!
+
+Game 91/100: Target = ROXAS
+  Attempt 1 [LLM]: HOUSE -> -G-Y- (H:4, L:4) [algo_top1=STALE, followed=False]
+  Attempt 2 [LLM]: SOARS -> -GYYG (H:3, L:3) [algo_top1=LORDS, followed=False]
+  Attempt 3 [LLM]: ROXAS -> GGGGG (H:0, L:0) [algo_top1=ROJAS, followed=False]
+  Won in 3 attempts!
+
+Game 92/100: Target = RANCE
+  Attempt 1 [LLM]: TRACE -> -YYGG (H:3, L:2) [algo_top1=ARIES, followed=False]
+  Attempt 2 [LLM]: FARCE -> -GYGG (H:2, L:2) [algo_top1=FARCE, followed=True]
+  Attempt 3 [LLM]: RANCE -> GGGGG (H:0, L:0) [algo_top1=RANCE, followed=True]
+  Won in 3 attempts!
+
+Game 93/100: Target = CARON
+  Attempt 1 [LLM]: HOUSE -> -Y--- (H:5, L:5) [algo_top1=SADIE, followed=False]
+  Attempt 2 [LLM]: CRONY -> GYYY- (H:4, L:2) [algo_top1=ACORN, followed=False]
+  Attempt 3 [LLM]: CARON -> GGGGG (H:0, L:0) [algo_top1=CARON, followed=True]
+  Won in 3 attempts!
+
+Game 94/100: Target = SURYA
+  Attempt 1 [LLM]: SHARE -> G-YY- (H:4, L:4) [algo_top1=SALON, followed=False]
+  Attempt 2 [LLM]: STRAY -> G-GYY (H:3, L:3) [algo_top1=SURAT, followed=False]
+  Attempt 3 [LLM]: SYRIA -> GYG-G (H:2, L:2) [algo_top1=SYRIA, followed=True]
+  Attempt 4 [LLM]: SURYA -> GGGGG (H:0, L:0) [algo_top1=SURYA, followed=True]
+  Won in 4 attempts!
+
+Game 95/100: Target = AGGIE
+  Attempt 1 [LLM]: BRAKE -> --Y-G (H:4, L:4) [algo_top1=ASTRO, followed=False]
+  Attempt 2 [LLM]: MAIZE -> -YY-G (H:4, L:4) [algo_top1=LAINE, followed=False]
+  Attempt 3 [LLM]: AISLE -> GY--G (H:3, L:3) [algo_top1=ANGIE, followed=False]
+  Attempt 4 [LLM]: ANGIE -> G-GGG (H:1, L:1) [algo_top1=ANNIE, followed=False]
+  Attempt 5 [LLM]: AGGIE -> GGGGG (H:0, L:0) [algo_top1=AGGIE, followed=True]
+  Won in 5 attempts!
+
+Game 96/100: Target = CAUSA
+  Attempt 1 [LLM]: HOUSE -> --GG- (H:3, L:3) [algo_top1=ACRES, followed=False]
+  Attempt 2 [LLM]: CRUST -> G-GG- (H:2, L:2) [algo_top1=TRUSS, followed=False]
+  Attempt 3 [LLM]: CAUSA -> GGGGG (H:0, L:0) [algo_top1=CAUSA, followed=True]
+  Won in 3 attempts!
+
+Game 97/100: Target = BAMBA
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=SIENA, followed=False]
+  Attempt 2 [LLM]: TIDAL -> ---Y- (H:5, L:5) [algo_top1=ALINA, followed=False]
+  Attempt 3 [LLM]: MAMMA -> -GG-G (H:2, L:2) [algo_top1=CAMRY, followed=False]
+  Attempt 4 [LLM]: BAMBA -> GGGGG (H:0, L:0) [algo_top1=BAMBA, followed=True]
+  Won in 4 attempts!
+
+Game 98/100: Target = MAYNE
+  Attempt 1 [LLM]: STATE -> --Y-G (H:4, L:4) [algo_top1=SARIN, followed=False]
+  Attempt 2 [LLM]: MAUVE -> GG--G (H:2, L:2) [algo_top1=LAINE, followed=False]
+  Attempt 3 [LLM]: MAYBE -> GGG-G (H:1, L:1) [algo_top1=MARIE, followed=False]
+  Attempt 4 [LLM]: MAYNE -> GGGGG (H:0, L:0) [algo_top1=MAYNE, followed=True]
+  Won in 4 attempts!
+
+Game 99/100: Target = BOGGS
+  Attempt 1 [LLM]: HOUSE -> -G-Y- (H:4, L:4) [algo_top1=CORES, followed=False]
+  Attempt 2 [LLM]: BOILS -> GG--G (H:2, L:2) [algo_top1=COOLS, followed=False]
+  Attempt 3 [LLM]: BOATS -> GG--G (H:2, L:2) [algo_top1=BOOBS, followed=False]
+  Attempt 4 [LLM]: BOOMS -> GG--G (H:2, L:2) [algo_top1=BOOMS, followed=True]
+  Attempt 5 [LLM]: BONDS -> GG--G (H:2, L:2) [algo_top1=BONDS, followed=True]
+  Attempt 6 [LLM]: BOGGS -> GGGGG (H:0, L:0) [algo_top1=BOGGS, followed=True]
+  Won in 6 attempts!
+
+Game 100/100: Target = FINNS
+  Attempt 1 [LLM]: HOUSE -> ---Y- (H:5, L:5) [algo_top1=CEDAR, followed=False]
+  Attempt 2 [LLM]: SLATS -> ----G (H:4, L:4) [algo_top1=SAMIR, followed=False]
+  Attempt 3 [LLM]: KINKS -> -GG-G (H:2, L:2) [algo_top1=KINDS, followed=False]
+  Attempt 4 [LLM]: WINDS -> -GG-G (H:2, L:2) [algo_top1=MINDS, followed=False]
+  Attempt 5 [LLM]: PINGS -> -GG-G (H:2, L:2) [algo_top1=RINGS, followed=False]
+  Attempt 6 [LLM]: MINIS -> -GG-G (H:2, L:2) [algo_top1=FINNS, followed=False]
+  Failed to find word
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 100
+Wins: 93
+Win rate: 93.0%
+Average attempts (when won): 4.09
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/voi_integration/results/wordle/baseline_css_llama-3.3-70b-instruct_20260328_045413.csv
+  /Users/kevin/Desktop/projects/wordle/voi_integration/results/wordle/summary_baseline_css_llama-3.3-70b-instruct_20260328_045413.json
+
+  Completed run 1/48
+----------------------------------------
+
+[2/48] Model=llama-3.3-70b-instruct  Algo=css  Condition=voi_informed
+  Schedule: {"1":"llm","2":"llm","3":"llm","4":"llm","5":"llm","6":"llm"}
+  Config: voi_informed_css
+================================================================================
+VOI-INFORMED HYBRID EVALUATION: voi_informed_css
+================================================================================
+Model: llama-3.3-70b-instruct
+Algorithm: CSS
+Condition: voi_informed
+Prompt Type: zero-shot
+Top-K: 5
+Schedule: {"1": "llm", "2": "llm", "3": "llm", "4": "llm", "5": "llm", "6": "llm"}
+Games: 100
+================================================================================
+
+Game 1/100: Target = PHOTO
+  Attempt 1 [LLM_VOI_INFORMED]: VOICE -> -Y--- (H:5, L:5) [algo_top1=MATES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: FLOWS -> --G-- (H:4, L:4) [algo_top1=SNORT, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: BROOD -> --GY- (H:4, L:4) [algo_top1=GROOT, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: KYOTO -> --GGG (H:2, L:2) [algo_top1=PHOTO, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: PHOTO -> GGGGG (H:0, L:0) [algo_top1=PHOTO, followed=True]
+  Won in 5 attempts!
+
+Game 2/100: Target = PARTY
+  Attempt 1 [LLM_VOI_INFORMED]: IRISH -> -Y--- (H:5, L:5) [algo_top1=RAISE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: PARED -> GGG-- (H:2, L:2) [algo_top1=BARRE, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: PARRY -> GGG-G (H:1, L:1) [algo_top1=PARTY, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: PARTY -> GGGGG (H:0, L:0) [algo_top1=PARTY, followed=True]
+  Won in 4 attempts!
+
+Game 3/100: Target = TRICK
+  Attempt 1 [LLM_VOI_INFORMED]: DECAL -> --Y-- (H:5, L:5) [algo_top1=DALES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: STOIC -> -Y-YY (H:5, L:3) [algo_top1=COINS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: MITCH -> -YYG- (H:4, L:4) [algo_top1=PITCH, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: TRICK -> GGGGG (H:0, L:0) [algo_top1=TRICK, followed=True]
+  Won in 4 attempts!
+
+Game 4/100: Target = DIRTY
+  Attempt 1 [LLM_VOI_INFORMED]: CHEAT -> ----Y (H:5, L:5) [algo_top1=GALES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: TULLY -> Y---G (H:4, L:4) [algo_top1=TILTS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: MINTY -> -G-GG (H:2, L:2) [algo_top1=NITTY, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: WITTY -> -G-GG (H:2, L:2) [algo_top1=DITTY, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: FIFTY -> -G-GG (H:2, L:2) [algo_top1=DIRTY, followed=False]
+  Attempt 6 [LLM_VOI_INFORMED]: SIXTY -> -G-GG (H:2, L:2) [algo_top1=DIRTY, followed=False]
+  Failed to find word
+
+Game 5/100: Target = USUAL
+  Attempt 1 [LLM_VOI_INFORMED]: FLUSH -> -YGY- (H:4, L:4) [algo_top1=LINER, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: SOULS -> Y-GY- (H:4, L:4) [algo_top1=GAULS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: USUAL -> GGGGG (H:0, L:0) [algo_top1=USUAL, followed=True]
+  Won in 3 attempts!
+
+Game 6/100: Target = TRULY
+  Attempt 1 [LLM_VOI_INFORMED]: LEADS -> Y---- (H:5, L:5) [algo_top1=MEATS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: FOLLY -> ---GG (H:3, L:3) [algo_top1=CLOUT, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: CURLY -> -YYGG (H:3, L:3) [algo_top1=TRULY, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: TRULY -> GGGGG (H:0, L:0) [algo_top1=TRULY, followed=True]
+  Won in 4 attempts!
+
+Game 7/100: Target = SPENT
+  Attempt 1 [LLM_VOI_INFORMED]: LINGO -> --Y-- (H:5, L:5) [algo_top1=AILES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: TAUNT -> ---GG (H:3, L:3) [algo_top1=EARNS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: SCENT -> G-GGG (H:1, L:1) [algo_top1=EVENT, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: SPENT -> GGGGG (H:0, L:0) [algo_top1=SPENT, followed=True]
+  Won in 4 attempts!
+
+Game 8/100: Target = PAUSE
+  Attempt 1 [LLM_VOI_INFORMED]: MEANS -> -YY-Y (H:5, L:4) [algo_top1=AIDES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: TASER -> -GYY- (H:4, L:3) [algo_top1=LASER, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: SAUCE -> YGG-G (H:2, L:2) [algo_top1=SALLE, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: PAUSE -> GGGGG (H:0, L:0) [algo_top1=PAUSE, followed=True]
+  Won in 4 attempts!
+
+Game 9/100: Target = CRAZY
+  Attempt 1 [LLM_VOI_INFORMED]: TOURS -> ---Y- (H:5, L:5) [algo_top1=HANES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: GRADE -> -GG-- (H:3, L:3) [algo_top1=MARIN, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: CRANK -> GGG-- (H:2, L:2) [algo_top1=BRAIN, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: CRAMP -> GGG-- (H:2, L:2) [algo_top1=CRAZY, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: CRAWL -> GGG-- (H:2, L:2) [algo_top1=CRAZY, followed=False]
+  Attempt 6 [LLM_VOI_INFORMED]: CRABB -> GGG-- (H:2, L:2) [algo_top1=CRAZY, followed=False]
+  Failed to find word
+
+Game 10/100: Target = BASES
+  Attempt 1 [LLM_VOI_INFORMED]: COINS -> ----G (H:4, L:4) [algo_top1=TAILS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: TAKES -> -G-GG (H:2, L:2) [algo_top1=MARES, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: WALES -> -G-GG (H:2, L:2) [algo_top1=GAMES, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: FAVES -> -G-GG (H:2, L:2) [algo_top1=GAMES, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: RAGES -> -G-GG (H:2, L:2) [algo_top1=MAGES, followed=False]
+  Attempt 6 [LLM_VOI_INFORMED]: MAZES -> -G-GG (H:2, L:2) [algo_top1=EAMES, followed=False]
+  Failed to find word
+
+Game 11/100: Target = YOUNG
+  Attempt 1 [LLM_VOI_INFORMED]: POLES -> -G--- (H:4, L:4) [algo_top1=DOERS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: MOIRA -> -G--- (H:4, L:4) [algo_top1=RONDA, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: TOUGH -> -GGY- (H:3, L:3) [algo_top1=GOODY, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: YOUNG -> GGGGG (H:0, L:0) [algo_top1=YOUNG, followed=True]
+  Won in 4 attempts!
+
+Game 12/100: Target = MEANS
+  Attempt 1 [LLM_VOI_INFORMED]: STORE -> Y---Y (H:5, L:5) [algo_top1=SNARE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: MUSED -> G-YY- (H:4, L:4) [algo_top1=DALES, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: MEALS -> GGG-G (H:1, L:1) [algo_top1=MEANS, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: MEANS -> GGGGG (H:0, L:0) [algo_top1=MEANS, followed=True]
+  Won in 4 attempts!
+
+Game 13/100: Target = TRUTH
+  Attempt 1 [LLM_VOI_INFORMED]: FRISK -> -G--- (H:4, L:4) [algo_top1=MARNE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: BREAD -> -G--- (H:4, L:4) [algo_top1=ARENT, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: TROOP -> GG--- (H:3, L:3) [algo_top1=GROOT, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: TRUTH -> GGGGG (H:0, L:0) [algo_top1=TRUTH, followed=True]
+  Won in 4 attempts!
+
+Game 14/100: Target = FIRED
+  Attempt 1 [LLM_VOI_INFORMED]: MINDY -> -G-Y- (H:4, L:4) [algo_top1=AIRES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: FIELD -> GGY-G (H:2, L:2) [algo_top1=RIDES, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: FIRED -> GGGGG (H:0, L:0) [algo_top1=FIXED, followed=False]
+  Won in 3 attempts!
+
+Game 15/100: Target = FOLKS
+  Attempt 1 [LLM_VOI_INFORMED]: HOVER -> -G--- (H:4, L:4) [algo_top1=RENAL, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: POLLS -> -GG-G (H:2, L:2) [algo_top1=SOLON, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: FOLKS -> GGGGG (H:0, L:0) [algo_top1=FOLDS, followed=False]
+  Won in 3 attempts!
+
+Game 16/100: Target = CHILE
+  Attempt 1 [LLM_VOI_INFORMED]: PANIC -> ---YY (H:5, L:5) [algo_top1=NOISE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: CRIES -> G-GY- (H:3, L:3) [algo_top1=ERICH, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: CHIME -> GGG-G (H:1, L:1) [algo_top1=CHILE, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: CHILE -> GGGGG (H:0, L:0) [algo_top1=CHILE, followed=True]
+  Won in 4 attempts!
+
+Game 17/100: Target = BLACK
+  Attempt 1 [LLM_VOI_INFORMED]: VINES -> ----- (H:5, L:5) [algo_top1=EARLS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: OUTDO -> ----- (H:5, L:5) [algo_top1=MAURO, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: HARAM -> -Y--- (H:5, L:5) [algo_top1=CARLA, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: FLACK -> -GGGG (H:1, L:1) [algo_top1=BLACK, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: CLACK -> -GGGG (H:1, L:1) [algo_top1=BLACK, followed=False]
+  Attempt 6 [LLM_VOI_INFORMED]: BLACK -> GGGGG (H:0, L:0) [algo_top1=BLACK, followed=True]
+  Won in 6 attempts!
+
+Game 18/100: Target = GRANT
+  Attempt 1 [LLM_VOI_INFORMED]: NOISY -> Y---- (H:5, L:5) [algo_top1=LASER, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: CRANE -> -GGG- (H:2, L:2) [algo_top1=GALEN, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: GRAND -> GGGG- (H:1, L:1) [algo_top1=BRAND, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: GRANT -> GGGGG (H:0, L:0) [algo_top1=GRANT, followed=True]
+  Won in 4 attempts!
+
+Game 19/100: Target = MEALS
+  Attempt 1 [LLM_VOI_INFORMED]: FINER -> ---Y- (H:5, L:5) [algo_top1=TONES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: TEASE -> -GGY- (H:3, L:3) [algo_top1=DEALS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: LEAPS -> YGG-G (H:2, L:2) [algo_top1=DEALS, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: SEALS -> -GGGG (H:1, L:1) [algo_top1=DEALS, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: MEALS -> GGGGG (H:0, L:0) [algo_top1=DEALS, followed=False]
+  Won in 5 attempts!
+
+Game 20/100: Target = CREAM
+  Attempt 1 [LLM_VOI_INFORMED]: INIGO -> ----- (H:5, L:5) [algo_top1=NILES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: LEVEL -> -Y--- (H:5, L:5) [algo_top1=REALS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: SHARE -> --YYY (H:5, L:5) [algo_top1=STARE, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: DREAM -> -GGGG (H:1, L:1) [algo_top1=BREAD, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: BREAM -> -GGGG (H:1, L:1) [algo_top1=CREAM, followed=False]
+  Attempt 6 [LLM_VOI_INFORMED]: CREAM -> GGGGG (H:0, L:0) [algo_top1=CREAM, followed=True]
+  Won in 6 attempts!
+
+Game 21/100: Target = AWAKE
+  Attempt 1 [LLM_VOI_INFORMED]: SNARE -> --G-G (H:3, L:3) [algo_top1=REALS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: BLAZE -> --G-G (H:3, L:3) [algo_top1=BLAME, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: AGAVE -> G-G-G (H:2, L:2) [algo_top1=PEAKE, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: AWAKE -> GGGGG (H:0, L:0) [algo_top1=AWAKE, followed=True]
+  Won in 4 attempts!
+
+Game 22/100: Target = OCCUR
+  Attempt 1 [LLM_VOI_INFORMED]: CRAZY -> YY--- (H:5, L:5) [algo_top1=POETS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: PERCH -> --YY- (H:5, L:5) [algo_top1=RICOH, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: INCUR -> --GGG (H:2, L:2) [algo_top1=SCOUR, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: OCCUR -> GGGGG (H:0, L:0) [algo_top1=OCCUR, followed=True]
+  Won in 4 attempts!
+
+Game 23/100: Target = YEARS
+  Attempt 1 [LLM_VOI_INFORMED]: QUASI -> --GY- (H:4, L:4) [algo_top1=ALDER, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: STAPH -> Y-G-- (H:4, L:4) [algo_top1=TEARS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: MEARS -> -GGGG (H:1, L:1) [algo_top1=READS, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: WEARS -> -GGGG (H:1, L:1) [algo_top1=REARS, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: YEARS -> GGGGG (H:0, L:0) [algo_top1=REARS, followed=False]
+  Won in 5 attempts!
+
+Game 24/100: Target = GRADE
+  Attempt 1 [LLM_VOI_INFORMED]: CIVIL -> ----- (H:5, L:5) [algo_top1=TESLA, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: ROOMS -> Y---- (H:5, L:5) [algo_top1=TAKES, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: BAYER -> -Y-YY (H:5, L:4) [algo_top1=BARED, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: GRADE -> GGGGG (H:0, L:0) [algo_top1=TRADE, followed=False]
+  Won in 4 attempts!
+
+Game 25/100: Target = CHILL
+  Attempt 1 [LLM_VOI_INFORMED]: RAPID -> ---Y- (H:5, L:5) [algo_top1=MARIN, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: THINS -> -GG-- (H:3, L:3) [algo_top1=NILES, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: WHILE -> -GGG- (H:2, L:2) [algo_top1=CHILE, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: CHILI -> GGGG- (H:1, L:1) [algo_top1=CHILL, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: CHILL -> GGGGG (H:0, L:0) [algo_top1=CHILL, followed=True]
+  Won in 5 attempts!
+
+Game 26/100: Target = FLOOD
+  Attempt 1 [LLM_VOI_INFORMED]: TIMES -> ----- (H:5, L:5) [algo_top1=LASER, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: CARON -> ---G- (H:4, L:4) [algo_top1=ROALD, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: FLOOD -> GGGGG (H:0, L:0) [algo_top1=LOLOL, followed=False]
+  Won in 3 attempts!
+
+Game 27/100: Target = APPLY
+  Attempt 1 [LLM_VOI_INFORMED]: KEYED -> --Y-- (H:5, L:5) [algo_top1=DANES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: WHINY -> ----G (H:4, L:4) [algo_top1=MINTY, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: PASTY -> YY--G (H:4, L:4) [algo_top1=MARTY, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: AMPLY -> G-GGG (H:1, L:1) [algo_top1=APPLY, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: APPLY -> GGGGG (H:0, L:0) [algo_top1=APPLY, followed=True]
+  Won in 5 attempts!
+
+Game 28/100: Target = SMILE
+  Attempt 1 [LLM_VOI_INFORMED]: SCENE -> G---G (H:3, L:3) [algo_top1=MARES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: SPARE -> G---G (H:3, L:3) [algo_top1=STALE, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: SMOKE -> GG--G (H:2, L:2) [algo_top1=SMILE, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: SMITE -> GGG-G (H:1, L:1) [algo_top1=SMILE, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: SMILE -> GGGGG (H:0, L:0) [algo_top1=SMILE, followed=True]
+  Won in 5 attempts!
+
+Game 29/100: Target = KNOCK
+  Attempt 1 [LLM_VOI_INFORMED]: PEELS -> ----- (H:5, L:5) [algo_top1=ALIEN, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: MARGO -> ----Y (H:5, L:5) [algo_top1=TRAIN, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: TOXIC -> -Y--Y (H:5, L:5) [algo_top1=DHONI, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: KNOCK -> GGGGG (H:0, L:0) [algo_top1=KNOCK, followed=True]
+  Won in 4 attempts!
+
+Game 30/100: Target = SLEEP
+  Attempt 1 [LLM_VOI_INFORMED]: COATS -> ----Y (H:5, L:5) [algo_top1=SLICE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: GUISE -> ---YY (H:5, L:5) [algo_top1=SPINE, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: SLEEP -> GGGGG (H:0, L:0) [algo_top1=SNEER, followed=False]
+  Won in 3 attempts!
+
+Game 31/100: Target = BRICK
+  Attempt 1 [LLM_VOI_INFORMED]: TRACE -> -G-G- (H:3, L:3) [algo_top1=ALTER, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: CRICK -> -GGGG (H:1, L:1) [algo_top1=CROCS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: PRICK -> -GGGG (H:1, L:1) [algo_top1=BRICK, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: FRICK -> -GGGG (H:1, L:1) [algo_top1=BRICK, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: BRICK -> GGGGG (H:0, L:0) [algo_top1=BRICK, followed=True]
+  Won in 5 attempts!
+
+Game 32/100: Target = WROTE
+  Attempt 1 [LLM_VOI_INFORMED]: SPURT -> ---YY (H:5, L:5) [algo_top1=RAINS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: CRATE -> -G-GG (H:2, L:2) [algo_top1=ARTIE, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: WRITE -> GG-GG (H:1, L:1) [algo_top1=WROTE, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: WROTE -> GGGGG (H:0, L:0) [algo_top1=WROTE, followed=True]
+  Won in 4 attempts!
+
+Game 33/100: Target = RATED
+  Attempt 1 [LLM_VOI_INFORMED]: TAPER -> YG-GY (H:3, L:3) [algo_top1=ELIAS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: RATED -> GGGGG (H:0, L:0) [algo_top1=RATES, followed=False]
+  Won in 2 attempts!
+
+Game 34/100: Target = ALERT
+  Attempt 1 [LLM_VOI_INFORMED]: CALMS -> -YY-- (H:5, L:4) [algo_top1=NAMES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: ALIVE -> GG--Y (H:3, L:3) [algo_top1=ALINE, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: ALERT -> GGGGG (H:0, L:0) [algo_top1=ALTER, followed=False]
+  Won in 3 attempts!
+
+Game 35/100: Target = CAGES
+  Attempt 1 [LLM_VOI_INFORMED]: FOCUS -> --Y-G (H:4, L:4) [algo_top1=NEARS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: CASES -> GG-GG (H:1, L:1) [algo_top1=CARES, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: CAVES -> GG-GG (H:1, L:1) [algo_top1=CANES, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: CANES -> GG-GG (H:1, L:1) [algo_top1=CATES, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: CARES -> GG-GG (H:1, L:1) [algo_top1=CARES, followed=True]
+  Attempt 6 [LLM_VOI_INFORMED]: CAPES -> GG-GG (H:1, L:1) [algo_top1=CAKES, followed=False]
+  Failed to find word
+
+Game 36/100: Target = TEDDY
+  Attempt 1 [LLM_VOI_INFORMED]: SCARE -> ----Y (H:5, L:5) [algo_top1=SYRIA, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: DEBIT -> YG--Y (H:4, L:4) [algo_top1=DENIM, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: METED -> -GY-Y (H:4, L:4) [algo_top1=TEDDY, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: TEDDY -> GGGGG (H:0, L:0) [algo_top1=TEDDY, followed=True]
+  Won in 4 attempts!
+
+Game 37/100: Target = COLES
+  Attempt 1 [LLM_VOI_INFORMED]: SPITS -> ----G (H:4, L:4) [algo_top1=ELIAS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: LEADS -> YY--G (H:4, L:4) [algo_top1=DANES, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: COLES -> GGGGG (H:0, L:0) [algo_top1=MULES, followed=False]
+  Won in 3 attempts!
+
+Game 38/100: Target = HWANG
+  Attempt 1 [LLM_VOI_INFORMED]: GRITS -> Y---- (H:5, L:5) [algo_top1=MEARS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: BEGAN -> --YYY (H:5, L:4) [algo_top1=LANGE, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: CLANG -> --GGG (H:2, L:2) [algo_top1=CHANG, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: HUANG -> G-GGG (H:1, L:1) [algo_top1=ZHANG, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: HWANG -> GGGGG (H:0, L:0) [algo_top1=HWANG, followed=True]
+  Won in 5 attempts!
+
+Game 39/100: Target = WRATH
+  Attempt 1 [LLM_VOI_INFORMED]: PICKY -> ----- (H:5, L:5) [algo_top1=REALS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: LATTE -> -Y-G- (H:4, L:4) [algo_top1=EARLS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: SORTA -> --YGY (H:4, L:4) [algo_top1=BOATS, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: WRATH -> GGGGG (H:0, L:0) [algo_top1=WRATH, followed=True]
+  Won in 4 attempts!
+
+Game 40/100: Target = MACHO
+  Attempt 1 [LLM_VOI_INFORMED]: STIRS -> ----- (H:5, L:5) [algo_top1=STORE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: CACHE -> -GGG- (H:2, L:2) [algo_top1=GLEAN, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: NACHO -> -GGGG (H:1, L:1) [algo_top1=MACHO, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: MACHO -> GGGGG (H:0, L:0) [algo_top1=MACHO, followed=True]
+  Won in 4 attempts!
+
+Game 41/100: Target = LOPEZ
+  Attempt 1 [LLM_VOI_INFORMED]: LEVEL -> G--G- (H:3, L:3) [algo_top1=RANCE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: LANES -> G--G- (H:3, L:3) [algo_top1=LASER, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: LITER -> G--G- (H:3, L:3) [algo_top1=LIBER, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: LOBED -> GG-G- (H:2, L:2) [algo_top1=LOPEZ, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: LOPEZ -> GGGGG (H:0, L:0) [algo_top1=LOPEZ, followed=True]
+  Won in 5 attempts!
+
+Game 42/100: Target = GOODY
+  Attempt 1 [LLM_VOI_INFORMED]: HOUSE -> -G--- (H:4, L:4) [algo_top1=TERMS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: DONOR -> YG-Y- (H:4, L:4) [algo_top1=GORAN, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: MOODY -> -GGGG (H:1, L:1) [algo_top1=WOODY, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: GOODY -> GGGGG (H:0, L:0) [algo_top1=WOODY, followed=False]
+  Won in 4 attempts!
+
+Game 43/100: Target = BROTH
+  Attempt 1 [LLM_VOI_INFORMED]: GAUDY -> ----- (H:5, L:5) [algo_top1=MEALS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: WHICH -> ----G (H:4, L:4) [algo_top1=TRIES, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: FORTH -> -YYGG (H:3, L:3) [algo_top1=BROTH, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: BROTH -> GGGGG (H:0, L:0) [algo_top1=BROTH, followed=True]
+  Won in 4 attempts!
+
+Game 44/100: Target = VERDE
+  Attempt 1 [LLM_VOI_INFORMED]: SNEAK -> --Y-- (H:5, L:5) [algo_top1=HADES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: MERLE -> -GG-G (H:2, L:2) [algo_top1=TIRED, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: EERIE -> -GG-G (H:2, L:2) [algo_top1=VERGE, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: VERGE -> GGG-G (H:1, L:1) [algo_top1=VERGE, followed=True]
+  Attempt 5 [LLM_VOI_INFORMED]: VERVE -> GGG-G (H:1, L:1) [algo_top1=VERDE, followed=False]
+  Attempt 6 [LLM_VOI_INFORMED]: VERDE -> GGGGG (H:0, L:0) [algo_top1=VERDE, followed=True]
+  Won in 6 attempts!
+
+Game 45/100: Target = TAMED
+  Attempt 1 [LLM_VOI_INFORMED]: GAZED -> -G-GG (H:2, L:2) [algo_top1=STEAL, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: PARED -> -G-GG (H:2, L:2) [algo_top1=RACED, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: SAVED -> -G-GG (H:2, L:2) [algo_top1=CASED, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: FADED -> -G-GG (H:2, L:2) [algo_top1=TAMED, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: TAMED -> GGGGG (H:0, L:0) [algo_top1=TAMED, followed=True]
+  Won in 5 attempts!
+
+Game 46/100: Target = LEAFS
+  Attempt 1 [LLM_VOI_INFORMED]: SPARE -> Y-G-Y (H:4, L:4) [algo_top1=DATES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: LEADS -> GGG-G (H:1, L:1) [algo_top1=MEALS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: LEANS -> GGG-G (H:1, L:1) [algo_top1=LEAKS, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: LEAFS -> GGGGG (H:0, L:0) [algo_top1=LEAKS, followed=False]
+  Won in 4 attempts!
+
+Game 47/100: Target = YACHT
+  Attempt 1 [LLM_VOI_INFORMED]: FOCUS -> --G-- (H:4, L:4) [algo_top1=FARES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: PACED -> -GG-- (H:3, L:3) [algo_top1=DECAY, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: TACIT -> -GG-G (H:2, L:2) [algo_top1=YACHT, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: YACHT -> GGGGG (H:0, L:0) [algo_top1=YACHT, followed=True]
+  Won in 4 attempts!
+
+Game 48/100: Target = MESSY
+  Attempt 1 [LLM_VOI_INFORMED]: SHOVE -> Y---Y (H:5, L:5) [algo_top1=SABLE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: LURES -> ---YY (H:5, L:5) [algo_top1=NEARS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: PEASY -> -G-GG (H:2, L:2) [algo_top1=YEAST, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: MESSY -> GGGGG (H:0, L:0) [algo_top1=MESSY, followed=True]
+  Won in 4 attempts!
+
+Game 49/100: Target = RYDER
+  Attempt 1 [LLM_VOI_INFORMED]: STEIN -> --Y-- (H:5, L:5) [algo_top1=SARIN, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: CRUDE -> -Y-YY (H:5, L:3) [algo_top1=MARGE, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: ROWED -> G--GY (H:3, L:3) [algo_top1=DARED, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: RYDER -> GGGGG (H:0, L:0) [algo_top1=RYDER, followed=True]
+  Won in 4 attempts!
+
+Game 50/100: Target = MOTIF
+  Attempt 1 [LLM_VOI_INFORMED]: SPIKE -> --Y-- (H:5, L:5) [algo_top1=READS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: MILLY -> GY--- (H:4, L:4) [algo_top1=DRAIN, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: MARDI -> G---Y (H:4, L:4) [algo_top1=MARIN, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: MOVIN -> GG-G- (H:2, L:2) [algo_top1=MOTIF, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: MOTIF -> GGGGG (H:0, L:0) [algo_top1=MOTIF, followed=True]
+  Won in 5 attempts!
+
+Game 51/100: Target = RAVEN
+  Attempt 1 [LLM_VOI_INFORMED]: HOUSE -> ----Y (H:5, L:5) [algo_top1=LANES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: FERAL -> -YYY- (H:5, L:5) [algo_top1=LINER, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: PACER -> -G-GY (H:3, L:3) [algo_top1=MATER, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: RAKED -> GG-G- (H:2, L:2) [algo_top1=RAGED, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: RAMEN -> GG-GG (H:1, L:1) [algo_top1=RAVEN, followed=False]
+  Attempt 6 [LLM_VOI_INFORMED]: RAVEN -> GGGGG (H:0, L:0) [algo_top1=RAVEN, followed=True]
+  Won in 6 attempts!
+
+Game 52/100: Target = REICH
+  Attempt 1 [LLM_VOI_INFORMED]: AUDIO -> ---Y- (H:5, L:5) [algo_top1=SIREN, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: BRINK -> -YG-- (H:4, L:4) [algo_top1=LIKES, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: SHIRT -> -YGY- (H:4, L:4) [algo_top1=HEIRS, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: REICH -> GGGGG (H:0, L:0) [algo_top1=REICH, followed=True]
+  Won in 4 attempts!
+
+Game 53/100: Target = ICONS
+  Attempt 1 [LLM_VOI_INFORMED]: ROUTE -> -Y--- (H:5, L:5) [algo_top1=AIRES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: SCOLD -> YGG-- (H:3, L:3) [algo_top1=SALON, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: ICONS -> GGGGG (H:0, L:0) [algo_top1=ICONS, followed=True]
+  Won in 3 attempts!
+
+Game 54/100: Target = SILKY
+  Attempt 1 [LLM_VOI_INFORMED]: PATCH -> ----- (H:5, L:5) [algo_top1=MATES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: LONER -> Y---- (H:5, L:5) [algo_top1=SIRED, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: GILLS -> -GG-Y (H:3, L:3) [algo_top1=MILLS, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: SILKY -> GGGGG (H:0, L:0) [algo_top1=SILKY, followed=True]
+  Won in 4 attempts!
+
+Game 55/100: Target = CARVE
+  Attempt 1 [LLM_VOI_INFORMED]: SPIKY -> ----- (H:5, L:5) [algo_top1=SLATE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: NOBLE -> ----G (H:4, L:4) [algo_top1=OREAL, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: GRADE -> -YY-G (H:4, L:4) [algo_top1=TRADE, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: FAVRE -> -GYYG (H:3, L:3) [algo_top1=CARVE, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: CARVE -> GGGGG (H:0, L:0) [algo_top1=CARVE, followed=True]
+  Won in 5 attempts!
+
+Game 56/100: Target = LAGER
+  Attempt 1 [LLM_VOI_INFORMED]: SCOPE -> ----Y (H:5, L:5) [algo_top1=AYRES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: RETRY -> YY--- (H:5, L:5) [algo_top1=DETER, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: MINER -> ---GG (H:3, L:3) [algo_top1=FADER, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: WAGER -> -GGGG (H:1, L:1) [algo_top1=ALGER, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: EAGER -> -GGGG (H:1, L:1) [algo_top1=EAGER, followed=True]
+  Attempt 6 [LLM_VOI_INFORMED]: LAGER -> GGGGG (H:0, L:0) [algo_top1=LAGER, followed=True]
+  Won in 6 attempts!
+
+Game 57/100: Target = JERKS
+  Attempt 1 [LLM_VOI_INFORMED]: TILES -> ---YG (H:4, L:4) [algo_top1=SAITO, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: NERDS -> -GG-G (H:2, L:2) [algo_top1=DOERS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: VERBS -> -GG-G (H:2, L:2) [algo_top1=SERBS, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: GERMS -> -GG-G (H:2, L:2) [algo_top1=ZEROS, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: JERKS -> GGGGG (H:0, L:0) [algo_top1=PERKS, followed=False]
+  Won in 5 attempts!
+
+Game 58/100: Target = LOTUS
+  Attempt 1 [LLM_VOI_INFORMED]: TANGO -> Y---Y (H:5, L:5) [algo_top1=REALS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: SORTS -> -G-YG (H:3, L:3) [algo_top1=POETS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: MOTHS -> -GG-G (H:2, L:2) [algo_top1=VOTES, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: LOTUS -> GGGGG (H:0, L:0) [algo_top1=VOTES, followed=False]
+  Won in 4 attempts!
+
+Game 59/100: Target = LACEY
+  Attempt 1 [LLM_VOI_INFORMED]: CLANS -> YYY-- (H:5, L:4) [algo_top1=LONER, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: LOCAL -> G-GY- (H:3, L:3) [algo_top1=LEICA, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: LUCIA -> G-G-Y (H:3, L:3) [algo_top1=LUCHA, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: LACEY -> GGGGG (H:0, L:0) [algo_top1=LACED, followed=False]
+  Won in 4 attempts!
+
+Game 60/100: Target = TUDOR
+  Attempt 1 [LLM_VOI_INFORMED]: PRINT -> -Y--Y (H:5, L:5) [algo_top1=YEARS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: THERE -> G--Y- (H:4, L:4) [algo_top1=TASER, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: TUDOR -> GGGGG (H:0, L:0) [algo_top1=TUTOR, followed=False]
+  Won in 3 attempts!
+
+Game 61/100: Target = QUOTA
+  Attempt 1 [LLM_VOI_INFORMED]: ARIEL -> Y---- (H:5, L:5) [algo_top1=ARISE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: SNACK -> --Y-- (H:5, L:5) [algo_top1=SANTA, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: MAMBA -> ----G (H:4, L:4) [algo_top1=TAMPA, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: POOJA -> --G-G (H:3, L:3) [algo_top1=QUOTA, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: QUOTA -> GGGGG (H:0, L:0) [algo_top1=QUOTA, followed=True]
+  Won in 5 attempts!
+
+Game 62/100: Target = MOURN
+  Attempt 1 [LLM_VOI_INFORMED]: QUIPS -> -Y--- (H:5, L:5) [algo_top1=CRIES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: LAUGH -> --G-- (H:4, L:4) [algo_top1=TOURE, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: ROUTE -> YGG-- (H:3, L:3) [algo_top1=TOURE, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: MOURN -> GGGGG (H:0, L:0) [algo_top1=MOURN, followed=True]
+  Won in 4 attempts!
+
+Game 63/100: Target = PROMO
+  Attempt 1 [LLM_VOI_INFORMED]: CABLE -> ----- (H:5, L:5) [algo_top1=SABLE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: FURRY -> --Y-- (H:5, L:5) [algo_top1=TROIS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: GRIPS -> -G-Y- (H:4, L:4) [algo_top1=GRIST, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: PROTO -> GGG-G (H:1, L:1) [algo_top1=PROMO, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: PROVO -> GGG-G (H:1, L:1) [algo_top1=PROMO, followed=False]
+  Attempt 6 [LLM_VOI_INFORMED]: PROMO -> GGGGG (H:0, L:0) [algo_top1=PROMO, followed=True]
+  Won in 6 attempts!
+
+Game 64/100: Target = CASTE
+  Attempt 1 [LLM_VOI_INFORMED]: TEASE -> Y-YYG (H:4, L:3) [algo_top1=ANDRE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: HASTE -> -GGGG (H:1, L:1) [algo_top1=WASTE, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: PASTE -> -GGGG (H:1, L:1) [algo_top1=WASTE, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: WASTE -> -GGGG (H:1, L:1) [algo_top1=WASTE, followed=True]
+  Attempt 5 [LLM_VOI_INFORMED]: CASTE -> GGGGG (H:0, L:0) [algo_top1=CASTE, followed=True]
+  Won in 5 attempts!
+
+Game 65/100: Target = CAPRI
+  Attempt 1 [LLM_VOI_INFORMED]: SAFES -> -G--- (H:4, L:4) [algo_top1=SORTA, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: CANON -> GG--- (H:3, L:3) [algo_top1=MARTA, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: CARRY -> GG-G- (H:2, L:2) [algo_top1=CARLY, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: CAPRA -> GGGG- (H:1, L:1) [algo_top1=CAPRI, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: CAPRI -> GGGGG (H:0, L:0) [algo_top1=CAPRI, followed=True]
+  Won in 5 attempts!
+
+Game 66/100: Target = ALIAS
+  Attempt 1 [LLM_VOI_INFORMED]: MENUS -> ----G (H:4, L:4) [algo_top1=TASER, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: CLASS -> -GY-G (H:3, L:3) [algo_top1=RAILS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: ALIAS -> GGGGG (H:0, L:0) [algo_top1=ALIAS, followed=True]
+  Won in 3 attempts!
+
+Game 67/100: Target = PADDY
+  Attempt 1 [LLM_VOI_INFORMED]: CASTS -> -G--- (H:4, L:4) [algo_top1=GALES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: PAULA -> GG--- (H:3, L:3) [algo_top1=MARIE, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: PARED -> GG--Y (H:3, L:3) [algo_top1=PAYER, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: PADDY -> GGGGG (H:0, L:0) [algo_top1=PADDY, followed=True]
+  Won in 4 attempts!
+
+Game 68/100: Target = BLOBS
+  Attempt 1 [LLM_VOI_INFORMED]: SONAR -> YY--- (H:5, L:5) [algo_top1=RESIN, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: CLOSE -> -GGY- (H:3, L:3) [algo_top1=PLOTS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: FLOWS -> -GG-G (H:2, L:2) [algo_top1=PLOWS, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: PLOTS -> -GG-G (H:2, L:2) [algo_top1=BLOGS, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: BLOBS -> GGGGG (H:0, L:0) [algo_top1=BLOGS, followed=False]
+  Won in 5 attempts!
+
+Game 69/100: Target = DILLY
+  Attempt 1 [LLM_VOI_INFORMED]: LOVES -> Y---- (H:5, L:5) [algo_top1=TONES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: PALAU -> --G-- (H:4, L:4) [algo_top1=TALIA, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: FILLY -> -GGGG (H:1, L:1) [algo_top1=MILLI, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: WILLY -> -GGGG (H:1, L:1) [algo_top1=TILLY, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: BILLY -> -GGGG (H:1, L:1) [algo_top1=DILLY, followed=False]
+  Attempt 6 [LLM_VOI_INFORMED]: MILLY -> -GGGG (H:1, L:1) [algo_top1=TILLY, followed=False]
+  Failed to find word
+
+Game 70/100: Target = GUTSY
+  Attempt 1 [LLM_VOI_INFORMED]: ROBIN -> ----- (H:5, L:5) [algo_top1=LIARS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: PLEAS -> ----Y (H:5, L:5) [algo_top1=MEALS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: MUSHY -> -GY-G (H:3, L:3) [algo_top1=HUSKY, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: SUCKY -> YG--G (H:3, L:3) [algo_top1=GUTSY, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: GUTSY -> GGGGG (H:0, L:0) [algo_top1=GUTSY, followed=True]
+  Won in 5 attempts!
+
+Game 71/100: Target = TABOR
+  Attempt 1 [LLM_VOI_INFORMED]: SNAPS -> --Y-- (H:5, L:5) [algo_top1=NADER, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: TAHOE -> GG-G- (H:2, L:2) [algo_top1=LATER, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: TAROT -> GGYG- (H:2, L:2) [algo_top1=TABOO, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: TABOR -> GGGGG (H:0, L:0) [algo_top1=TABOR, followed=True]
+  Won in 4 attempts!
+
+Game 72/100: Target = INLAY
+  Attempt 1 [LLM_VOI_INFORMED]: STAKE -> --Y-- (H:5, L:5) [algo_top1=RECON, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: DALLY -> -YG-G (H:3, L:3) [algo_top1=NADAL, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: INLAY -> GGGGG (H:0, L:0) [algo_top1=INLAY, followed=True]
+  Won in 3 attempts!
+
+Game 73/100: Target = AHHHH
+  Attempt 1 [LLM_VOI_INFORMED]: STATE -> --Y-- (H:5, L:5) [algo_top1=HOARE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: MAJOR -> -Y--- (H:5, L:5) [algo_top1=MARIN, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: ANVIL -> G---- (H:4, L:4) [algo_top1=LINDA, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: AWWWW -> G---- (H:4, L:4) [algo_top1=AHHHH, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: AHHHH -> GGGGG (H:0, L:0) [algo_top1=AHHHH, followed=True]
+  Won in 5 attempts!
+
+Game 74/100: Target = ROUEN
+  Attempt 1 [LLM_VOI_INFORMED]: COLOR -> -G--Y (H:4, L:4) [algo_top1=HALES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: FORMS -> -GY-- (H:4, L:4) [algo_top1=NORSE, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: ROGAN -> GG--G (H:2, L:2) [algo_top1=ROUND, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: ROBIN -> GG--G (H:2, L:2) [algo_top1=ROBIN, followed=True]
+  Attempt 5 [LLM_VOI_INFORMED]: ROUEN -> GGGGG (H:0, L:0) [algo_top1=ROUEN, followed=True]
+  Won in 5 attempts!
+
+Game 75/100: Target = BUENA
+  Attempt 1 [LLM_VOI_INFORMED]: PLAIN -> --Y-Y (H:5, L:5) [algo_top1=AIRES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: BANGS -> GYY-- (H:4, L:4) [algo_top1=DANES, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: BUENA -> GGGGG (H:0, L:0) [algo_top1=BUENA, followed=True]
+  Won in 3 attempts!
+
+Game 76/100: Target = MENON
+  Attempt 1 [LLM_VOI_INFORMED]: PASTE -> ----Y (H:5, L:5) [algo_top1=LATER, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: FEVER -> -G--- (H:4, L:4) [algo_top1=LOREN, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: BENCH -> -GG-- (H:3, L:3) [algo_top1=LENIN, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: JENNY -> -GGY- (H:3, L:3) [algo_top1=LENIN, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: XENON -> -GGGG (H:1, L:1) [algo_top1=LENIN, followed=False]
+  Attempt 6 [LLM_VOI_INFORMED]: MENON -> GGGGG (H:0, L:0) [algo_top1=MENON, followed=True]
+  Won in 6 attempts!
+
+Game 77/100: Target = TRASK
+  Attempt 1 [LLM_VOI_INFORMED]: STAIR -> YYG-Y (H:4, L:4) [algo_top1=SIREN, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: TRANS -> GGG-Y (H:2, L:2) [algo_top1=TRAPS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: TRASH -> GGGG- (H:1, L:1) [algo_top1=TRASH, followed=True]
+  Attempt 4 [LLM_VOI_INFORMED]: TRASK -> GGGGG (H:0, L:0) [algo_top1=TRASK, followed=True]
+  Won in 4 attempts!
+
+Game 78/100: Target = CASIO
+  Attempt 1 [LLM_VOI_INFORMED]: SWING -> Y-Y-- (H:5, L:5) [algo_top1=ALINE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: RIDES -> -Y--Y (H:5, L:5) [algo_top1=RIDES, followed=True]
+  Attempt 3 [LLM_VOI_INFORMED]: BASIL -> -GGG- (H:2, L:2) [algo_top1=CASIO, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: CASIO -> GGGGG (H:0, L:0) [algo_top1=CASIO, followed=True]
+  Won in 4 attempts!
+
+Game 79/100: Target = VOILA
+  Attempt 1 [LLM_VOI_INFORMED]: CODEX -> -G--- (H:4, L:4) [algo_top1=STALE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: SOYUZ -> -G--- (H:4, L:4) [algo_top1=HORNS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: MORAL -> -G-YY (H:4, L:4) [algo_top1=GORAN, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: LOATH -> YGY-- (H:4, L:4) [algo_top1=VOLTA, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: VOILA -> GGGGG (H:0, L:0) [algo_top1=POLKA, followed=False]
+  Won in 5 attempts!
+
+Game 80/100: Target = AURAL
+  Attempt 1 [LLM_VOI_INFORMED]: SWEET -> ----- (H:5, L:5) [algo_top1=DEALS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: LIDAR -> Y--GY (H:4, L:4) [algo_top1=NORMA, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: MURAL -> -GGGG (H:1, L:1) [algo_top1=MORAL, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: AURAL -> GGGGG (H:0, L:0) [algo_top1=RURAL, followed=False]
+  Won in 4 attempts!
+
+Game 81/100: Target = LEGER
+  Attempt 1 [LLM_VOI_INFORMED]: TOTES -> ---G- (H:4, L:4) [algo_top1=TONES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: WAXED -> ---G- (H:4, L:4) [algo_top1=ALDER, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: MINER -> ---GG (H:3, L:3) [algo_top1=REBEL, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: LEVER -> GG-GG (H:1, L:1) [algo_top1=RULER, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: LEPER -> GG-GG (H:1, L:1) [algo_top1=LEPER, followed=True]
+  Attempt 6 [LLM_VOI_INFORMED]: LEGER -> GGGGG (H:0, L:0) [algo_top1=LEGER, followed=True]
+  Won in 6 attempts!
+
+Game 82/100: Target = DALLY
+  Attempt 1 [LLM_VOI_INFORMED]: SIGNS -> ----- (H:5, L:5) [algo_top1=DANES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: CROWD -> ----Y (H:5, L:5) [algo_top1=BADER, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: DEALT -> G-YG- (H:3, L:3) [algo_top1=DALEY, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: DALLY -> GGGGG (H:0, L:0) [algo_top1=DALLY, followed=True]
+  Won in 4 attempts!
+
+Game 83/100: Target = INIGO
+  Attempt 1 [LLM_VOI_INFORMED]: STOUT -> --Y-- (H:5, L:5) [algo_top1=TALES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: POACH -> -Y--- (H:5, L:5) [algo_top1=DOLAN, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: MINOR -> -YYY- (H:5, L:4) [algo_top1=ELDON, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: INDIO -> GG-YG (H:2, L:2) [algo_top1=OWING, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: INIGO -> GGGGG (H:0, L:0) [algo_top1=INIGO, followed=True]
+  Won in 5 attempts!
+
+Game 84/100: Target = KRILL
+  Attempt 1 [LLM_VOI_INFORMED]: PLANT -> -Y--- (H:5, L:5) [algo_top1=ROSEN, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: SMILE -> --GG- (H:3, L:3) [algo_top1=RILED, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: GRILL -> -GGGG (H:1, L:1) [algo_top1=GUILD, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: BRILL -> -GGGG (H:1, L:1) [algo_top1=DRILL, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: KRILL -> GGGGG (H:0, L:0) [algo_top1=DRILL, followed=False]
+  Won in 5 attempts!
+
+Game 85/100: Target = SNIDE
+  Attempt 1 [LLM_VOI_INFORMED]: MENUS -> -YY-Y (H:5, L:5) [algo_top1=SHONE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: SNARE -> GG--G (H:2, L:2) [algo_top1=SNIPE, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: SNIDE -> GGGGG (H:0, L:0) [algo_top1=SNIPE, followed=False]
+  Won in 3 attempts!
+
+Game 86/100: Target = LEWES
+  Attempt 1 [LLM_VOI_INFORMED]: EVADE -> Y---Y (H:5, L:5) [algo_top1=RAISE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: SNEER -> Y-YG- (H:4, L:4) [algo_top1=SPEER, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: BESET -> -GYG- (H:3, L:3) [algo_top1=MEMES, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: FECES -> -G-GG (H:2, L:2) [algo_top1=MEMES, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: KEYES -> -G-GG (H:2, L:2) [algo_top1=MEMES, followed=False]
+  Attempt 6 [LLM_VOI_INFORMED]: LEWES -> GGGGG (H:0, L:0) [algo_top1=MEMES, followed=False]
+  Won in 6 attempts!
+
+Game 87/100: Target = TAMER
+  Attempt 1 [LLM_VOI_INFORMED]: HEALS -> -YY-- (H:5, L:5) [algo_top1=CASTE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: PAYER -> -G-GG (H:2, L:2) [algo_top1=RATED, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: TAKER -> GG-GG (H:1, L:1) [algo_top1=TAMER, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: TATER -> GG-GG (H:1, L:1) [algo_top1=TAMER, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: TAMER -> GGGGG (H:0, L:0) [algo_top1=TAMER, followed=True]
+  Won in 5 attempts!
+
+Game 88/100: Target = COTTA
+  Attempt 1 [LLM_VOI_INFORMED]: STOOP -> -YY-- (H:5, L:5) [algo_top1=TAILS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: COTTA -> GGGGG (H:0, L:0) [algo_top1=TONER, followed=False]
+  Won in 2 attempts!
+
+Game 89/100: Target = CORBY
+  Attempt 1 [LLM_VOI_INFORMED]: HEART -> ---Y- (H:5, L:5) [algo_top1=MATES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: DORKS -> -GG-- (H:3, L:3) [algo_top1=DORIS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: MORON -> -GG-- (H:3, L:3) [algo_top1=BORNO, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: CORBY -> GGGGG (H:0, L:0) [algo_top1=CORGI, followed=False]
+  Won in 4 attempts!
+
+Game 90/100: Target = POLIS
+  Attempt 1 [LLM_VOI_INFORMED]: STAKE -> Y---- (H:5, L:5) [algo_top1=LOSER, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: FOILS -> -GYYG (H:3, L:3) [algo_top1=DORIS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: POLIS -> GGGGG (H:0, L:0) [algo_top1=LOUIS, followed=False]
+  Won in 3 attempts!
+
+Game 91/100: Target = ROXAS
+  Attempt 1 [LLM_VOI_INFORMED]: WIRED -> --Y-- (H:5, L:5) [algo_top1=HIRES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: RAMPS -> GY--G (H:3, L:3) [algo_top1=CRAPS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: ROARS -> GGY-G (H:2, L:2) [algo_top1=ROARS, followed=True]
+  Attempt 4 [LLM_VOI_INFORMED]: ROXAS -> GGGGG (H:0, L:0) [algo_top1=ROJAS, followed=False]
+  Won in 4 attempts!
+
+Game 92/100: Target = RANCE
+  Attempt 1 [LLM_VOI_INFORMED]: LIBRA -> ---YY (H:5, L:5) [algo_top1=SNARE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: PARED -> -GYY- (H:4, L:4) [algo_top1=RAKES, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: RANGE -> GGG-G (H:1, L:1) [algo_top1=RANGE, followed=True]
+  Attempt 4 [LLM_VOI_INFORMED]: RANCE -> GGGGG (H:0, L:0) [algo_top1=RANCE, followed=True]
+  Won in 4 attempts!
+
+Game 93/100: Target = CARON
+  Attempt 1 [LLM_VOI_INFORMED]: DUPED -> ----- (H:5, L:5) [algo_top1=NORSE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: ROAST -> YYY-- (H:5, L:5) [algo_top1=SINHA, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: MARGO -> -GG-Y (H:3, L:3) [algo_top1=CAROL, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: CARON -> GGGGG (H:0, L:0) [algo_top1=AARON, followed=False]
+  Won in 4 attempts!
+
+Game 94/100: Target = SURYA
+  Attempt 1 [LLM_VOI_INFORMED]: TOWEL -> ----- (H:5, L:5) [algo_top1=RAINS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: MINAS -> ---YY (H:5, L:5) [algo_top1=BARNS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: SHARK -> G-YY- (H:4, L:4) [algo_top1=SCARY, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: SURYA -> GGGGG (H:0, L:0) [algo_top1=SURYA, followed=True]
+  Won in 4 attempts!
+
+Game 95/100: Target = AGGIE
+  Attempt 1 [LLM_VOI_INFORMED]: MINOR -> -Y--- (H:5, L:5) [algo_top1=SLATE, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: GLIDE -> Y-Y-G (H:4, L:3) [algo_top1=DALIT, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: AGGIE -> GGGGG (H:0, L:0) [algo_top1=AGGIE, followed=True]
+  Won in 3 attempts!
+
+Game 96/100: Target = CAUSA
+  Attempt 1 [LLM_VOI_INFORMED]: PITCH -> ---Y- (H:5, L:5) [algo_top1=TONES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: CORES -> G---Y (H:4, L:4) [algo_top1=CARES, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: CAUSA -> GGGGG (H:0, L:0) [algo_top1=CAUSA, followed=True]
+  Won in 3 attempts!
+
+Game 97/100: Target = BAMBA
+  Attempt 1 [LLM_VOI_INFORMED]: DEEDS -> ----- (H:5, L:5) [algo_top1=SABER, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: MOLAR -> Y--Y- (H:5, L:5) [algo_top1=CONTI, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: TAMPA -> -GG-G (H:2, L:2) [algo_top1=HAMMY, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: HAMZA -> -GG-G (H:2, L:2) [algo_top1=GAMMA, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: BAMBA -> GGGGG (H:0, L:0) [algo_top1=GAMMA, followed=False]
+  Won in 5 attempts!
+
+Game 98/100: Target = MAYNE
+  Attempt 1 [LLM_VOI_INFORMED]: CHATS -> --Y-- (H:5, L:5) [algo_top1=MINES, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: PENAL -> -YYY- (H:5, L:5) [algo_top1=DARLA, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: RAINE -> -G-GG (H:2, L:2) [algo_top1=MARNE, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: JAYNE -> -GGGG (H:1, L:1) [algo_top1=WAYNE, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: MAYNE -> GGGGG (H:0, L:0) [algo_top1=WAYNE, followed=False]
+  Won in 5 attempts!
+
+Game 99/100: Target = BOGGS
+  Attempt 1 [LLM_VOI_INFORMED]: BOOED -> GG--- (H:3, L:3) [algo_top1=CARDS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: BOLTS -> GG--G (H:2, L:2) [algo_top1=BOGUS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: BOARS -> GG--G (H:2, L:2) [algo_top1=BOGUS, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: BOGUS -> GGG-G (H:1, L:1) [algo_top1=BONUS, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: BOGGS -> GGGGG (H:0, L:0) [algo_top1=BOGGS, followed=True]
+  Won in 5 attempts!
+
+Game 100/100: Target = FINNS
+  Attempt 1 [LLM_VOI_INFORMED]: PINTS -> -GG-G (H:2, L:2) [algo_top1=NEARS, followed=False]
+  Attempt 2 [LLM_VOI_INFORMED]: WINDS -> -GG-G (H:2, L:2) [algo_top1=KINDS, followed=False]
+  Attempt 3 [LLM_VOI_INFORMED]: LINES -> -GG-G (H:2, L:2) [algo_top1=MINES, followed=False]
+  Attempt 4 [LLM_VOI_INFORMED]: SINGS -> -GG-G (H:2, L:2) [algo_top1=KINGS, followed=False]
+  Attempt 5 [LLM_VOI_INFORMED]: KINKS -> -GG-G (H:2, L:2) [algo_top1=MINUS, followed=False]
+  Attempt 6 [LLM_VOI_INFORMED]: MINIS -> -GG-G (H:2, L:2) [algo_top1=MINUS, followed=False]
+  Failed to find word
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 100
+Wins: 94
+Win rate: 94.0%
+Average attempts (when won): 4.27
+LLM follow rate (chose algo true top-1): 17.2% (75/437)
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/voi_integration/results/wordle/voi_informed_css_llama-3.3-70b-instruct_20260328_045811.csv
+  /Users/kevin/Desktop/projects/wordle/voi_integration/results/wordle/summary_voi_informed_css_llama-3.3-70b-instruct_20260328_045811.json
+
+  Completed run 2/48
+----------------------------------------
+
+[3/48] Model=llama-3.3-70b-instruct  Algo=css  Condition=shuffled_ranking
+  Schedule: {"1":"llm","2":"llm","3":"llm","4":"llm","5":"llm","6":"llm"}
+  Config: shuffled_ranking_css
+================================================================================
+VOI-INFORMED HYBRID EVALUATION: shuffled_ranking_css
+================================================================================
+Model: llama-3.3-70b-instruct
+Algorithm: CSS
+Condition: shuffled_ranking
+Prompt Type: zero-shot
+Top-K: 5
+Schedule: {"1": "llm", "2": "llm", "3": "llm", "4": "llm", "5": "llm", "6": "llm"}
+Games: 100
+================================================================================
+
+Game 1/100: Target = PHOTO
+  Attempt 1 [LLM_SHUFFLED_RANKING]: STARE -> -Y--- (H:5, L:5) [algo_top1=SADIE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: PINTO -> G--GG (H:2, L:2) [algo_top1=TINTO, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: PHOTO -> GGGGG (H:0, L:0) [algo_top1=PHOTO, followed=True]
+  Won in 3 attempts!
+
+Game 2/100: Target = PARTY
+  Attempt 1 [LLM_SHUFFLED_RANKING]: SEEDY -> ----G (H:4, L:4) [algo_top1=HADES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: PAPPY -> GG--G (H:2, L:2) [algo_top1=MANLY, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: PARRY -> GGG-G (H:1, L:1) [algo_top1=PARTY, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: PARTY -> GGGGG (H:0, L:0) [algo_top1=PARTY, followed=True]
+  Won in 4 attempts!
+
+Game 3/100: Target = TRICK
+  Attempt 1 [LLM_SHUFFLED_RANKING]: LUCAS -> --Y-- (H:5, L:5) [algo_top1=RAMOS, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: MEDIC -> ---YY (H:5, L:4) [algo_top1=CHINO, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: PINCH -> -Y-G- (H:4, L:4) [algo_top1=CHINK, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: BRICK -> -GGGG (H:1, L:1) [algo_top1=TRICK, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: CRICK -> -GGGG (H:1, L:1) [algo_top1=TRICK, followed=False]
+  Attempt 6 [LLM_SHUFFLED_RANKING]: TRICK -> GGGGG (H:0, L:0) [algo_top1=TRICK, followed=True]
+  Won in 6 attempts!
+
+Game 4/100: Target = DIRTY
+  Attempt 1 [LLM_SHUFFLED_RANKING]: LAMPS -> ----- (H:5, L:5) [algo_top1=SNORE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: REEVE -> Y---- (H:5, L:5) [algo_top1=TONED, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: ORION -> -YY-- (H:5, L:5) [algo_top1=TRYIN, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: BIRCH -> -GG-- (H:3, L:3) [algo_top1=BIRCH, followed=True]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: DIRTY -> GGGGG (H:0, L:0) [algo_top1=DIRTY, followed=True]
+  Won in 5 attempts!
+
+Game 5/100: Target = USUAL
+  Attempt 1 [LLM_SHUFFLED_RANKING]: CRATE -> --Y-- (H:5, L:5) [algo_top1=YARNS, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: PUMAS -> -Y-GY (H:4, L:4) [algo_top1=LANDS, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: USUAL -> GGGGG (H:0, L:0) [algo_top1=SQUAD, followed=False]
+  Won in 3 attempts!
+
+Game 6/100: Target = TRULY
+  Attempt 1 [LLM_SHUFFLED_RANKING]: SEATS -> ---Y- (H:5, L:5) [algo_top1=AEGIS, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: MINOT -> ----Y (H:5, L:5) [algo_top1=TIMON, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: BUTCH -> -YY-- (H:5, L:5) [algo_top1=DUTCH, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: TRUDY -> GGG-G (H:1, L:1) [algo_top1=TRULY, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: TRULY -> GGGGG (H:0, L:0) [algo_top1=TRULY, followed=True]
+  Won in 5 attempts!
+
+Game 7/100: Target = SPENT
+  Attempt 1 [LLM_SHUFFLED_RANKING]: CLING -> ---G- (H:4, L:4) [algo_top1=TALES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: ATONE -> -Y-GY (H:4, L:4) [algo_top1=SHANE, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: TREND -> Y-GG- (H:3, L:3) [algo_top1=TEENS, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: SPENT -> GGGGG (H:0, L:0) [algo_top1=EVENT, followed=False]
+  Won in 4 attempts!
+
+Game 8/100: Target = PAUSE
+  Attempt 1 [LLM_SHUFFLED_RANKING]: TIBIA -> ----Y (H:5, L:5) [algo_top1=SNORE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: PAVED -> GG-Y- (H:3, L:3) [algo_top1=MALES, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: PARSE -> GG-GG (H:1, L:1) [algo_top1=PAUSE, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: PAUSE -> GGGGG (H:0, L:0) [algo_top1=PAUSE, followed=True]
+  Won in 4 attempts!
+
+Game 9/100: Target = CRAZY
+  Attempt 1 [LLM_SHUFFLED_RANKING]: STEEL -> ----- (H:5, L:5) [algo_top1=RAPES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: RAMBO -> YY--- (H:5, L:4) [algo_top1=CAIRN, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: DRAIN -> -GG-- (H:3, L:3) [algo_top1=DRAIN, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: GRAVY -> -GG-G (H:2, L:2) [algo_top1=CRAZY, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: CRAZY -> GGGGG (H:0, L:0) [algo_top1=CRAZY, followed=True]
+  Won in 5 attempts!
+
+Game 10/100: Target = BASES
+  Attempt 1 [LLM_SHUFFLED_RANKING]: PLAIN -> --Y-- (H:5, L:5) [algo_top1=MARES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: FAVOR -> -G--- (H:4, L:4) [algo_top1=HATES, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: HATCH -> -G--- (H:4, L:4) [algo_top1=MATES, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: MADGE -> -G--Y (H:4, L:4) [algo_top1=GAMES, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: BAKES -> GG-GG (H:1, L:1) [algo_top1=BASES, followed=False]
+  Attempt 6 [LLM_SHUFFLED_RANKING]: BABES -> GG-GG (H:1, L:1) [algo_top1=BASES, followed=False]
+  Failed to find word
+
+Game 11/100: Target = YOUNG
+  Attempt 1 [LLM_SHUFFLED_RANKING]: HYDRO -> -Y--Y (H:5, L:5) [algo_top1=RUNES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: COYNE -> -GYG- (H:3, L:3) [algo_top1=EBONY, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: LOONY -> -G-GY (H:3, L:3) [algo_top1=YOUNG, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: YOUNG -> GGGGG (H:0, L:0) [algo_top1=YOUNG, followed=True]
+  Won in 4 attempts!
+
+Game 12/100: Target = MEANS
+  Attempt 1 [LLM_SHUFFLED_RANKING]: VIGIL -> ----- (H:5, L:5) [algo_top1=SPARE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: RAMOS -> -YY-G (H:4, L:4) [algo_top1=READS, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: TEAMS -> -GGYG (H:2, L:2) [algo_top1=SEAMS, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: MEANS -> GGGGG (H:0, L:0) [algo_top1=MEANS, followed=True]
+  Won in 4 attempts!
+
+Game 13/100: Target = TRUTH
+  Attempt 1 [LLM_SHUFFLED_RANKING]: DRAWN -> -G--- (H:4, L:4) [algo_top1=ARNIE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: TRIPS -> GG--- (H:3, L:3) [algo_top1=TRIES, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: TRUCE -> GGG-- (H:2, L:2) [algo_top1=TRUER, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: TRUTH -> GGGGG (H:0, L:0) [algo_top1=TRUTH, followed=True]
+  Won in 4 attempts!
+
+Game 14/100: Target = FIRED
+  Attempt 1 [LLM_SHUFFLED_RANKING]: RACER -> Y--G- (H:4, L:4) [algo_top1=SIREN, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: MOREL -> --GG- (H:3, L:3) [algo_top1=TRIES, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: TIRES -> -GGG- (H:2, L:2) [algo_top1=HERES, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: HIRED -> -GGGG (H:1, L:1) [algo_top1=FIRED, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: WIRED -> -GGGG (H:1, L:1) [algo_top1=FIRED, followed=False]
+  Attempt 6 [LLM_SHUFFLED_RANKING]: FIRED -> GGGGG (H:0, L:0) [algo_top1=FIRED, followed=True]
+  Won in 6 attempts!
+
+Game 15/100: Target = FOLKS
+  Attempt 1 [LLM_SHUFFLED_RANKING]: IONIC -> -G--- (H:4, L:4) [algo_top1=AROSE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: GOERS -> -G--G (H:3, L:3) [algo_top1=HORSE, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: BOOMS -> -G--G (H:3, L:3) [algo_top1=TOOLS, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: FOULS -> GG-YG (H:2, L:2) [algo_top1=FOLDS, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: FOLKS -> GGGGG (H:0, L:0) [algo_top1=FOLKS, followed=True]
+  Won in 5 attempts!
+
+Game 16/100: Target = CHILE
+  Attempt 1 [LLM_SHUFFLED_RANKING]: ALINE -> -YG-G (H:3, L:3) [algo_top1=SIRED, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: SMILE -> --GGG (H:2, L:2) [algo_top1=EMILE, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: EXILE -> --GGG (H:2, L:2) [algo_top1=WHILE, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: WHILE -> -GGGG (H:1, L:1) [algo_top1=WHILE, followed=True]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: CHILE -> GGGGG (H:0, L:0) [algo_top1=CHILE, followed=True]
+  Won in 5 attempts!
+
+Game 17/100: Target = BLACK
+  Attempt 1 [LLM_SHUFFLED_RANKING]: WINCE -> ---G- (H:4, L:4) [algo_top1=LEAST, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: TORCH -> ---G- (H:4, L:4) [algo_top1=ROACH, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: SLACK -> -GGGG (H:1, L:1) [algo_top1=SLACK, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: BLACK -> GGGGG (H:0, L:0) [algo_top1=BLACK, followed=True]
+  Won in 4 attempts!
+
+Game 18/100: Target = GRANT
+  Attempt 1 [LLM_SHUFFLED_RANKING]: MUCUS -> ----- (H:5, L:5) [algo_top1=CANOE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: PANEL -> -YY-- (H:5, L:4) [algo_top1=LAYNE, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: GRAIN -> GGG-Y (H:2, L:2) [algo_top1=GRAIN, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: GRANT -> GGGGG (H:0, L:0) [algo_top1=GRAND, followed=False]
+  Won in 4 attempts!
+
+Game 19/100: Target = MEALS
+  Attempt 1 [LLM_SHUFFLED_RANKING]: FARES -> -Y-YG (H:4, L:4) [algo_top1=HATES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: MEALS -> GGGGG (H:0, L:0) [algo_top1=DEALS, followed=False]
+  Won in 2 attempts!
+
+Game 20/100: Target = CREAM
+  Attempt 1 [LLM_SHUFFLED_RANKING]: SLASH -> --Y-- (H:5, L:5) [algo_top1=EINAR, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: MATER -> YY-YY (H:5, L:5) [algo_top1=MANOR, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: DREAM -> -GGGG (H:1, L:1) [algo_top1=DREAM, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: CREAM -> GGGGG (H:0, L:0) [algo_top1=CREAM, followed=True]
+  Won in 4 attempts!
+
+Game 21/100: Target = AWAKE
+  Attempt 1 [LLM_SHUFFLED_RANKING]: VERBS -> -Y--- (H:5, L:5) [algo_top1=DALES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: LANCE -> -Y--G (H:4, L:4) [algo_top1=LODGE, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: AWAKE -> GGGGG (H:0, L:0) [algo_top1=IMAGE, followed=False]
+  Won in 3 attempts!
+
+Game 22/100: Target = OCCUR
+  Attempt 1 [LLM_SHUFFLED_RANKING]: PAINS -> ----- (H:5, L:5) [algo_top1=MINAS, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: FOYLE -> -Y--- (H:5, L:5) [algo_top1=MOYER, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: BROOK -> -YY-- (H:5, L:5) [algo_top1=ORTHO, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: OCCUR -> GGGGG (H:0, L:0) [algo_top1=OCCUR, followed=True]
+  Won in 4 attempts!
+
+Game 23/100: Target = YEARS
+  Attempt 1 [LLM_SHUFFLED_RANKING]: SCABS -> --G-G (H:3, L:3) [algo_top1=DRIES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: READS -> YGG-G (H:2, L:2) [algo_top1=REALS, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: HEARS -> -GGGG (H:1, L:1) [algo_top1=MEARS, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: TEARS -> -GGGG (H:1, L:1) [algo_top1=NEARS, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: FEARS -> -GGGG (H:1, L:1) [algo_top1=PEARS, followed=False]
+  Attempt 6 [LLM_SHUFFLED_RANKING]: YEARS -> GGGGG (H:0, L:0) [algo_top1=MEARS, followed=False]
+  Won in 6 attempts!
+
+Game 24/100: Target = GRADE
+  Attempt 1 [LLM_SHUFFLED_RANKING]: RUNNY -> Y---- (H:5, L:5) [algo_top1=STORE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: STARE -> --GYG (H:3, L:3) [algo_top1=ACRES, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: BRAVE -> -GG-G (H:2, L:2) [algo_top1=GRACE, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: DRAPE -> YGG-G (H:2, L:2) [algo_top1=DRAPE, followed=True]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: GRADE -> GGGGG (H:0, L:0) [algo_top1=GRADE, followed=True]
+  Won in 5 attempts!
+
+Game 25/100: Target = CHILL
+  Attempt 1 [LLM_SHUFFLED_RANKING]: STAGE -> ----- (H:5, L:5) [algo_top1=AILES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: ONION -> --G-- (H:4, L:4) [algo_top1=NICOL, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: CHIRP -> GGG-- (H:2, L:2) [algo_top1=CHIRP, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: CHICK -> GGG-- (H:2, L:2) [algo_top1=CHILD, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: CHILL -> GGGGG (H:0, L:0) [algo_top1=CHILD, followed=False]
+  Won in 5 attempts!
+
+Game 26/100: Target = FLOOD
+  Attempt 1 [LLM_SHUFFLED_RANKING]: SEVEN -> ----- (H:5, L:5) [algo_top1=BORES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: CRIMP -> ----- (H:5, L:5) [algo_top1=CARLO, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: LOBBY -> YY--- (H:5, L:4) [algo_top1=HOTLY, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: ALOFT -> -GGY- (H:3, L:3) [algo_top1=FLOOD, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: FLOOD -> GGGGG (H:0, L:0) [algo_top1=FLOOD, followed=True]
+  Won in 5 attempts!
+
+Game 27/100: Target = APPLY
+  Attempt 1 [LLM_SHUFFLED_RANKING]: COINS -> ----- (H:5, L:5) [algo_top1=MATES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: EATER -> -Y--- (H:5, L:5) [algo_top1=LAYER, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: ALLAY -> GY--G (H:3, L:3) [algo_top1=ALLAY, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: APPLY -> GGGGG (H:0, L:0) [algo_top1=APPLY, followed=True]
+  Won in 4 attempts!
+
+Game 28/100: Target = SMILE
+  Attempt 1 [LLM_SHUFFLED_RANKING]: STEAL -> G-Y-Y (H:4, L:4) [algo_top1=TONED, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: SMILE -> GGGGG (H:0, L:0) [algo_top1=SMILE, followed=True]
+  Won in 2 attempts!
+
+Game 29/100: Target = KNOCK
+  Attempt 1 [LLM_SHUFFLED_RANKING]: STIRS -> ----- (H:5, L:5) [algo_top1=RESIN, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: LOVED -> -Y--- (H:5, L:5) [algo_top1=OLNEY, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: MACON -> --YYY (H:5, L:5) [algo_top1=MACON, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: CHONG -> Y-GY- (H:4, L:4) [algo_top1=KNOCK, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: KNOCK -> GGGGG (H:0, L:0) [algo_top1=KNOCK, followed=True]
+  Won in 5 attempts!
+
+Game 30/100: Target = SLEEP
+  Attempt 1 [LLM_SHUFFLED_RANKING]: SMIRK -> G---- (H:4, L:4) [algo_top1=DORIS, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: SENSE -> GY--Y (H:4, L:4) [algo_top1=STONE, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: SLEEP -> GGGGG (H:0, L:0) [algo_top1=STEEP, followed=False]
+  Won in 3 attempts!
+
+Game 31/100: Target = BRICK
+  Attempt 1 [LLM_SHUFFLED_RANKING]: GIVES -> -Y--- (H:5, L:5) [algo_top1=KAREN, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: PLAIN -> ---Y- (H:5, L:5) [algo_top1=TRAIN, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: THICK -> --GGG (H:2, L:2) [algo_top1=FRITH, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: QUICK -> --GGG (H:2, L:2) [algo_top1=QUICK, followed=True]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: BRICK -> GGGGG (H:0, L:0) [algo_top1=BRICK, followed=True]
+  Won in 5 attempts!
+
+Game 32/100: Target = WROTE
+  Attempt 1 [LLM_SHUFFLED_RANKING]: REPLY -> YY--- (H:5, L:5) [algo_top1=ALIEN, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: TIRES -> Y-YY- (H:5, L:5) [algo_top1=BREES, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: GREAT -> -GY-Y (H:4, L:4) [algo_top1=EBERT, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: BRUTE -> -G-GG (H:2, L:2) [algo_top1=WROTE, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: WROTE -> GGGGG (H:0, L:0) [algo_top1=WROTE, followed=True]
+  Won in 5 attempts!
+
+Game 33/100: Target = RATED
+  Attempt 1 [LLM_SHUFFLED_RANKING]: FOCUS -> ----- (H:5, L:5) [algo_top1=ARIEL, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: TANIA -> YG--- (H:4, L:4) [algo_top1=HEARN, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: LATER -> -GGGY (H:2, L:2) [algo_top1=LATHE, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: RATED -> GGGGG (H:0, L:0) [algo_top1=RATED, followed=True]
+  Won in 4 attempts!
+
+Game 34/100: Target = ALERT
+  Attempt 1 [LLM_SHUFFLED_RANKING]: PAIRS -> -Y-G- (H:4, L:4) [algo_top1=RATES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: LEARY -> YYYG- (H:4, L:3) [algo_top1=HEART, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: ALERT -> GGGGG (H:0, L:0) [algo_top1=ALERT, followed=True]
+  Won in 3 attempts!
+
+Game 35/100: Target = CAGES
+  Attempt 1 [LLM_SHUFFLED_RANKING]: GROSS -> Y---G (H:4, L:4) [algo_top1=SADIE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: WAGES -> -GGGG (H:1, L:1) [algo_top1=DINGS, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: PAGES -> -GGGG (H:1, L:1) [algo_top1=PAGES, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: MAGES -> -GGGG (H:1, L:1) [algo_top1=CAGES, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: CAGES -> GGGGG (H:0, L:0) [algo_top1=CAGES, followed=True]
+  Won in 5 attempts!
+
+Game 36/100: Target = TEDDY
+  Attempt 1 [LLM_SHUFFLED_RANKING]: STORY -> -Y--G (H:4, L:4) [algo_top1=SAUER, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: NATTY -> --Y-G (H:4, L:4) [algo_top1=NATTY, followed=True]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: TILLY -> G---G (H:3, L:3) [algo_top1=TULLY, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: TEDDY -> GGGGG (H:0, L:0) [algo_top1=TEDDY, followed=True]
+  Won in 4 attempts!
+
+Game 37/100: Target = COLES
+  Attempt 1 [LLM_SHUFFLED_RANKING]: GRANT -> ----- (H:5, L:5) [algo_top1=PALES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: HOMES -> -G-GG (H:2, L:2) [algo_top1=MILES, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: POLES -> -GGGG (H:1, L:1) [algo_top1=LOPES, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: COLES -> GGGGG (H:0, L:0) [algo_top1=SOLES, followed=False]
+  Won in 4 attempts!
+
+Game 38/100: Target = HWANG
+  Attempt 1 [LLM_SHUFFLED_RANKING]: HAIRS -> GY--- (H:4, L:4) [algo_top1=EARLS, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: HEALY -> G-G-- (H:3, L:3) [algo_top1=HYENA, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: HWANG -> GGGGG (H:0, L:0) [algo_top1=HUANG, followed=False]
+  Won in 3 attempts!
+
+Game 39/100: Target = WRATH
+  Attempt 1 [LLM_SHUFFLED_RANKING]: CHORD -> -Y-Y- (H:5, L:5) [algo_top1=SADIE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: HAREM -> YYY-- (H:5, L:5) [algo_top1=EARTH, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: BRASH -> -GG-G (H:2, L:2) [algo_top1=TRASH, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: WRATH -> GGGGG (H:0, L:0) [algo_top1=GRAPH, followed=False]
+  Won in 4 attempts!
+
+Game 40/100: Target = MACHO
+  Attempt 1 [LLM_SHUFFLED_RANKING]: LUISA -> ----Y (H:5, L:5) [algo_top1=RATES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: REACH -> --YYY (H:5, L:3) [algo_top1=CADRE, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: YACHT -> -GGG- (H:2, L:2) [algo_top1=YACHT, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: MACHO -> GGGGG (H:0, L:0) [algo_top1=MACHO, followed=True]
+  Won in 4 attempts!
+
+Game 41/100: Target = LOPEZ
+  Attempt 1 [LLM_SHUFFLED_RANKING]: CASES -> ---G- (H:4, L:4) [algo_top1=SETON, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: TUNED -> ---G- (H:4, L:4) [algo_top1=RILED, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: REBEL -> ---GY (H:4, L:4) [algo_top1=REVEL, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: GOLEM -> -GYG- (H:3, L:3) [algo_top1=FOLEY, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: LOVEY -> GG-G- (H:2, L:2) [algo_top1=LOPEZ, followed=False]
+  Attempt 6 [LLM_SHUFFLED_RANKING]: LOPEZ -> GGGGG (H:0, L:0) [algo_top1=LOPEZ, followed=True]
+  Won in 6 attempts!
+
+Game 42/100: Target = GOODY
+  Attempt 1 [LLM_SHUFFLED_RANKING]: RIOTS -> --G-- (H:4, L:4) [algo_top1=CANES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: CLOUD -> --G-Y (H:4, L:4) [algo_top1=CLONE, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: GOODY -> GGGGG (H:0, L:0) [algo_top1=WOODY, followed=False]
+  Won in 3 attempts!
+
+Game 43/100: Target = BROTH
+  Attempt 1 [LLM_SHUFFLED_RANKING]: TASKS -> Y---- (H:5, L:5) [algo_top1=SALEM, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: INTER -> --Y-Y (H:5, L:5) [algo_top1=ROHIT, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: FORTH -> -YYGG (H:3, L:3) [algo_top1=FORTH, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: BROTH -> GGGGG (H:0, L:0) [algo_top1=BROTH, followed=True]
+  Won in 4 attempts!
+
+Game 44/100: Target = VERDE
+  Attempt 1 [LLM_SHUFFLED_RANKING]: MORSE -> --G-G (H:3, L:3) [algo_top1=RAINS, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: VERGE -> GGG-G (H:1, L:1) [algo_top1=CARNE, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: VERNE -> GGG-G (H:1, L:1) [algo_top1=VERDE, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: VERVE -> GGG-G (H:1, L:1) [algo_top1=VERDE, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: VERDE -> GGGGG (H:0, L:0) [algo_top1=VERDE, followed=True]
+  Won in 5 attempts!
+
+Game 45/100: Target = TAMED
+  Attempt 1 [LLM_SHUFFLED_RANKING]: NOSES -> ---G- (H:4, L:4) [algo_top1=TONES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: CAKED -> -G-GG (H:2, L:2) [algo_top1=LATER, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: PAVED -> -G-GG (H:2, L:2) [algo_top1=RATED, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: RATED -> -GYGG (H:2, L:2) [algo_top1=RATED, followed=True]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: TAMED -> GGGGG (H:0, L:0) [algo_top1=TAXED, followed=False]
+  Won in 5 attempts!
+
+Game 46/100: Target = LEAFS
+  Attempt 1 [LLM_SHUFFLED_RANKING]: CIVIC -> ----- (H:5, L:5) [algo_top1=AROSE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: SALLE -> YYY-Y (H:5, L:5) [algo_top1=SEDAN, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: LEAPS -> GGG-G (H:1, L:1) [algo_top1=LEAPS, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: LEANS -> GGG-G (H:1, L:1) [algo_top1=LEADS, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: LEADS -> GGG-G (H:1, L:1) [algo_top1=LEADS, followed=True]
+  Attempt 6 [LLM_SHUFFLED_RANKING]: LEAKS -> GGG-G (H:1, L:1) [algo_top1=LEAKS, followed=True]
+  Failed to find word
+
+Game 47/100: Target = YACHT
+  Attempt 1 [LLM_SHUFFLED_RANKING]: LEARN -> --Y-- (H:5, L:5) [algo_top1=ROLES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: BASIS -> -G--- (H:4, L:4) [algo_top1=SAMOA, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: PATCH -> -GYYY (H:4, L:3) [algo_top1=TAMPA, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: YACHT -> GGGGG (H:0, L:0) [algo_top1=YACHT, followed=True]
+  Won in 4 attempts!
+
+Game 48/100: Target = MESSY
+  Attempt 1 [LLM_SHUFFLED_RANKING]: HAIKU -> ----- (H:5, L:5) [algo_top1=TRINA, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: STOVE -> Y---Y (H:5, L:5) [algo_top1=LORDS, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: PEERS -> -G--Y (H:4, L:4) [algo_top1=REEDS, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: MESSY -> GGGGG (H:0, L:0) [algo_top1=MESSY, followed=True]
+  Won in 4 attempts!
+
+Game 49/100: Target = RYDER
+  Attempt 1 [LLM_SHUFFLED_RANKING]: MINCE -> ----Y (H:5, L:5) [algo_top1=SADIE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: PEARS -> -Y-Y- (H:5, L:5) [algo_top1=REELS, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: LOWER -> ---GG (H:3, L:3) [algo_top1=ORDER, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: BUYER -> --YGG (H:3, L:3) [algo_top1=FREER, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: RYDER -> GGGGG (H:0, L:0) [algo_top1=RYDER, followed=True]
+  Won in 5 attempts!
+
+Game 50/100: Target = MOTIF
+  Attempt 1 [LLM_SHUFFLED_RANKING]: ALIBI -> --Y-- (H:5, L:5) [algo_top1=ARNIE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: DITCH -> -YG-- (H:4, L:4) [algo_top1=RINSE, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: INTRO -> Y-G-Y (H:4, L:4) [algo_top1=INTRO, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: MOTIF -> GGGGG (H:0, L:0) [algo_top1=MOTIF, followed=True]
+  Won in 4 attempts!
+
+Game 51/100: Target = RAVEN
+  Attempt 1 [LLM_SHUFFLED_RANKING]: STICK -> ----- (H:5, L:5) [algo_top1=DEANS, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: ALARM -> Y--Y- (H:5, L:5) [algo_top1=RANGE, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: BARED -> -GYG- (H:3, L:3) [algo_top1=BARED, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: PAGER -> -G-GY (H:3, L:3) [algo_top1=PAGER, followed=True]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: RAVEN -> GGGGG (H:0, L:0) [algo_top1=RAVEN, followed=True]
+  Won in 5 attempts!
+
+Game 52/100: Target = REICH
+  Attempt 1 [LLM_SHUFFLED_RANKING]: SHIRT -> -YGY- (H:4, L:4) [algo_top1=SNARE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: ERICH -> YYGGG (H:2, L:2) [algo_top1=REICH, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: REICH -> GGGGG (H:0, L:0) [algo_top1=REICH, followed=True]
+  Won in 3 attempts!
+
+Game 53/100: Target = ICONS
+  Attempt 1 [LLM_SHUFFLED_RANKING]: KNOWN -> -YG-- (H:4, L:4) [algo_top1=TONER, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: PHONE -> --GG- (H:3, L:3) [algo_top1=SHONE, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: LIONS -> -YGGG (H:2, L:2) [algo_top1=LIONS, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: IRONS -> G-GGG (H:1, L:1) [algo_top1=ICONS, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: ICONS -> GGGGG (H:0, L:0) [algo_top1=ICONS, followed=True]
+  Won in 5 attempts!
+
+Game 54/100: Target = SILKY
+  Attempt 1 [LLM_SHUFFLED_RANKING]: LOOSE -> Y--Y- (H:5, L:5) [algo_top1=SOLAR, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: MAILS -> --YYY (H:5, L:4) [algo_top1=SAILS, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: SILKY -> GGGGG (H:0, L:0) [algo_top1=SPLIT, followed=False]
+  Won in 3 attempts!
+
+Game 55/100: Target = CARVE
+  Attempt 1 [LLM_SHUFFLED_RANKING]: SIDED -> ---Y- (H:5, L:5) [algo_top1=CANES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: RENAL -> YY-Y- (H:5, L:5) [algo_top1=HEARN, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: GRAZE -> -YY-G (H:4, L:4) [algo_top1=CRATE, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: FARCE -> -GGYG (H:2, L:2) [algo_top1=CARTE, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: CARPE -> GGG-G (H:1, L:1) [algo_top1=CARVE, followed=False]
+  Attempt 6 [LLM_SHUFFLED_RANKING]: CARVE -> GGGGG (H:0, L:0) [algo_top1=CARVE, followed=True]
+  Won in 6 attempts!
+
+Game 56/100: Target = LAGER
+  Attempt 1 [LLM_SHUFFLED_RANKING]: BREAD -> -YYY- (H:5, L:5) [algo_top1=OLSEN, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: CARES -> -GYG- (H:3, L:3) [algo_top1=CARES, followed=True]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: TAMER -> -G-GG (H:2, L:2) [algo_top1=TAMER, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: PAYER -> -G-GG (H:2, L:2) [algo_top1=LAGER, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: WAGER -> -GGGG (H:1, L:1) [algo_top1=LAGER, followed=False]
+  Attempt 6 [LLM_SHUFFLED_RANKING]: EAGER -> -GGGG (H:1, L:1) [algo_top1=EAGER, followed=True]
+  Failed to find word
+
+Game 57/100: Target = JERKS
+  Attempt 1 [LLM_SHUFFLED_RANKING]: STEPS -> --Y-G (H:4, L:4) [algo_top1=TASER, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: HAVES -> ---YG (H:4, L:4) [algo_top1=LANES, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: NERDS -> -GG-G (H:2, L:2) [algo_top1=LENDS, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: JERKS -> GGGGG (H:0, L:0) [algo_top1=GERMS, followed=False]
+  Won in 4 attempts!
+
+Game 58/100: Target = LOTUS
+  Attempt 1 [LLM_SHUFFLED_RANKING]: SPLIT -> Y-Y-Y (H:5, L:5) [algo_top1=DEANS, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: LASTS -> G--YG (H:3, L:3) [algo_top1=LOTUS, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: LOTUS -> GGGGG (H:0, L:0) [algo_top1=LOTUS, followed=True]
+  Won in 3 attempts!
+
+Game 59/100: Target = LACEY
+  Attempt 1 [LLM_SHUFFLED_RANKING]: LEAPT -> GYY-- (H:4, L:4) [algo_top1=SORTA, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: LANES -> GG-G- (H:2, L:2) [algo_top1=LANES, followed=True]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: LAYER -> GGYG- (H:2, L:2) [algo_top1=LAYER, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: LACEY -> GGGGG (H:0, L:0) [algo_top1=LACEY, followed=True]
+  Won in 4 attempts!
+
+Game 60/100: Target = TUDOR
+  Attempt 1 [LLM_SHUFFLED_RANKING]: ROUND -> YYY-Y (H:5, L:5) [algo_top1=DIANE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: TUDOR -> GGGGG (H:0, L:0) [algo_top1=TUDOR, followed=True]
+  Won in 2 attempts!
+
+Game 61/100: Target = QUOTA
+  Attempt 1 [LLM_SHUFFLED_RANKING]: INTEL -> --Y-- (H:5, L:5) [algo_top1=SAUER, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: STOCK -> -YG-- (H:4, L:4) [algo_top1=TORUS, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: BROTH -> --GG- (H:3, L:3) [algo_top1=BOOTH, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: FOOTY -> --GG- (H:3, L:3) [algo_top1=QUOTA, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: QUOTA -> GGGGG (H:0, L:0) [algo_top1=QUOTA, followed=True]
+  Won in 5 attempts!
+
+Game 62/100: Target = MOURN
+  Attempt 1 [LLM_SHUFFLED_RANKING]: STOLL -> --Y-- (H:5, L:5) [algo_top1=ANSEL, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: HONEY -> -GY-- (H:4, L:4) [algo_top1=HORNE, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: MORAN -> GGY-G (H:2, L:2) [algo_top1=MORAN, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: MOURN -> GGGGG (H:0, L:0) [algo_top1=MOURN, followed=True]
+  Won in 4 attempts!
+
+Game 63/100: Target = PROMO
+  Attempt 1 [LLM_SHUFFLED_RANKING]: BIRDY -> --Y-- (H:5, L:5) [algo_top1=DOERS, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: TOWER -> -Y--Y (H:5, L:5) [algo_top1=TASER, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: ARGOS -> -G-Y- (H:4, L:4) [algo_top1=ARGOS, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: FROCK -> -GG-- (H:3, L:3) [algo_top1=FROCK, followed=True]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: PROVO -> GGG-G (H:1, L:1) [algo_top1=PROMO, followed=False]
+  Attempt 6 [LLM_SHUFFLED_RANKING]: PROMO -> GGGGG (H:0, L:0) [algo_top1=PROMO, followed=True]
+  Won in 6 attempts!
+
+Game 64/100: Target = CASTE
+  Attempt 1 [LLM_SHUFFLED_RANKING]: CREWE -> G---G (H:3, L:3) [algo_top1=SARIN, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: CHOSE -> G--YG (H:3, L:3) [algo_top1=CLONE, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: CASTE -> GGGGG (H:0, L:0) [algo_top1=CASTE, followed=True]
+  Won in 3 attempts!
+
+Game 65/100: Target = CAPRI
+  Attempt 1 [LLM_SHUFFLED_RANKING]: TEAMS -> --Y-- (H:5, L:5) [algo_top1=HEARS, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: VIRAL -> -YYY- (H:5, L:5) [algo_top1=CARLA, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: RAPID -> YGGY- (H:3, L:3) [algo_top1=INDRA, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: CAPRI -> GGGGG (H:0, L:0) [algo_top1=CAPRI, followed=True]
+  Won in 4 attempts!
+
+Game 66/100: Target = ALIAS
+  Attempt 1 [LLM_SHUFFLED_RANKING]: BROAD -> ---G- (H:4, L:4) [algo_top1=LANES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: METAL -> ---GY (H:4, L:4) [algo_top1=ASLAN, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: SALAS -> -YYGG (H:3, L:2) [algo_top1=ASLAN, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: ALIAS -> GGGGG (H:0, L:0) [algo_top1=ALIAS, followed=True]
+  Won in 4 attempts!
+
+Game 67/100: Target = PADDY
+  Attempt 1 [LLM_SHUFFLED_RANKING]: MAURA -> -G--- (H:4, L:4) [algo_top1=CESAR, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: WALES -> -G--- (H:4, L:4) [algo_top1=LADEN, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: PATCH -> GG--- (H:3, L:3) [algo_top1=CANTO, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: PADDY -> GGGGG (H:0, L:0) [algo_top1=PADDY, followed=True]
+  Won in 4 attempts!
+
+Game 68/100: Target = BLOBS
+  Attempt 1 [LLM_SHUFFLED_RANKING]: AVOID -> --G-- (H:4, L:4) [algo_top1=RAISE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: SCOUR -> Y-G-- (H:4, L:4) [algo_top1=SNOOP, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: LOOPS -> Y-G-G (H:3, L:3) [algo_top1=LOOPS, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: BLOWS -> GGG-G (H:1, L:1) [algo_top1=GLOWS, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: BLOGS -> GGG-G (H:1, L:1) [algo_top1=BLOGS, followed=True]
+  Attempt 6 [LLM_SHUFFLED_RANKING]: BLOBS -> GGGGG (H:0, L:0) [algo_top1=BLOBS, followed=True]
+  Won in 6 attempts!
+
+Game 69/100: Target = DILLY
+  Attempt 1 [LLM_SHUFFLED_RANKING]: PALMS -> --G-- (H:4, L:4) [algo_top1=RATES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: FOLEY -> --G-G (H:3, L:3) [algo_top1=FOLEY, followed=True]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: BILLY -> -GGGG (H:1, L:1) [algo_top1=BULKY, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: WILLY -> -GGGG (H:1, L:1) [algo_top1=HILLY, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: LILLY -> -GGGG (H:1, L:1) [algo_top1=HILLY, followed=False]
+  Attempt 6 [LLM_SHUFFLED_RANKING]: HILLY -> -GGGG (H:1, L:1) [algo_top1=HILLY, followed=True]
+  Failed to find word
+
+Game 70/100: Target = GUTSY
+  Attempt 1 [LLM_SHUFFLED_RANKING]: CHATS -> ---YY (H:5, L:4) [algo_top1=LAYNE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: STINT -> YY--- (H:5, L:5) [algo_top1=SPENT, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: TERSE -> Y--G- (H:4, L:4) [algo_top1=BETSY, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: GUTSY -> GGGGG (H:0, L:0) [algo_top1=GUTSY, followed=True]
+  Won in 4 attempts!
+
+Game 71/100: Target = TABOR
+  Attempt 1 [LLM_SHUFFLED_RANKING]: QUITE -> ---Y- (H:5, L:5) [algo_top1=NERDS, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: STARS -> -YYY- (H:5, L:4) [algo_top1=TRANS, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: TAROT -> GGYG- (H:2, L:2) [algo_top1=TAROT, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: TABOR -> GGGGG (H:0, L:0) [algo_top1=TABOR, followed=True]
+  Won in 4 attempts!
+
+Game 72/100: Target = INLAY
+  Attempt 1 [LLM_SHUFFLED_RANKING]: PRISM -> --Y-- (H:5, L:5) [algo_top1=MARIE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: FINED -> -YY-- (H:5, L:4) [algo_top1=LATIN, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: ALVIN -> YY-YY (H:5, L:5) [algo_top1=LATIN, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: INLAY -> GGGGG (H:0, L:0) [algo_top1=INLAY, followed=True]
+  Won in 4 attempts!
+
+Game 73/100: Target = AHHHH
+  Attempt 1 [LLM_SHUFFLED_RANKING]: WANTS -> -Y--- (H:5, L:5) [algo_top1=SALON, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: RELAY -> ---Y- (H:5, L:5) [algo_top1=CLARE, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: POACH -> --Y-G (H:4, L:4) [algo_top1=OMAHA, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: AHHHH -> GGGGG (H:0, L:0) [algo_top1=AHHHH, followed=True]
+  Won in 4 attempts!
+
+Game 74/100: Target = ROUEN
+  Attempt 1 [LLM_SHUFFLED_RANKING]: SPEAK -> --Y-- (H:5, L:5) [algo_top1=PACES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: LIVER -> ---GY (H:4, L:4) [algo_top1=LINER, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: ROWED -> GG-G- (H:2, L:2) [algo_top1=BORED, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: ROGEN -> GG-GG (H:1, L:1) [algo_top1=ROMEO, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: ROUEN -> GGGGG (H:0, L:0) [algo_top1=ROUEN, followed=True]
+  Won in 5 attempts!
+
+Game 75/100: Target = BUENA
+  Attempt 1 [LLM_SHUFFLED_RANKING]: EXITS -> Y---- (H:5, L:5) [algo_top1=EARNS, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: DEWAR -> -Y-Y- (H:5, L:4) [algo_top1=READE, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: HALVE -> -Y--Y (H:5, L:5) [algo_top1=NAGEL, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: APNEA -> --YYG (H:4, L:4) [algo_top1=ABBEY, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: BUENA -> GGGGG (H:0, L:0) [algo_top1=BUENA, followed=True]
+  Won in 5 attempts!
+
+Game 76/100: Target = MENON
+  Attempt 1 [LLM_SHUFFLED_RANKING]: TICKS -> ----- (H:5, L:5) [algo_top1=SNAIL, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: BOUND -> -Y-Y- (H:5, L:5) [algo_top1=RAMEN, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: LEMON -> -GYGG (H:2, L:2) [algo_top1=MELON, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: MENON -> GGGGG (H:0, L:0) [algo_top1=MENON, followed=True]
+  Won in 4 attempts!
+
+Game 77/100: Target = TRASK
+  Attempt 1 [LLM_SHUFFLED_RANKING]: REACT -> Y-G-Y (H:4, L:4) [algo_top1=CASTE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: TRAPS -> GGG-Y (H:2, L:2) [algo_top1=TRAPS, followed=True]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: TRASH -> GGGG- (H:1, L:1) [algo_top1=TRASH, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: TRASK -> GGGGG (H:0, L:0) [algo_top1=TRASK, followed=True]
+  Won in 4 attempts!
+
+Game 78/100: Target = CASIO
+  Attempt 1 [LLM_SHUFFLED_RANKING]: SLAMS -> Y-Y-- (H:5, L:5) [algo_top1=HOSEA, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: PARSE -> -G-Y- (H:4, L:4) [algo_top1=TASER, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: HASTY -> -GG-- (H:3, L:3) [algo_top1=HASNT, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: BASIN -> -GGG- (H:2, L:2) [algo_top1=BASIC, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: CASIO -> GGGGG (H:0, L:0) [algo_top1=CASIO, followed=True]
+  Won in 5 attempts!
+
+Game 79/100: Target = VOILA
+  Attempt 1 [LLM_SHUFFLED_RANKING]: CHART -> --Y-- (H:5, L:5) [algo_top1=REALS, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: SAGAS -> -Y--- (H:5, L:5) [algo_top1=NAMES, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: ALINE -> YYG-- (H:4, L:4) [algo_top1=ALINE, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: VOILA -> GGGGG (H:0, L:0) [algo_top1=VOILA, followed=True]
+  Won in 4 attempts!
+
+Game 80/100: Target = AURAL
+  Attempt 1 [LLM_SHUFFLED_RANKING]: RETRO -> Y---- (H:5, L:5) [algo_top1=SIREN, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: CHAIR -> --Y-Y (H:5, L:5) [algo_top1=MARIS, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: BARNS -> -YG-- (H:4, L:4) [algo_top1=KARMA, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: MURAL -> -GGGG (H:1, L:1) [algo_top1=MURAL, followed=True]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: AURAL -> GGGGG (H:0, L:0) [algo_top1=AURAL, followed=True]
+  Won in 5 attempts!
+
+Game 81/100: Target = LEGER
+  Attempt 1 [LLM_SHUFFLED_RANKING]: STEIN -> --Y-- (H:5, L:5) [algo_top1=OATES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: PEALE -> -G-YY (H:4, L:4) [algo_top1=MADRE, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: REVEL -> YG-GY (H:3, L:3) [algo_top1=BEVEL, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: LEGER -> GGGGG (H:0, L:0) [algo_top1=LEGER, followed=True]
+  Won in 4 attempts!
+
+Game 82/100: Target = DALLY
+  Attempt 1 [LLM_SHUFFLED_RANKING]: ARGUE -> Y---- (H:5, L:5) [algo_top1=NASIR, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: PANTS -> -G--- (H:4, L:4) [algo_top1=HALTS, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: BADLY -> -GYGG (H:2, L:2) [algo_top1=MALIA, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: DAILY -> GG-GG (H:1, L:1) [algo_top1=DAILY, followed=True]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: DALLY -> GGGGG (H:0, L:0) [algo_top1=DALLY, followed=True]
+  Won in 5 attempts!
+
+Game 83/100: Target = INIGO
+  Attempt 1 [LLM_SHUFFLED_RANKING]: LEVEL -> ----- (H:5, L:5) [algo_top1=COLES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: SMASH -> ----- (H:5, L:5) [algo_top1=SIMON, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: BRINK -> --GY- (H:4, L:4) [algo_top1=NITRO, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: ONION -> YGG-- (H:3, L:3) [algo_top1=UNION, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: INIGO -> GGGGG (H:0, L:0) [algo_top1=INIGO, followed=True]
+  Won in 5 attempts!
+
+Game 84/100: Target = KRILL
+  Attempt 1 [LLM_SHUFFLED_RANKING]: WHINE -> --G-- (H:4, L:4) [algo_top1=KEATS, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: STICK -> --G-Y (H:4, L:4) [algo_top1=TAILS, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: KAIJU -> G-G-- (H:3, L:3) [algo_top1=AKIRA, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: KRILL -> GGGGG (H:0, L:0) [algo_top1=KRILL, followed=True]
+  Won in 4 attempts!
+
+Game 85/100: Target = SNIDE
+  Attempt 1 [LLM_SHUFFLED_RANKING]: MODES -> --YYY (H:5, L:4) [algo_top1=DANES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: SLADE -> G--GG (H:2, L:2) [algo_top1=SLADE, followed=True]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: SUEDE -> G--GG (H:2, L:2) [algo_top1=SUEDE, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: SNIDE -> GGGGG (H:0, L:0) [algo_top1=SNIDE, followed=True]
+  Won in 4 attempts!
+
+Game 86/100: Target = LEWES
+  Attempt 1 [LLM_SHUFFLED_RANKING]: TWEET -> -YYG- (H:4, L:4) [algo_top1=RAILS, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: SEWER -> YGGG- (H:2, L:2) [algo_top1=SEWER, followed=True]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: LEWES -> GGGGG (H:0, L:0) [algo_top1=LEWES, followed=True]
+  Won in 3 attempts!
+
+Game 87/100: Target = TAMER
+  Attempt 1 [LLM_SHUFFLED_RANKING]: EARTH -> YGYY- (H:4, L:4) [algo_top1=EARNS, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: RATES -> YGYG- (H:3, L:3) [algo_top1=TAMER, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: TAKER -> GG-GG (H:1, L:1) [algo_top1=TAPER, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: TAMER -> GGGGG (H:0, L:0) [algo_top1=TAPER, followed=False]
+  Won in 4 attempts!
+
+Game 88/100: Target = COTTA
+  Attempt 1 [LLM_SHUFFLED_RANKING]: EMITS -> ---G- (H:4, L:4) [algo_top1=ELIAS, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: CLOTH -> G-YG- (H:3, L:3) [algo_top1=LOTTA, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: CANTO -> GY-GY (H:3, L:3) [algo_top1=COTTA, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: COTTA -> GGGGG (H:0, L:0) [algo_top1=COTTA, followed=True]
+  Won in 4 attempts!
+
+Game 89/100: Target = CORBY
+  Attempt 1 [LLM_SHUFFLED_RANKING]: VOWEL -> -G--- (H:4, L:4) [algo_top1=CATER, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: ROOMY -> YG--G (H:3, L:3) [algo_top1=HORNS, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: DORKY -> -GG-G (H:2, L:2) [algo_top1=CORKY, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: CORNY -> GGG-G (H:1, L:1) [algo_top1=CORNY, followed=True]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: CORBY -> GGGGG (H:0, L:0) [algo_top1=CORBY, followed=True]
+  Won in 5 attempts!
+
+Game 90/100: Target = POLIS
+  Attempt 1 [LLM_SHUFFLED_RANKING]: ROOMY -> -G--- (H:4, L:4) [algo_top1=LASER, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: TONES -> -G--G (H:3, L:3) [algo_top1=TONES, followed=True]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: FOALS -> -G-YG (H:3, L:3) [algo_top1=COLDS, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: LOUIS -> YG-GG (H:2, L:2) [algo_top1=LOUIS, followed=True]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: POLIS -> GGGGG (H:0, L:0) [algo_top1=SOLIS, followed=False]
+  Won in 5 attempts!
+
+Game 91/100: Target = ROXAS
+  Attempt 1 [LLM_SHUFFLED_RANKING]: PAUSE -> -Y-Y- (H:5, L:5) [algo_top1=NARCO, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: SLAVS -> --Y-G (H:4, L:4) [algo_top1=TRANS, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: ATMOS -> Y--YG (H:4, L:4) [algo_top1=ARTIS, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: ORCAS -> YY-GG (H:3, L:3) [algo_top1=JONAS, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: ROJAS -> GG-GG (H:1, L:1) [algo_top1=ROJAS, followed=True]
+  Attempt 6 [LLM_SHUFFLED_RANKING]: ROXAS -> GGGGG (H:0, L:0) [algo_top1=ROXAS, followed=True]
+  Won in 6 attempts!
+
+Game 92/100: Target = RANCE
+  Attempt 1 [LLM_SHUFFLED_RANKING]: BROOK -> -Y--- (H:5, L:5) [algo_top1=SHONE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: SEARS -> -YYY- (H:5, L:5) [algo_top1=TIRES, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: CARED -> YGYY- (H:4, L:4) [algo_top1=CATER, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: RANCE -> GGGGG (H:0, L:0) [algo_top1=RANCE, followed=True]
+  Won in 4 attempts!
+
+Game 93/100: Target = CARON
+  Attempt 1 [LLM_SHUFFLED_RANKING]: STALL -> --Y-- (H:5, L:5) [algo_top1=LIARS, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: HADEN -> -G--G (H:3, L:3) [algo_top1=RAMEN, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: RAMON -> YG-GG (H:2, L:2) [algo_top1=RAMAN, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: AARON -> -GGGG (H:1, L:1) [algo_top1=AARON, followed=True]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: CARON -> GGGGG (H:0, L:0) [algo_top1=BARON, followed=False]
+  Won in 5 attempts!
+
+Game 94/100: Target = SURYA
+  Attempt 1 [LLM_SHUFFLED_RANKING]: RILED -> Y---- (H:5, L:5) [algo_top1=CORES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: CORPS -> --G-Y (H:4, L:4) [algo_top1=BARNS, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: STRUT -> G-GY- (H:3, L:3) [algo_top1=HURST, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: SURRY -> GGG-Y (H:2, L:2) [algo_top1=SURYA, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: SURYA -> GGGGG (H:0, L:0) [algo_top1=SURYA, followed=True]
+  Won in 5 attempts!
+
+Game 95/100: Target = AGGIE
+  Attempt 1 [LLM_SHUFFLED_RANKING]: SKATE -> --Y-G (H:4, L:4) [algo_top1=RANTS, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: ALIVE -> G-Y-G (H:3, L:3) [algo_top1=LAINE, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: ANGIE -> G-GGG (H:1, L:1) [algo_top1=ANGIE, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: AGGIE -> GGGGG (H:0, L:0) [algo_top1=AGGIE, followed=True]
+  Won in 4 attempts!
+
+Game 96/100: Target = CAUSA
+  Attempt 1 [LLM_SHUFFLED_RANKING]: GLENN -> ----- (H:5, L:5) [algo_top1=AIRES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: TORUS -> ---YY (H:5, L:4) [algo_top1=CARTS, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: SUSHI -> YY--- (H:5, L:4) [algo_top1=SUSHI, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: CAUSA -> GGGGG (H:0, L:0) [algo_top1=ASUKA, followed=False]
+  Won in 4 attempts!
+
+Game 97/100: Target = BAMBA
+  Attempt 1 [LLM_SHUFFLED_RANKING]: MARCH -> YG--- (H:4, L:4) [algo_top1=WARES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: DAMES -> -GG-- (H:3, L:3) [algo_top1=NAMES, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: TAMPA -> -GG-G (H:2, L:2) [algo_top1=TAMPA, followed=True]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: BAMBA -> GGGGG (H:0, L:0) [algo_top1=GAMMA, followed=False]
+  Won in 4 attempts!
+
+Game 98/100: Target = MAYNE
+  Attempt 1 [LLM_SHUFFLED_RANKING]: BONUS -> --Y-- (H:5, L:5) [algo_top1=NOIRE, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: ANGLE -> YY--G (H:4, L:4) [algo_top1=RAINE, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: CAINE -> -G-GG (H:2, L:2) [algo_top1=RAINE, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: PAYNE -> -GGGG (H:1, L:1) [algo_top1=WARNE, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: WAYNE -> -GGGG (H:1, L:1) [algo_top1=WAYNE, followed=True]
+  Attempt 6 [LLM_SHUFFLED_RANKING]: MAYNE -> GGGGG (H:0, L:0) [algo_top1=JAYNE, followed=False]
+  Won in 6 attempts!
+
+Game 99/100: Target = BOGGS
+  Attempt 1 [LLM_SHUFFLED_RANKING]: VOWEL -> -G--- (H:4, L:4) [algo_top1=SONAR, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: TOAST -> -G-Y- (H:4, L:4) [algo_top1=HORNS, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: COINS -> -G--G (H:3, L:3) [algo_top1=COORS, followed=False]
+  Attempt 4 [LLM_SHUFFLED_RANKING]: MOORS -> -G--G (H:3, L:3) [algo_top1=DORMS, followed=False]
+  Attempt 5 [LLM_SHUFFLED_RANKING]: DOBBS -> -GY-G (H:3, L:3) [algo_top1=DOBBS, followed=True]
+  Attempt 6 [LLM_SHUFFLED_RANKING]: BOGUS -> GGG-G (H:1, L:1) [algo_top1=BOGUS, followed=True]
+  Failed to find word
+
+Game 100/100: Target = FINNS
+  Attempt 1 [LLM_SHUFFLED_RANKING]: WISER -> -GY-- (H:4, L:4) [algo_top1=GATES, followed=False]
+  Attempt 2 [LLM_SHUFFLED_RANKING]: KILNS -> -G-GG (H:2, L:2) [algo_top1=LINKS, followed=False]
+  Attempt 3 [LLM_SHUFFLED_RANKING]: FINNS -> GGGGG (H:0, L:0) [algo_top1=SIGNS, followed=False]
+  Won in 3 attempts!
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 100
+Wins: 95
+Win rate: 95.0%
+Average attempts (when won): 4.28
+LLM follow rate (chose algo true top-1): 29.3% (128/437)
+LLM displayed-top1 pick rate (rank imitation): 14.9% (65/437)
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/voi_integration/results/wordle/shuffled_ranking_css_llama-3.3-70b-instruct_20260328_050136.csv
+  /Users/kevin/Desktop/projects/wordle/voi_integration/results/wordle/summary_shuffled_ranking_css_llama-3.3-70b-instruct_20260328_050136.json
+
+  Completed run 3/48
+----------------------------------------
+
+[4/48] Model=llama-3.3-70b-instruct  Algo=voi  Condition=baseline
+  Schedule: {"1":"llm","2":"llm","3":"llm","4":"llm","5":"llm","6":"llm"}
+  Config: baseline_voi
+================================================================================
+VOI-INFORMED HYBRID EVALUATION: baseline_voi
+================================================================================
+Model: llama-3.3-70b-instruct
+Algorithm: VOI
+Condition: baseline
+Prompt Type: zero-shot
+Top-K: 5
+Schedule: {"1": "llm", "2": "llm", "3": "llm", "4": "llm", "5": "llm", "6": "llm"}
+Games: 100
+================================================================================
+
+Game 1/100: Target = PHOTO
+  Attempt 1 [LLM]: HOUSE -> YY--- (H:5, L:4) [algo_top1=RAINS, followed=False]
+  Attempt 2 [LLM]: THONG -> YGG-- (H:3, L:3) [algo_top1=CHOIR, followed=False]
+  Attempt 3 [LLM]: PHOTO -> GGGGG (H:0, L:0) [algo_top1=PHOTO, followed=True]
+  Won in 3 attempts!
+
+Game 2/100: Target = PARTY
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=RAILS, followed=False]
+  Attempt 2 [LLM]: DAILY -> -G--G (H:3, L:3) [algo_top1=TANIA, followed=False]
+  Attempt 3 [LLM]: PATTY -> GG-GG (H:1, L:1) [algo_top1=PANTY, followed=False]
+  Attempt 4 [LLM]: PARTY -> GGGGG (H:0, L:0) [algo_top1=PARTY, followed=True]
+  Won in 4 attempts!
+
+Game 3/100: Target = TRICK
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=LEANS, followed=False]
+  Attempt 2 [LLM]: PANIC -> ---YY (H:5, L:4) [algo_top1=TANIA, followed=False]
+  Attempt 3 [LLM]: BRICK -> -GGGG (H:1, L:1) [algo_top1=RICCI, followed=False]
+  Attempt 4 [LLM]: TRICK -> GGGGG (H:0, L:0) [algo_top1=TRICK, followed=True]
+  Won in 4 attempts!
+
+Game 4/100: Target = DIRTY
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=AILES, followed=False]
+  Attempt 2 [LLM]: PILAR -> -G--Y (H:4, L:4) [algo_top1=NAIRA, followed=False]
+  Attempt 3 [LLM]: RICKY -> YG--G (H:3, L:3) [algo_top1=KIRIN, followed=False]
+  Attempt 4 [LLM]: BIRDY -> -GGYG (H:2, L:2) [algo_top1=DIRTY, followed=False]
+  Attempt 5 [LLM]: DIRTY -> GGGGG (H:0, L:0) [algo_top1=DIRTY, followed=True]
+  Won in 5 attempts!
+
+Game 5/100: Target = USUAL
+  Attempt 1 [LLM]: STALE -> Y-YY- (H:5, L:3) [algo_top1=MEALS, followed=False]
+  Attempt 2 [LLM]: BASAL -> --YGG (H:3, L:3) [algo_top1=LAMPS, followed=False]
+  Attempt 3 [LLM]: USUAL -> GGGGG (H:0, L:0) [algo_top1=USUAL, followed=True]
+  Won in 3 attempts!
+
+Game 6/100: Target = TRULY
+  Attempt 1 [LLM]: HOUSE -> --G-- (H:4, L:4) [algo_top1=SALEH, followed=False]
+  Attempt 2 [LLM]: PLUCK -> -YG-- (H:4, L:4) [algo_top1=BRUNT, followed=False]
+  Attempt 3 [LLM]: FAULT -> --GGY (H:3, L:3) [algo_top1=ADULT, followed=False]
+  Attempt 4 [LLM]: TRULY -> GGGGG (H:0, L:0) [algo_top1=TRULY, followed=True]
+  Won in 4 attempts!
+
+Game 7/100: Target = SPENT
+  Attempt 1 [LLM]: HOUSE -> ---YY (H:5, L:5) [algo_top1=LATER, followed=False]
+  Attempt 2 [LLM]: BEETS -> --GYY (H:4, L:4) [algo_top1=TALES, followed=False]
+  Attempt 3 [LLM]: SWEAT -> G-G-G (H:2, L:2) [algo_top1=SPENT, followed=False]
+  Attempt 4 [LLM]: SLEPT -> G-GYG (H:2, L:2) [algo_top1=SPENT, followed=False]
+  Attempt 5 [LLM]: SPENT -> GGGGG (H:0, L:0) [algo_top1=SPENT, followed=True]
+  Won in 5 attempts!
+
+Game 8/100: Target = PAUSE
+  Attempt 1 [LLM]: PASTE -> GGY-G (H:2, L:2) [algo_top1=AILES, followed=False]
+  Attempt 2 [LLM]: PARSE -> GG-GG (H:1, L:1) [algo_top1=PAUSE, followed=False]
+  Attempt 3 [LLM]: PAUSE -> GGGGG (H:0, L:0) [algo_top1=PAUSE, followed=True]
+  Won in 3 attempts!
+
+Game 9/100: Target = CRAZY
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=TRIES, followed=False]
+  Attempt 2 [LLM]: MAGIC -> -Y--Y (H:5, L:5) [algo_top1=TRINA, followed=False]
+  Attempt 3 [LLM]: CRACK -> GGG-- (H:2, L:2) [algo_top1=CLANK, followed=False]
+  Attempt 4 [LLM]: CRAZY -> GGGGG (H:0, L:0) [algo_top1=CRAZY, followed=True]
+  Won in 4 attempts!
+
+Game 10/100: Target = BASES
+  Attempt 1 [LLM]: HOUSE -> ---YY (H:5, L:4) [algo_top1=RATES, followed=False]
+  Attempt 2 [LLM]: SERFS -> YY--G (H:4, L:4) [algo_top1=RATES, followed=False]
+  Attempt 3 [LLM]: CASES -> -GGGG (H:1, L:1) [algo_top1=EASES, followed=False]
+  Attempt 4 [LLM]: BASES -> GGGGG (H:0, L:0) [algo_top1=BASES, followed=True]
+  Won in 4 attempts!
+
+Game 11/100: Target = YOUNG
+  Attempt 1 [LLM]: HOUSE -> -GG-- (H:3, L:3) [algo_top1=AIRES, followed=False]
+  Attempt 2 [LLM]: ROUND -> -GGG- (H:2, L:2) [algo_top1=MOUND, followed=False]
+  Attempt 3 [LLM]: MOUNT -> -GGG- (H:2, L:2) [algo_top1=YOUNG, followed=False]
+  Attempt 4 [LLM]: YOUNG -> GGGGG (H:0, L:0) [algo_top1=YOUNG, followed=True]
+  Won in 4 attempts!
+
+Game 12/100: Target = MEANS
+  Attempt 1 [LLM]: STATE -> Y-G-Y (H:4, L:4) [algo_top1=ROLES, followed=False]
+  Attempt 2 [LLM]: LEAPS -> -GG-G (H:2, L:2) [algo_top1=REALS, followed=False]
+  Attempt 3 [LLM]: BEANS -> -GGGG (H:1, L:1) [algo_top1=REAMS, followed=False]
+  Attempt 4 [LLM]: MEANS -> GGGGG (H:0, L:0) [algo_top1=MEANS, followed=True]
+  Won in 4 attempts!
+
+Game 13/100: Target = TRUTH
+  Attempt 1 [LLM]: HOUSE -> Y-G-- (H:4, L:4) [algo_top1=ROLES, followed=False]
+  Attempt 2 [LLM]: THUMP -> GYG-- (H:3, L:3) [algo_top1=THUNK, followed=False]
+  Attempt 3 [LLM]: TRUTH -> GGGGG (H:0, L:0) [algo_top1=TRUTH, followed=True]
+  Won in 3 attempts!
+
+Game 14/100: Target = FIRED
+  Attempt 1 [LLM]: HOUSE -> ----Y (H:5, L:5) [algo_top1=EARLS, followed=False]
+  Attempt 2 [LLM]: WIDEN -> -GYG- (H:3, L:3) [algo_top1=RATED, followed=False]
+  Attempt 3 [LLM]: TIRED -> -GGGG (H:1, L:1) [algo_top1=DIMER, followed=False]
+  Attempt 4 [LLM]: FIRED -> GGGGG (H:0, L:0) [algo_top1=FIRED, followed=True]
+  Won in 4 attempts!
+
+Game 15/100: Target = FOLKS
+  Attempt 1 [LLM]: KNITS -> Y---G (H:4, L:4) [algo_top1=TIRES, followed=False]
+  Attempt 2 [LLM]: JOKES -> -GY-G (H:3, L:3) [algo_top1=RACKS, followed=False]
+  Attempt 3 [LLM]: HOOKS -> -G-GG (H:2, L:2) [algo_top1=CORKS, followed=False]
+  Attempt 4 [LLM]: LOCKS -> YG-GG (H:2, L:2) [algo_top1=CORKS, followed=False]
+  Attempt 5 [LLM]: YOLKS -> -GGGG (H:1, L:1) [algo_top1=FOLKS, followed=False]
+  Attempt 6 [LLM]: FOLKS -> GGGGG (H:0, L:0) [algo_top1=FOLKS, followed=True]
+  Won in 6 attempts!
+
+Game 16/100: Target = CHILE
+  Attempt 1 [LLM]: HOUSE -> Y---G (H:4, L:4) [algo_top1=DALES, followed=False]
+  Attempt 2 [LLM]: WHILE -> -GGGG (H:1, L:1) [algo_top1=THINE, followed=False]
+  Attempt 3 [LLM]: CHILE -> GGGGG (H:0, L:0) [algo_top1=CHILE, followed=True]
+  Won in 3 attempts!
+
+Game 17/100: Target = BLACK
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=OATES, followed=False]
+  Attempt 2 [LLM]: BAWDY -> GY--- (H:4, L:4) [algo_top1=NAIRA, followed=False]
+  Attempt 3 [LLM]: BRAVA -> G-G-- (H:3, L:3) [algo_top1=BLANK, followed=False]
+  Attempt 4 [LLM]: BLANK -> GGG-G (H:1, L:1) [algo_top1=BLACK, followed=False]
+  Attempt 5 [LLM]: BLACK -> GGGGG (H:0, L:0) [algo_top1=BLACK, followed=True]
+  Won in 5 attempts!
+
+Game 18/100: Target = GRANT
+  Attempt 1 [LLM]: COREY -> --Y-- (H:5, L:5) [algo_top1=RAISE, followed=False]
+  Attempt 2 [LLM]: GRAFF -> GGG-- (H:2, L:2) [algo_top1=ARTIS, followed=False]
+  Attempt 3 [LLM]: GRANT -> GGGGG (H:0, L:0) [algo_top1=GRADS, followed=False]
+  Won in 3 attempts!
+
+Game 19/100: Target = MEALS
+  Attempt 1 [LLM]: HOUSE -> ---YY (H:5, L:5) [algo_top1=TASER, followed=False]
+  Attempt 2 [LLM]: BEAMS -> -GGYG (H:2, L:2) [algo_top1=TALES, followed=False]
+  Attempt 3 [LLM]: MEATS -> GGG-G (H:1, L:1) [algo_top1=MEANS, followed=False]
+  Attempt 4 [LLM]: MEALS -> GGGGG (H:0, L:0) [algo_top1=MEANS, followed=False]
+  Won in 4 attempts!
+
+Game 20/100: Target = CREAM
+  Attempt 1 [LLM]: HOUSE -> ----Y (H:5, L:5) [algo_top1=RAGES, followed=False]
+  Attempt 2 [LLM]: RENEW -> YY--- (H:5, L:4) [algo_top1=RATED, followed=False]
+  Attempt 3 [LLM]: DREAD -> -GGG- (H:2, L:2) [algo_top1=TREAD, followed=False]
+  Attempt 4 [LLM]: BREAM -> -GGGG (H:1, L:1) [algo_top1=BREAM, followed=True]
+  Attempt 5 [LLM]: CREAM -> GGGGG (H:0, L:0) [algo_top1=CREAM, followed=True]
+  Won in 5 attempts!
+
+Game 21/100: Target = AWAKE
+  Attempt 1 [LLM]: HOUSE -> ----G (H:4, L:4) [algo_top1=RITES, followed=False]
+  Attempt 2 [LLM]: FLAKE -> --GGG (H:2, L:2) [algo_top1=RAINE, followed=False]
+  Attempt 3 [LLM]: AWAKE -> GGGGG (H:0, L:0) [algo_top1=AWAKE, followed=True]
+  Won in 3 attempts!
+
+Game 22/100: Target = OCCUR
+  Attempt 1 [LLM]: HOUSE -> -YY-- (H:5, L:5) [algo_top1=AILES, followed=False]
+  Attempt 2 [LLM]: MUNDO -> -Y--Y (H:5, L:5) [algo_top1=TUMOR, followed=False]
+  Attempt 3 [LLM]: GROUT -> -YYG- (H:4, L:4) [algo_top1=TROUT, followed=False]
+  Attempt 4 [LLM]: OCCUR -> GGGGG (H:0, L:0) [algo_top1=OCCUR, followed=True]
+  Won in 4 attempts!
+
+Game 23/100: Target = YEARS
+  Attempt 1 [LLM]: HOUSE -> ---YY (H:5, L:5) [algo_top1=ARIES, followed=False]
+  Attempt 2 [LLM]: PEAKS -> -GG-G (H:2, L:2) [algo_top1=RATES, followed=False]
+  Attempt 3 [LLM]: BEAMS -> -GG-G (H:2, L:2) [algo_top1=REAMS, followed=False]
+  Attempt 4 [LLM]: SEARS -> -GGGG (H:1, L:1) [algo_top1=REALS, followed=False]
+  Attempt 5 [LLM]: TEARS -> -GGGG (H:1, L:1) [algo_top1=WEARS, followed=False]
+  Attempt 6 [LLM]: YEARS -> GGGGG (H:0, L:0) [algo_top1=NEARS, followed=False]
+  Won in 6 attempts!
+
+Game 24/100: Target = GRADE
+  Attempt 1 [LLM]: PULSE -> ----G (H:4, L:4) [algo_top1=RAINE, followed=False]
+  Attempt 2 [LLM]: CRATE -> -GG-G (H:2, L:2) [algo_top1=ARNIE, followed=False]
+  Attempt 3 [LLM]: BRAVE -> -GG-G (H:2, L:2) [algo_top1=GRAVE, followed=False]
+  Attempt 4 [LLM]: GRADE -> GGGGG (H:0, L:0) [algo_top1=GRADE, followed=True]
+  Won in 4 attempts!
+
+Game 25/100: Target = CHILL
+  Attempt 1 [LLM]: HOUSE -> Y---- (H:5, L:5) [algo_top1=AYRES, followed=False]
+  Attempt 2 [LLM]: THINK -> -GG-- (H:3, L:3) [algo_top1=CHART, followed=False]
+  Attempt 3 [LLM]: CHILL -> GGGGG (H:0, L:0) [algo_top1=CHILI, followed=False]
+  Won in 3 attempts!
+
+Game 26/100: Target = FLOOD
+  Attempt 1 [LLM]: HOUSE -> -Y--- (H:5, L:5) [algo_top1=RAILS, followed=False]
+  Attempt 2 [LLM]: ONION -> Y--G- (H:4, L:4) [algo_top1=CARON, followed=False]
+  Attempt 3 [LLM]: BROOD -> --GGG (H:2, L:2) [algo_top1=BROOM, followed=False]
+  Attempt 4 [LLM]: FLOOD -> GGGGG (H:0, L:0) [algo_top1=FLOOD, followed=True]
+  Won in 4 attempts!
+
+Game 27/100: Target = APPLY
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=TASER, followed=False]
+  Attempt 2 [LLM]: PINKY -> Y---G (H:4, L:4) [algo_top1=TRINA, followed=False]
+  Attempt 3 [LLM]: AMPLY -> G-GGG (H:1, L:1) [algo_top1=APPLY, followed=False]
+  Attempt 4 [LLM]: APPLY -> GGGGG (H:0, L:0) [algo_top1=APPLY, followed=True]
+  Won in 4 attempts!
+
+Game 28/100: Target = SMILE
+  Attempt 1 [LLM]: HOUSE -> ---YG (H:4, L:4) [algo_top1=TEARS, followed=False]
+  Attempt 2 [LLM]: SPACE -> G---G (H:3, L:3) [algo_top1=SPATE, followed=False]
+  Attempt 3 [LLM]: SWINE -> G-G-G (H:2, L:2) [algo_top1=SEINE, followed=False]
+  Attempt 4 [LLM]: SMILE -> GGGGG (H:0, L:0) [algo_top1=SMILE, followed=True]
+  Won in 4 attempts!
+
+Game 29/100: Target = KNOCK
+  Attempt 1 [LLM]: HOUSE -> -Y--- (H:5, L:5) [algo_top1=DRIES, followed=False]
+  Attempt 2 [LLM]: PLATO -> ----Y (H:5, L:5) [algo_top1=CARON, followed=False]
+  Attempt 3 [LLM]: BROOK -> --G-G (H:3, L:3) [algo_top1=DIXON, followed=False]
+  Attempt 4 [LLM]: KNOCK -> GGGGG (H:0, L:0) [algo_top1=KNOCK, followed=True]
+  Won in 4 attempts!
+
+Game 30/100: Target = SLEEP
+  Attempt 1 [LLM]: WILES -> --YGY (H:4, L:4) [algo_top1=LASER, followed=False]
+  Attempt 2 [LLM]: SLEET -> GGGG- (H:1, L:1) [algo_top1=EASEL, followed=False]
+  Attempt 3 [LLM]: SLEEP -> GGGGG (H:0, L:0) [algo_top1=SLEEP, followed=True]
+  Won in 3 attempts!
+
+Game 31/100: Target = BRICK
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=NEARS, followed=False]
+  Attempt 2 [LLM]: CRICK -> -GGGG (H:1, L:1) [algo_top1=DARIN, followed=False]
+  Attempt 3 [LLM]: TRICK -> -GGGG (H:1, L:1) [algo_top1=TRICK, followed=True]
+  Attempt 4 [LLM]: BRICK -> GGGGG (H:0, L:0) [algo_top1=BRICK, followed=True]
+  Won in 4 attempts!
+
+Game 32/100: Target = WROTE
+  Attempt 1 [LLM]: BREAD -> -GY-- (H:4, L:4) [algo_top1=SLATE, followed=False]
+  Attempt 2 [LLM]: TRIPE -> YG--G (H:3, L:3) [algo_top1=PRICE, followed=False]
+  Attempt 3 [LLM]: WROTE -> GGGGG (H:0, L:0) [algo_top1=WROTE, followed=True]
+  Won in 3 attempts!
+
+Game 33/100: Target = RATED
+  Attempt 1 [LLM]: HOUSE -> ----Y (H:5, L:5) [algo_top1=LASER, followed=False]
+  Attempt 2 [LLM]: NERDY -> -YYY- (H:5, L:5) [algo_top1=ALDER, followed=False]
+  Attempt 3 [LLM]: WIERD -> --YYG (H:4, L:4) [algo_top1=DREAD, followed=False]
+  Attempt 4 [LLM]: RAZED -> GG-GG (H:1, L:1) [algo_top1=RAPED, followed=False]
+  Attempt 5 [LLM]: RATED -> GGGGG (H:0, L:0) [algo_top1=RATED, followed=True]
+  Won in 5 attempts!
+
+Game 34/100: Target = ALERT
+  Attempt 1 [LLM]: HOUSE -> ----Y (H:5, L:5) [algo_top1=TEARS, followed=False]
+  Attempt 2 [LLM]: METER -> -YY-Y (H:5, L:4) [algo_top1=RATED, followed=False]
+  Attempt 3 [LLM]: TRENT -> -YG-G (H:3, L:3) [algo_top1=TREAT, followed=False]
+  Attempt 4 [LLM]: AVERT -> G-GGG (H:1, L:1) [algo_top1=ALERT, followed=False]
+  Attempt 5 [LLM]: ALERT -> GGGGG (H:0, L:0) [algo_top1=ALERT, followed=True]
+  Won in 5 attempts!
+
+Game 35/100: Target = CAGES
+  Attempt 1 [LLM]: SLATS -> --Y-G (H:4, L:4) [algo_top1=LASER, followed=False]
+  Attempt 2 [LLM]: WARMS -> -G--G (H:3, L:3) [algo_top1=MARES, followed=False]
+  Attempt 3 [LLM]: PACES -> -GYGG (H:2, L:2) [algo_top1=CANES, followed=False]
+  Attempt 4 [LLM]: CAKES -> GG-GG (H:1, L:1) [algo_top1=CAKES, followed=True]
+  Attempt 5 [LLM]: CAGES -> GGGGG (H:0, L:0) [algo_top1=CAVES, followed=False]
+  Won in 5 attempts!
+
+Game 36/100: Target = TEDDY
+  Attempt 1 [LLM]: PARSE -> ----Y (H:5, L:5) [algo_top1=TILES, followed=False]
+  Attempt 2 [LLM]: MEDIC -> -GG-- (H:3, L:3) [algo_top1=LINED, followed=False]
+  Attempt 3 [LLM]: FEDEX -> -GG-- (H:3, L:3) [algo_top1=TEDDY, followed=False]
+  Attempt 4 [LLM]: TEDDY -> GGGGG (H:0, L:0) [algo_top1=TEDDY, followed=True]
+  Won in 4 attempts!
+
+Game 37/100: Target = COLES
+  Attempt 1 [LLM]: GUESS -> --Y-G (H:4, L:4) [algo_top1=CARES, followed=False]
+  Attempt 2 [LLM]: HEARS -> -Y--G (H:4, L:4) [algo_top1=MALES, followed=False]
+  Attempt 3 [LLM]: TIMES -> ---GG (H:3, L:3) [algo_top1=MILES, followed=False]
+  Attempt 4 [LLM]: NOYES -> -G-GG (H:2, L:2) [algo_top1=LOPES, followed=False]
+  Attempt 5 [LLM]: POLES -> -GGGG (H:1, L:1) [algo_top1=LOPES, followed=False]
+  Attempt 6 [LLM]: COLES -> GGGGG (H:0, L:0) [algo_top1=COLES, followed=True]
+  Won in 6 attempts!
+
+Game 38/100: Target = HWANG
+  Attempt 1 [LLM]: LEARN -> --G-Y (H:4, L:4) [algo_top1=SORTA, followed=False]
+  Attempt 2 [LLM]: STAND -> --GG- (H:3, L:3) [algo_top1=SHANG, followed=False]
+  Attempt 3 [LLM]: GUANO -> Y-GG- (H:3, L:3) [algo_top1=GHANI, followed=False]
+  Attempt 4 [LLM]: JIANG -> --GGG (H:2, L:2) [algo_top1=HWANG, followed=False]
+  Attempt 5 [LLM]: ZHANG -> -YGGG (H:2, L:2) [algo_top1=CHANG, followed=False]
+  Attempt 6 [LLM]: HWANG -> GGGGG (H:0, L:0) [algo_top1=HWANG, followed=True]
+  Won in 6 attempts!
+
+Game 39/100: Target = WRATH
+  Attempt 1 [LLM]: HOUSE -> Y---- (H:5, L:5) [algo_top1=SOREN, followed=False]
+  Attempt 2 [LLM]: PATCH -> -YY-G (H:4, L:3) [algo_top1=CHART, followed=False]
+  Attempt 3 [LLM]: WRATH -> GGGGG (H:0, L:0) [algo_top1=WRATH, followed=True]
+  Won in 3 attempts!
+
+Game 40/100: Target = MACHO
+  Attempt 1 [LLM]: HOUSE -> YY--- (H:5, L:5) [algo_top1=NEARS, followed=False]
+  Attempt 2 [LLM]: THONG -> -YY-- (H:5, L:5) [algo_top1=CHOIR, followed=False]
+  Attempt 3 [LLM]: OMAHA -> YYYG- (H:4, L:3) [algo_top1=RICOH, followed=False]
+  Attempt 4 [LLM]: MACHO -> GGGGG (H:0, L:0) [algo_top1=MACHO, followed=True]
+  Won in 4 attempts!
+
+Game 41/100: Target = LOPEZ
+  Attempt 1 [LLM]: PAGES -> Y--G- (H:4, L:4) [algo_top1=TRIES, followed=False]
+  Attempt 2 [LLM]: HYPER -> --GG- (H:3, L:3) [algo_top1=ROPED, followed=False]
+  Attempt 3 [LLM]: DUPED -> --GG- (H:3, L:3) [algo_top1=DOPED, followed=False]
+  Attempt 4 [LLM]: EXPEL -> --GGY (H:3, L:3) [algo_top1=LOPEZ, followed=False]
+  Attempt 5 [LLM]: LOPEZ -> GGGGG (H:0, L:0) [algo_top1=LOPEZ, followed=True]
+  Won in 5 attempts!
+
+Game 42/100: Target = GOODY
+  Attempt 1 [LLM]: HOUSE -> -G--- (H:4, L:4) [algo_top1=RATES, followed=False]
+  Attempt 2 [LLM]: TONTO -> -G--Y (H:4, L:4) [algo_top1=DORAN, followed=False]
+  Attempt 3 [LLM]: WOODY -> -GGGG (H:1, L:1) [algo_top1=GOODY, followed=False]
+  Attempt 4 [LLM]: MOODY -> -GGGG (H:1, L:1) [algo_top1=MOODY, followed=True]
+  Attempt 5 [LLM]: GOODY -> GGGGG (H:0, L:0) [algo_top1=GOODY, followed=True]
+  Won in 5 attempts!
+
+Game 43/100: Target = BROTH
+  Attempt 1 [LLM]: HOUSE -> YY--- (H:5, L:5) [algo_top1=MEANS, followed=False]
+  Attempt 2 [LLM]: CHORD -> -YGY- (H:4, L:4) [algo_top1=CHOIR, followed=False]
+  Attempt 3 [LLM]: BROTH -> GGGGG (H:0, L:0) [algo_top1=BROTH, followed=True]
+  Won in 3 attempts!
+
+Game 44/100: Target = VERDE
+  Attempt 1 [LLM]: HOUSE -> ----G (H:4, L:4) [algo_top1=TONES, followed=False]
+  Attempt 2 [LLM]: GRAVE -> -Y-YG (H:4, L:4) [algo_top1=RAINE, followed=False]
+  Attempt 3 [LLM]: VERNE -> GGG-G (H:1, L:1) [algo_top1=VERDE, followed=False]
+  Attempt 4 [LLM]: VERDE -> GGGGG (H:0, L:0) [algo_top1=VERDE, followed=True]
+  Won in 4 attempts!
+
+Game 45/100: Target = TAMED
+  Attempt 1 [LLM]: PEEPS -> -Y--- (H:5, L:5) [algo_top1=SARIN, followed=False]
+  Attempt 2 [LLM]: HAVEN -> -G-G- (H:3, L:3) [algo_top1=ARDEN, followed=False]
+  Attempt 3 [LLM]: GATED -> -GYGG (H:2, L:2) [algo_top1=RATED, followed=False]
+  Attempt 4 [LLM]: TAMED -> GGGGG (H:0, L:0) [algo_top1=TAXED, followed=False]
+  Won in 4 attempts!
+
+Game 46/100: Target = LEAFS
+  Attempt 1 [LLM]: PANIC -> -Y--- (H:5, L:5) [algo_top1=RAISE, followed=False]
+  Attempt 2 [LLM]: BREAD -> --YY- (H:5, L:4) [algo_top1=BEARS, followed=False]
+  Attempt 3 [LLM]: HEATH -> -GG-- (H:3, L:3) [algo_top1=HEALS, followed=False]
+  Attempt 4 [LLM]: LEAVE -> GGG-- (H:2, L:2) [algo_top1=LEAFS, followed=False]
+  Attempt 5 [LLM]: LEAKY -> GGG-- (H:2, L:2) [algo_top1=LEAKS, followed=False]
+  Attempt 6 [LLM]: LEAFS -> GGGGG (H:0, L:0) [algo_top1=LEAFS, followed=True]
+  Won in 6 attempts!
+
+Game 47/100: Target = YACHT
+  Attempt 1 [LLM]: HOUSE -> Y---- (H:5, L:5) [algo_top1=REALS, followed=False]
+  Attempt 2 [LLM]: THICK -> YY-Y- (H:5, L:5) [algo_top1=CHART, followed=False]
+  Attempt 3 [LLM]: YACHT -> GGGGG (H:0, L:0) [algo_top1=YACHT, followed=True]
+  Won in 3 attempts!
+
+Game 48/100: Target = MESSY
+  Attempt 1 [LLM]: HOUSE -> ---GY (H:4, L:4) [algo_top1=CORES, followed=False]
+  Attempt 2 [LLM]: BLESS -> --YGY (H:4, L:3) [algo_top1=BEAST, followed=False]
+  Attempt 3 [LLM]: MESSY -> GGGGG (H:0, L:0) [algo_top1=MESSY, followed=True]
+  Won in 3 attempts!
+
+Game 49/100: Target = RYDER
+  Attempt 1 [LLM]: MEDIA -> -YG-- (H:4, L:4) [algo_top1=ARIES, followed=False]
+  Attempt 2 [LLM]: JUDGE -> --G-Y (H:4, L:4) [algo_top1=NODES, followed=False]
+  Attempt 3 [LLM]: OLDER -> --GGG (H:2, L:2) [algo_top1=CODER, followed=False]
+  Attempt 4 [LLM]: RYDER -> GGGGG (H:0, L:0) [algo_top1=RYDER, followed=True]
+  Won in 4 attempts!
+
+Game 50/100: Target = MOTIF
+  Attempt 1 [LLM]: HOUSE -> -G--- (H:4, L:4) [algo_top1=RAINE, followed=False]
+  Attempt 2 [LLM]: PORTA -> -G-Y- (H:4, L:4) [algo_top1=LORNA, followed=False]
+  Attempt 3 [LLM]: TONIC -> YG-G- (H:3, L:3) [algo_top1=TOXIN, followed=False]
+  Attempt 4 [LLM]: MOTIF -> GGGGG (H:0, L:0) [algo_top1=VOMIT, followed=False]
+  Won in 4 attempts!
+
+Game 51/100: Target = RAVEN
+  Attempt 1 [LLM]: HOUSE -> ----Y (H:5, L:5) [algo_top1=TALES, followed=False]
+  Attempt 2 [LLM]: RETRY -> GY--- (H:4, L:4) [algo_top1=ARDEN, followed=False]
+  Attempt 3 [LLM]: RAVED -> GGGG- (H:1, L:1) [algo_top1=RAVEN, followed=False]
+  Attempt 4 [LLM]: RAVEN -> GGGGG (H:0, L:0) [algo_top1=RAVEN, followed=True]
+  Won in 4 attempts!
+
+Game 52/100: Target = REICH
+  Attempt 1 [LLM]: HEALS -> YG--- (H:4, L:4) [algo_top1=RANTS, followed=False]
+  Attempt 2 [LLM]: PERTH -> -GY-G (H:3, L:3) [algo_top1=PERTH, followed=True]
+  Attempt 3 [LLM]: REICH -> GGGGG (H:0, L:0) [algo_top1=REICH, followed=True]
+  Won in 3 attempts!
+
+Game 53/100: Target = ICONS
+  Attempt 1 [LLM]: HOUSE -> -Y-Y- (H:5, L:4) [algo_top1=LANES, followed=False]
+  Attempt 2 [LLM]: GROWS -> --G-G (H:3, L:3) [algo_top1=SALON, followed=False]
+  Attempt 3 [LLM]: SPOTS -> --G-G (H:3, L:3) [algo_top1=PLOTS, followed=False]
+  Attempt 4 [LLM]: ICONS -> GGGGG (H:0, L:0) [algo_top1=ICONS, followed=True]
+  Won in 4 attempts!
+
+Game 54/100: Target = SILKY
+  Attempt 1 [LLM]: HOUSE -> ---Y- (H:5, L:5) [algo_top1=TIRES, followed=False]
+  Attempt 2 [LLM]: SAMIR -> G--Y- (H:4, L:4) [algo_top1=TAILS, followed=False]
+  Attempt 3 [LLM]: SPINS -> G-Y-- (H:4, L:4) [algo_top1=STINK, followed=False]
+  Attempt 4 [LLM]: SILKY -> GGGGG (H:0, L:0) [algo_top1=SILLY, followed=False]
+  Won in 4 attempts!
+
+Game 55/100: Target = CARVE
+  Attempt 1 [LLM]: HOUSE -> ----G (H:4, L:4) [algo_top1=AIRES, followed=False]
+  Attempt 2 [LLM]: FLARE -> --YYG (H:4, L:3) [algo_top1=LAINE, followed=False]
+  Attempt 3 [LLM]: MARNE -> -GG-G (H:2, L:2) [algo_top1=CARNE, followed=False]
+  Attempt 4 [LLM]: CARTE -> GGG-G (H:1, L:1) [algo_top1=PARTE, followed=False]
+  Attempt 5 [LLM]: CARVE -> GGGGG (H:0, L:0) [algo_top1=CARVE, followed=True]
+  Won in 5 attempts!
+
+Game 56/100: Target = LAGER
+  Attempt 1 [LLM]: HOUSE -> ----Y (H:5, L:5) [algo_top1=MARES, followed=False]
+  Attempt 2 [LLM]: MINED -> ---G- (H:4, L:4) [algo_top1=ALTER, followed=False]
+  Attempt 3 [LLM]: PAPER -> -G-GG (H:2, L:2) [algo_top1=LEPER, followed=False]
+  Attempt 4 [LLM]: WATER -> -G-GG (H:2, L:2) [algo_top1=LATER, followed=False]
+  Attempt 5 [LLM]: LAZER -> GG-GG (H:1, L:1) [algo_top1=LAKER, followed=False]
+  Attempt 6 [LLM]: LAYER -> GG-GG (H:1, L:1) [algo_top1=LAYER, followed=True]
+  Failed to find word
+
+Game 57/100: Target = JERKS
+  Attempt 1 [LLM]: HOUSE -> ---YY (H:5, L:5) [algo_top1=RACES, followed=False]
+  Attempt 2 [LLM]: WIPES -> ---YG (H:4, L:4) [algo_top1=TALES, followed=False]
+  Attempt 3 [LLM]: DEEDS -> -G--G (H:3, L:3) [algo_top1=TEARS, followed=False]
+  Attempt 4 [LLM]: TEARS -> -G-YG (H:3, L:3) [algo_top1=TEARS, followed=True]
+  Attempt 5 [LLM]: SERBS -> -GG-G (H:2, L:2) [algo_top1=SERBS, followed=True]
+  Attempt 6 [LLM]: GERMS -> -GG-G (H:2, L:2) [algo_top1=GERMS, followed=True]
+  Failed to find word
+
+Game 58/100: Target = LOTUS
+  Attempt 1 [LLM]: SCOOP -> Y-Y-- (H:5, L:5) [algo_top1=TRIES, followed=False]
+  Attempt 2 [LLM]: GOATS -> -G-YG (H:3, L:3) [algo_top1=ROLES, followed=False]
+  Attempt 3 [LLM]: TONES -> YG--G (H:3, L:3) [algo_top1=TONES, followed=True]
+  Attempt 4 [LLM]: LOTUS -> GGGGG (H:0, L:0) [algo_top1=LOTUS, followed=True]
+  Won in 4 attempts!
+
+Game 59/100: Target = LACEY
+  Attempt 1 [LLM]: HOUSE -> ----Y (H:5, L:5) [algo_top1=NEARS, followed=False]
+  Attempt 2 [LLM]: WIPER -> ---G- (H:4, L:4) [algo_top1=ARDEN, followed=False]
+  Attempt 3 [LLM]: TAMED -> -G-G- (H:3, L:3) [algo_top1=LADEN, followed=False]
+  Attempt 4 [LLM]: GALEN -> -GYG- (H:3, L:3) [algo_top1=BAGEL, followed=False]
+  Attempt 5 [LLM]: LABEL -> GG-G- (H:2, L:2) [algo_top1=LABEL, followed=True]
+  Attempt 6 [LLM]: LACEY -> GGGGG (H:0, L:0) [algo_top1=LACEY, followed=True]
+  Won in 6 attempts!
+
+Game 60/100: Target = TUDOR
+  Attempt 1 [LLM]: HOUSE -> -YY-- (H:5, L:5) [algo_top1=MALES, followed=False]
+  Attempt 2 [LLM]: OUIJA -> YG--- (H:4, L:4) [algo_top1=TUMOR, followed=False]
+  Attempt 3 [LLM]: TUMOR -> GG-GG (H:1, L:1) [algo_top1=TUMOR, followed=True]
+  Attempt 4 [LLM]: TUDOR -> GGGGG (H:0, L:0) [algo_top1=TUTOR, followed=False]
+  Won in 4 attempts!
+
+Game 61/100: Target = QUOTA
+  Attempt 1 [LLM]: HOUSE -> -YY-- (H:5, L:5) [algo_top1=ROLES, followed=False]
+  Attempt 2 [LLM]: CLOUD -> --GY- (H:4, L:4) [algo_top1=TUMOR, followed=False]
+  Attempt 3 [LLM]: QUOTA -> GGGGG (H:0, L:0) [algo_top1=QUOTA, followed=True]
+  Won in 3 attempts!
+
+Game 62/100: Target = MOURN
+  Attempt 1 [LLM]: HOUSE -> -GG-- (H:3, L:3) [algo_top1=ALIEN, followed=False]
+  Attempt 2 [LLM]: ROUND -> YGGY- (H:3, L:3) [algo_top1=MOUND, followed=False]
+  Attempt 3 [LLM]: MOURN -> GGGGG (H:0, L:0) [algo_top1=MOURN, followed=True]
+  Won in 3 attempts!
+
+Game 63/100: Target = PROMO
+  Attempt 1 [LLM]: HOUSE -> -Y--- (H:5, L:5) [algo_top1=ROSEN, followed=False]
+  Attempt 2 [LLM]: MACRO -> Y--YG (H:4, L:4) [algo_top1=CARON, followed=False]
+  Attempt 3 [LLM]: PRIMO -> GG-GG (H:1, L:1) [algo_top1=PROMO, followed=False]
+  Attempt 4 [LLM]: PROMO -> GGGGG (H:0, L:0) [algo_top1=PROMO, followed=True]
+  Won in 4 attempts!
+
+Game 64/100: Target = CASTE
+  Attempt 1 [LLM]: HOUSE -> ---YG (H:4, L:4) [algo_top1=SABRE, followed=False]
+  Attempt 2 [LLM]: SPARE -> Y-Y-G (H:4, L:4) [algo_top1=SPATE, followed=False]
+  Attempt 3 [LLM]: TASTE -> -GGGG (H:1, L:1) [algo_top1=WASTE, followed=False]
+  Attempt 4 [LLM]: WASTE -> -GGGG (H:1, L:1) [algo_top1=WASTE, followed=True]
+  Attempt 5 [LLM]: CASTE -> GGGGG (H:0, L:0) [algo_top1=CASTE, followed=True]
+  Won in 5 attempts!
+
+Game 65/100: Target = CAPRI
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=PANES, followed=False]
+  Attempt 2 [LLM]: LANZA -> -G--- (H:4, L:4) [algo_top1=DARIN, followed=False]
+  Attempt 3 [LLM]: PATTY -> YG--- (H:4, L:4) [algo_top1=MARDI, followed=False]
+  Attempt 4 [LLM]: CAPRI -> GGGGG (H:0, L:0) [algo_top1=RAPID, followed=False]
+  Won in 4 attempts!
+
+Game 66/100: Target = ALIAS
+  Attempt 1 [LLM]: HOUSE -> ---Y- (H:5, L:5) [algo_top1=RAINE, followed=False]
+  Attempt 2 [LLM]: BANKS -> -Y--G (H:4, L:4) [algo_top1=SAINT, followed=False]
+  Attempt 3 [LLM]: SLAPS -> -GY-G (H:3, L:3) [algo_top1=SLATS, followed=False]
+  Attempt 4 [LLM]: ALIAS -> GGGGG (H:0, L:0) [algo_top1=ALIAS, followed=True]
+  Won in 4 attempts!
+
+Game 67/100: Target = PADDY
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=CANES, followed=False]
+  Attempt 2 [LLM]: CIVIL -> ----- (H:5, L:5) [algo_top1=NAIRA, followed=False]
+  Attempt 3 [LLM]: KAYAK -> -GY-- (H:4, L:4) [algo_top1=MANTA, followed=False]
+  Attempt 4 [LLM]: BAGGY -> -G--G (H:3, L:3) [algo_top1=TANDY, followed=False]
+  Attempt 5 [LLM]: PADDY -> GGGGG (H:0, L:0) [algo_top1=TANDY, followed=False]
+  Won in 5 attempts!
+
+Game 68/100: Target = BLOBS
+  Attempt 1 [LLM]: LEVER -> Y---- (H:5, L:5) [algo_top1=TIERS, followed=False]
+  Attempt 2 [LLM]: BALDY -> G-Y-- (H:4, L:4) [algo_top1=BAILS, followed=False]
+  Attempt 3 [LLM]: BLISS -> GG--G (H:2, L:2) [algo_top1=BLOGS, followed=False]
+  Attempt 4 [LLM]: BLOBS -> GGGGG (H:0, L:0) [algo_top1=BLOWS, followed=False]
+  Won in 4 attempts!
+
+Game 69/100: Target = DILLY
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=MALES, followed=False]
+  Attempt 2 [LLM]: GRAIL -> ---YY (H:5, L:5) [algo_top1=TANIA, followed=False]
+  Attempt 3 [LLM]: CLINK -> -YY-- (H:5, L:5) [algo_top1=DIMLY, followed=False]
+  Attempt 4 [LLM]: WILLY -> -GGGG (H:1, L:1) [algo_top1=DIMLY, followed=False]
+  Attempt 5 [LLM]: BILLY -> -GGGG (H:1, L:1) [algo_top1=FILLY, followed=False]
+  Attempt 6 [LLM]: FILLY -> -GGGG (H:1, L:1) [algo_top1=LILLY, followed=False]
+  Failed to find word
+
+Game 70/100: Target = GUTSY
+  Attempt 1 [LLM]: HOUSE -> --YG- (H:4, L:4) [algo_top1=RATES, followed=False]
+  Attempt 2 [LLM]: GUTSY -> GGGGG (H:0, L:0) [algo_top1=TUTSI, followed=False]
+  Won in 2 attempts!
+
+Game 71/100: Target = TABOR
+  Attempt 1 [LLM]: LOCAL -> -Y-Y- (H:5, L:5) [algo_top1=EARNS, followed=False]
+  Attempt 2 [LLM]: MAJOR -> -G-GG (H:2, L:2) [algo_top1=RATON, followed=False]
+  Attempt 3 [LLM]: SAVOR -> -G-GG (H:2, L:2) [algo_top1=TABOR, followed=False]
+  Attempt 4 [LLM]: RAZOR -> -G-GG (H:2, L:2) [algo_top1=RAZOR, followed=True]
+  Attempt 5 [LLM]: GATOR -> -GYGG (H:2, L:2) [algo_top1=GATOR, followed=True]
+  Attempt 6 [LLM]: TABOR -> GGGGG (H:0, L:0) [algo_top1=TABOR, followed=True]
+  Won in 6 attempts!
+
+Game 72/100: Target = INLAY
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=NEARS, followed=False]
+  Attempt 2 [LLM]: BLIND -> -YYY- (H:5, L:5) [algo_top1=RAINA, followed=False]
+  Attempt 3 [LLM]: VINYL -> -YYYY (H:5, L:4) [algo_top1=MILAN, followed=False]
+  Attempt 4 [LLM]: INLAY -> GGGGG (H:0, L:0) [algo_top1=INLAY, followed=True]
+  Won in 4 attempts!
+
+Game 73/100: Target = AHHHH
+  Attempt 1 [LLM]: HOUSE -> Y---- (H:5, L:5) [algo_top1=LANES, followed=False]
+  Attempt 2 [LLM]: MIGHT -> ---G- (H:4, L:4) [algo_top1=CHART, followed=False]
+  Attempt 3 [LLM]: ALPHA -> G--G- (H:3, L:3) [algo_top1=ALPHA, followed=True]
+  Attempt 4 [LLM]: AHHHH -> GGGGG (H:0, L:0) [algo_top1=AHHHH, followed=True]
+  Won in 4 attempts!
+
+Game 74/100: Target = ROUEN
+  Attempt 1 [LLM]: SWIPE -> ----Y (H:5, L:5) [algo_top1=EARLS, followed=False]
+  Attempt 2 [LLM]: LEACH -> -Y--- (H:5, L:5) [algo_top1=ALTER, followed=False]
+  Attempt 3 [LLM]: BONER -> -GYGY (H:3, L:3) [algo_top1=TONER, followed=False]
+  Attempt 4 [LLM]: ROGEN -> GG-GG (H:1, L:1) [algo_top1=ROUEN, followed=False]
+  Attempt 5 [LLM]: ROUEN -> GGGGG (H:0, L:0) [algo_top1=ROUEN, followed=True]
+  Won in 5 attempts!
+
+Game 75/100: Target = BUENA
+  Attempt 1 [LLM]: HOUSE -> --Y-Y (H:5, L:5) [algo_top1=DARES, followed=False]
+  Attempt 2 [LLM]: RULED -> -G-Y- (H:4, L:4) [algo_top1=LURED, followed=False]
+  Attempt 3 [LLM]: NUEVA -> YGG-G (H:2, L:2) [algo_top1=BUENA, followed=False]
+  Attempt 4 [LLM]: BUENA -> GGGGG (H:0, L:0) [algo_top1=BUENA, followed=True]
+  Won in 4 attempts!
+
+Game 76/100: Target = MENON
+  Attempt 1 [LLM]: HOUSE -> -Y--Y (H:5, L:5) [algo_top1=SNARE, followed=False]
+  Attempt 2 [LLM]: ENVOY -> YY-G- (H:4, L:3) [algo_top1=TENOR, followed=False]
+  Attempt 3 [LLM]: MELON -> GG-GG (H:1, L:1) [algo_top1=LEMON, followed=False]
+  Attempt 4 [LLM]: MENON -> GGGGG (H:0, L:0) [algo_top1=MENON, followed=True]
+  Won in 4 attempts!
+
+Game 77/100: Target = TRASK
+  Attempt 1 [LLM]: HOUSE -> ---G- (H:4, L:4) [algo_top1=SNARE, followed=False]
+  Attempt 2 [LLM]: CRASS -> -GGG- (H:2, L:2) [algo_top1=GRASS, followed=False]
+  Attempt 3 [LLM]: GRASP -> -GGG- (H:2, L:2) [algo_top1=GRASP, followed=True]
+  Attempt 4 [LLM]: TRASK -> GGGGG (H:0, L:0) [algo_top1=TRASK, followed=True]
+  Won in 4 attempts!
+
+Game 78/100: Target = CASIO
+  Attempt 1 [LLM]: SCENE -> YY--- (H:5, L:5) [algo_top1=TALES, followed=False]
+  Attempt 2 [LLM]: COMBS -> GY--Y (H:4, L:4) [algo_top1=COALS, followed=False]
+  Attempt 3 [LLM]: CISCO -> GYG-G (H:2, L:2) [algo_top1=CISCO, followed=True]
+  Attempt 4 [LLM]: CASIO -> GGGGG (H:0, L:0) [algo_top1=CASIO, followed=True]
+  Won in 4 attempts!
+
+Game 79/100: Target = VOILA
+  Attempt 1 [LLM]: RETRY -> ----- (H:5, L:5) [algo_top1=TASER, followed=False]
+  Attempt 2 [LLM]: WOULD -> -G-G- (H:3, L:3) [algo_top1=SALON, followed=False]
+  Attempt 3 [LLM]: FOOLS -> -G-G- (H:3, L:3) [algo_top1=COILS, followed=False]
+  Attempt 4 [LLM]: VOILA -> GGGGG (H:0, L:0) [algo_top1=KOALA, followed=False]
+  Won in 4 attempts!
+
+Game 80/100: Target = AURAL
+  Attempt 1 [LLM]: HOUSE -> --Y-- (H:5, L:5) [algo_top1=AIRES, followed=False]
+  Attempt 2 [LLM]: QUICK -> -G--- (H:4, L:4) [algo_top1=LUMIA, followed=False]
+  Attempt 3 [LLM]: GUMMY -> -G--- (H:4, L:4) [algo_top1=BURMA, followed=False]
+  Attempt 4 [LLM]: AURAL -> GGGGG (H:0, L:0) [algo_top1=BURNT, followed=False]
+  Won in 4 attempts!
+
+Game 81/100: Target = LEGER
+  Attempt 1 [LLM]: HOUSE -> ----Y (H:5, L:5) [algo_top1=SARIN, followed=False]
+  Attempt 2 [LLM]: BEYER -> -G-GG (H:2, L:2) [algo_top1=ALDER, followed=False]
+  Attempt 3 [LLM]: LEVER -> GG-GG (H:1, L:1) [algo_top1=FEVER, followed=False]
+  Attempt 4 [LLM]: LEPER -> GG-GG (H:1, L:1) [algo_top1=LEPER, followed=True]
+  Attempt 5 [LLM]: LEGER -> GGGGG (H:0, L:0) [algo_top1=LEGER, followed=True]
+  Won in 5 attempts!
+
+Game 82/100: Target = DALLY
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=RACES, followed=False]
+  Attempt 2 [LLM]: KNICK -> ----- (H:5, L:5) [algo_top1=NAIRA, followed=False]
+  Attempt 3 [LLM]: TARDY -> -G-YG (H:3, L:3) [algo_top1=MARLA, followed=False]
+  Attempt 4 [LLM]: MADLY -> -GYGG (H:2, L:2) [algo_top1=BADLY, followed=False]
+  Attempt 5 [LLM]: DALLY -> GGGGG (H:0, L:0) [algo_top1=DALLY, followed=True]
+  Won in 5 attempts!
+
+Game 83/100: Target = INIGO
+  Attempt 1 [LLM]: HOUSE -> -Y--- (H:5, L:5) [algo_top1=SNARE, followed=False]
+  Attempt 2 [LLM]: BROAD -> --Y-- (H:5, L:5) [algo_top1=RATON, followed=False]
+  Attempt 3 [LLM]: PINOT -> -YYY- (H:5, L:4) [algo_top1=PILOT, followed=False]
+  Attempt 4 [LLM]: INIGO -> GGGGG (H:0, L:0) [algo_top1=OWING, followed=False]
+  Won in 4 attempts!
+
+Game 84/100: Target = KRILL
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=RACES, followed=False]
+  Attempt 2 [LLM]: GLICK -> -YG-Y (H:4, L:4) [algo_top1=TANIA, followed=False]
+  Attempt 3 [LLM]: KRILL -> GGGGG (H:0, L:0) [algo_top1=KRILL, followed=True]
+  Won in 3 attempts!
+
+Game 85/100: Target = SNIDE
+  Attempt 1 [LLM]: PLAIN -> ---YY (H:5, L:5) [algo_top1=SIENA, followed=False]
+  Attempt 2 [LLM]: SHINE -> G-GYG (H:2, L:2) [algo_top1=HINES, followed=False]
+  Attempt 3 [LLM]: SNIDE -> GGGGG (H:0, L:0) [algo_top1=SNIDE, followed=True]
+  Won in 3 attempts!
+
+Game 86/100: Target = LEWES
+  Attempt 1 [LLM]: HOUSE -> ---YY (H:5, L:5) [algo_top1=CARES, followed=False]
+  Attempt 2 [LLM]: SEARS -> -G--G (H:3, L:3) [algo_top1=RATES, followed=False]
+  Attempt 3 [LLM]: TEEMS -> -GY-G (H:3, L:3) [algo_top1=LEEDS, followed=False]
+  Attempt 4 [LLM]: GENES -> -G-GG (H:2, L:2) [algo_top1=GENES, followed=True]
+  Attempt 5 [LLM]: FECES -> -G-GG (H:2, L:2) [algo_top1=FECES, followed=True]
+  Attempt 6 [LLM]: KEYES -> -G-GG (H:2, L:2) [algo_top1=KEYES, followed=True]
+  Failed to find word
+
+Game 87/100: Target = TAMER
+  Attempt 1 [LLM]: RATIO -> YGY-- (H:4, L:4) [algo_top1=EARNS, followed=False]
+  Attempt 2 [LLM]: PARTY -> -GYY- (H:4, L:4) [algo_top1=TASER, followed=False]
+  Attempt 3 [LLM]: TAMER -> GGGGG (H:0, L:0) [algo_top1=TAKER, followed=False]
+  Won in 3 attempts!
+
+Game 88/100: Target = COTTA
+  Attempt 1 [LLM]: HOUSE -> -G--- (H:4, L:4) [algo_top1=EARLS, followed=False]
+  Attempt 2 [LLM]: DONOR -> -G--- (H:4, L:4) [algo_top1=LORNA, followed=False]
+  Attempt 3 [LLM]: MOLLY -> -G--- (H:4, L:4) [algo_top1=LOCAL, followed=False]
+  Attempt 4 [LLM]: GOTTA -> -GGGG (H:1, L:1) [algo_top1=TOPIC, followed=False]
+  Attempt 5 [LLM]: COTTA -> GGGGG (H:0, L:0) [algo_top1=COTTA, followed=True]
+  Won in 5 attempts!
+
+Game 89/100: Target = CORBY
+  Attempt 1 [LLM]: SHARE -> ---Y- (H:5, L:5) [algo_top1=LANES, followed=False]
+  Attempt 2 [LLM]: RIGOR -> Y--Y- (H:5, L:5) [algo_top1=TRYIN, followed=False]
+  Attempt 3 [LLM]: FROCK -> -YYY- (H:5, L:5) [algo_top1=FRONT, followed=False]
+  Attempt 4 [LLM]: CORNY -> GGG-G (H:1, L:1) [algo_top1=CORNY, followed=True]
+  Attempt 5 [LLM]: CORBY -> GGGGG (H:0, L:0) [algo_top1=CORBY, followed=True]
+  Won in 5 attempts!
+
+Game 90/100: Target = POLIS
+  Attempt 1 [LLM]: HOUSE -> -G-Y- (H:4, L:4) [algo_top1=ARIES, followed=False]
+  Attempt 2 [LLM]: COOKS -> -G--G (H:3, L:3) [algo_top1=COOLS, followed=False]
+  Attempt 3 [LLM]: LOANS -> YG--G (H:3, L:3) [algo_top1=LOADS, followed=False]
+  Attempt 4 [LLM]: POLLS -> GGG-G (H:1, L:1) [algo_top1=BOILS, followed=False]
+  Attempt 5 [LLM]: POLIS -> GGGGG (H:0, L:0) [algo_top1=POLIS, followed=True]
+  Won in 5 attempts!
+
+Game 91/100: Target = ROXAS
+  Attempt 1 [LLM]: HOUSE -> -G-Y- (H:4, L:4) [algo_top1=TALES, followed=False]
+  Attempt 2 [LLM]: FOLKS -> -G--G (H:3, L:3) [algo_top1=COOLS, followed=False]
+  Attempt 3 [LLM]: SOAPS -> -GY-G (H:3, L:3) [algo_top1=DORMS, followed=False]
+  Attempt 4 [LLM]: ROJAS -> GG-GG (H:1, L:1) [algo_top1=JONAS, followed=False]
+  Attempt 5 [LLM]: ROXAS -> GGGGG (H:0, L:0) [algo_top1=ROXAS, followed=True]
+  Won in 5 attempts!
+
+Game 92/100: Target = RANCE
+  Attempt 1 [LLM]: SPIRE -> ---YG (H:4, L:4) [algo_top1=ROSEN, followed=False]
+  Attempt 2 [LLM]: GROVE -> -Y--G (H:4, L:4) [algo_top1=CARTE, followed=False]
+  Attempt 3 [LLM]: BERNE -> --YYG (H:4, L:4) [algo_top1=CARNE, followed=False]
+  Attempt 4 [LLM]: RANCE -> GGGGG (H:0, L:0) [algo_top1=RANCE, followed=True]
+  Won in 4 attempts!
+
+Game 93/100: Target = CARON
+  Attempt 1 [LLM]: GRAZE -> -YY-- (H:5, L:5) [algo_top1=RATES, followed=False]
+  Attempt 2 [LLM]: RAINY -> YG-Y- (H:4, L:4) [algo_top1=DARIA, followed=False]
+  Attempt 3 [LLM]: MANOR -> -GYGY (H:3, L:3) [algo_top1=AARON, followed=False]
+  Attempt 4 [LLM]: BARON -> -GGGG (H:1, L:1) [algo_top1=AARON, followed=False]
+  Attempt 5 [LLM]: AARON -> -GGGG (H:1, L:1) [algo_top1=AARON, followed=True]
+  Attempt 6 [LLM]: CARON -> GGGGG (H:0, L:0) [algo_top1=CARON, followed=True]
+  Won in 6 attempts!
+
+Game 94/100: Target = SURYA
+  Attempt 1 [LLM]: HOUSE -> --YY- (H:5, L:5) [algo_top1=SONAR, followed=False]
+  Attempt 2 [LLM]: MUSTY -> -GY-Y (H:4, L:4) [algo_top1=TURNS, followed=False]
+  Attempt 3 [LLM]: SURYA -> GGGGG (H:0, L:0) [algo_top1=SURYA, followed=True]
+  Won in 3 attempts!
+
+Game 95/100: Target = AGGIE
+  Attempt 1 [LLM]: HOUSE -> ----G (H:4, L:4) [algo_top1=DALES, followed=False]
+  Attempt 2 [LLM]: MILLE -> -Y--G (H:4, L:4) [algo_top1=RAINE, followed=False]
+  Attempt 3 [LLM]: WAIVE -> -YY-G (H:4, L:4) [algo_top1=RAINE, followed=False]
+  Attempt 4 [LLM]: ANNIE -> G--GG (H:2, L:2) [algo_top1=ANGIE, followed=False]
+  Attempt 5 [LLM]: ADDIE -> G--GG (H:2, L:2) [algo_top1=ARTIE, followed=False]
+  Attempt 6 [LLM]: AGGIE -> GGGGG (H:0, L:0) [algo_top1=ARTIE, followed=False]
+  Won in 6 attempts!
+
+Game 96/100: Target = CAUSA
+  Attempt 1 [LLM]: HOUSE -> --GG- (H:3, L:3) [algo_top1=REALS, followed=False]
+  Attempt 2 [LLM]: CRUST -> G-GG- (H:2, L:2) [algo_top1=CRUST, followed=True]
+  Attempt 3 [LLM]: CAUSA -> GGGGG (H:0, L:0) [algo_top1=CAUSA, followed=True]
+  Won in 3 attempts!
+
+Game 97/100: Target = BAMBA
+  Attempt 1 [LLM]: HOUSE -> ----- (H:5, L:5) [algo_top1=RACES, followed=False]
+  Attempt 2 [LLM]: PRANK -> --Y-- (H:5, L:5) [algo_top1=TANIA, followed=False]
+  Attempt 3 [LLM]: VITAL -> ---Y- (H:5, L:5) [algo_top1=TALIA, followed=False]
+  Attempt 4 [LLM]: MAMMA -> -GG-G (H:2, L:2) [algo_top1=MAGDA, followed=False]
+  Attempt 5 [LLM]: BAMBA -> GGGGG (H:0, L:0) [algo_top1=BAMBA, followed=True]
+  Won in 5 attempts!
+
+Game 98/100: Target = MAYNE
+  Attempt 1 [LLM]: HOUSE -> ----G (H:4, L:4) [algo_top1=RAINE, followed=False]
+  Attempt 2 [LLM]: CRATE -> --Y-G (H:4, L:4) [algo_top1=RAINE, followed=False]
+  Attempt 3 [LLM]: ALIKE -> Y---G (H:4, L:4) [algo_top1=MAINE, followed=False]
+  Attempt 4 [LLM]: MAYNE -> GGGGG (H:0, L:0) [algo_top1=MAYBE, followed=False]
+  Won in 4 attempts!
+
+Game 99/100: Target = BOGGS
+  Attempt 1 [LLM]: BLIND -> G---- (H:4, L:4) [algo_top1=HEARS, followed=False]
+  Attempt 2 [LLM]: BEAST -> G--Y- (H:4, L:4) [algo_top1=BATES, followed=False]
+  Attempt 3 [LLM]: BOOMS -> GG--G (H:2, L:2) [algo_top1=BOMBS, followed=False]
+  Attempt 4 [LLM]: BOGUS -> GGG-G (H:1, L:1) [algo_top1=BOGUS, followed=True]
+  Attempt 5 [LLM]: BOGGS -> GGGGG (H:0, L:0) [algo_top1=BOGGS, followed=True]
+  Won in 5 attempts!
+
+Game 100/100: Target = FINNS
+  Attempt 1 [LLM]: HOUSE -> ---Y- (H:5, L:5) [algo_top1=CANES, followed=False]
+  Attempt 2 [LLM]: SLANT -> Y--G- (H:4, L:4) [algo_top1=RANTS, followed=False]
+  Attempt 3 [LLM]: GRINS -> --YGG (H:3, L:3) [algo_top1=FINNS, followed=False]
+  Attempt 4 [LLM]: FINNS -> GGGGG (H:0, L:0) [algo_top1=FINNS, followed=True]
+  Won in 4 attempts!
+
+================================================================================
+RESULTS SUMMARY
+================================================================================
+Games played: 100
+Wins: 96
+Win rate: 96.0%
+Average attempts (when won): 4.16
+================================================================================
+
+Results saved to:
+  /Users/kevin/Desktop/projects/wordle/voi_integration/results/wordle/baseline_voi_llama-3.3-70b-instruct_20260328_050927.csv
+  /Users/kevin/Desktop/projects/wordle/voi_integration/results/wordle/summary_baseline_voi_llama-3.3-70b-instruct_20260328_050927.json

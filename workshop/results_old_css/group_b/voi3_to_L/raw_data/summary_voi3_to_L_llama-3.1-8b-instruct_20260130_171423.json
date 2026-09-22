@@ -1,0 +1,19 @@
+{
+  "strategy": "flexible_hybrid",
+  "config_name": "voi3_to_L",
+  "model_name": "llama-3.1-8b-instruct",
+  "prompt_type": "zero-shot",
+  "schedule": {
+    "1": "voi",
+    "2": "voi",
+    "3": "voi",
+    "4": "llm",
+    "5": "llm",
+    "6": "llm"
+  },
+  "total_games": 100,
+  "wins": 88,
+  "win_rate": 0.88,
+  "avg_attempts_when_won": 4.363636363636363,
+  "timestamp": "20260130_171423"
+}

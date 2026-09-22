@@ -1,0 +1,24 @@
+{
+  "strategy": "flexible_hybrid",
+  "config_name": "L_to_C_alt",
+  "variant": "classic",
+  "model_name": "llama-3.1-8b-instruct",
+  "prompt_type": "zero-shot",
+  "schedule": {
+    "1": "llm",
+    "2": "css",
+    "3": "voi",
+    "4": "css",
+    "5": "voi",
+    "6": "css",
+    "7": "voi",
+    "8": "css",
+    "9": "voi",
+    "10": "css"
+  },
+  "total_games": 100,
+  "wins": 100,
+  "win_rate": 1.0,
+  "avg_attempts_when_won": 4.44,
+  "timestamp": "20260212_125635"
+}

@@ -1,0 +1,19 @@
+{
+  "strategy": "flexible_hybrid",
+  "config_name": "L1_to_voi",
+  "model_name": "codestral-22b",
+  "prompt_type": "zero-shot",
+  "schedule": {
+    "1": "llm",
+    "2": "voi",
+    "3": "voi",
+    "4": "voi",
+    "5": "voi",
+    "6": "voi"
+  },
+  "total_games": 100,
+  "wins": 97,
+  "win_rate": 0.97,
+  "avg_attempts_when_won": 4.144329896907217,
+  "timestamp": "20260212_215658"
+}

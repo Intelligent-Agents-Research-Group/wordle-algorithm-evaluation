@@ -1,0 +1,3 @@
+game_number,target_code,won,attempts,guess_1,feedback_1,strategy_1,candidates_1,guess_2,feedback_2,strategy_2,candidates_2,guess_3,feedback_3,strategy_3,candidates_3,guess_4,feedback_4,strategy_4,candidates_4,guess_5,feedback_5,strategy_5,candidates_5,guess_6,feedback_6,strategy_6,candidates_6,guess_7,feedback_7,strategy_7,candidates_7,guess_8,feedback_8,strategy_8,candidates_8,guess_9,feedback_9,strategy_9,candidates_9,guess_10,feedback_10,strategy_10,candidates_10
+1,GGYR,True,5,OYGG,0B3W,LLM,44,GOYO,2B0W,CSS,7,GGWO,2B0W,CSS,3,GGYY,3B0W,CSS,2,GGYR,4B0W,CSS,1,,,,,,,,,,,,,,,,,,,,
+2,OWYY,True,5,BYGB,0B1W,LLM,276,YWWO,1B2W,CSS,27,RWOY,2B1W,CSS,3,WWRY,2B0W,CSS,1,OWYY,4B0W,CSS,1,,,,,,,,,,,,,,,,,,,,

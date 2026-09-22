@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "constraint_filter_voi",
+  "repair_mode": "constraint_filter",
+  "algorithm": "voi",
+  "model_name": "codestral-22b",
+  "prompt_type": "zero-shot",
+  "top_k": null,
+  "total_games": 100,
+  "wins": 98,
+  "win_rate": 0.98,
+  "avg_attempts_when_won": 4.285714285714286,
+  "llm_accepted": 362,
+  "llm_repaired": 70,
+  "repair_rate": 0.16203703703703703,
+  "timestamp": "20260131_065123"
+}

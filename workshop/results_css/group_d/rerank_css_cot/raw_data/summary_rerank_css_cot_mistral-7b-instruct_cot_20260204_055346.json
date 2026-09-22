@@ -1,0 +1,17 @@
+{
+  "strategy": "repair_hybrid",
+  "config_name": "rerank_css_true_cot",
+  "repair_mode": "rerank",
+  "algorithm": "css_true",
+  "model_name": "mistral-7b-instruct",
+  "prompt_type": "cot",
+  "top_k": 5,
+  "total_games": 100,
+  "wins": 96,
+  "win_rate": 0.96,
+  "avg_attempts_when_won": 4.375,
+  "llm_accepted": 389,
+  "llm_repaired": 2,
+  "repair_rate": 0.005115089514066497,
+  "timestamp": "20260204_055346"
+}

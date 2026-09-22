@@ -1,0 +1,104 @@
+================================================================================
+REPEATED MEASURES ANOVA: HAMMING_2
+================================================================================
+
+Generated: 2026-02-02 18:13:31
+Metric: hamming_2
+Description: Hamming distance after round 2
+Lower is better: Yes
+
+--------------------------------------------------------------------------------
+DESIGN
+--------------------------------------------------------------------------------
+Complete cases (subjects): 100
+Conditions (approaches): 8
+Within-subjects factor: approach
+Subject: target_word
+
+--------------------------------------------------------------------------------
+ANOVA TABLE
+--------------------------------------------------------------------------------
+Source                         SS     df           MS            F            p
+----------------------------------------------------------------------
+Conditions               108.8060      7      15.5437      22.0559     5.39e-27
+Error                    488.3848    693       0.7047
+
+--------------------------------------------------------------------------------
+EFFECT SIZES
+--------------------------------------------------------------------------------
+Partial eta-squared (eta^2p): 0.1822
+Omega-squared (omega^2): 0.1737
+
+--------------------------------------------------------------------------------
+INTERPRETATION
+--------------------------------------------------------------------------------
+Result: HIGHLY SIGNIFICANT (p < 0.001)
+Effect size: large (eta^2p = 0.1822)
+
+F(7, 693) = 22.0559, p = 5.39e-27, eta^2p = 0.1822
+
+--------------------------------------------------------------------------------
+DESCRIPTIVE STATISTICS BY APPROACH
+--------------------------------------------------------------------------------
+    approach       mean        std   min        max  count         se     95% CI
+         CSS   3.330000   1.263753   0.0   5.000000    100   0.126375   0.247696
+         VOI   3.400000   1.279204   0.0   5.000000    100   0.127920   0.250724
+Frontier_LLM   3.590000   0.916068   0.7   5.000000    100   0.091607   0.179549
+     Mid_LLM   3.583333   0.781915   0.7   5.000000    100   0.078192   0.153255
+   Small_LLM   3.730000   0.584220   1.8   5.000000    100   0.058422   0.114507
+      Hybrid   3.514074   0.523710   2.0   4.592593    100   0.052371   0.102647
+      Random   3.860000   1.063822   0.0   5.000000    100   0.106382   0.208509
+ Pure_Random   4.580000   0.713223   1.0   5.000000    100   0.071322   0.139792
+
+--------------------------------------------------------------------------------
+POST-HOC PAIRWISE COMPARISONS (Bonferroni-corrected)
+--------------------------------------------------------------------------------
+Significant comparisons: 10 out of 28
+
+Significant Pairwise Differences (p-corr < 0.05):
+           A            B          T        p-unc       p-corr    cohen
+         CSS  Pure_Random  -9.355088     2.79e-15     7.82e-14      nan
+         CSS       Random  -3.666087     3.98e-04     1.12e-02      nan
+         CSS    Small_LLM  -3.244428     1.61e-03     4.50e-02      nan
+Frontier_LLM  Pure_Random  -8.733501     6.28e-14     1.76e-12      nan
+      Hybrid  Pure_Random -13.044158     3.16e-23     8.84e-22      nan
+      Hybrid    Small_LLM  -3.569248     5.54e-04     1.55e-02      nan
+     Mid_LLM  Pure_Random  -9.637061     6.77e-16     1.90e-14      nan
+ Pure_Random       Random   5.732779     1.07e-07     3.00e-06      nan
+ Pure_Random    Small_LLM   9.226125     5.33e-15     1.49e-13      nan
+ Pure_Random          VOI   8.370111     3.84e-13     1.08e-11      nan
+
+All Pairwise Comparisons (sorted by p-value):
+           A            B          T    dof        p-unc       p-corr    cohen
+      Hybrid  Pure_Random -13.044158   99.0     3.16e-23     8.84e-22      nan
+     Mid_LLM  Pure_Random  -9.637061   99.0     6.77e-16     1.90e-14      nan
+         CSS  Pure_Random  -9.355088   99.0     2.79e-15     7.82e-14      nan
+ Pure_Random    Small_LLM   9.226125   99.0     5.33e-15     1.49e-13      nan
+Frontier_LLM  Pure_Random  -8.733501   99.0     6.28e-14     1.76e-12      nan
+ Pure_Random          VOI   8.370111   99.0     3.84e-13     1.08e-11      nan
+ Pure_Random       Random   5.732779   99.0     1.07e-07     3.00e-06      nan
+         CSS       Random  -3.666087   99.0     3.98e-04     1.12e-02      nan
+      Hybrid    Small_LLM  -3.569248   99.0     5.54e-04     1.55e-02      nan
+         CSS    Small_LLM  -3.244428   99.0     1.61e-03     4.50e-02      nan
+      Random          VOI   3.038894   99.0     3.04e-03     8.50e-02      nan
+      Hybrid       Random  -2.913124   99.0     4.42e-03     1.24e-01      nan
+   Small_LLM          VOI   2.419349   99.0     1.74e-02     4.86e-01      nan
+     Mid_LLM       Random  -2.165694   99.0     3.27e-02     9.17e-01      nan
+         CSS      Mid_LLM  -2.082735   99.0     3.99e-02     1.00e+00      nan
+         CSS Frontier_LLM  -1.960449   99.0     5.28e-02     1.00e+00      nan
+Frontier_LLM       Random  -1.903116   99.0     5.99e-02     1.00e+00      nan
+     Mid_LLM    Small_LLM  -1.851077   99.0     6.71e-02     1.00e+00      nan
+         CSS       Hybrid  -1.666341   99.0     9.88e-02     1.00e+00      nan
+Frontier_LLM    Small_LLM  -1.433131   99.0     1.55e-01     1.00e+00      nan
+Frontier_LLM          VOI   1.415863   99.0     1.60e-01     1.00e+00      nan
+     Mid_LLM          VOI   1.340433   99.0     1.83e-01     1.00e+00      nan
+      Random    Small_LLM   1.105138   99.0     2.72e-01     1.00e+00      nan
+Frontier_LLM       Hybrid   0.990995   99.0     3.24e-01     1.00e+00      nan
+      Hybrid      Mid_LLM  -0.933290   99.0     3.53e-01     1.00e+00      nan
+      Hybrid          VOI   0.929830   99.0     3.55e-01     1.00e+00      nan
+         CSS          VOI  -0.484669   99.0     6.29e-01     1.00e+00      nan
+Frontier_LLM      Mid_LLM   0.059947   99.0     9.52e-01     1.00e+00      nan
+
+================================================================================
+END OF REPORT
+================================================================================

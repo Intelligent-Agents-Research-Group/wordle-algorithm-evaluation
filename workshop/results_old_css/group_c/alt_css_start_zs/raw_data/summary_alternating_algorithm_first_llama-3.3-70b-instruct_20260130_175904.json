@@ -1,0 +1,12 @@
+{
+  "strategy": "alternating_algorithm_first",
+  "model_name": "llama-3.3-70b-instruct",
+  "start_with": "algorithm",
+  "prompt_type": "zero-shot",
+  "algorithm": "css",
+  "total_games": 100,
+  "wins": 96,
+  "win_rate": 0.96,
+  "avg_attempts_when_won": 4.104166666666667,
+  "timestamp": "20260130_175904"
+}
