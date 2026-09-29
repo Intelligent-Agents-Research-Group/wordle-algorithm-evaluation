@@ -59,6 +59,10 @@ KEY1_MODELS = {"claude-4-sonnet"}
 # Models that use NAVIGATOR_UF_API_KEY3
 KEY3_MODELS = {"gpt-5", "gemini-2.5-pro"}
 
+# Models that use OpenRouter (OPENROUTER_API_KEY)
+OPENROUTER_MODELS = {"google/gemini-2.5-pro"}
+OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
+
 # Reasoning models: need max_completion_tokens instead of max_tokens, no temperature
 REASONING_MODELS = {"gpt-5", "gpt-oss-120b"}
 
@@ -68,7 +72,12 @@ MAX_ROUNDS = 10
 
 
 def _get_api_key_for_model(model_name: str) -> str:
-    if model_name in KEY1_MODELS:
+    if model_name in OPENROUTER_MODELS:
+        key = os.getenv("OPENROUTER_API_KEY")
+        if not key:
+            raise RuntimeError(f"OPENROUTER_API_KEY not set (required for {model_name})")
+        return key
+    elif model_name in KEY1_MODELS:
         key = os.getenv("NAVIGATOR_UF_API_KEY1")
         if not key:
             raise RuntimeError(f"NAVIGATOR_UF_API_KEY1 not set (required for {model_name})")
@@ -88,6 +97,12 @@ def _get_api_key_for_model(model_name: str) -> str:
         if not key:
             raise RuntimeError(f"NAVIGATOR_UF_API_KEY not set (required for {model_name})")
         return key
+
+
+def _get_base_url_for_model(model_name: str) -> str:
+    if model_name in OPENROUTER_MODELS:
+        return OPENROUTER_BASE_URL
+    return os.getenv("NAVIGATOR_API_ENDPOINT", "https://api.ai.it.ufl.edu/v1")
 
 
 def _create_algo_strategy(name: str, num_pegs: int = 4):
@@ -125,7 +140,7 @@ class VOIInformedMastermindStrategy:
         self.top_k = top_k
         self.colors = colors
         self.turn_number = 0
-        self.api_base = os.getenv("NAVIGATOR_API_ENDPOINT", "https://api.ai.it.ufl.edu/v1")
+        self.api_base = _get_base_url_for_model(model_name)
 
         for rnd, strat in schedule.items():
             if strat not in VALID_STRATEGIES:
@@ -622,7 +637,8 @@ def run_evaluation(num_games=100, variant="classic",
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     prompt_suffix = "_cot" if prompt_type == "cot" else ""
     safe_config = config_name.replace(" ", "_").replace("/", "_")
-    csv_file = output_dir / f"{safe_config}_{model_name}{prompt_suffix}_{timestamp}.csv"
+    safe_model = model_name.replace("/", "_")
+    csv_file = output_dir / f"{safe_config}_{safe_model}{prompt_suffix}_{timestamp}.csv"
 
     with open(csv_file, 'w', newline='') as f:
         writer = csv.writer(f)
@@ -678,7 +694,7 @@ def run_evaluation(num_games=100, variant="classic",
         'timestamp': timestamp
     }
 
-    json_file = output_dir / f"summary_{safe_config}_{model_name}{prompt_suffix}_{timestamp}.json"
+    json_file = output_dir / f"summary_{safe_config}_{safe_model}{prompt_suffix}_{timestamp}.json"
     with open(json_file, 'w') as f:
         json.dump(summary, f, indent=2)
 

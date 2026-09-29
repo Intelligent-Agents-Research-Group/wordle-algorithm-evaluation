@@ -25,8 +25,8 @@ if [ -f "$ENV_FILE" ]; then
     export $(grep -v '^#' "$ENV_FILE" | xargs)
 fi
 
-if [ -z "${NAVIGATOR_UF_API_KEY3:-}" ]; then
-    echo "ERROR: NAVIGATOR_UF_API_KEY3 not set"
+if [ -z "${NAVIGATOR_UF_API_KEY3:-}" ] && [ -z "${OPENROUTER_API_KEY:-}" ]; then
+    echo "ERROR: Neither NAVIGATOR_UF_API_KEY3 nor OPENROUTER_API_KEY is set"
     exit 1
 fi
 
@@ -35,7 +35,7 @@ if [ ! -f "$PYTHON" ]; then
     exit 1
 fi
 
-MODELS=("gpt-5" "gemini-2.5-pro")
+MODELS=("gpt-5" "google/gemini-2.5-pro")
 ALGORITHMS=("css" "voi")
 CONDITIONS=("baseline" "voi_informed")
 NUM_GAMES=100
@@ -60,6 +60,9 @@ TOTAL=24  # 2 models x 2 algos x 2 conditions x 3 domains
 
 for MODEL in "${MODELS[@]}"; do
 
+    # Sanitize model name for filenames (e.g., google/gemini-2.5-pro -> google_gemini-2.5-pro)
+    SAFE_MODEL="${MODEL//\//_}"
+
     # ── Wordle ──────────────────────────────────────────────────────────────
     WORDLE_OUTPUT="${PROJECT_ROOT}/voi_integration/results/wordle"
     mkdir -p "$WORDLE_OUTPUT"
@@ -69,7 +72,7 @@ for MODEL in "${MODELS[@]}"; do
             RUN=$((RUN + 1))
             CONFIG_NAME="${COND}_${ALGO}"
 
-            EXISTING=$(find "$WORDLE_OUTPUT" -name "${CONFIG_NAME}_${MODEL}_*.csv" 2>/dev/null | head -1)
+            EXISTING=$(find "$WORDLE_OUTPUT" -name "${CONFIG_NAME}_${SAFE_MODEL}_*.csv" 2>/dev/null | head -1)
             if [ -n "$EXISTING" ]; then
                 LINES=$(wc -l < "$EXISTING" | tr -d ' ')
                 if [ "$LINES" -gt 100 ]; then
@@ -87,7 +90,7 @@ for MODEL in "${MODELS[@]}"; do
             CONFIG_NAME="$CONFIG_NAME" \
             OUTPUT_DIR="$WORDLE_OUTPUT" \
             "$PYTHON" "$WORDLE_SCRIPT" \
-                2>&1 | tee "${WORDLE_OUTPUT}/${CONFIG_NAME}_${MODEL}.log"
+                2>&1 | tee "${WORDLE_OUTPUT}/${CONFIG_NAME}_${SAFE_MODEL}.log"
             echo "  Done [$RUN/$TOTAL]"
             echo ""
         done
@@ -102,7 +105,7 @@ for MODEL in "${MODELS[@]}"; do
             RUN=$((RUN + 1))
             CONFIG_NAME="${COND}_${ALGO}"
 
-            EXISTING=$(find "$MM_EXT_OUTPUT" -name "${CONFIG_NAME}_${MODEL}_*.csv" 2>/dev/null | head -1)
+            EXISTING=$(find "$MM_EXT_OUTPUT" -name "${CONFIG_NAME}_${SAFE_MODEL}_*.csv" 2>/dev/null | head -1)
             if [ -n "$EXISTING" ]; then
                 LINES=$(wc -l < "$EXISTING" | tr -d ' ')
                 if [ "$LINES" -gt 100 ]; then
@@ -121,7 +124,7 @@ for MODEL in "${MODELS[@]}"; do
             OUTPUT_DIR="$MM_EXT_OUTPUT" \
             VARIANT="extended" \
             "$PYTHON" "$MM_SCRIPT" \
-                2>&1 | tee "${MM_EXT_OUTPUT}/${CONFIG_NAME}_${MODEL}.log"
+                2>&1 | tee "${MM_EXT_OUTPUT}/${CONFIG_NAME}_${SAFE_MODEL}.log"
             echo "  Done [$RUN/$TOTAL]"
             echo ""
         done
@@ -136,7 +139,7 @@ for MODEL in "${MODELS[@]}"; do
             RUN=$((RUN + 1))
             CONFIG_NAME="${COND}_${ALGO}"
 
-            EXISTING=$(find "$MM_HARD_OUTPUT" -name "${CONFIG_NAME}_${MODEL}_*.csv" 2>/dev/null | head -1)
+            EXISTING=$(find "$MM_HARD_OUTPUT" -name "${CONFIG_NAME}_${SAFE_MODEL}_*.csv" 2>/dev/null | head -1)
             if [ -n "$EXISTING" ]; then
                 LINES=$(wc -l < "$EXISTING" | tr -d ' ')
                 if [ "$LINES" -gt 100 ]; then
@@ -155,7 +158,7 @@ for MODEL in "${MODELS[@]}"; do
             OUTPUT_DIR="$MM_HARD_OUTPUT" \
             VARIANT="extended" \
             "$PYTHON" "$MM_SCRIPT" \
-                2>&1 | tee "${MM_HARD_OUTPUT}/${CONFIG_NAME}_${MODEL}.log"
+                2>&1 | tee "${MM_HARD_OUTPUT}/${CONFIG_NAME}_${SAFE_MODEL}.log"
             echo "  Done [$RUN/$TOTAL]"
             echo ""
         done
