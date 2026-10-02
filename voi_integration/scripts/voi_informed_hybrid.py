@@ -59,17 +59,23 @@ KEY1_MODELS = {"claude-4-sonnet"}
 KEY3_MODELS = {"gpt-5", "gemini-2.5-pro"}
 
 # Models that use OpenRouter (OPENROUTER_API_KEY)
-OPENROUTER_MODELS = {"google/gemini-2.5-pro"}
+OPENROUTER_MODELS = {"google/gemini-2.5-pro", "openai/gpt-5", "qwen/qwen3-8b", "qwen/qwen3-14b"}
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
+# Models that run locally via Ollama
+OLLAMA_MODELS = {"qwen3:1.7b", "qwen3:4b", "llama3.2:1b", "llama3.2:3b", "gemma3:4b"}
+OLLAMA_BASE_URL = "http://localhost:11434/v1"
+
 # Reasoning models: need max_completion_tokens instead of max_tokens, no temperature
-REASONING_MODELS = {"gpt-5", "gpt-oss-120b"}
+REASONING_MODELS = {"gpt-5", "openai/gpt-5", "gpt-oss-120b", "qwen/qwen3-14b"}
 
 VALID_STRATEGIES = {"llm", "css", "voi"}
 
 
 def _get_api_key_for_model(model_name: str) -> str:
-    if model_name in OPENROUTER_MODELS:
+    if model_name in OLLAMA_MODELS:
+        return "ollama"  # Ollama doesn't need a real API key
+    elif model_name in OPENROUTER_MODELS:
         key = os.getenv("OPENROUTER_API_KEY")
         if not key:
             raise RuntimeError(f"OPENROUTER_API_KEY not set (required for {model_name})")
@@ -97,7 +103,9 @@ def _get_api_key_for_model(model_name: str) -> str:
 
 
 def _get_base_url_for_model(model_name: str) -> str:
-    if model_name in OPENROUTER_MODELS:
+    if model_name in OLLAMA_MODELS:
+        return OLLAMA_BASE_URL
+    elif model_name in OPENROUTER_MODELS:
         return OPENROUTER_BASE_URL
     return os.getenv("NAVIGATOR_API_ENDPOINT", "https://api.navigator.uf.edu/v1")
 
@@ -235,40 +243,63 @@ class VOIInformedHybridStrategy:
 
         return self.scoring_algo.score_candidates(candidates, history, self.top_k)
 
+    def _ollama_call(self, prompt: str) -> Optional[str]:
+        """Call Ollama native API with thinking disabled."""
+        import httpx
+        resp = httpx.post(
+            f"{OLLAMA_BASE_URL.replace('/v1', '')}/api/chat",
+            json={
+                "model": self.model_name,
+                "messages": [{"role": "user", "content": prompt}],
+                "think": False,
+                "stream": False,
+                "options": {"num_predict": 100, "temperature": self.temperature},
+            },
+            timeout=120,
+        )
+        resp.raise_for_status()
+        return resp.json()["message"]["content"]
+
     def _get_llm_guess(self, candidates: List[str], history: List[Tuple[str, List[str]]],
                        algo_scores: Optional[List[Tuple[str, float]]] = None,
                        entropy: Optional[float] = None) -> Optional[str]:
         """Get guess from LLM with retry logic."""
         try:
-            import openai
-            client = openai.OpenAI(
-                api_key=_get_api_key_for_model(self.model_name),
-                base_url=self.api_base
-            )
-
             prompt = self._build_prompt(candidates, history, algo_scores, entropy)
+            is_ollama = self.model_name in OLLAMA_MODELS
 
-            is_reasoning = self.model_name in REASONING_MODELS
-            call_kwargs = {
-                "model": self.model_name,
-                "messages": [{"role": "user", "content": prompt}],
-            }
-            if is_reasoning:
-                call_kwargs["max_completion_tokens"] = 16384
-            else:
-                call_kwargs["temperature"] = self.temperature
-                call_kwargs["max_tokens"] = 150
+            if not is_ollama:
+                import openai
+                client = openai.OpenAI(
+                    api_key=_get_api_key_for_model(self.model_name),
+                    base_url=self.api_base
+                )
 
-            def api_call():
-                return client.chat.completions.create(**call_kwargs)
+                is_reasoning = self.model_name in REASONING_MODELS
+                call_kwargs = {
+                    "model": self.model_name,
+                    "messages": [{"role": "user", "content": prompt}],
+                }
+                if is_reasoning:
+                    call_kwargs["max_completion_tokens"] = 16384
+                else:
+                    call_kwargs["temperature"] = self.temperature
+                    call_kwargs["max_tokens"] = 150
+
+                def api_call():
+                    return client.chat.completions.create(**call_kwargs)
 
             for attempt in range(5):
                 try:
-                    response = api_call()
-                    content = response.choices[0].message.content
-                    if content is None:
-                        content = getattr(response.choices[0].message, 'reasoning_content', None) or ""
-                    text = content.strip()
+                    if is_ollama:
+                        text = (self._ollama_call(prompt) or "").strip()
+                    else:
+                        response = api_call()
+                        content = response.choices[0].message.content
+                        if content is None:
+                            content = getattr(response.choices[0].message, 'reasoning_content', None) or ""
+                        # Strip <think>...</think> tags from Qwen3 thinking output
+                        text = re.sub(r'<think>.*?</think>', '', content, flags=re.DOTALL).strip()
                     guess = self._extract_guess(text, history, candidates)
                     if guess:
                         return guess

@@ -6,6 +6,9 @@ results/
 scripts/test_results/
 scripts/evaluation_logs/
 
+# Paper manuscript (private)
+paper/
+
 # Large data files (>100MB, exceed GitHub limit)
 data/wordle_games.csv
 data/wordle_round_scores.csv
